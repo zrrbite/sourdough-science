@@ -86,6 +86,18 @@ This is a specialist tool rather than a routine one. For most bread applications
 
 **5. Expect a flavour dividend.** The enlarged free amino acid pool feeds Strecker degradation during the bake, producing a more complex crust aroma — malty, nutty, and roasted notes from Strecker aldehydes and pyrazines. This is the payoff that a short pizza bake cannot access.
 
+```mermaid
+flowchart TD
+    A["Flour + Water\n40–42°C\n(no salt, no levain)"] --> B["Warm Autolyse\n60–90 min at 38–42°C"]
+    B --> C{"Assess\nextensibility"}
+    C -->|"Soft, stretches\nthin"| D["Final Mix:\nAdd Levain + Salt"]
+    C -->|"Too tight"| E["Extend 30 min"] --> C
+    C -->|"Too slack"| F["Reduce time/temp\nnext bake"]
+    D --> G["Salt suppresses proteases\n→ Proteolysis window closed"]
+    G --> H["Bulk & Shape\nas normal"]
+    H --> I["Bake → Flavour dividend:\nmalty, nutty crust"]
+```
+
 ---
 
 <!-- nav -->

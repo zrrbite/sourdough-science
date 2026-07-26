@@ -48,6 +48,17 @@ These experiments establish a clear hierarchy of factors controlling oven spring
 
 **4. Gas volume and nucleation** — pre-existing gas cells and dissolved CO₂ contribute to oven spring but are secondary to alignment. A well-aligned, largely degassed dough outperforms a gassy dough with random gluten orientation.
 
+```mermaid
+flowchart TD
+    A["1 · Gluten Network Alignment\n(dominant factor)"] --> B["2 · Heating Uniformity\nThin dough → simultaneous steam generation"]
+    B --> C["3 · Network Extensibility\nGluten yields to steam pressure"]
+    C --> D["4 · Gas Volume & Nucleation\n(secondary factor)"]
+    A -.->|"Laminar alignment\ncreates preferential\nsteam paths"| E["Explosive\nDelamination\n→ Oven Spring"]
+    B -.-> E
+    C -.-> E
+    D -.-> E
+```
+
 ## Fold Multiplication: Amplifying the Laminar Effect
 
 If laminar alignment is the dominant factor in oven spring, it follows that **multiplying the number of aligned layers** should amplify the effect. This is achieved through folding.

@@ -52,6 +52,19 @@ Commercial *S. cerevisiae* produces CO₂ at a relatively uniform rate, especial
 
 These modifications converge during oven spring. pH-modified charge state, proteolytic chain cleavage, disulfide reduction, and uneven gas production each push the dough toward irregular expansion through different mechanisms, and their effects are synergistic rather than additive — which is why sourdough produces dramatic ears and open, irregular crumb where commercial yeast produces controlled, even rise. The oven-spring mechanics are treated in full in a dedicated section later in this document.
 
+```mermaid
+flowchart TD
+    A["Sourdough Fermentation"] --> B["pH Drop → 3.5–4.5"]
+    A --> C["LAB Proteases"]
+    A --> D["Reducing Agents\n(Glutathione)"]
+    A --> E["Uneven Gas Production"]
+    B --> F["Charge Repulsion\n→ Extensibility ↑"]
+    C --> G["Peptide Cleavage\n→ Elasticity ↓"]
+    D --> H["S–S Bond Disruption\n→ Network Weakening"]
+    E --> I["Patchy Nucleation\n→ Irregular Crumb"]
+    F & G & H & I --> J["Synergistic Result:\nOpen, Irregular Crumb\n+ Dramatic Ear"]
+```
+
 ---
 
 <!-- nav -->

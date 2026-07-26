@@ -38,6 +38,20 @@ The critical insight is that cold temperature does not suppress all reactions eq
 
 This differential temperature sensitivity means that the **construction-to-demolition ratio** is heavily tilted in favour of network building during cold retardation. At room temperature, a long bulk ferment sees proteases chewing through the network nearly as fast as it builds — after 18+ hours, demolition starts winning and the dough degrades. At 3–5°C, the building reactions run at perhaps 20–30% of room temperature rates while the proteolytic reactions run at perhaps 5–10% of room temperature rates. Over 3–4 days in the cold, the net result is far more network development than a shorter room-temperature ferment could achieve, because the construction proceeds with minimal opposition.
 
+```mermaid
+flowchart LR
+    subgraph RT ["Room Temp · 22°C"]
+        direction TB
+        A["Construction\n~100% rate"] --- B["Demolition\n~100% rate"]
+        B --> C["After 18h+:\nDemolition wins\n→ Dough degrades"]
+    end
+    subgraph CR ["Cold Retard · 3–5°C"]
+        direction TB
+        D["Construction\n20–30% rate"] --- E["Demolition\n5–10% rate"]
+        E --> F["Over 3–4 days:\nConstruction wins\n→ Strong network"]
+    end
+```
+
 ## The Role of Minimal Mechanical Input
 
 A single coil fold at the beginning of a cold retard is not building the gluten network — it is **initialising** it. The fold accomplishes three specific things:

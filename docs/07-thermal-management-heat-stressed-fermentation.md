@@ -36,6 +36,23 @@ During the **cold coast** (the 48–72h cold retard at 3–5°C), metabolic acti
 
 The result is a dough that enters the oven with a richer flavour precursor base than either a purely cold process or a purely warm process could produce. The hot sprint generates what the cold coast alone cannot (stress-induced metabolites). The cold coast preserves what the hot sprint would otherwise lose (volatile precursors stripped by continued active fermentation).
 
+```mermaid
+flowchart LR
+    subgraph HS ["Hot Sprint · 35–40°C"]
+        direction TB
+        A["Heat Shock Response"] --> B["Fusel Alcohols ↑"]
+        A --> C["LAB Flavour Metabolites ↑"]
+        A --> D["Fast Acid Production"]
+    end
+    subgraph CC ["Cold Coast · 3–5°C, 48–72h"]
+        direction TB
+        E["Volatiles Preserved"] --- F["Gluten Network Builds"]
+        F --- G["Sugars Depleted"]
+        G --- H["Maillard Precursors ↑"]
+    end
+    HS -- "Precursor pool\nlocked in" --> CC
+```
+
 ## The Thermal Risk Gradient
 
 The danger zone for yeast is not a cliff but a **gradient**. Understanding where your process sits on this gradient is essential for pushing temperature without crossing into failure.
