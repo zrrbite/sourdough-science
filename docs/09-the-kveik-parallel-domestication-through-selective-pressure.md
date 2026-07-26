@@ -44,6 +44,19 @@ What a home baker is most likely seeing after months of warm practice is **speci
 
 Over years or decades of consistent hot practice, strain-level adaptation could begin to occur on top of species-level selection — the same process that produced Kveik, operating on a shorter but still meaningful timescale. The culture in the jar is not static; it is evolving under the selective pressure of the baker’s practice.
 
+```mermaid
+flowchart TD
+    A["Repeated hot builds · 40°C+"] --> B["Differential growth rates,<br/>not direct combat"]
+    B --> C["Thermotolerant organisms keep dividing;<br/>mesophiles stall entirely"]
+    C --> D["Competitive exclusion<br/>Van der Meulen: complete species shift<br/>within ~10 backslopping cycles"]
+    D --> E["<b>Yeast</b> → P. kudriavzevii (to 45°C),<br/>thermotolerant wild S. cerevisiae,<br/>W. anomalus"]
+    D --> F["<b>LAB</b> → away from F. sanfranciscensis<br/>(upper limit ~40°C), toward<br/>L. delbrueckii · helveticus · fermentum"]
+    F --> G["Heterofermentative → homofermentative:<br/>lactic acid without the acetic"]
+    G --> H["Cleaner, less vinegary culture —<br/>useful for pizza, where acetic acid<br/>tightens the dough"]
+    E & H --> I["<b>Species-level</b> selection<br/>months to years of practice"]
+    I -.->|"centuries of it, plus genomic change:<br/>FLO/MAL CNVs, enhanced trehalose"| K["<b>Kveik</b><br/>the same mechanism,<br/>run far longer"]
+```
+
 ## The Kitchen as Selective Environment
 
 Direct backslopping from hot builds is not the only selection pathway. The kitchen itself is an ecosystem. Flour dust, surfaces, the air, the baker’s hands — these carry microbes from baking activities back to the starter jar at every feed. If the baker’s practice consistently involves high temperatures, the environmental microbial pool in the kitchen shifts toward thermotolerant organisms, and these continuously inoculate the mother culture. The selection pressure is ambient and ongoing, even if the mother culture is nominally maintained at room temperature.

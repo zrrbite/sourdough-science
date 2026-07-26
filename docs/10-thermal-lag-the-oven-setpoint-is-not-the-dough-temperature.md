@@ -20,6 +20,19 @@ The **core**, still at 30–35°C, functions as a **yeast-friendly leavening zon
 
 The spatial separation means the baker gets both: **intense LAB-driven flavour production and robust yeast-driven leavening** from the same dough at the same time. A uniform 40°C throughout would sacrifice leavening for flavour. A uniform 30°C throughout would sacrifice flavour intensity for leavening. The gradient gives both, and the plastic container that causes the gradient is an accidental but effective fermentation bioreactor.
 
+```mermaid
+flowchart LR
+    A["Oven setpoint · 45°C<br/>dough starts at 22–24°C"] --> B["Low thermal diffusivity<br/>plus an insulating container"]
+    B --> C["Core lags 30–45 min<br/>an hour or more for a 1 kg tub"]
+    C --> GRAD
+    subgraph GRAD ["One dough, two regimes at once"]
+        direction TB
+        OUT["<b>Outer layer · 40–45°C</b><br/>LAB at metabolic peak,<br/>yeast stressed or non-dividing"] --> OUTF["Flavour reactor<br/>acids · proteases · diacetyl"]
+        CORE["<b>Core · 30–35°C</b><br/>wild yeast dividing normally"] --> COREF["Leavening zone<br/>CO₂ · fusel alcohols"]
+    end
+    OUTF & COREF --> Z["Flavour <b>and</b> leavening together<br/>A uniform 40°C would cost leavening;<br/>a uniform 30°C would cost flavour"]
+```
+
 ## Implications for the Thermotolerance Question
 
 Thermal lag substantially changes the interpretation of the yeast thermotolerance question raised in the preceding sections. If the core of the dough mass never actually reaches 40°C during a “40°C+” build (or reaches it only briefly at the end), then the wild yeast population may never have experienced the temperatures that the oven setpoint implies. The leavening observed in the final bread might come from perfectly ordinary mesophilic yeast that were insulated from the heat by the dough mass around them — not from exceptionally thermotolerant organisms.
