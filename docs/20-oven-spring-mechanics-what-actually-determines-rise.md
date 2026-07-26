@@ -93,3 +93,8 @@ For applying these principles to rolls or flatbreads (rather than pizza, where t
 **5.** Rest 15–20 minutes at room temperature. The dough should look slightly puffed and relaxed — not tight and flat, not fully proofed and spreading.
 
 **6.** Bake at high heat. The laminar structure will delaminate under steam, producing dramatic rise and open crumb regardless of how modest the visible proofing appeared during the rest.
+
+---
+
+<!-- nav -->
+[← 19 Post-Retard Handling: CO₂ Nucleation and the Gentle Pull](19-post-retard-handling-co2-nucleation-and-the-gentle-pull.md) · [Contents](../README.md) · [21 Flour Selection: Why Protein Percentage Is Not Enough →](21-flour-selection-why-protein-percentage-is-not-enough.md)

@@ -51,3 +51,8 @@ If the mother culture is **fed and maintained at room temperature** (20–25°C)
 If the baker is **backslopping from the hot build** — taking a portion of the 40°C+ levain to seed the next build, and repeating this cycle — then serial passage under thermal selection pressure will progressively reshape the culture. Thermotolerant organisms (both yeast and LAB) will dominate; mesophilic organisms will decline over 10–20 cycles. The culture adapts to the conditions it repeatedly experiences. This may be desirable if the goal is to develop a heat-adapted culture, but it reduces ecosystem diversity and resilience.
 
 The practical implication is that bakers should **test their own culture’s thermal performance empirically** rather than relying solely on published species-level data. If a pure sourdough levain built at 40°C+ produces a well-risen loaf, the culture is thermotolerant enough for that protocol regardless of what the literature says about the species it ‘should’ contain. The bread is the proof. Published data provides a useful starting framework, but the culture in the jar is the final authority.
+
+---
+
+<!-- nav -->
+[← 07 Thermal Management: Heat-Stressed Fermentation as a Flavour Tool](07-thermal-management-heat-stressed-fermentation.md) · [Contents](../README.md) · [09 The Kveik Parallel: Domestication Through Selective Pressure →](09-the-kveik-parallel-domestication-through-selective-pressure.md)

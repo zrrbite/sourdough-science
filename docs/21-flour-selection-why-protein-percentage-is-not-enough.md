@@ -57,3 +57,8 @@ For the hybrid pizza dough with a 48h cold retard:
 **Levain flour:** The flour used to feed the levain can differ from the main dough flour. A whole wheat or high-extraction flour for the levain provides mineral cofactors, additional flavour precursors, and enzymatic complexity — but confined to the 10–15% of total flour that the levain represents. This gives flavour benefits from a complex flour without exposing the bulk dough to its higher enzymatic activity.
 
 The core message: for a 2-hour direct dough, flour differences are marginal. For a 48h cold-retarded hybrid dough in an Ooni, the flour is the difference between a dough that arrives at the oven structurally intact and one that doesn’t. Invest in the flour; it is the single highest-impact ingredient choice.
+
+---
+
+<!-- nav -->
+[← 20 Oven Spring Mechanics: What Actually Determines Rise](20-oven-spring-mechanics-what-actually-determines-rise.md) · [Contents](../README.md) · [22 Practical Ratios and Formulas →](22-practical-ratios-and-formulas.md)

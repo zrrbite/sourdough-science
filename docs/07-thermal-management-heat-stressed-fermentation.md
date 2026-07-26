@@ -69,3 +69,8 @@ Build the levain at **35–38°C** using a proofing box, oven with light on, or 
 Incorporate this hot-built levain into the dough at room temperature (~22°C). Perform the single coil fold, divide into balls, and move to the cold retard as normal. The flavour precursors from the hot levain build are now distributed throughout the dough and will be preserved during the cold coast. The bulk dough flour has not been exposed to the elevated protease activity of the hot build, so the gluten network develops normally during the retard.
 
 For a more aggressive approach, the entire dough can be held at 30–35°C for the brief bulk period (30–60 minutes before balling and cold retarding). This pushes all the organisms — both the levain’s LAB and wild yeast, and the commercial yeast — into accelerated metabolite production. The risk of over-proteolysis increases, so this approach is best reserved for high-W flours and shorter cold retards (48h rather than 72h).
+
+---
+
+<!-- nav -->
+[← 06 Time-Dependent Gluten Development: Why Folding Is a Shortcut, Not a Requirement](06-time-dependent-gluten-development.md) · [Contents](../README.md) · [08 Empirical Evidence: Pure Sourdough at 40°C+ →](08-empirical-evidence-pure-sourdough-at-40c.md)

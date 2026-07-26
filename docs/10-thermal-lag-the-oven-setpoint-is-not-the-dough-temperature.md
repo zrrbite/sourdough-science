@@ -55,3 +55,8 @@ If the current unstirred hot build produces well-risen bread with good flavour, 
 If the baker wants to experiment with stirring, a single stir at the halfway point of the levain build is a reasonable starting point. This partially homogenises the temperature without fully collapsing the gradient, and the air incorporation provides a moderate oxygen boost. Compare the resulting bread to the unstirred version: if leavening is unchanged and flavour is different (more or less acid, different aromatic profile), the gradient was contributing meaningfully and stirring should be used selectively rather than routinely.
 
 A biga is inoculated with pure *S. cerevisiae* and produces nuanced yeast-driven aromatics without significant acidification. A stiff levain is a mixed-culture system where wild yeast and LAB coexist, producing the full acid, protease, and mixed-fermentation package. You can think of a biga as what you would get if you took a stiff levain and swapped the entire consortium for a single domesticated strain — same vessel, same hydration, completely different ecology.
+
+---
+
+<!-- nav -->
+[← 09 The Kveik Parallel: Domestication Through Selective Pressure](09-the-kveik-parallel-domestication-through-selective-pressure.md) · [Contents](../README.md) · [11 Thermal Death Kinetics and Culture Recovery →](11-thermal-death-kinetics-and-culture-recovery.md)

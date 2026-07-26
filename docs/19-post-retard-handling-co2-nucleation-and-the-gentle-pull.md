@@ -23,3 +23,8 @@ This technique is emphatically **not** the same as pressing the dough flat. Pres
 ## Recommended Post-Retard Protocol
 
 After removing balls from the fridge, give each ball a **gentle stretch-and-fold or pull**: lift one edge, stretch it outward without tearing, fold it back over the centre. Rotate 90° and repeat 2–3 times. Re-round loosely — do not degas — and return to the container or a floured surface to temper. The nucleation event will produce visible, rapid expansion within the first 20–30 minutes, followed by continued slower rise as the yeast reactivates at room temperature. Total tempering time remains 1.5–2 hours, but the dough reaches a better-aerated, taller, more workable state than passive tempering alone.
+
+---
+
+<!-- nav -->
+[← 18 High-Heat Baking: Sugar, Hydration, and the Ooni Problem](18-high-heat-baking-sugar-hydration-and-the-ooni-problem.md) · [Contents](../README.md) · [20 Oven Spring Mechanics: What Actually Determines Rise →](20-oven-spring-mechanics-what-actually-determines-rise.md)

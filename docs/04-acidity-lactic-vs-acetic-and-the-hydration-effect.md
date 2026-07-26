@@ -13,3 +13,8 @@ In a liquid levain, higher water activity promotes homofermentative LAB metaboli
 ## Commercial Yeast: Minimal Acidification
 
 Neither biga nor poolish produces meaningful acidification. The dough remains near neutral pH (5.5–6.0), which means gluten behaviour is not modified by acid, and the flavour profile stays in the realm of yeast-derived aromatics: fruity esters, mild alcohols, and a sweet wheaty character from enzymatic starch breakdown (especially prominent in the wetter poolish).
+
+---
+
+<!-- nav -->
+[← 03 Microbiology: Monoculture vs. Mixed Consortium](03-microbiology-monoculture-vs-mixed-consortium.md) · [Contents](../README.md) · [05 Gluten: Structure, Modification, and Why It Matters →](05-gluten-structure-modification-and-why-it-matters.md)

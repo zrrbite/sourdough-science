@@ -85,3 +85,8 @@ This is a specialist tool rather than a routine one. For most bread applications
 **4. Bulk and shape as normal.** Because significant extensibility has already been developed, the dough may require fewer folds and shorter bulk than the same formula without a warm autolyse. Watch the dough rather than the clock.
 
 **5. Expect a flavour dividend.** The enlarged free amino acid pool feeds Strecker degradation during the bake, producing a more complex crust aroma — malty, nutty, and roasted notes from Strecker aldehydes and pyrazines. This is the payoff that a short pizza bake cannot access.
+
+---
+
+<!-- nav -->
+[← 16 The Long Fermentation Problem in Pizza](16-the-long-fermentation-problem-in-pizza.md) · [Contents](../README.md) · [18 High-Heat Baking: Sugar, Hydration, and the Ooni Problem →](18-high-heat-baking-sugar-hydration-and-the-ooni-problem.md)

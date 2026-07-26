@@ -51,3 +51,8 @@ Beyond peptide bond cleavage, some LAB metabolites can directly attack the disul
 Commercial *S. cerevisiae* produces CO₂ at a relatively uniform rate, especially during proofing. The gas nucleation is even, bubble size distribution is narrow, and the crumb develops as a regular, fine-celled foam. Sourdough fermentation is inherently less uniform: multiple organisms with different growth curves, different temperature optima, and competitive dynamics produce CO₂ at variable rates. Gas nucleation is patchy, some regions of the dough inflate faster than others, and the combination of uneven gas production with an already weakened gluten network produces the characteristic irregular, wild crumb.
 
 These modifications converge during oven spring. pH-modified charge state, proteolytic chain cleavage, disulfide reduction, and uneven gas production each push the dough toward irregular expansion through different mechanisms, and their effects are synergistic rather than additive — which is why sourdough produces dramatic ears and open, irregular crumb where commercial yeast produces controlled, even rise. The oven-spring mechanics are treated in full in a dedicated section later in this document.
+
+---
+
+<!-- nav -->
+[← 04 Acidity: Lactic vs. Acetic and the Hydration Effect](04-acidity-lactic-vs-acetic-and-the-hydration-effect.md) · [Contents](../README.md) · [06 Time-Dependent Gluten Development: Why Folding Is a Shortcut, Not a Requirement →](06-time-dependent-gluten-development.md)

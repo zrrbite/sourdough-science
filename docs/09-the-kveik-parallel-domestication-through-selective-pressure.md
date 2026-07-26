@@ -61,3 +61,8 @@ This understanding opens the possibility of **intentional selection**: deliberat
 ## Domestication and Selection: Primary Sources
 
 The papers underpinning this section are listed in full in the consolidated References at the end of the document, under *Sourdough Microbial Ecology* and *Yeast Thermotolerance and Stress Response*.
+
+---
+
+<!-- nav -->
+[← 08 Empirical Evidence: Pure Sourdough at 40°C+](08-empirical-evidence-pure-sourdough-at-40c.md) · [Contents](../README.md) · [10 Thermal Lag: The Oven Setpoint Is Not the Dough Temperature →](10-thermal-lag-the-oven-setpoint-is-not-the-dough-temperature.md)

@@ -17,3 +17,8 @@ The transformation accelerates dramatically in the oven. As the dough enters the
 The hybrid approach has a specific advantage here. In a pure sourdough with long fermentation, some of the volatile alcohol precursors and early-formed esters are lost to off-gassing over the extended bulk ferment — CO₂ acts as a carrier, stripping volatiles from the dough matrix during each degas and fold. By keeping fermentation shorter (commercial yeast provides faster leavening), more of the volatile alcohol pool survives to the point the dough enters the oven. More precursors present at the thermal phase means a richer and more diverse ester profile in the finished crust.
 
 This is directly analogous to the biotransformation logic in dry-hopped brewing: staging the precursor chemistry to maximise aromatic conversion at the critical moment. In brewing, you time the dry hop to coincide with active yeast metabolism for enzymatic biotransformation. In the hybrid pizza dough, you preserve volatile precursors through a shorter ferment so they are available for thermal esterification in the oven.
+
+---
+
+<!-- nav -->
+[← 12 The Hybrid Approach: Commercial Yeast + Sourdough Levain](12-the-hybrid-approach-commercial-yeast-sourdough-levain.md) · [Contents](../README.md) · [14 Why Cold Ferment With Commercial Yeast at All? →](14-why-cold-ferment-with-commercial-yeast-at-all.md)

@@ -17,3 +17,8 @@ The acid-modified gluten in a sourdough pizza dough is more extensible but less 
 ## Oven Temperature and Preferment Choice
 
 Oven temperature interacts with preferment choice in a meaningful way. In a proper Neapolitan deck oven at 450°C+, the bake is so fast (60–90 seconds) that subtle flavour differences compress and char dominates. At home oven temperatures (250–300°C), the longer bake time gives the crust more time to develop, and the acid complexity of a sourdough preferment shines through. For home baking, sourdough pizza can actually be the more flavourful option precisely because the slower bake allows its distinctive character to express fully.
+
+---
+
+<!-- nav -->
+[← 14 Why Cold Ferment With Commercial Yeast at All?](14-why-cold-ferment-with-commercial-yeast-at-all.md) · [Contents](../README.md) · [16 The Long Fermentation Problem in Pizza →](16-the-long-fermentation-problem-in-pizza.md)

@@ -87,3 +87,8 @@ References are grouped by the section of this document whose claims they support
 - Bloksma AH (1990). Dough structure, dough rheology, and baking quality. *Cereal Foods World* 35(2):237–244. — Classic treatment of gas cell stability and the transition from foam to sponge during baking.
 - Mondal A, Datta AK (2008). Bread baking — a review. *Journal of Food Engineering* 86(4):465–474. — Heat and mass transfer during baking, crust formation, and the evaporation front.
 - Sadot M, Curet S, Rouaud O, Le-Bail A, Havet M (2017). Numerical modelling of convective heat transfer during bread baking. *Journal of Food Engineering*. — Basis for the thermal diffusion and core-temperature-lag discussion.
+
+---
+
+<!-- nav -->
+[← 24 Quick Reference: Preferment Comparison](24-quick-reference-preferment-comparison.md) · [Contents](../README.md)

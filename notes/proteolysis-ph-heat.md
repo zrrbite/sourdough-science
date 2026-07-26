@@ -223,3 +223,8 @@ You're not stretching to 3mm by hand; the dough sits in a banneton with structur
   tightening before enzymatic softening overtakes)
 - Compare crust aroma between warm-autolyse and control loaves — the Strecker/pyrazine claim
   is the least directly evidenced part of this and would benefit from a sensory check
+
+---
+
+<!-- nav -->
+[Contents](../README.md)

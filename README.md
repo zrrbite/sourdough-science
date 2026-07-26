@@ -13,7 +13,13 @@ literature, and **flagged as such wherever the two diverge**.
 
 ## Contents
 
-### Foundations
+Read in order if you are reading it whole — the chapters are a chain, and most
+open by building on the one before. Jump straight in if you are looking
+something up; every chapter carries prev/next links back to this page.
+
+### Part I — Foundations
+
+What a preferment is, and the two axes that distinguish them.
 
 | # | Chapter |
 |---|---|
@@ -22,24 +28,32 @@ literature, and **flagged as such wherever the two diverge**.
 | 03 | [Microbiology: Monoculture vs. Mixed Consortium](docs/03-microbiology-monoculture-vs-mixed-consortium.md) |
 | 04 | [Acidity: Lactic vs. Acetic and the Hydration Effect](docs/04-acidity-lactic-vs-acetic-and-the-hydration-effect.md) |
 
-### Gluten
+### Part II — The Science
+
+Mechanism: what acid, enzymes and heat actually do to a dough and a culture.
+
+**Gluten**
 
 | # | Chapter |
 |---|---|
 | 05 | [Gluten: Structure, Modification, and Why It Matters](docs/05-gluten-structure-modification-and-why-it-matters.md) |
-| 06 | [Time-Dependent Gluten Development](docs/06-time-dependent-gluten-development-why-folding-is-a-shortcut-.md) |
+| 06 | [Time-Dependent Gluten Development](docs/06-time-dependent-gluten-development.md) |
 
-### Thermal
+**Thermal**
 
 | # | Chapter |
 |---|---|
-| 07 | [Thermal Management: Heat-Stressed Fermentation as a Flavour Tool](docs/07-thermal-management-heat-stressed-fermentation-as-a-flavour-t.md) |
+| 07 | [Thermal Management: Heat-Stressed Fermentation as a Flavour Tool](docs/07-thermal-management-heat-stressed-fermentation.md) |
 | 08 | [Empirical Evidence: Pure Sourdough at 40°C+](docs/08-empirical-evidence-pure-sourdough-at-40c.md) |
 | 09 | [The Kveik Parallel: Domestication Through Selective Pressure](docs/09-the-kveik-parallel-domestication-through-selective-pressure.md) |
 | 10 | [Thermal Lag: The Oven Setpoint Is Not the Dough Temperature](docs/10-thermal-lag-the-oven-setpoint-is-not-the-dough-temperature.md) |
 | 11 | [Thermal Death Kinetics and Culture Recovery](docs/11-thermal-death-kinetics-and-culture-recovery.md) |
 
-### Flavour Chemistry
+### Part III — Application
+
+Turning the mechanism into a strategy, then into a bake.
+
+**Strategy and flavour chemistry**
 
 | # | Chapter |
 |---|---|
@@ -47,7 +61,7 @@ literature, and **flagged as such wherever the two diverge**.
 | 13 | [Ester Chemistry: Where Brewing Meets Baking](docs/13-ester-chemistry-where-brewing-meets-baking.md) |
 | 14 | [Why Cold Ferment With Commercial Yeast at All?](docs/14-why-cold-ferment-with-commercial-yeast-at-all.md) |
 
-### Application
+**Pizza and bread**
 
 | # | Chapter |
 |---|---|
@@ -58,7 +72,9 @@ literature, and **flagged as such wherever the two diverge**.
 | 19 | [Post-Retard Handling: CO₂ Nucleation and the Gentle Pull](docs/19-post-retard-handling-co2-nucleation-and-the-gentle-pull.md) |
 | 20 | [Oven Spring Mechanics: What Actually Determines Rise](docs/20-oven-spring-mechanics-what-actually-determines-rise.md) |
 
-### Practical
+### Part IV — Practical and Formulas
+
+The lookup end of the document: what to buy, what to weigh, what to check.
 
 | # | Chapter |
 |---|---|
@@ -99,17 +115,13 @@ Formulas and temperatures assume this setup. Adjust accordingly.
 
 ---
 
-## Building
+## Format
 
-Markdown is the source of truth. To produce a single PDF or DOCX:
-
-```sh
-make pdf     # -> build/sourdough-science.pdf
-make docx    # -> build/sourdough-science.docx
-make single  # -> build/sourdough-science.md  (concatenated)
-```
-
-Requires `pandoc`; PDF additionally requires a LaTeX engine (`xelatex`).
+Markdown, and nothing else. There is no build step and no generated PDF or
+DOCX — this is meant to be browsed and searched a chapter at a time, on GitHub
+or in an editor, which is how it actually gets used. The consequence to be
+aware of: **chapter order is load-bearing.** Most chapters open by referring to
+the one before, so moving a file means rewriting its first paragraph.
 
 ---
 
@@ -126,5 +138,10 @@ This is a live document, not a finished text. Things currently unresolved:
   side-by-side taste test against a room-temperature control.
 - **Strecker/pyrazine crust claim** (ch. 17) — the least directly evidenced claim in the
   document. Wants a sensory comparison.
-- **Structural reorganisation** — chapter order still reflects how the document grew rather
-  than how it reads. Foundations → science → application → formulas would be better.
+- **Structural reorganisation** — partly settled. The contents above are now grouped
+  Foundations → science → application → formulas, which is what this wanted. What was *not*
+  done is renumbering the files, and there is a reason: the chapters are welded into a chain
+  by their opening sentences — 04→05→06, 07→08→09→10→11, 12→13→14, 16→17, 19→20 each
+  back-reference the chapter before, and ch. 25 groups its references "by the section of this
+  document". Only 01, 02, 03, 15, 18 and 21–24 could move freely. A physical reorder is
+  therefore a prose edit, not a file rename, and is still open if it ever seems worth it.

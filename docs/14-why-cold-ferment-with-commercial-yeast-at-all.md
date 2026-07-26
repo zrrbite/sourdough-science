@@ -31,3 +31,8 @@ This is precisely the gap the hybrid approach fills. By combining commercial yea
 **3. Direct LAB metabolites** — lactic acid, acetic acid, diacetyl, acetaldehyde, and other compounds produced by LAB metabolism, contributing their own taste and aroma directly. These are present in the levain and carry through to the final dough. They provide the tang, the creamy notes, and the aromatic complexity that no amount of Maillard chemistry can replicate.
 
 No single-culture approach gives you all three systems at full expression. Commercial yeast alone provides system 1 and a weak version of system 2. Pure sourdough provides all three but compromises system 2 (volatile precursor loss) and imposes structural and timing penalties. The hybrid maximises all three while maintaining structural integrity and schedule predictability. This is why it is more than the sum of its parts.
+
+---
+
+<!-- nav -->
+[← 13 Ester Chemistry: Where Brewing Meets Baking](13-ester-chemistry-where-brewing-meets-baking.md) · [Contents](../README.md) · [15 Application: Pizza Dough →](15-application-pizza-dough.md)

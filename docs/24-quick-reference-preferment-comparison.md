@@ -14,3 +14,8 @@
 | Pizza Suitability | Good | Excellent (traditional) | Viable | Good | Optimal for home oven |
 
 *Same vessel, same hydration, completely different ecology. Or: combine them.*
+
+---
+
+<!-- nav -->
+[← 23 Quick Reference: Home Oven vs. Ooni 12”](23-quick-reference-home-oven-vs-ooni-12.md) · [Contents](../README.md) · [25 References →](25-references.md)

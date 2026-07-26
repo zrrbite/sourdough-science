@@ -15,3 +15,8 @@
 | Raw centre risk | Very low (long bake) | High at max flame — moderate flame solves this |
 | Ester development | Extended thermal phase, rich expression | Good at 2–3 min; compressed at 60s |
 | Key advantage of hybrid | Flavour complexity in longer bake | Sugar depletion + flavour + cooked-through centre |
+
+---
+
+<!-- nav -->
+[← 22 Practical Ratios and Formulas](22-practical-ratios-and-formulas.md) · [Contents](../README.md) · [24 Quick Reference: Preferment Comparison →](24-quick-reference-preferment-comparison.md)

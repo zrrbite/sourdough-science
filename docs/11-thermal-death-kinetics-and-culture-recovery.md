@@ -163,3 +163,8 @@ The single most useful mitigation is to **feed immediately before a hot session*
 - Shui W et al. A hierarchical transcriptional regulatory network required for long-term thermal stress tolerance in an industrial *Saccharomyces cerevisiae* strain. — Distinguishes short-term heat shock survival from long-term thermal stress tolerance; different regulatory requirements.
 
 > **Caveat on precision.** Published D- and z-values for *S. cerevisiae* are measured in defined buffers or growth media, not in dough. Dough is a low-water-activity, high-viscosity, compositionally complex matrix, and its solutes are broadly protective. Absolute D-values from the literature should be treated as *lower bounds* on survival time in dough, and the kinetics used qualitatively — to understand why duration matters more than temperature — rather than to predict a specific kill time.
+
+---
+
+<!-- nav -->
+[← 10 Thermal Lag: The Oven Setpoint Is Not the Dough Temperature](10-thermal-lag-the-oven-setpoint-is-not-the-dough-temperature.md) · [Contents](../README.md) · [12 The Hybrid Approach: Commercial Yeast + Sourdough Levain →](12-the-hybrid-approach-commercial-yeast-sourdough-levain.md)

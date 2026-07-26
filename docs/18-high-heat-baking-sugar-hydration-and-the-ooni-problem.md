@@ -77,3 +77,8 @@ After each pizza, the stone surface temperature drops by 50–100°C. At moderat
 ## Summary: Ooni 12” Optimisation
 
 For a 12” Ooni with a hybrid sourdough dough, the four critical parameters are: **sugar depletion** through a 48h minimum cold retard to prevent burning; **hydration** in the 63–65% range for peel handling and moderate thermal buffering; **ball weight** of 270–280g opened to 10–11” for thermal mass and turning clearance; and **flame management** at 40–50% of maximum for a 2–3 minute bake, giving the centre time to cook through while the exterior develops controlled browning. Preheat at full flame, drop before launch, bake with regular turning, and optionally boost briefly at the end for leopard-spot char. Use an IR thermometer to target 350–380°C on the stone surface, and allow 3–5 minutes of recovery at full flame between pizzas.
+
+---
+
+<!-- nav -->
+[← 17 Controlled Proteolysis for Bread: Degradation as a Tool](17-controlled-proteolysis-for-bread-degradation-as-a-tool.md) · [Contents](../README.md) · [19 Post-Retard Handling: CO₂ Nucleation and the Gentle Pull →](19-post-retard-handling-co2-nucleation-and-the-gentle-pull.md)

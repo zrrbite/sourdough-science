@@ -9,3 +9,8 @@ Both biga and poolish are inoculated with a pure culture of *S. cerevisiae*. Thi
 A sourdough levain is a mixed-culture system comprising wild yeast (often *Kazachstania humilis* or wild *Saccharomyces* strains) and LAB (primarily *Lactobacillus* and *Leuconostoc* spp.) in a symbiotic equilibrium. The LAB produce lactic and acetic acid, dropping pH into the 3.5–4.5 range. The wild yeast strains are adapted to thrive in this acidic environment, which suppresses competing organisms and creates a stable, self-sustaining culture.
 
 This mixed ecology has several consequences that monoculture yeast preferments cannot replicate. Proteolytic enzymes from the LAB partially degrade the gluten network during fermentation. Gas production is less uniform because multiple organisms with different growth curves and temperature optima are competing and cooperating simultaneously. And the acid load directly modifies gluten charge state and hydration behaviour.
+
+---
+
+<!-- nav -->
+[← 02 The Four Quadrants](02-the-four-quadrants.md) · [Contents](../README.md) · [04 Acidity: Lactic vs. Acetic and the Hydration Effect →](04-acidity-lactic-vs-acetic-and-the-hydration-effect.md)

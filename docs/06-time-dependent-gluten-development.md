@@ -55,3 +55,8 @@ After these three initialisation functions are fulfilled, additional folds offer
 This understanding simplifies the hybrid pizza method considerably. Rather than an elaborate bulk ferment with multiple stretch-and-fold sets over 2–3 hours at room temperature, the dough can be mixed, given a single fold or brief rest, divided into balls, and moved directly to the cold retard. The 48–72 hour retard builds the gluten network through time-dependent mechanisms while simultaneously developing flavour (Maillard precursor accumulation, LAB acid production, ester precursor staging) and depleting sugars for high-heat baking.
 
 The practical advantage is significant: the total hands-on time drops from 3–4 hours (mixing + repeated folds + bulk ferment + dividing + shaping) to approximately 30 minutes (mixing + one fold + dividing into balls). The cold retard handles both network development and flavour development in parallel, delivering a dough that is structurally superior to a heavily-worked short-fermented version because the slow, uniform, distributed development mechanisms produce a more even and complete network.
+
+---
+
+<!-- nav -->
+[← 05 Gluten: Structure, Modification, and Why It Matters](05-gluten-structure-modification-and-why-it-matters.md) · [Contents](../README.md) · [07 Thermal Management: Heat-Stressed Fermentation as a Flavour Tool →](07-thermal-management-heat-stressed-fermentation.md)
