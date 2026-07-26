@@ -41,6 +41,25 @@ The population takes a hit each cycle, but it recovers between cycles. The net e
 
 A prolonged session removes the recovery window entirely. The protective system runs to depletion with nothing to replenish it.
 
+```mermaid
+flowchart LR
+    subgraph BRIEF ["Brief excursions · ~1–2h, repeated"]
+        direction TB
+        A["Hot session · 40°C+"] --> B["Heat shock response<br/>HSP chaperones · trehalose<br/>membrane remodelling"]
+        B --> C["Cold retard<br/>= recovery window"]
+        C --> D["Resynthesise proteins<br/>rebuild trehalose · restore ATP"]
+        D --> A
+    end
+    subgraph LONG ["One prolonged session · same temperature"]
+        direction TB
+        E["Continuous stress,<br/>no recovery window"] --> F["ATP drain · trehalose consumed<br/>denaturation accumulates"]
+        F --> G["Repair falls behind damage"]
+        G --> H["Stressed → dead<br/>irreversible"]
+    end
+    BRIEF --> I["Population dips each cycle<br/>but recovers · sustainable"]
+    LONG --> J["Protective system<br/>runs to depletion"]
+```
+
 ## Ramp Versus Shock: An Unexpected Ally
 
 There is a further wrinkle that works in the baker's favour, and it connects directly to the thermal lag discussed in the previous chapter.

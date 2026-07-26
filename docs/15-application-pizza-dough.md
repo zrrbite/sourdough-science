@@ -18,6 +18,20 @@ The acid-modified gluten in a sourdough pizza dough is more extensible but less 
 
 Oven temperature interacts with preferment choice in a meaningful way. In a proper Neapolitan deck oven at 450°C+, the bake is so fast (60–90 seconds) that subtle flavour differences compress and char dominates. At home oven temperatures (250–300°C), the longer bake time gives the crust more time to develop, and the acid complexity of a sourdough preferment shines through. For home baking, sourdough pizza can actually be the more flavourful option precisely because the slower bake allows its distinctive character to express fully.
 
+```mermaid
+flowchart TD
+    A{"Which oven?"} -->|"Neapolitan deck · 450°C+<br/>60–90 s bake"| B["Char dominates<br/>Subtle flavour differences compress"]
+    A -->|"Home oven · 250–300°C<br/>longer bake"| C["Crust has time to develop<br/>Acid complexity expresses fully"]
+    B --> D["Favour poolish or direct commercial yeast<br/>24–72h cold ferment"]
+    D --> E["Goal: maximum extensibility,<br/>no acid interference"]
+    C --> F["Sourdough can be the<br/><b>more</b> flavourful choice here"]
+    F --> G["Manage the acid load"]
+    G --> H["Young liquid levain at peak<br/>max yeast vigour vs. LAB<br/>→ cornicione puff, less acid"]
+    G --> I["Stiff levain<br/>slower ferment<br/>→ wider timing window"]
+    H & I --> J["Acid-modified gluten:<br/>more extensible, less elastic"]
+    J --> K["Reduce hydration slightly,<br/>or raise flour protein"]
+```
+
 ---
 
 <!-- nav -->

@@ -12,6 +12,17 @@ With a **longer fermentation** (24–72h cold retard), the yeast has consumed mo
 
 However, there is a curve, not a straight line. If fermentation goes too long, amylase has broken down so much starch that new sugars are being liberated faster than the declining yeast population can consume them. Sugars begin to accumulate again. This is especially problematic if the dough is over-proofed and yeast activity has essentially stopped — the result is a dough that is both sugar-rich and structurally compromised. It burns easily *and* handles poorly.
 
+```mermaid
+flowchart LR
+    subgraph SUGAR ["Residual sugar at launch — the primary driver"]
+        direction TB
+        A["<b>Short ferment</b><br/>yeast has not consumed<br/>the available sugar pool"] --> B["Sugar-rich<br/>→ uniform carbonisation<br/>in seconds"]
+        C["<b>24–72h cold retard</b><br/>yeast has consumed<br/>most simple sugars"] --> D["Sugar-depleted<br/>→ controlled leopard spots"]
+        E["<b>Too long</b><br/>amylase outruns a<br/>declining yeast population"] --> F["Sugars re-accumulate<br/>→ burns <b>and</b> handles poorly"]
+    end
+    G["Hydration 63–67%"] -.->|"secondary moderator:<br/>buys seconds before the<br/>surface dries — not a fix"| SUGAR
+```
+
 ## Hydration as Thermal Buffer
 
 Hydration does play a role, but as a **buffer** rather than a solution. Higher hydration provides more thermal mass — more water that must absorb energy and evaporate before the surface temperature can rise above 100°C. While liquid water is present at the dough surface, it pins the local temperature near its boiling point. Only after the surface dries out can the temperature climb into the 150–200°C+ range where caramelisation and Maillard reactions accelerate.

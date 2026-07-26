@@ -26,6 +26,21 @@ Over-fermented pizza dough often produces a crust that is gummy or chewy rather 
 
 None of this means long fermentation is wrong for pizza — many excellent pizzas use 48–72h cold-fermented doughs with great results. But it does mean that longer is not automatically better. There is a point of diminishing returns where additional fermentation time degrades handling, narrows the timing window, and reduces rather than increases flavour complexity. For home bakers without the experience to read their dough precisely, a shorter, more controlled fermentation with deliberate flavour additions (such as a hybrid approach) can produce a more reliable and arguably more complex result.
 
+```mermaid
+flowchart TD
+    A["Extended fermentation<br/>48–72h and beyond"] --> B["Proteolysis<br/>peptide bonds cleaved"]
+    A --> C["Timing window narrows<br/>LAB active at 3–5°C, yeast is not"]
+    A --> D["Acid load keeps climbing"]
+    A --> E["Repeated degassing<br/>CO₂ carries volatiles out"]
+    A --> F["Amylase converts more<br/>starch to sugar"]
+    B --> G["Stretches willingly, then tears<br/>catastrophically rather than gracefully"]
+    C --> H["Perfect at 48h,<br/>over-proofed at 56h"]
+    D --> I["Slack; loses the elastic<br/>recovery needed to hold shape"]
+    E --> J["Estery top notes diminish<br/>even as acidity rises"]
+    F --> K["Less starch matrix to crisp<br/>→ gummy, bending crust"]
+    G & H & I & J & K --> L["Longer is not automatically better<br/>Diminishing returns, then losses"]
+```
+
 ---
 
 <!-- nav -->

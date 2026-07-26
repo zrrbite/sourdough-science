@@ -14,6 +14,21 @@ In a liquid levain, higher water activity promotes homofermentative LAB metaboli
 
 Neither biga nor poolish produces meaningful acidification. The dough remains near neutral pH (5.5–6.0), which means gluten behaviour is not modified by acid, and the flavour profile stays in the realm of yeast-derived aromatics: fruity esters, mild alcohols, and a sweet wheaty character from enzymatic starch breakdown (especially prominent in the wetter poolish).
 
+```mermaid
+flowchart TD
+    A["Preferment hydration"] --> B["Stiff levain · 50–60%<br/>lower water activity"]
+    A --> C["Liquid levain · 100%<br/>higher water activity"]
+    A --> D["Biga or poolish<br/>commercial yeast"]
+    B --> E["Heterofermentative LAB<br/>shift via acetyl-CoA"]
+    C --> F["Homofermentative LAB"]
+    D --> G["No meaningful acidification<br/>pH stays 5.5–6.0"]
+    E --> H["<b>Acetic acid</b><br/>sharp, vinegary, more volatile"]
+    F --> I["<b>Lactic acid</b><br/>milder, rounder, less volatile"]
+    H --> J["Perceived on the nose<br/>→ rustic, whole-grain loaves"]
+    I --> K["Perceived on the palate<br/>→ enriched and lighter breads"]
+    G --> L["Gluten unmodified by acid<br/>→ fruity esters, sweet wheat"]
+```
+
 ---
 
 <!-- nav -->
