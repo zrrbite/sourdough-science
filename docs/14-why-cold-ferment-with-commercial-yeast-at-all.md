@@ -35,15 +35,15 @@ No single-culture approach gives you all three systems at full expression. Comme
 ```mermaid
 flowchart TD
     subgraph S1 ["1 · Maillard Chemistry"]
-        A["Free Amino Acids\n+ Reducing Sugars"] -->|"Oven heat"| B["Melanoidins · Pyrazines\nFuranones · Strecker Aldehydes"]
+        A["Free Amino Acids<br/>+ Reducing Sugars"] -->|"Oven heat"| B["Melanoidins · Pyrazines<br/>Furanones · Strecker Aldehydes"]
     end
     subgraph S2 ["2 · Ester Chemistry"]
-        C["Yeast Alcohols\n+ LAB Organic Acids"] -->|"Enzymatic + thermal"| D["Ethyl Acetate · Ethyl Lactate\nComplex Aromatic Esters"]
+        C["Yeast Alcohols<br/>+ LAB Organic Acids"] -->|"Enzymatic + thermal"| D["Ethyl Acetate · Ethyl Lactate<br/>Complex Aromatic Esters"]
     end
     subgraph S3 ["3 · Direct LAB Metabolites"]
-        E["LAB Metabolism"] --> F["Lactic Acid · Acetic Acid\nDiacetyl · Acetaldehyde"]
+        E["LAB Metabolism"] --> F["Lactic Acid · Acetic Acid<br/>Diacetyl · Acetaldehyde"]
     end
-    B & D & F --> G["Complete Hybrid\nFlavour Profile"]
+    B & D & F --> G["Complete Hybrid<br/>Flavour Profile"]
 ```
 
 ---

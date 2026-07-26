@@ -88,14 +88,14 @@ This is a specialist tool rather than a routine one. For most bread applications
 
 ```mermaid
 flowchart TD
-    A["Flour + Water\n40–42°C\n(no salt, no levain)"] --> B["Warm Autolyse\n60–90 min at 38–42°C"]
-    B --> C{"Assess\nextensibility"}
-    C -->|"Soft, stretches\nthin"| D["Final Mix:\nAdd Levain + Salt"]
+    A["Flour + Water<br/>40–42°C<br/>(no salt, no levain)"] --> B["Warm Autolyse<br/>60–90 min at 38–42°C"]
+    B --> C{"Assess<br/>extensibility"}
+    C -->|"Soft, stretches<br/>thin"| D["Final Mix:<br/>Add Levain + Salt"]
     C -->|"Too tight"| E["Extend 30 min"] --> C
-    C -->|"Too slack"| F["Reduce time/temp\nnext bake"]
-    D --> G["Salt suppresses proteases\n→ Proteolysis window closed"]
-    G --> H["Bulk & Shape\nas normal"]
-    H --> I["Bake → Flavour dividend:\nmalty, nutty crust"]
+    C -->|"Too slack"| F["Reduce time/temp<br/>next bake"]
+    D --> G["Salt suppresses proteases<br/>→ Proteolysis window closed"]
+    G --> H["Bulk & Shape<br/>as normal"]
+    H --> I["Bake → Flavour dividend:<br/>malty, nutty crust"]
 ```
 
 ---

@@ -42,13 +42,13 @@ This differential temperature sensitivity means that the **construction-to-demol
 flowchart LR
     subgraph RT ["Room Temp · 22°C"]
         direction TB
-        A["Construction\n~100% rate"] --- B["Demolition\n~100% rate"]
-        B --> C["After 18h+:\nDemolition wins\n→ Dough degrades"]
+        A["Construction<br/>~100% rate"] --- B["Demolition<br/>~100% rate"]
+        B --> C["After 18h+:<br/>Demolition wins<br/>→ Dough degrades"]
     end
     subgraph CR ["Cold Retard · 3–5°C"]
         direction TB
-        D["Construction\n20–30% rate"] --- E["Demolition\n5–10% rate"]
-        E --> F["Over 3–4 days:\nConstruction wins\n→ Strong network"]
+        D["Construction<br/>20–30% rate"] --- E["Demolition<br/>5–10% rate"]
+        E --> F["Over 3–4 days:<br/>Construction wins<br/>→ Strong network"]
     end
 ```
 

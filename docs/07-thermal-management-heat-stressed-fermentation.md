@@ -50,7 +50,7 @@ flowchart LR
         F --- G["Sugars Depleted"]
         G --- H["Maillard Precursors ↑"]
     end
-    HS -- "Precursor pool\nlocked in" --> CC
+    HS -- "Precursor pool<br/>locked in" --> CC
 ```
 
 ## The Thermal Risk Gradient

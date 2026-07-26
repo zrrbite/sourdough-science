@@ -50,10 +50,10 @@ These experiments establish a clear hierarchy of factors controlling oven spring
 
 ```mermaid
 flowchart TD
-    A["1 · Gluten Network Alignment\n(dominant factor)"] --> B["2 · Heating Uniformity\nThin dough → simultaneous steam generation"]
-    B --> C["3 · Network Extensibility\nGluten yields to steam pressure"]
-    C --> D["4 · Gas Volume & Nucleation\n(secondary factor)"]
-    A -.->|"Laminar alignment\ncreates preferential\nsteam paths"| E["Explosive\nDelamination\n→ Oven Spring"]
+    A["1 · Gluten Network Alignment<br/>(dominant factor)"] --> B["2 · Heating Uniformity<br/>Thin dough → simultaneous steam generation"]
+    B --> C["3 · Network Extensibility<br/>Gluten yields to steam pressure"]
+    C --> D["4 · Gas Volume & Nucleation<br/>(secondary factor)"]
+    A -.->|"Laminar alignment<br/>creates preferential<br/>steam paths"| E["Explosive<br/>Delamination<br/>→ Oven Spring"]
     B -.-> E
     C -.-> E
     D -.-> E

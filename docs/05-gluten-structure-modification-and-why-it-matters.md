@@ -56,13 +56,13 @@ These modifications converge during oven spring. pH-modified charge state, prote
 flowchart TD
     A["Sourdough Fermentation"] --> B["pH Drop → 3.5–4.5"]
     A --> C["LAB Proteases"]
-    A --> D["Reducing Agents\n(Glutathione)"]
+    A --> D["Reducing Agents<br/>(Glutathione)"]
     A --> E["Uneven Gas Production"]
-    B --> F["Charge Repulsion\n→ Extensibility ↑"]
-    C --> G["Peptide Cleavage\n→ Elasticity ↓"]
-    D --> H["S–S Bond Disruption\n→ Network Weakening"]
-    E --> I["Patchy Nucleation\n→ Irregular Crumb"]
-    F & G & H & I --> J["Synergistic Result:\nOpen, Irregular Crumb\n+ Dramatic Ear"]
+    B --> F["Charge Repulsion<br/>→ Extensibility ↑"]
+    C --> G["Peptide Cleavage<br/>→ Elasticity ↓"]
+    D --> H["S–S Bond Disruption<br/>→ Network Weakening"]
+    E --> I["Patchy Nucleation<br/>→ Irregular Crumb"]
+    F & G & H & I --> J["Synergistic Result:<br/>Open, Irregular Crumb<br/>+ Dramatic Ear"]
 ```
 
 ---
