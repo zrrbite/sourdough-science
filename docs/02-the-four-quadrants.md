@@ -7,6 +7,21 @@ Preferments can be mapped onto two independent axes. The first axis is **microbi
 | **Commercial Yeast** | Biga — Italian tradition. Long, cool ferment (12–24h). Yeast-driven aromatics: esters, aldehydes, alcohols. Minimal acidification. Tighter, more elastic gluten. | Poolish — French/Polish origin. 8–16h at room temp. Higher enzymatic activity (amylase, protease) due to water availability. Sweeter, wheaty flavour. Very extensible dough. |
 | **Sourdough (Wild)** | Stiff Levain — Favours heterofermentative LAB metabolism; lower water activity pushes toward acetic acid via acetyl-CoA pathways. Sharper, more vinegary tang. Wider timing window for the baker. | Liquid Levain — Favours homofermentative LAB metabolism; higher water activity promotes lactate production. Milder, rounder acidity. More analogous to a poolish in handling but with full sourdough microbiology. |
 
+```mermaid
+quadrantChart
+    title The two axes that define a preferment
+    x-axis "Stiff · 50–60%" --> "Liquid · 100%"
+    y-axis "Commercial yeast" --> "Sourdough (wild)"
+    quadrant-1 "Milder, rounder · lactic"
+    quadrant-2 "Sharper, vinegary · acetic"
+    quadrant-3 "Tighter, elastic · minimal acid"
+    quadrant-4 "Very extensible · enzymatic"
+    "Biga": [0.25, 0.25]
+    "Poolish": [0.75, 0.25]
+    "Stiff levain": [0.25, 0.75]
+    "Liquid levain": [0.75, 0.75]
+```
+
 ---
 
 <!-- nav -->
