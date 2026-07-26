@@ -37,6 +37,7 @@ literature, and **flagged as such wherever the two diverge**.
 | 08 | [Empirical Evidence: Pure Sourdough at 40°C+](docs/08-empirical-evidence-pure-sourdough-at-40c.md) |
 | 09 | [The Kveik Parallel: Domestication Through Selective Pressure](docs/09-the-kveik-parallel-domestication-through-selective-pressure.md) |
 | 10 | [Thermal Lag: The Oven Setpoint Is Not the Dough Temperature](docs/10-thermal-lag-the-oven-setpoint-is-not-the-dough-temperature.md) |
+| 11 | [Thermal Death Kinetics and Culture Recovery](docs/11-thermal-death-kinetics-and-culture-recovery.md) |
 
 ### Flavour Chemistry
 
@@ -119,6 +120,8 @@ This is a live document, not a finished text. Things currently unresolved:
 - **Thermotolerance vs. temporal escape** (ch. 08) — is the culture genuinely heat-adapted, or
   merely escaping via short exposure and thermal lag? The extended-bulk test described in
   ch. 08 would distinguish these and has not been run.
+- **Post-recovery culture assessment** (ch. 11) — the recovered culture has not yet been
+  compared against a control on thermotolerance, flavour, and vigour.
 - **Ester/temperature direction** (ch. 13) — the literature genuinely conflicts. Needs a
   side-by-side taste test against a room-temperature control.
 - **Strecker/pyrazine crust claim** (ch. 17) — the least directly evidenced claim in the
