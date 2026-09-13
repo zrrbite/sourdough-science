@@ -108,6 +108,10 @@ The lookup end of the document: what to buy, what to weigh, what to check.
   "Manitoba" at ~13% protein
 - **Culture:** pure sourdough, maintained warm, repeatedly built at 40°C+
 - **Retard:** domestic fridge at 3–5°C
+- **Measurement:** oven air measured at ~45°C on the usual setting (2026-09-13).
+  A logging chamber is designed and its first stage built — see
+  [`chamber/`](chamber/) — but nothing is instrumented yet, so every temperature
+  in this document is still a setpoint rather than a reading.
 
 Formulas and temperatures assume this setup. Adjust accordingly.
 
@@ -127,11 +131,17 @@ Formulas and temperatures assume this setup. Adjust accordingly.
 
 ## Format
 
-Markdown, and nothing else. There is no build step and no generated PDF or
-DOCX — this is meant to be browsed and searched a chapter at a time, on GitHub
-or in an editor, which is how it actually gets used. The consequence to be
-aware of: **chapter order is load-bearing.** Most chapters open by referring to
-the one before, so moving a file means rewriting its first paragraph.
+**The document** is markdown and nothing else. There is no build step and no
+generated PDF or DOCX — it is meant to be browsed and searched a chapter at a
+time, on GitHub or in an editor, which is how it actually gets used. The
+consequence to be aware of: **chapter order is load-bearing.** Most chapters
+open by referring to the one before, so moving a file means rewriting its first
+paragraph.
+
+**[`chamber/`](chamber/) is a project, not prose**, and has its own toolchain —
+Python, tests, a systemd unit. It is kept here rather than in its own repository
+because its whole purpose is to answer questions chapters 08, 10 and 11 leave
+open, and the run data belongs next to the argument it settles.
 
 ---
 
