@@ -39,10 +39,19 @@ decisive version, see *Serial hot passage* below.
 ### Setup
 
 - [ ] **Two jars, one feed.** Same mother, same ratio, mixed at the same moment, divided into
-      two identical vessels. One goes hot, one is the control.
-- [ ] **Control at ~26°C.** Without it, "it doubled" has no scale — doubling in one hour and
-      doubling in four mean opposite things, and only the control says which this culture
-      does normally on this feed.
+      two identical vessels. One goes hot, one is the control. **Weigh both** — equal mass
+      matters more than a round number, because mass is what drives the thermal lag the hot
+      jar is being tested for.
+- [ ] **A control jar at room temperature.** Without it, "it doubled" has no scale — doubling
+      in one hour and doubling in four mean opposite things, and only the control says which
+      this culture does normally on this feed.
+
+      The control does **not** need to sit at some particular warm temperature, and should not
+      be made to: there is one oven, so manufacturing a second controlled warm spot introduces
+      a variable rather than removing one. What the control must be is *un-stressed and
+      recorded*. Room temperature qualifies. Put a thermometer beside it and write the number
+      down — a control at 21°C with the figure noted is worth more than one at a nominal 26°C
+      that was never measured.
 - [ ] **Straight-sided, tall, narrow jars**, identical to each other. Height stands in for
       volume, so geometry must match.
 - [ ] **Rubber band at the start line** on both.
@@ -68,8 +77,9 @@ Five things, or run two is not comparable with run one:
 1. Mother source, and when it was last fed
 2. Feed ratio and total mass per jar
 3. Temperature of the mix as it goes in
-4. Jar geometry — diameter and fill height
+4. Jar geometry — diameter and fill height, and the mass in each jar
 5. Oven setting, and whether the cavity is otherwise empty
+6. The control's actual temperature, measured rather than assumed
 
 ---
 
