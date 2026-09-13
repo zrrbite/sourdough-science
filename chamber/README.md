@@ -11,6 +11,10 @@ are all arguing about.
 - **[`stage0/`](stage0/)** — built now. Pi + ceramic heat emitter + smart plug +
   an insulated box, ~€45. Holds a setpoint with hysteresis and logs air and
   dough-core temperature to CSV. Start here.
+- **[`ble/`](ble/)** — a broadcast-only Bluetooth probe: wire format, a simulator that runs
+  the chamber's own physics, and a listener. Simulated end to end, no hardware needed. It
+  exists because a wired dough-core probe means a cable through the chamber seal; a probe that
+  advertises does not.
 - **Full instrument** — designed, not built:
   [`../docs/superpowers/specs/2026-09-13-fermentation-chamber-design.md`](../docs/superpowers/specs/2026-09-13-fermentation-chamber-design.md).
   ESP32, PID over a PTC heater, four probes, three independent safety layers,

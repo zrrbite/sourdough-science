@@ -76,6 +76,9 @@
   }
   .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-muted); }
   .chip.live .dot { background: var(--core); }
+  .chip.streaming .dot { background: var(--air); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: .35 } }
+  .age { font-size: 11px; color: var(--ink-muted); margin-left: 7px; }
 
   /* Readout row — these figures are the point of the page, so they get the weight */
   .readouts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); }
@@ -159,7 +162,8 @@
       <p class="sub">Chamber air is what the controller holds. Dough core is what the fermentation actually experiences. The gap between them is the whole argument of chapter&nbsp;10.</p>
     </div>
     <div class="runid mono">
-      <span class="chip live" id="src-chip"><span class="dot"></span><span id="src-label">simulated run</span></span><br>
+      <span class="chip live" id="src-chip"><span class="dot"></span><span id="src-label">simulated run</span></span>
+      <span class="age mono" id="src-age"></span><br>
       <span class="id" id="run-id">2026-09-13T18-04-12Z_demo</span><br>
       <span id="run-load">1000 g · 2.4 L PP tub, lid on</span>
     </div>
@@ -195,6 +199,7 @@
       <label class="file" tabindex="0">Load a run
         <input type="file" id="file" accept=".csv,text/csv">
       </label>
+      <button id="live" hidden>Live telemetry</button>
       <button id="demo">Back to sample run</button>
       <button id="toggle-table" aria-expanded="false">Show data table</button>
       <span class="hint">Reads <span class="mono">samples.csv</span> from any run directory. Nothing leaves your browser.</span>
@@ -532,6 +537,7 @@
     var reader = new FileReader();
     reader.onload = function () {
       try {
+        leaveLive();
         var p = parseCSV(String(reader.result));
         var sp = p.rows[0] && p.rows[0].setpoint != null ? p.rows[0].setpoint : SETPOINT;
         build(p.rows, p.roles, sp, { id: f.name, load: p.rows.length + " samples", source: "your run", simulated: false });
@@ -542,7 +548,7 @@
     };
     reader.readAsText(f);
   });
-  el("demo").addEventListener("click", loadDemo);
+  el("demo").addEventListener("click", function () { leaveLive(); loadDemo(); });
   el("toggle-table").addEventListener("click", function () {
     var w = el("tablewrap"), open = !w.hidden;
     w.hidden = open;
@@ -550,6 +556,80 @@
     this.textContent = open ? "Show data table" : "Hide data table";
   });
 
+  /* ---- live telemetry from the artifact store ----
+     Absence is the normal case: opened as a local file there is no
+     window.claude at all, and use() resolves null whenever the store is not
+     served or not granted. The page must be complete without it. */
+  var live = { series: null, current: null, at: 0, on: false };
+
+  function liveRows() {
+    if (!live.series || !live.series.samples) return null;
+    return live.series.samples.map(function (s) {
+      return { t: s[0], air: s[1], core: s[2], heating: s[3] ? 1 : 0 };
+    });
+  }
+
+  function renderLive() {
+    if (!live.on) return;
+    var rows = liveRows();
+    if (!rows || !rows.length) return;
+    var sp = (live.series && live.series.setpoint_c) ||
+             (live.current && live.current.setpoint_c) || SETPOINT;
+    build(rows, ["air", "core"], sp, {
+      id: (live.current && live.current.run_id) || live.series.run_id || "live",
+      load: (live.current && live.current.source) === "ble-simulated"
+        ? "simulated BLE probe" : "BLE probe",
+      source: "live telemetry",
+      simulated: false
+    });
+    el("src-chip").classList.add("streaming");
+    paintAge();
+  }
+
+  function paintAge() {
+    var node = el("src-age");
+    if (!live.on || !live.at) { node.textContent = ""; return; }
+    var age = Math.round((Date.now() - live.at) / 1000);
+    node.textContent = age < 2 ? "just now"
+      : age < 90 ? age + "s ago"
+      : Math.round(age / 60) + " min ago";
+  }
+  setInterval(paintAge, 1000);
+
+  function leaveLive() {
+    live.on = false;
+    el("src-chip").classList.remove("streaming");
+    el("src-age").textContent = "";
+  }
+
   loadDemo();
+
+  if (window.claude && typeof window.claude.use === "function") {
+    window.claude.use("db").then(function (db) {
+      if (!db) return;
+      var button = el("live");
+      button.hidden = false;
+      button.addEventListener("click", function () {
+        live.on = true;
+        renderLive();
+      });
+
+      var onError = function () {
+        button.disabled = true;
+        leaveLive();
+      };
+      var arrived = function (which) {
+        return function (snap) {
+          if (!snap.exists) return;
+          live[which] = snap.data();
+          live.at = Date.now();
+          if (!live.on) live.on = true;   // first telemetry wins the view
+          renderLive();
+        };
+      };
+      db.doc("telemetry/series").onSnapshot(arrived("series"), onError);
+      db.doc("telemetry/current").onSnapshot(arrived("current"), onError);
+    });
+  }
 })();
 </script>
