@@ -88,6 +88,9 @@ The lookup end of the document: what to buy, what to weigh, what to check.
 
 - [Accelerating Proteolysis: pH, Heat, and Salt](notes/proteolysis-ph-heat.md) — working notes on
   whether a heat boost can substitute for long fermentation in driving protease activity.
+- [The Heat-Driven Levain Bank](notes/heat-driven-levain-bank.md) — the protocol as currently
+  run: levains built hot and banked cold for days, refed hot with wholegrain on bake day, a hot
+  pulse after mixing, then an overnight cold rest *before* bulk. Mechanism hypotheses and open tests.
 
 ---
 
