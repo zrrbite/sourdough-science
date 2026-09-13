@@ -46,7 +46,7 @@ is testable and `--once` can pipe a frame into anything.
 
 ## Sources
 
-It reads the telemetry `chamber/ble/listen.py --serve` publishes and the CSV `chamber/stage0`
+It reads the telemetry `chamber/collector/listen.py --serve` publishes and the CSV `chamber/stage0`
 records — a third view of one dataset, not a parallel implementation. `stats.py` computes the
 same four figures the web viewer does, from the same rows.
 
