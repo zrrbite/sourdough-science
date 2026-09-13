@@ -596,6 +596,16 @@
   }
   setInterval(paintAge, 1000);
 
+  function applyTelemetry(payload) {
+    if (!payload) return;
+    if (payload.series) live.series = payload.series;
+    if (payload.current) live.current = payload.current;
+    live.at = Date.now();
+    if (!live.on) live.on = true;   // first telemetry wins the view
+    el("live").hidden = false;
+    renderLive();
+  }
+
   function leaveLive() {
     live.on = false;
     el("src-chip").classList.remove("streaming");
@@ -621,15 +631,34 @@
       var arrived = function (which) {
         return function (snap) {
           if (!snap.exists) return;
-          live[which] = snap.data();
-          live.at = Date.now();
-          if (!live.on) live.on = true;   // first telemetry wins the view
-          renderLive();
+          var patch = {};
+          patch[which] = snap.data();
+          applyTelemetry(patch);
         };
       };
       db.doc("telemetry/series").onSnapshot(arrived("series"), onError);
       db.doc("telemetry/current").onSnapshot(arrived("current"), onError);
     });
+  } else if (location.protocol === "http:" || location.protocol === "https:") {
+    /* Served locally by `listen.py --serve`: the page and its telemetry share an
+       origin, so a plain poll works and nothing has to relay anything. Inside the
+       artifact this branch never runs — window.claude is present there, and the
+       CSP would block the fetch regardless. */
+    var misses = 0;
+    var timer = setInterval(function () {
+      fetch("telemetry.json", { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (payload) {
+          if (!payload) throw new Error("no telemetry");
+          misses = 0;
+          applyTelemetry(payload);
+        })
+        .catch(function () {
+          // Nothing is serving telemetry here; stop asking rather than
+          // hammering a static host forever.
+          if (++misses >= 5) clearInterval(timer);
+        });
+    }, 3000);
   }
 })();
 </script>
