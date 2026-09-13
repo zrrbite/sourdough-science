@@ -1,7 +1,7 @@
 import unittest
 
 from protocol import decode
-from simulate import ProbeSimulator
+from simulated import ProbeSimulator
 
 
 class TestProbeSimulator(unittest.TestCase):

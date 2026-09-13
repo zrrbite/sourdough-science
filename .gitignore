@@ -2,5 +2,5 @@
 __pycache__/
 *.pyc
 chamber/stage0/chamber.toml
+chamber/collector/telemetry.json
 chamber/stage0/runs/
-chamber/ble/telemetry.json

@@ -11,10 +11,12 @@ are all arguing about.
 - **[`stage0/`](stage0/)** — built now. Pi + ceramic heat emitter + smart plug +
   an insulated box, ~€45. Holds a setpoint with hysteresis and logs air and
   dough-core temperature to CSV. Start here.
-- **[`ble/`](ble/)** — a broadcast-only Bluetooth probe: wire format, a simulator that runs
-  the chamber's own physics, and a listener. Simulated end to end, no hardware needed. It
-  exists because a wired dough-core probe means a cable through the chamber seal; a probe that
-  advertises does not.
+- **[`sources/`](sources/)** — where readings come from, behind two seams: **transport**
+  (Bluetooth, USB serial, wired 1-Wire, simulated) and **decoder** (our payload, an Inkbird's,
+  a text line). Kept apart because an Inkbird is not a different transport — it broadcasts BLE
+  as our probe does, with different bytes inside. The hardware decision is a flag.
+- **[`collector/`](collector/)** — takes readings from any source, buffers them, serves the
+  viewer and its telemetry from one origin, and optionally records a CSV.
 - **[`term/`](term/)** — the same run in a terminal, drawn with braille graphs. Follows the
   local listener, or replays a recorded CSV. No dependencies.
 - **Full instrument** — designed, not built:
