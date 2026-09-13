@@ -13,15 +13,21 @@ This document's Part II (chapters 07–11) argues about fermentation temperature
 in terms the document cannot currently measure. Chapter 10 says the core of a
 dough mass is *"probably 30–38°C"* against a 45°C setpoint and lags
 *"30–45 minutes"*; chapter 08's extended-bulk thermotolerance test is described
-and has never been run. Both are blocked on the same missing thing: an
-environment whose temperature is known, held, and recorded — together with the
-temperature *inside the dough*, which is the quantity the argument is actually
-about.
+and has never been run. The working note on the heat-driven levain bank states
+the problem outright: *"the setpoint is above conventional guidance, the core
+temperature is unknown, and the bread rises"*, and lists as its first open test
+*"log core temperature with a probe in a banked levain jar and in the dough
+during the hot pulse — this is the single measurement that would settle the
+caveat."*
+
+All three are blocked on the same missing thing: an environment whose
+temperature is known, held, and recorded — together with the temperature
+*inside the dough*, which is the quantity the argument is actually about.
 
 A domestic oven on its lowest setting heats. It does not measure, does not
 hold, and cannot be trusted to have been at the temperature its dial claims.
 The point of this build is therefore **not** that it replaces the oven as a
-heat source. It is that it turns three of this repository's open threads from
+heat source. It is that it turns several of this repository's open threads from
 speculation into experiments.
 
 ## 2. Decisions
@@ -123,6 +129,12 @@ dough sub-surface, room ambient** — plus an SHT31 for RH.
   geometry repeats between runs. Two centimetres of depth error swamps the
   effect being measured; reproducible placement is a measurement requirement,
   not a nicety.
+- **Two load cases, two fixtures.** The bulk tub is one; a 75 g levain jar per
+  the heat-driven levain bank note is the other, and its thermal behaviour is
+  very different — far less mass, far shorter lag, so its core plausibly *does*
+  approach the setpoint where a 1 kg tub's does not. The jar needs its own
+  fixture: a lid or silicone plug holding the probe at the jar's geometric
+  centre, clear of the glass wall.
 
 ### Calibration
 
@@ -299,19 +311,26 @@ interpretation. Keeping that seam clean is what stops the two drifting.
 
 1. **Characterisation** — the step test. Calibrates the instrument before
    anything it says is trusted.
-2. **Thermal lag (ch. 10)** — 1 kg tub, 45°C setpoint, 3 h. Replaces
-   "probably 30–38°C" and "likely 30–45 minutes" with measurements.
-3. **Stir vs. no-stir (ch. 10)** — two runs at one setpoint, one stirred twice;
+2. **Levain jar core (levain bank note, open test 1)** — a 75 g jar at a 45°C
+   setpoint, probe at the jar's centre. The note names this as *the single
+   measurement* that would settle its temperature caveat, and it is cheap: one
+   jar, one afternoon. It also tests the more interesting hypothesis, that jar
+   and tub sit in genuinely different thermal regimes rather than differing by
+   degree.
+3. **Thermal lag (ch. 10)** — 1 kg tub, 45°C setpoint, 3 h. Replaces
+   "probably 30–38°C" and "likely 30–45 minutes" with measurements. Run
+   alongside 2 for the jar-versus-tub comparison.
+4. **Stir vs. no-stir (ch. 10)** — two runs at one setpoint, one stirred twice;
    observe the gradient collapse and its effect on rise.
-4. **Extended bulk / thermotolerance (ch. 08)** — the README's first open
+5. **Extended bulk / thermotolerance (ch. 08)** — the README's first open
    thread. It has been unrunnable because the core could not be *verified* at
    40°C+ rather than hiding in a cool refuge. Now it can be, and thermotolerance
    separates from temporal escape.
-5. **Post-recovery culture (ch. 11)** — identical, verified thermal exposure for
+6. **Post-recovery culture (ch. 11)** — identical, verified thermal exposure for
    the recovered culture against a control.
 
-Experiment 4 is unlocked by the measurement, not by the box. An oven would have
-done the heating.
+Experiments 2 and 5 are unlocked by the measurement, not by the box. An oven
+would have done the heating.
 
 ## 13. What v2 (profiles) inherits — and one honest limit
 
@@ -332,6 +351,14 @@ about 3.3 hours — so 45°C → 26°C in a 20°C kitchen takes on the order of
 barely faster, because the dough's own mass dominates. It is the same thermal
 lag chapter 10 is about, running in reverse. Downward segments in any future
 profile must be written around that, or the chamber needs active cooling.
+
+In practice this bites less than it looks. The protocol in the levain bank note
+alternates hot and cold repeatedly — hot build, fridge for days, hot refeed,
+hot pulse, fridge overnight — but every cold step is done by **moving the jar or
+tub to the fridge**, not by ramping the chamber down. Relocation is far faster
+than passive cooldown and needs no hardware. A future profile engine should
+therefore treat a downward step as a *prompt to move the load*, not as a
+setpoint to chase.
 
 ## 14. Assumptions
 
