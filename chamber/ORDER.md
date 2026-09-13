@@ -60,6 +60,10 @@ Full rationale in [`stage0/README.md`](stage0/README.md); thermal budget in the
   **Ceramic, not plastic.** A CHE's surface gets hot enough to deform a plastic holder and to
   scorch foam or cardboard. The guard stops the emitter touching anything.
 
+  Better still, buy the emitter **in a reflector dome** rated for ceramic emitters — that is how
+  the vivarium trade mounts these, and it keeps the element away from every surface. In a foam
+  box that stops being a nicety. See the warning in the Denmark section.
+
   *Where:* same suppliers as the emitter, often sold together as a "ceramic heat lamp holder".
 
 - [ ] **Smart plug with a local HTTP API** — ~€15
@@ -96,10 +100,15 @@ Full rationale in [`stage0/README.md`](stage0/README.md); thermal budget in the
 
   *Where:* electronics suppliers. Search *"KSD9700 60C NC thermal switch"*.
 
-- [ ] **Cable gland / sealed grommet ×2** — ~€3
+- [ ] **Cable seal — glands *or* silicone** — ~€3
 
   Probe leads pass through the chamber wall. Unsealed, humid air wicks out and condensation
   tracks down the cable toward whatever is on the other end.
+
+  **A threaded gland only works on a thin panel.** Through 20–40 mm of foam there is no way to
+  land the locking nut, so on a flamingokasse the answer is a drilled hole sealed with silicone
+  on both faces. Size glands to the *cable* (M12 for a 3–4 mm probe lead) and use one per cable
+  — a gland with three leads through it is not sealed. See the Denmark section.
 
 - [ ] **Insulated box, ~35 L** — €0–25
 
@@ -204,6 +213,63 @@ resistor needed)
 Longer leads are worth it: the electronics live outside the box, so a 1 m lead is the minimum
 and 2 m is more comfortable.
 
+### Insulated box — packaging suppliers and builders' merchants
+
+[Harald Nyborg](https://www.harald-nyborg.dk/flamingokasse-med-laag) (flamingokasse with lid,
+40 L and 50 L; the 40 L is H27 × W39,5 × L59,5 cm externally) ·
+[jem & fix](https://www.jemogfix.dk/flamingokasse-med-laag-16-liter/1191/9069265/) (16 L, too
+small) · [Lomax](https://www.lomax.dk/lager/emballage/papkasser-og-aesker/termo-og-flamingokasser/)
+(up to 52 L) · [DT Emballage](https://www.dtemballage.dk/shop/en/varekatalog/termo-og-kolekasser/termokasser-eps) ·
+[Grafical](https://www.grafical.dk/termokasser-flamingokasser/)
+
+EPS flamingo is the right material — thick-walled, moisture-resistant, food-approved, and it
+holds heat in exactly as it holds cold in. **40 L is close enough to the 35 L the thermal
+budget assumes**; the loss figure scales with surface area, so a 40 L box costs a couple of
+watts more and nothing else changes. And a fishmonger will often hand over a used one free,
+which is worth asking before ordering.
+
+> ### ⚠ Do not put a ceramic emitter against polystyrene
+>
+> This is the one genuinely dangerous combination in this list, and it arises precisely because
+> the best insulator here is foam and the best heater here runs hot. A CHE's element reaches
+> several hundred degrees — far above the point where EPS melts, and then burns.
+>
+> The vivarium trade already solved this: **buy the emitter with a reflector dome / lamp
+> fixture rated for ceramic emitters**, which is how a CHE is normally mounted. The dome holds
+> the element away from any surface, stops line-of-sight to the walls, and directs the heat.
+> Add real clearance on top of that, aim it along a wall rather than at the dough, and put
+> something non-combustible — a ceramic tile, a piece of sheet metal — between the emitter and
+> the nearest foam.
+>
+> If that feels like too much care for a proofing box, the alternative is a **seedling heat
+> mat**: much lower surface temperature, designed for continuous use, no radiant hot spot. It
+> gives up headroom and fast pull-up in exchange for removing this problem entirely.
+
+### Cable glands — Biltema, or rethink the seal
+
+[Biltema M16, 4–8 mm, 2-pack](https://www.biltema.dk/byggeri/elinstallationer/monteringsdetaljer/kabelforskruning-m16-4-8-mm-2-stk-2000064967)
+(with nut and gasket) ·
+[Biltema M-thread, 2-pack](https://www.biltema.dk/byggeri/elinstallationer/monteringsdetaljer/kabelforskruning-m-gevind-2-stk-2000051760) ·
+[Biltema rubber grommets, 10-pack](https://www.biltema.dk/byggeri/elinstallationer/monteringsdetaljer/kabelgennemforing-10-pak-2000021896) ·
+[MakerSupplies M12, 3–6,5 mm](https://makersupplies.dk/electrical-cnc-electronics/electrical/cable-management/cable-management-cable-gland-m12-3-65mm)
+
+**Two things to get right here, and the second one may mean buying something else entirely.**
+
+**Size to the cable, not to the hole.** A waterproof DS18B20 lead is typically 3–4 mm, so
+**M12 (3–6,5 mm) fits it properly**; M16 (4–8 mm) is loose on a single thin probe lead. And a
+gland seals *one* cable — running two or three leads through one gland does not seal, it just
+looks like it does. One gland per cable, or a different approach.
+
+**A cable gland assumes a thin panel.** Its thread is sized for a few millimetres of enclosure
+wall plus a locking nut on the inside. A flamingokasse wall is 20–40 mm of foam, and a cooler
+box is a liner plus foam plus a shell — **the thread will not reach through, and there is
+nothing solid to tighten a nut against.** So for a foam box the practical seal is: drill
+undersized, push the lead through, and seal both faces with silicone. Or mount a gland on a
+thin plate fixed over a larger hole, if you want it demountable.
+
+Buy the glands only if the box turns out to have a thin wall somewhere to mount them; buy
+**silicone sealant** either way.
+
 ### Raspberry Pi — the bundle is the best buy
 
 [AvXperten's Zero WH bundle](https://www.avxperten.dk/raspberry-pi/raspberry-pi-zero-wh-stroemforsyning-512mb-16gb-microsd.asp)
@@ -279,8 +345,8 @@ Fill in on receipt. Substitutions are fine; unrecorded substitutions are not.
 | Smart plug | | | local API verified with internet off? |
 | DS18B20 ×n | | | adapter board included? |
 | KSD9700 | | | NC confirmed? |
-| Cable glands | | | |
-| Insulated box | | | wall type, internal volume |
+| Cable seal | | | glands or silicone? |
+| Insulated box | | | wall type, wall thickness, internal volume |
 
 ---
 
