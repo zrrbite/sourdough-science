@@ -14,6 +14,9 @@ Full design, and what this grows into, in
 
 ## What you need
 
+Shopping list with specs, traps and suppliers: [`../ORDER.md`](../ORDER.md).
+
+
 | Item | Note | ~€ |
 |---|---|---|
 | Raspberry Pi | any model; it lives **outside** the box | — |

@@ -8,6 +8,9 @@ it cannot do is tell you what temperature the dough actually reached — which i
 the quantity ch. 07–11 and [`../notes/heat-driven-levain-bank.md`](../notes/heat-driven-levain-bank.md)
 are all arguing about.
 
+- **[`ORDER.md`](ORDER.md)** — what to buy, what to check on each line, and where to look.
+  ~€70–85, nothing ordered yet. The dual-probe thermometer in group A is the one that unblocks
+  a real measurement on its own.
 - **[`stage0/`](stage0/)** — built now. Pi + ceramic heat emitter + smart plug +
   an insulated box, ~€45. Holds a setpoint with hysteresis and logs air and
   dough-core temperature to CSV. Start here.
