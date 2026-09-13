@@ -108,6 +108,91 @@ Full rationale in [`stage0/README.md`](stage0/README.md); thermal budget in the
 
 ---
 
+## Where to buy — Denmark
+
+Searched 2026-09-13. **Prices seen at the time, not quotes**, and product pages move — treat
+these as "this shop stocks this category" rather than as links to click blindly.
+
+The non-obvious part is which *kind* of shop sells what: a ceramic heat emitter is a reptile
+item, a dual-probe thermometer is a BBQ item, and neither is where you would start looking.
+
+### Dual-probe thermometer — kitchen / BBQ shops
+
+[Lomax](https://www.lomax.dk/flere-produkter/udendoers/grill-og-grilludstyr/grilltilbehoer/termometerfabriken-digitalt-ovn-stegetermometer-70158490/)
+(Termometerfabriken) · [AV-Cables](https://www.av-cables.dk/stegetermometer/) ·
+[AvXperten](https://www.avxperten.dk/stegetermometre/) ·
+[Damborg](https://damborg.dk/conzept-stegetermometer-tradlost-m-2-temperaturfolere-sort) ·
+[Davidsen](https://www.davidsen.dk/stegetermometre-c-id2000056)
+
+**One distinction worth getting right before buying.** Two different things are sold as
+"dual probe":
+
+- **Two sensors on one spit** (the Termometerfabriken style — tip reads the core, a second
+  sensor near the handle reads the oven air, ~1 m cable, both shown at once). Elegant for a
+  **dough tub**: push it in and you get core and air from one insertion.
+- **Two independent cabled probes.** More flexible, and what you want for a **75 g levain
+  jar**, where a single spit would put the "air" sensor at the jar mouth rather than in free
+  chamber air.
+
+Given the plan is to measure jar *and* tub, two independent probes is the safer buy.
+
+### Ceramic heat emitter + ceramic socket — reptile / terrarium suppliers
+
+[Centrum Dyrehandel](https://centrumdyrehandel.dk/vare/repti-zoo-100w-reptile-ceramic-heat-emitter/) ·
+[CDON's terrarium heating section](https://cdon.dk/dyretilbehor/tilbehor-til-krybdyr/radiatorer-lamper-til-terrarier-til-krybdyr/)
+
+Listings skew toward 100–200 W for large vivaria — **look specifically for 40–60 W**, which is
+right for a 35 L box and is often the least prominent option. The trade reinforces two things
+already in this document: a CHE should always run through a thermostat, and it wants a guard,
+because the element gets hot enough to burn anything touching it.
+
+### Shelly smart plug — home-automation shops
+
+[Let-Elektronik](https://let-elektronik.dk/smart-socket-shelly-plug-wifi) ·
+[Smart.dk](https://www.smart.dk/maerker/shelly.html) ·
+[AvXperten](https://www.avxperten.dk/smart-home-stikkontakt/shelly-plus-plug-s-wi-fi-stikkontakt-energimaaler-1-udtag-2500w-12a.asp)
+(Plus Plug S, 229 DKK seen) · [Gadgethuset](https://www.gadgethuset.dk/shop/438-shelly-smarthome/7123-shelly-plus-plug-s-wifi-stikkontakt-med-energimaaling/) ·
+[SoluNOiD](https://www.solunoid.dk/shelly) · [WATTOO](https://www.wattoo.dk/shelly-plug-s-gen3-hvid-matter-wifi-smartplug-12a-7822623419)
+
+**This resolves the buying trap in our favour.** Shelly ships a built-in web server with a
+local HTTP/RPC API, MQTT and webhooks, and **the cloud can be switched off entirely** —
+operation is fully local and does not depend on an internet connection. That is exactly the
+property Stage 0's safety argument needs. Type F (Schuko) is the Danish-compatible variant.
+
+### DS18B20 waterproof probes — electronics shops
+
+[Elektronik Lavpris](https://elektronik-lavpris.dk/p140343/sens0025-temperaturfoeler-probe-ds18b20-vandtaet/) ·
+[Let-Elektronik](https://let-elektronik.dk/ds18b20-waterproof-temperature-probe-sensor) (1 m, 2 m
+and 5 m leads) · [ELEXTRA](https://www.elextra.dk/p/temperatursensor-ds18b20-vandt%C3%A6t-m-ledn-55-125c-1m/H15942) ·
+[eBits](https://ebits.dk/products/vandtaet-temperatur-sensor-ds18b20) ·
+[Svane-El](https://svane-el.dk/temperatur-alarm-843/temperatursensor-vandtaet-ds18b20-1-meter-p617) ·
+[Elektro Shoppen](https://elektroshoppen.dk/produkt/keyestudio-ds18b20-temperatursensor-1m-vandtaet-roer-med-connect-module/)
+(Keyestudio, **sold with the connect module** — that is the adapter-board variant, so no
+resistor needed)
+
+Longer leads are worth it: the electronics live outside the box, so a 1 m lead is the minimum
+and 2 m is more comfortable.
+
+### KSD9700 thermal cutoff — electronics shops
+
+[BitByg](http://bitbyg.dk/shop/thermostat-switch-bimetal-ksd9700) — **verified**: 60 °C is
+stocked, NC is the default variant, 27,50 kr. Also
+[Fyndiq](https://fyndiq.dk/produkt/2-stk-ksd9700-temperaturafbryder-termostat-termisk-beskytter-nc-6277d69834c840fc/)
+(2-pack) and [ampul.eu](https://ampul.eu/en/thermostats/4089-thermostat-ksd9700-250v-5a-nc).
+
+**The tolerances matter here, and they constrain the setpoint.** The 60 °C part is
+**60 ± 5 °C trip, 40 ± 10 °C reset**. So it may open as low as 55 °C — comfortably above a
+45 °C working setpoint, but close enough that **setpoints above 50 °C risk nuisance trips**.
+Either keep runs at or below 50 °C (which is the whole designed envelope anyway) or take the
+70 °C variant for headroom and accept a higher failure temperature. The 5 A version is ample:
+a 60 W emitter on 230 V draws about 0.26 A.
+
+Being self-resetting, it will close again as the box cools — so a nuisance trip shows up as a
+chamber that mysteriously will not hold temperature, not as a dead run. Worth remembering when
+diagnosing.
+
+---
+
 ## Deliberately not ordering
 
 - **Inkbird IBS-TH (~€20).** A broadcast probe that drops straight into the decoder seam in
