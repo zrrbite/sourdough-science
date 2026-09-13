@@ -1,6 +1,7 @@
 # Parts to order
 
-**Decided 2026-09-13. Nothing bought yet.** Roughly €70–85 in two groups.
+**Decided 2026-09-13. Nothing bought yet.** Roughly €70–85 plus ~235 DKK for the Pi, in three
+groups.
 
 Prices are indicative, not quoted. Every line says what to *check*, because most of these are
 commodity parts where the wrong variant looks identical and fails differently.
@@ -108,6 +109,36 @@ Full rationale in [`stage0/README.md`](stage0/README.md); thermal budget in the
 
 ---
 
+## Group C — the Pi
+
+Stage 0 needs a small always-on computer to read the probes, decide, and call the plug. It does
+almost nothing: **two file reads and one HTTP request every ten seconds.** Performance is
+irrelevant here, and that is worth knowing before overbuying.
+
+**The Pi already in the house is not a candidate.** It has been unreachable since 2026-09-08
+with its address unknown (see `todo`), and it is the Bullet roaster's deployment target
+regardless — a chamber holding temperature unattended overnight would collide with that.
+
+- [ ] **Raspberry Pi Zero WH + power supply + microSD** — ~235 DKK as a bundle
+
+| check | why |
+|---|---|
+| **Pre-soldered header (the "H" in WH)** | The 1-Wire bus needs GPIO4, 3.3 V and GND. A bare Zero ships with no header, and the alternative is soldering 40 pins. This is the single spec most likely to be got wrong. |
+| **Micro-USB power supply, 5 V 2.5 A** | The Zero takes micro-USB, not USB-C. A phone charger usually works but an official supply avoids brownout weirdness on a box that must not stop. |
+| **microSD, 16 GB is plenty** | Raspberry Pi OS Lite plus a Python script. |
+
+**An original Zero W is ample.** Single-core ARMv6 sounds antique, and for a loop that samples
+at 0.1 Hz it makes no difference. A Zero 2 W is quad-core and 64-bit and nicer to live with —
+worth it only if the board will later do BLE scanning as well. Both have Bluetooth, so either
+can grow into the broadcast-probe path.
+
+**Plan for headless setup.** The Zero has *mini*-HDMI, so unless that cable is already in a
+drawer, do not plan to plug in a monitor. Use Raspberry Pi Imager on the Mac to preconfigure
+Wi-Fi, SSH and the hostname before first boot — then the Pi is reachable the moment it powers
+up, which is how it will be used anyway.
+
+---
+
 ## Where to buy — Denmark
 
 Searched 2026-09-13. **Prices seen at the time, not quotes**, and product pages move — treat
@@ -173,6 +204,26 @@ resistor needed)
 Longer leads are worth it: the electronics live outside the box, so a 1 m lead is the minimum
 and 2 m is more comfortable.
 
+### Raspberry Pi — the bundle is the best buy
+
+[AvXperten's Zero WH bundle](https://www.avxperten.dk/raspberry-pi/raspberry-pi-zero-wh-stroemforsyning-512mb-16gb-microsd.asp)
+— **235 DKK for board with pre-soldered header, power supply and a 16 GB microSD**, as listed.
+One order, nothing to solder, nothing missing. For this workload that is the whole Pi decision.
+
+If you would rather have the faster board: the **Zero 2 WH** (pre-soldered) is listed at
+[RaspberryPi.dk](https://raspberrypi.dk/en/product/raspberry-pi-zero-2-wh-with-presoldered-header/)
+at €22,59 but was **out of stock** when checked, with a waitlist. The plain **Zero 2 W** without
+a header is widely available from about 149 kr —
+[Power](https://www.power.dk/computere-og-tablets/datakomponenter/mikrocontroller/raspberry-pi-zero-2-w-enkeltkortscomputer/p-3959181/),
+[Dustin](https://www.dustin.dk/product/5020077561/zero-2-w),
+[Farnell](https://dk.farnell.com/raspberry-pi/rpi-zero-w-v2/raspberry-pi-kit-64bit-arm-cortex/dp/3838499),
+compared on [PriceRunner](https://www.pricerunner.dk/pl/10012-3208416724/Single-board-computere/Raspberry-Pi-Zero-2-W-Zero-2-Sammenlign-Priser) —
+**but then you are soldering a header**, which is exactly the work the bundle avoids.
+
+Power supplies and microSD separately, if buying a bare board:
+[official micro-USB 5 V 2.5 A, EU](https://raspberrypi.dk/en/product/raspberry-pi-power-supply-eu-5v-25a/)
+· [Zero accessories](https://raspberrypi.dk/en/shop/category/raspberry-pi-zero-and-accessories/).
+
 ### KSD9700 thermal cutoff — electronics shops
 
 [BitByg](http://bitbyg.dk/shop/thermostat-switch-bimetal-ksd9700) — **verified**: 60 °C is
@@ -203,6 +254,11 @@ diagnosing.
 - **ESP32, PTC heater, MOSFET, 24 V PSU.** The full instrument from the design spec. §15's
   argument is that a few Stage 0 runs tell you whether it is needed at all: if the box holds
   43 ± 2 °C, PID is a luxury.
+- **A second computer, if you would rather not have one.** `listen.py --source serial` exists
+  precisely so a USB device printing `air=40.29,core=36.71` can feed the whole system from the
+  Mac, with no Pi at all. The catch is that the Mac then has to stay awake and plugged in for
+  the length of a run, which is workable for an afternoon and awkward for an overnight retard.
+  A 235 DKK Zero is the cheaper answer to that problem than a laptop that cannot sleep.
 - **A reference thermometer for calibration.** Not required — relative agreement between probes
   is what the gradient rests on, and a stirred ice bath anchors the absolute scale at 0.00 °C
   by definition.
@@ -215,7 +271,9 @@ Fill in on receipt. Substitutions are fine; unrecorded substitutions are not.
 
 | item | bought | actual spec | notes |
 |---|---|---|---|
-| Dual-probe thermometer | | | resolution? |
+| Dual-probe thermometer | | | resolution? one spit or two probes? |
+| Raspberry Pi | | | model, header pre-soldered? |
+| PSU + microSD | | | |
 | Ceramic heat emitter | | | W: |
 | Ceramic socket | | | |
 | Smart plug | | | local API verified with internet off? |
