@@ -109,6 +109,13 @@ favour, and it is why this is adequate rather than a compromise. Swapping in PID
 later touches one function, because the control law is isolated in
 `controller.py`.
 
+**One thing to watch: switching rate.** With the default ±0.25 °C band, a ~35 L
+box loses about 0.004 °C/s and gains about 0.014 °C/s under a 55 W emitter, so
+the heater cycles roughly **every three minutes** — around 500 switches a day.
+A smart plug's relay is typically good for ~10⁵ operations, so that is months of
+continuous running rather than years. Widening `band_c` to 0.5 halves it, and
+costs nothing the dough can detect: the core sees almost none of that swing.
+
 ## Deliberately not here
 
 Profiles, a web UI, humidity control, active cooling. The full design has a seam

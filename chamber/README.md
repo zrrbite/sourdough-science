@@ -16,6 +16,14 @@ are all arguing about.
   ESP32, PID over a PTC heater, four probes, three independent safety layers,
   and a seam for programmable profiles.
 
+- **[`viewer/`](viewer/)** — a single page that reads a run's `samples.csv` and
+  plots chamber air against dough core, with lag-to-setpoint, time-weighted mean
+  core temperature and peak gradient computed from the data. Published at
+  <https://claude.ai/code/artifact/2865cdf4-1ac0-433d-b3c8-a8f6e1c0c05d>; the
+  source here is the same file, so it runs offline from any browser too. Opens
+  on a simulated run derived from the chamber's own constants, so it shows
+  something before the first real bake.
+
 Stage 0 is a subset of that design, not a detour: the file schema, the run
 manifest and the calibration discipline are identical, so runs recorded now stay
 comparable with runs recorded later.

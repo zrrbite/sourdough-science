@@ -1,0 +1,555 @@
+<title>Dough Core Trace</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --plane:      #f1f4f3;
+    --surface:    #fbfcfb;
+    --surface-2:  #f6f8f7;
+    --ink:        #0d1211;
+    --ink-2:      #4e5654;
+    --ink-muted:  #858d8b;
+    --rule:       #e0e5e3;
+    --rule-firm:  #ccd4d2;
+    --air:        #2a78d6;
+    --core:       #eb6834;
+    --shadow:     0 1px 2px rgba(13,18,17,.05), 0 8px 24px rgba(13,18,17,.045);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --plane:      #0c0e0f;
+      --surface:    #16191a;
+      --surface-2:  #1d2122;
+      --ink:        #ffffff;
+      --ink-2:      #c0c6c4;
+      --ink-muted:  #858d8b;
+      --rule:       #282d2e;
+      --rule-firm:  #3a4142;
+      --air:        #3987e5;
+      --core:       #d95926;
+      --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plane:      #0c0e0f;
+    --surface:    #16191a;
+    --surface-2:  #1d2122;
+    --ink:        #ffffff;
+    --ink-2:      #c0c6c4;
+    --ink-muted:  #858d8b;
+    --rule:       #282d2e;
+    --rule-firm:  #3a4142;
+    --air:        #3987e5;
+    --core:       #d95926;
+    --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+
+  body {
+    background: var(--plane);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 28px 22px 64px; display: flex; flex-direction: column; gap: 22px; }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace; font-variant-numeric: tabular-nums; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .13em; text-transform: uppercase;
+    color: var(--ink-muted); margin: 0;
+  }
+
+  header.masthead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px; border-bottom: 1px solid var(--rule-firm); padding-bottom: 16px; }
+  header.masthead h1 { font-size: 27px; font-weight: 600; letter-spacing: -.017em; margin: 2px 0 0; text-wrap: balance; }
+  header.masthead p.sub { margin: 5px 0 0; color: var(--ink-2); max-width: 58ch; font-size: 14px; }
+  .runid { text-align: right; font-size: 12px; color: var(--ink-2); line-height: 1.7; }
+  .runid .id { color: var(--ink); font-size: 13px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .06em;
+    padding: 3px 9px; border: 1px solid var(--rule-firm); border-radius: 999px; color: var(--ink-2);
+    background: var(--surface);
+  }
+  .chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-muted); }
+  .chip.live .dot { background: var(--core); }
+
+  /* Readout row — these figures are the point of the page, so they get the weight */
+  .readouts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); }
+  .readout { background: var(--surface); padding: 15px 16px 14px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .readout .label { display: flex; align-items: center; gap: 7px; }
+  .readout .swatch { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+  .readout .val { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 30px; font-weight: 500; letter-spacing: -.02em; line-height: 1.15; }
+  .readout .val .unit { font-size: 15px; color: var(--ink-muted); margin-left: 2px; }
+  .readout .foot { font-size: 12px; color: var(--ink-muted); }
+
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow); }
+  .card > .head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; padding: 15px 18px 0; }
+  .card > .head h2 { font-size: 15px; font-weight: 600; margin: 0; letter-spacing: -.005em; }
+
+  .legend { display: flex; gap: 15px; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-2); }
+  .legend i { width: 13px; height: 2.5px; border-radius: 2px; display: inline-block; }
+  .legend i.dash { height: 0; border-top: 2px dashed var(--ink-muted); border-radius: 0; }
+  .legend i.block { height: 9px; width: 9px; border-radius: 2px; background: var(--ink-muted); opacity: .5; }
+
+  .plot { position: relative; padding: 6px 10px 8px; }
+  .plot svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .axis-text { font-family: "IBM Plex Mono", monospace; font-size: 11px; fill: var(--ink-muted); }
+  .series-label { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 500; }
+
+  .tip {
+    position: absolute; pointer-events: none; opacity: 0; transition: opacity .1s;
+    background: var(--surface); border: 1px solid var(--rule-firm); border-radius: 7px;
+    box-shadow: var(--shadow); padding: 8px 10px; min-width: 132px; z-index: 5;
+  }
+  .tip .t { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-muted); letter-spacing: .04em; }
+  .tip .r { display: flex; align-items: center; justify-content: space-between; gap: 14px; font-size: 12.5px; margin-top: 3px; }
+  .tip .r .k { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+  .tip .r .k i { width: 8px; height: 8px; border-radius: 2px; }
+  .tip .r .v { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; color: var(--ink); }
+
+  /* Findings — a definition list, not tiles: these are conclusions, not live state */
+  .findings { display: grid; grid-template-columns: repeat(auto-fit, minmax(216px, 1fr)); gap: 0; }
+  .finding { padding: 15px 20px 15px 0; border-right: 1px solid var(--rule); }
+  .finding:last-child { border-right: 0; }
+  .finding dt { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted); }
+  .finding dd { margin: 5px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 19px; font-variant-numeric: tabular-nums; }
+  .finding p { margin: 4px 0 0; font-size: 12.5px; color: var(--ink-2); line-height: 1.45; }
+
+  .note { font-size: 13.5px; color: var(--ink-2); background: var(--surface-2); border-left: 2px solid var(--core); padding: 12px 16px; border-radius: 0 7px 7px 0; }
+  .note b { color: var(--ink); font-weight: 600; }
+
+  .tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 14px 18px; }
+  button, label.file {
+    font: inherit; font-size: 13px; cursor: pointer;
+    background: var(--surface-2); color: var(--ink); border: 1px solid var(--rule-firm);
+    padding: 6px 13px; border-radius: 7px;
+  }
+  button:hover, label.file:hover { border-color: var(--ink-muted); }
+  button:focus-visible, label.file:focus-within { outline: 2px solid var(--air); outline-offset: 2px; }
+  input[type=file] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  .hint { font-size: 12.5px; color: var(--ink-muted); }
+
+  .tablewrap { overflow-x: auto; max-height: 320px; overflow-y: auto; border-top: 1px solid var(--rule); }
+  table { border-collapse: collapse; width: 100%; font-family: "IBM Plex Mono", monospace; font-size: 12px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 5px 14px; white-space: nowrap; border-bottom: 1px solid var(--rule); }
+  th { position: sticky; top: 0; background: var(--surface-2); color: var(--ink-2); font-weight: 500; text-align: right; z-index: 1; }
+  td:first-child, th:first-child { text-align: left; color: var(--ink-muted); }
+
+  footer { color: var(--ink-muted); font-size: 12.5px; border-top: 1px solid var(--rule); padding-top: 14px; }
+  footer a { color: var(--ink-2); }
+
+  @media (max-width: 760px) {
+    .readouts { grid-template-columns: repeat(2, 1fr); }
+    .finding { border-right: 0; border-bottom: 1px solid var(--rule); padding-right: 0; }
+    .finding:last-child { border-bottom: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Chamber · stage 0</p>
+      <h1>Dough Core Trace</h1>
+      <p class="sub">Chamber air is what the controller holds. Dough core is what the fermentation actually experiences. The gap between them is the whole argument of chapter&nbsp;10.</p>
+    </div>
+    <div class="runid mono">
+      <span class="chip live" id="src-chip"><span class="dot"></span><span id="src-label">simulated run</span></span><br>
+      <span class="id" id="run-id">2026-09-13T18-04-12Z_demo</span><br>
+      <span id="run-load">1000 g · 2.4 L PP tub, lid on</span>
+    </div>
+  </header>
+
+  <section class="readouts" id="readouts" aria-label="Latest readings"></section>
+
+  <section class="card">
+    <div class="head">
+      <h2>Temperature over the run</h2>
+      <div class="legend">
+        <span><i style="background:var(--air)"></i>chamber air</span>
+        <span><i style="background:var(--core)"></i>dough core</span>
+        <span><i class="dash"></i>setpoint</span>
+        <span><i class="block"></i>heater on</span>
+      </div>
+    </div>
+    <div class="plot" id="plot">
+      <svg id="chart" viewBox="0 0 900 384" role="img" aria-labelledby="charttitle"></svg>
+      <title id="charttitle">Chamber air and dough core temperature against time, with setpoint and heater state</title>
+      <div class="tip" id="tip"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <dl class="findings" id="findings"></dl>
+  </section>
+
+  <p class="note" id="note"></p>
+
+  <section class="card">
+    <div class="tools">
+      <label class="file" tabindex="0">Load a run
+        <input type="file" id="file" accept=".csv,text/csv">
+      </label>
+      <button id="demo">Back to sample run</button>
+      <button id="toggle-table" aria-expanded="false">Show data table</button>
+      <span class="hint">Reads <span class="mono">samples.csv</span> from any run directory. Nothing leaves your browser.</span>
+    </div>
+    <div class="tablewrap" id="tablewrap" hidden>
+      <table id="table"></table>
+    </div>
+  </section>
+
+  <footer>
+    Companion to <span class="mono">zrrbite/sourdough-science</span> · chamber/stage0. Sample data is
+    simulated from the chamber's own physical constants (UA&nbsp;0.63&nbsp;W/K, 55&nbsp;W emitter,
+    dough&nbsp;&tau;&nbsp;48&nbsp;min) using the same hysteresis law the controller runs.
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var SETPOINT = 40.0, BAND = 0.25, AMBIENT = 21.5;
+
+  /* ---- sample run: same control law and constants as the real controller ---- */
+  function simulate() {
+    var dt = 20, hours = 4, n = (hours * 3600) / dt;
+    var UA = 0.63, P = 55, C = 3000, TAU_CORE = 48 * 60;
+    var air = AMBIENT, core = AMBIENT - 0.2, heating = false, lastChange = -1e9;
+    var rows = [];
+    for (var i = 0; i <= n; i++) {
+      var t = i * dt;
+      var want = heating ? air <= SETPOINT + BAND : air < SETPOINT - BAND;
+      if (want !== heating && t - lastChange >= 60) { heating = want; lastChange = t; }
+      air += ((heating ? P : 0) - UA * (air - AMBIENT)) / C * dt;
+      core += (air - core) / TAU_CORE * dt;
+      rows.push({
+        t: t,
+        air: air + (Math.sin(i * 0.7) * 0.02),
+        core: core,
+        ambient: AMBIENT + Math.sin(i / 260) * 0.35,
+        heating: heating ? 1 : 0
+      });
+    }
+    return rows;
+  }
+
+  /* ---- parse a real samples.csv ---- */
+  function parseCSV(text) {
+    var lines = text.trim().split(/\r?\n/);
+    if (lines.length < 2) throw new Error("that file has no data rows");
+    var head = lines[0].split(",").map(function (h) { return h.trim(); });
+    var idx = {};
+    head.forEach(function (h, i) { idx[h] = i; });
+    if (!("t_s" in idx)) throw new Error("no t_s column — is this a chamber samples.csv?");
+    var roles = head.filter(function (h) { return /_c$/.test(h) && h !== "setpoint_c"; })
+                    .map(function (h) { return h.slice(0, -2); });
+    var num = function (c) { var v = parseFloat(c); return isNaN(v) ? null : v; };
+    var rows = lines.slice(1).filter(Boolean).map(function (line) {
+      var c = line.split(",");
+      var row = { t: num(c[idx.t_s]) || 0, heating: idx.heating != null ? (c[idx.heating] === "1" ? 1 : 0) : 0 };
+      roles.forEach(function (r) { row[r] = num(c[idx[r + "_c"]]); });
+      if (idx.setpoint_c != null) row.setpoint = num(c[idx.setpoint_c]);
+      return row;
+    });
+    return { rows: rows, roles: roles };
+  }
+
+  /* ---- derived numbers: precisely what chapter 10 asks for ---- */
+  function analyse(rows, airKey, coreKey, setpoint) {
+    var lag = null, peakGap = 0, peakGapT = 0, wSum = 0, wDur = 0, onDur = 0, total = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i], dur = i ? r.t - rows[i - 1].t : 0;
+      total += dur;
+      if (r.heating) onDur += dur;
+      var core = r[coreKey], air = r[airKey];
+      if (core != null) {
+        wSum += core * dur; wDur += dur;
+        if (lag === null && core >= setpoint - 0.5) lag = r.t;
+      }
+      if (core != null && air != null && air - core > peakGap) { peakGap = air - core; peakGapT = r.t; }
+    }
+    return {
+      lag: lag,
+      meanCore: wDur ? wSum / wDur : null,
+      peakGap: peakGap,
+      peakGapT: peakGapT,
+      duty: total ? onDur / total : 0,
+      total: total
+    };
+  }
+
+  var clock = function (s) {
+    var h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60);
+    if (m === 60) { h += 1; m = 0; }
+    return h + "h " + (m < 10 ? "0" : "") + m + "m";
+  };
+  var deg = function (v, d) { return v == null ? "—" : v.toFixed(d == null ? 1 : d); };
+  var el = function (id) { return document.getElementById(id); };
+
+  /* ---- chart ---- */
+  var PAD = { l: 56, r: 74, t: 20, b: 116 }, W = 900, H = 384;
+  var PLOT = { x0: PAD.l, x1: W - PAD.r, y0: PAD.t, y1: H - PAD.b };
+  var STRIP = { y0: H - PAD.b + 24, h: 15 };
+  var SVGNS = "http://www.w3.org/2000/svg";
+
+  function node(name, attrs, text) {
+    var e = document.createElementNS(SVGNS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  var state = null;
+
+  function render(data) {
+    state = data;
+    var rows = data.rows, airKey = data.airKey, coreKey = data.coreKey, setpoint = data.setpoint;
+    var svg = el("chart");
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+    var tMax = rows[rows.length - 1].t || 1;
+    var vals = [];
+    rows.forEach(function (r) {
+      [airKey, coreKey].forEach(function (k) { if (k && r[k] != null) vals.push(r[k]); });
+    });
+    vals.push(setpoint);
+    var lo = Math.floor((Math.min.apply(null, vals) - 2) / 5) * 5;
+    var hi = Math.ceil((Math.max.apply(null, vals) + 2) / 5) * 5;
+
+    var X = function (t) { return PLOT.x0 + (t / tMax) * (PLOT.x1 - PLOT.x0); };
+    var Y = function (v) { return PLOT.y1 - ((v - lo) / (hi - lo)) * (PLOT.y1 - PLOT.y0); };
+
+    /* gridlines + y labels — every label names a value the chart reaches */
+    for (var v = lo; v <= hi; v += 5) {
+      svg.appendChild(node("line", { x1: PLOT.x0, x2: PLOT.x1, y1: Y(v), y2: Y(v),
+        stroke: "var(--rule)", "stroke-width": 1 }));
+      svg.appendChild(node("text", { x: PLOT.x0 - 10, y: Y(v) + 4, "text-anchor": "end",
+        "class": "axis-text" }, v + "°"));
+    }
+
+    /* x ticks every 30 min */
+    var step = tMax > 4 * 3600 ? 3600 : 1800;
+    for (var t = 0; t <= tMax + 1; t += step) {
+      svg.appendChild(node("line", { x1: X(t), x2: X(t), y1: PLOT.y1, y2: PLOT.y1 + 5,
+        stroke: "var(--rule-firm)", "stroke-width": 1 }));
+      svg.appendChild(node("text", { x: X(t), y: PLOT.y1 + 20, "text-anchor": "middle",
+        "class": "axis-text" }, (t / 3600).toFixed(step === 1800 ? 1 : 0) + "h"));
+    }
+    svg.appendChild(node("line", { x1: PLOT.x0, x2: PLOT.x1, y1: PLOT.y1, y2: PLOT.y1,
+      stroke: "var(--rule-firm)", "stroke-width": 1 }));
+
+    /* setpoint reference */
+    svg.appendChild(node("line", { x1: PLOT.x0, x2: PLOT.x1, y1: Y(setpoint), y2: Y(setpoint),
+      stroke: "var(--ink-muted)", "stroke-width": 1.5, "stroke-dasharray": "5 4" }));
+    svg.appendChild(node("text", { x: PLOT.x1 + 8, y: Y(setpoint) + 4, "class": "axis-text" },
+      "setpoint " + setpoint.toFixed(1) + "°"));
+
+    /* heater strip — state, not a series, so it stays in ink rather than a hue */
+    svg.appendChild(node("text", { x: PLOT.x0 - 10, y: STRIP.y0 + 11, "text-anchor": "end",
+      "class": "axis-text" }, "heat"));
+    svg.appendChild(node("rect", { x: PLOT.x0, y: STRIP.y0, width: PLOT.x1 - PLOT.x0,
+      height: STRIP.h, fill: "var(--rule)", rx: 2 }));
+    var runStart = null;
+    for (var i = 0; i <= rows.length; i++) {
+      var on = i < rows.length && rows[i].heating;
+      if (on && runStart === null) runStart = rows[i].t;
+      if (!on && runStart !== null) {
+        var x = X(runStart), w = Math.max(1, X(rows[i - 1].t) - x);
+        svg.appendChild(node("rect", { x: x, y: STRIP.y0, width: w, height: STRIP.h,
+          fill: "var(--ink-muted)", opacity: .55, rx: 1 }));
+        runStart = null;
+      }
+    }
+
+    /* series */
+    function path(key, color) {
+      var d = "", pen = false;
+      rows.forEach(function (r) {
+        if (r[key] == null) { pen = false; return; }
+        d += (pen ? "L" : "M") + X(r.t).toFixed(1) + " " + Y(r[key]).toFixed(1) + " ";
+        pen = true;
+      });
+      svg.appendChild(node("path", { d: d.trim(), fill: "none", stroke: color,
+        "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    }
+    if (coreKey) path(coreKey, "var(--core)");
+    if (airKey) path(airKey, "var(--air)");
+
+    /* direct labels at the live end */
+    var last = rows[rows.length - 1];
+    function endLabel(key, color, name) {
+      if (!key || last[key] == null) return;
+      svg.appendChild(node("circle", { cx: X(last.t), cy: Y(last[key]), r: 3.5, fill: color,
+        stroke: "var(--surface)", "stroke-width": 2 }));
+      svg.appendChild(node("text", { x: PLOT.x1 + 8, y: Y(last[key]) + 4, fill: color,
+        "class": "series-label" }, name));
+    }
+    endLabel(coreKey, "var(--core)", "core");
+    endLabel(airKey, "var(--air)", "air");
+
+    svg.appendChild(node("text", { x: (PLOT.x0 + PLOT.x1) / 2, y: H - 8, "text-anchor": "middle",
+      "class": "axis-text" }, "elapsed"));
+
+    /* crosshair */
+    var cross = node("line", { y1: PLOT.y0, y2: PLOT.y1, stroke: "var(--ink-muted)",
+      "stroke-width": 1, "stroke-dasharray": "3 3", opacity: 0 });
+    svg.appendChild(cross);
+    state.cross = cross; state.X = X; state.Y = Y; state.tMax = tMax;
+
+    paintReadouts(data);
+    paintFindings(data);
+    paintTable(data);
+  }
+
+  function paintReadouts(d) {
+    var last = d.rows[d.rows.length - 1];
+    var air = d.airKey ? last[d.airKey] : null, core = d.coreKey ? last[d.coreKey] : null;
+    var gap = (air != null && core != null) ? air - core : null;
+    var stats = d.stats;
+    var tiles = [
+      { sw: "var(--air)",  k: "chamber air",  v: deg(air),  u: "°C", f: "held at " + d.setpoint.toFixed(1) + "°C ± " + BAND },
+      { sw: "var(--core)", k: "dough core",   v: deg(core), u: "°C", f: core != null && air != null ? deg(air - core) + "°C below the air" : "no core probe" },
+      { sw: null, k: "gradient", v: gap == null ? "—" : deg(gap), u: "°C", f: "peak " + deg(stats.peakGap) + "°C at " + clock(stats.peakGapT) },
+      { sw: null, k: "heater duty", v: (stats.duty * 100).toFixed(0), u: "%", f: "over " + clock(stats.total) }
+    ];
+    el("readouts").innerHTML = tiles.map(function (t) {
+      return '<div class="readout">' +
+        '<span class="label">' + (t.sw ? '<span class="swatch" style="background:' + t.sw + '"></span>' : '') +
+        '<span class="eyebrow">' + t.k + '</span></span>' +
+        '<span class="val">' + t.v + '<span class="unit">' + t.u + '</span></span>' +
+        '<span class="foot">' + t.f + '</span></div>';
+    }).join("");
+  }
+
+  function paintFindings(d) {
+    var s = d.stats;
+    var items = [
+      { t: "lag to setpoint", v: s.lag == null ? "not reached" : clock(s.lag),
+        p: s.lag == null ? "The core never came within 0.5°C of the setpoint during this run."
+                         : "Time for the dough core to come within 0.5°C of " + d.setpoint.toFixed(1) + "°C." },
+      { t: "time-weighted mean core", v: deg(s.meanCore) + " °C",
+        p: "What the culture actually experienced, averaged over the run — not the setpoint." },
+      { t: "peak gradient", v: deg(s.peakGap) + " °C",
+        p: "Widest air-to-core gap, at " + clock(s.peakGapT) + ". The dual-zone bioreactor of ch. 10." },
+      { t: "run length", v: clock(s.total),
+        p: d.rows.length.toLocaleString() + " samples." }
+    ];
+    el("findings").innerHTML = items.map(function (i) {
+      return '<div class="finding"><dt>' + i.t + '</dt><dd>' + i.v + '</dd><p>' + i.p + '</p></div>';
+    }).join("");
+
+    var gapText = s.meanCore == null ? "" :
+      "The setpoint says <b>" + d.setpoint.toFixed(1) + "°C</b>. The dough averaged <b>" +
+      deg(s.meanCore) + "°C</b> — a difference of <b>" + deg(d.setpoint - s.meanCore) +
+      "°C</b> that no thermostat reading would have shown you. " +
+      (s.lag == null ? "The core never got there at all."
+                     : "It took <b>" + clock(s.lag) + "</b> to arrive.");
+    el("note").innerHTML = gapText;
+  }
+
+  function paintTable(d) {
+    var keys = ["t"].concat(d.roles).concat(["heating"]);
+    var head = "<thead><tr><th>elapsed</th>" + d.roles.map(function (r) {
+      return "<th>" + r + " °C</th>"; }).join("") + "<th>heater</th></tr></thead>";
+    var every = Math.max(1, Math.round(d.rows.length / 240));
+    var body = d.rows.filter(function (_, i) { return i % every === 0; }).map(function (r) {
+      return "<tr><td>" + clock(r.t) + "</td>" +
+        d.roles.map(function (k) { return "<td>" + deg(r[k], 2) + "</td>"; }).join("") +
+        "<td>" + (r.heating ? "on" : "—") + "</td></tr>";
+    }).join("");
+    el("table").innerHTML = head + "<tbody>" + body + "</tbody>";
+  }
+
+  /* ---- hover ---- */
+  var plot = el("plot"), tip = el("tip");
+  function onMove(ev) {
+    if (!state) return;
+    var svg = el("chart"), box = svg.getBoundingClientRect();
+    var px = (ev.clientX - box.left) / box.width * W;
+    if (px < PLOT.x0 || px > PLOT.x1) return onLeave();
+    var t = (px - PLOT.x0) / (PLOT.x1 - PLOT.x0) * state.tMax;
+    var rows = state.rows, best = rows[0], bestD = Infinity;
+    for (var i = 0; i < rows.length; i++) {
+      var dd = Math.abs(rows[i].t - t);
+      if (dd < bestD) { bestD = dd; best = rows[i]; }
+    }
+    state.cross.setAttribute("x1", state.X(best.t));
+    state.cross.setAttribute("x2", state.X(best.t));
+    state.cross.setAttribute("opacity", 1);
+
+    var rowsHtml = state.roles.map(function (k) {
+      var color = k === state.airKey ? "var(--air)" : (k === state.coreKey ? "var(--core)" : "var(--ink-muted)");
+      return '<div class="r"><span class="k"><i style="background:' + color + '"></i>' + k +
+             '</span><span class="v">' + deg(best[k], 2) + '°</span></div>';
+    }).join("");
+    tip.innerHTML = '<div class="t">' + clock(best.t) + " · heater " + (best.heating ? "on" : "off") +
+      "</div>" + rowsHtml;
+    tip.style.opacity = 1;
+    var relX = (state.X(best.t) / W) * plot.clientWidth;
+    tip.style.left = Math.min(Math.max(relX - tip.offsetWidth / 2, 4), plot.clientWidth - tip.offsetWidth - 4) + "px";
+    tip.style.top = "14px";
+  }
+  function onLeave() {
+    tip.style.opacity = 0;
+    if (state && state.cross) state.cross.setAttribute("opacity", 0);
+  }
+  plot.addEventListener("pointermove", onMove);
+  plot.addEventListener("pointerleave", onLeave);
+
+  /* ---- wiring ---- */
+  function build(rows, roles, setpoint, meta) {
+    var airKey = roles.indexOf("air") >= 0 ? "air" : roles[0] || null;
+    var coreKey = roles.indexOf("core") >= 0 ? "core" : (roles.filter(function (r) { return r !== airKey; })[0] || null);
+    var data = { rows: rows, roles: roles, airKey: airKey, coreKey: coreKey, setpoint: setpoint };
+    data.stats = analyse(rows, airKey, coreKey, setpoint);
+    render(data);
+    el("run-id").textContent = meta.id;
+    el("run-load").textContent = meta.load;
+    el("src-label").textContent = meta.source;
+    el("src-chip").classList.toggle("live", meta.simulated);
+  }
+
+  function loadDemo() {
+    var rows = simulate();
+    build(rows, ["air", "core", "ambient"], SETPOINT, {
+      id: "2026-09-13T18-04-12Z_demo",
+      load: "1000 g · 2.4 L PP tub, lid on",
+      source: "simulated run",
+      simulated: true
+    });
+  }
+
+  el("file").addEventListener("change", function (ev) {
+    var f = ev.target.files && ev.target.files[0];
+    if (!f) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        var p = parseCSV(String(reader.result));
+        var sp = p.rows[0] && p.rows[0].setpoint != null ? p.rows[0].setpoint : SETPOINT;
+        build(p.rows, p.roles, sp, { id: f.name, load: p.rows.length + " samples", source: "your run", simulated: false });
+      } catch (e) {
+        el("note").innerHTML = "<b>Could not read that file:</b> " + e.message +
+          " Expected a chamber <span class='mono'>samples.csv</span> with a <span class='mono'>t_s</span> column.";
+      }
+    };
+    reader.readAsText(f);
+  });
+  el("demo").addEventListener("click", loadDemo);
+  el("toggle-table").addEventListener("click", function () {
+    var w = el("tablewrap"), open = !w.hidden;
+    w.hidden = open;
+    this.setAttribute("aria-expanded", String(!open));
+    this.textContent = open ? "Show data table" : "Hide data table";
+  });
+
+  loadDemo();
+})();
+</script>
