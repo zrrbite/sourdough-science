@@ -91,6 +91,9 @@ The lookup end of the document: what to buy, what to weigh, what to check.
 - [The Heat-Driven Levain Bank](notes/heat-driven-levain-bank.md) — the protocol as currently
   run: levains built hot and banked cold for days, refed hot with wholegrain on bake day, a hot
   pulse after mixing, then an overnight cold rest *before* bulk. Mechanism hypotheses and open tests.
+- [The Levain Doubling Test](notes/levain-doubling-test.md) — bench protocol for the
+  experiment that would settle ch. 08's open question, with the correction that doubling shows
+  gas production rather than cell division, and serial hot passage as the decisive version.
 - [Why the Hot Protocol Works](notes/why-the-hot-protocol-works.md) — why fermenting above
   conventional guidance keeps working. Argues the 28°C question dissolves (nothing is stressed
   there, and the norm is a scheduling convention), and that the 40–50°C case is six ordinary

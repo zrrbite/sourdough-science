@@ -146,8 +146,20 @@ the protocol may be running the culture at a lower effective temperature than th
 suggests, and for a shorter time than the session length suggests. That would reconcile it
 with the 40–45°C viability-decline range in chapter 07 without either being wrong.
 
-Until a probe reading exists, the honest statement is: **the setpoint is above conventional
-guidance, the core temperature is unknown, and the bread rises.**
+**Measured, 2026-09-13.** A thermometer in the empty oven cavity put the air at **~45°C** on
+the usual setting. That removes one unknown: domestic oven dials are unreliable at low
+settings, and the air really is where the setpoint claimed. It is a spot reading rather than
+a logged hold, so whether the oven *holds* 45°C or cycles around a lower mean is still open,
+and an empty cavity is not a loaded one.
+
+It also sharpens the problem rather than settling it. 45°C is exactly where chapter 07's
+gradient stops calling the range "viability decline" and starts calling it "thermal kill
+territory for most yeast". The levain's *surface* is therefore genuinely in the range the
+literature says should not work, which puts more weight on the gradient and lag arguments,
+not less — the explanation has to come from the core.
+
+So the honest statement is now: **the air is measured at 45°C, the core temperature is still
+unknown, and the bread rises.**
 
 ## Open tests
 
@@ -155,8 +167,10 @@ guidance, the core temperature is unknown, and the bread rises.**
    hot pulse. This is the single measurement that would settle the caveat above.
 2. **Bank life.** How many days in the fridge before the refeed noticeably lags? Mark jars by
    date and note the first slow one.
-3. **Does the hot build double?** Chapter 08's test. If the bank jars double in volume during
-   the hot build, the yeast are reproducing at that temperature.
+3. **Does the hot build double?** Chapter 08's test — but note that doubling shows gas
+   production, not cell division, so a positive result is suggestive rather than decisive.
+   Serial hot passage is the version that settles it. Protocol for both:
+   [The Levain Doubling Test](levain-doubling-test.md).
 4. **White versus wholegrain at storage.** One jar banked with 10% rye, one white-only, refed
    and heated side by side.
 5. **With and without the overnight rest.** Same levain, same formula, one dough straight to

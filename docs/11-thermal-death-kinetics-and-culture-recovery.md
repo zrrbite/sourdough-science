@@ -90,7 +90,9 @@ For a baker deliberately pushing temperature, this is a free safety margin that 
 
 ### Limits of this claim
 
-The *direction* is not in doubt; the *magnitude* in a sourdough matrix is unmeasured. No published work quantifies the D-value shift between a 50% and a 100% hydration levain at 40–45°C, and the reference list for this chapter carries no citation for that specific comparison because none was found. Treating the effect as a known quantity would be overreach.
+The *direction* is not in doubt; the *magnitude* in a sourdough matrix is unmeasured, and it is probably smaller than the general principle suggests. The dramatic heat-resistance gains in the food-microbiology literature come from genuinely dry matrices — water activities below 0.7, where thermal processes lengthen by orders of magnitude. **Every levain, stiff or liquid, sits far above that.** A 100% hydration levain and a 50% one are perhaps 0.99 against 0.95, and across that narrow band the effect is real but modest: plausibly a factor of a few in D-value, not a transformation. No published work quantifies that specific shift at 40–45°C, and the reference list for this chapter carries no citation for it because none was found. Treating the effect as a known quantity would be overreach.
+
+The practical reading: **this is a margin, not a licence.** Firming a levain from 100% to 85% — a common preference on rise and handling grounds — buys very little thermal protection, because most of the a_w change is still ahead of you. Going to a genuine 50–60% stiff levain buys more. Neither buys enough to extend a hot session safely.
 
 Two cautions follow. First, water activity does not repeal the kinetics: **duration remains the dominant variable**, and a stiff levain held hot for six hours is still a long session. Second, the protection is not uniform across the mass — a stiff levain also conducts heat differently and holds its gradient longer, which entangles this effect with the thermal lag of the previous chapter.
 
