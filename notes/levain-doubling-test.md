@@ -72,12 +72,12 @@ decisive version, see *Serial hot passage* below.
 
 ### Record before you start
 
-Five things, or run two is not comparable with run one:
+Six things, or run two is not comparable with run one:
 
 1. Mother source, and when it was last fed
-2. Feed ratio and total mass per jar
+2. Feed ratio, and the mass in each jar
 3. Temperature of the mix as it goes in
-4. Jar geometry — diameter and fill height, and the mass in each jar
+4. Jar geometry — diameter and fill height
 5. Oven setting, and whether the cavity is otherwise empty
 6. The control's actual temperature, measured rather than assumed
 
