@@ -72,6 +72,30 @@ The practical consequence is that **the thermal lag of a dough mass in a plastic
 
 It also implies that pre-warming a container, or dropping a small levain into an already-hot water bath, is *harsher* than it looks — both reduce the ramp and push the exposure toward shock conditions.
 
+## Water Activity: The Matrix Is a Thermal Protectant
+
+The second protective factor is the dough itself, and it is the one most easily overlooked because it never appears in a protocol as a number.
+
+**Microbial heat resistance rises sharply as water activity falls.** This is foundational food microbiology rather than anything specific to sourdough — it is why low-moisture foods are so much harder to pasteurise than wet ones, and why thermal processes for dry products are specified in hours where wet-process equivalents are specified in minutes. The same organism can be orders of magnitude more heat-resistant in a dry matrix than in broth.
+
+The mechanism is that thermal death is mediated by water. Irreversible protein unfolding and the hydrolytic reactions that follow it both require water as a participant, and membrane disordering depends on the aqueous environment at the lipid interface. Reduce the free water and the same temperature does less damage per unit time.
+
+There is a direct parallel already present in this chapter. Trehalose (Morano et al., 2012) protects yeast by acting as a compatible solute — stabilising proteins and membranes by replacing water at their surfaces. **A stiff levain does externally what trehalose does internally.** The cell is defended from both sides, and the external defence costs the baker nothing and requires no metabolic budget.
+
+### The practical consequence
+
+A stiff levain at 50–60% hydration is a **materially more protective matrix under heat** than a liquid levain at 100%. Chapter 04 presents the stiff/liquid choice as a flavour decision — lower water activity pushes heterofermentative LAB toward acetic acid, higher water activity toward lactic. That analysis is correct and incomplete. The same choice is also setting how much thermal abuse the culture can absorb, and the two effects point the same way: the levain that gives the sharper acid profile is also the one that survives heat better.
+
+For a baker deliberately pushing temperature, this is a free safety margin that is currently being spent on flavour without being recognised as a margin at all. **Stiffen the levain before raising the temperature**, not after something has gone wrong.
+
+### Limits of this claim
+
+The *direction* is not in doubt; the *magnitude* in a sourdough matrix is unmeasured. No published work quantifies the D-value shift between a 50% and a 100% hydration levain at 40–45°C, and the reference list for this chapter carries no citation for that specific comparison because none was found. Treating the effect as a known quantity would be overreach.
+
+Two cautions follow. First, water activity does not repeal the kinetics: **duration remains the dominant variable**, and a stiff levain held hot for six hours is still a long session. Second, the protection is not uniform across the mass — a stiff levain also conducts heat differently and holds its gradient longer, which entangles this effect with the thermal lag of the previous chapter.
+
+The comparison is straightforward to run: the same culture, built as a stiff levain and a liquid levain, held at the same setpoint for the same duration, then fed and timed to peak. A difference in recovery vigour is the effect.
+
 ## Compounding Stressors: Why Long Sessions Are Qualitatively Harsher
 
 A long hot session is not simply more of the same. The culture progressively creates a more hostile environment for itself, and each additional stressor lowers the thermal tolerance of the survivors.
@@ -170,6 +194,8 @@ Synthesising the kinetics with the empirical results elsewhere in this document:
 
 The single most useful mitigation is to **feed immediately before a hot session**, not after. A freshly fed culture enters the stress with maximum substrate, minimum accumulated acid and ethanol, and a full ATP budget — which is precisely the condition in which the heat shock response performs best.
 
+The second is to **build the levain stiff rather than liquid** when a hot session is planned. It costs nothing, changes the acid profile in a direction that suits hot protocols anyway, and buys thermal margin for free. Neither mitigation extends the duration a culture can tolerate; both raise the odds it comes through the duration already chosen.
+
 ## References for This Chapter
 
 - Leão C, van Uden N (1982). Effects of ethanol and other alkanols on the kinetics and the activation parameters of thermal death in *Saccharomyces cerevisiae*. *Biotechnology and Bioengineering* 24:1581–1590. — Ethanol exponentially enhances thermal death rate; effect scales with lipid solubility.
@@ -181,7 +207,7 @@ The single most useful mitigation is to **feed immediately before a hot session*
 - Morano KA, Grant CM, Moye-Rowley WS (2012). The response to heat shock and oxidative stress in *Saccharomyces cerevisiae*. *Genetics* 190(4):1157–1195. — HSP chaperones, trehalose thermoprotection, induced thermotolerance.
 - Shui W et al. A hierarchical transcriptional regulatory network required for long-term thermal stress tolerance in an industrial *Saccharomyces cerevisiae* strain. — Distinguishes short-term heat shock survival from long-term thermal stress tolerance; different regulatory requirements.
 
-> **Caveat on precision.** Published D- and z-values for *S. cerevisiae* are measured in defined buffers or growth media, not in dough. Dough is a low-water-activity, high-viscosity, compositionally complex matrix, and its solutes are broadly protective. Absolute D-values from the literature should be treated as *lower bounds* on survival time in dough, and the kinetics used qualitatively — to understand why duration matters more than temperature — rather than to predict a specific kill time.
+> **Caveat on precision.** Published D- and z-values for *S. cerevisiae* are measured in defined buffers or growth media, not in dough. Dough is a low-water-activity, high-viscosity, compositionally complex matrix, and its solutes are broadly protective — see *Water Activity: The Matrix Is a Thermal Protectant* above, where that protection is treated as a lever rather than only a source of error. Absolute D-values from the literature should be treated as *lower bounds* on survival time in dough, and the kinetics used qualitatively — to understand why duration matters more than temperature — rather than to predict a specific kill time.
 
 ---
 

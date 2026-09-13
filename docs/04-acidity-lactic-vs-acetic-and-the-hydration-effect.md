@@ -10,6 +10,8 @@ In a stiff levain, the lower water activity favours heterofermentative LAB metab
 
 In a liquid levain, higher water activity promotes homofermentative LAB metabolism, which produces primarily lactic acid. Lactic acid is milder, rounder, and less volatile. It is perceived mainly on the palate rather than the nose. This gentler acidity is often preferred for enriched doughs, lighter breads, or applications where you want the acid to stay in the background and let wheat flavour, butter, or other ingredients come forward.
 
+**The hydration choice also has a thermal consequence.** Lower water activity does not only shift LAB metabolism toward acetic acid — it makes the matrix itself protective against heat, because irreversible protein unfolding and membrane disordering are both water-mediated. A stiff levain is therefore the more heat-tolerant levain as well as the sharper one. This matters only if hot builds are in use; see chapter 11, *Water Activity: The Matrix Is a Thermal Protectant*.
+
 ## Commercial Yeast: Minimal Acidification
 
 Neither biga nor poolish produces meaningful acidification. The dough remains near neutral pH (5.5–6.0), which means gluten behaviour is not modified by acid, and the flavour profile stays in the realm of yeast-derived aromatics: fruity esters, mild alcohols, and a sweet wheaty character from enzymatic starch breakdown (especially prominent in the wetter poolish).

@@ -91,6 +91,10 @@ The lookup end of the document: what to buy, what to weigh, what to check.
 - [The Heat-Driven Levain Bank](notes/heat-driven-levain-bank.md) — the protocol as currently
   run: levains built hot and banked cold for days, refed hot with wholegrain on bake day, a hot
   pulse after mixing, then an overnight cold rest *before* bulk. Mechanism hypotheses and open tests.
+- [Why the Hot Protocol Works](notes/why-the-hot-protocol-works.md) — why fermenting above
+  conventional guidance keeps working. Argues the 28°C question dissolves (nothing is stressed
+  there, and the norm is a scheduling convention), and that the 40–50°C case is six ordinary
+  effects compounding rather than an unusual culture. Takes a position on ch. 08's open question.
 
 ---
 
@@ -133,8 +137,11 @@ the one before, so moving a file means rewriting its first paragraph.
 This is a live document, not a finished text. Things currently unresolved:
 
 - **Thermotolerance vs. temporal escape** (ch. 08) — is the culture genuinely heat-adapted, or
-  merely escaping via short exposure and thermal lag? The extended-bulk test described in
-  ch. 08 would distinguish these and has not been run.
+  merely escaping via short exposure and thermal lag? [Why the Hot Protocol
+  Works](notes/why-the-hot-protocol-works.md) now argues for the second, as one term in a
+  six-effect stack — but that is a stated bet, not a result. The decisive test is whether a
+  levain **doubles** during a hot build; the extended-bulk test in ch. 08 is the confirmatory
+  one. Neither has been run, and [`chamber/`](chamber/) exists to run them.
 - **Post-recovery culture assessment** (ch. 11) — the recovered culture has not yet been
   compared against a control on thermotolerance, flavour, and vigour.
 - **Ester/temperature direction** (ch. 13) — the literature genuinely conflicts. Needs a

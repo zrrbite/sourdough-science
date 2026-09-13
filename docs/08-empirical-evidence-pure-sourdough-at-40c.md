@@ -42,6 +42,8 @@ The practical test is straightforward: **extend the hot bulk and observe when le
 
 A complementary test is to build the levain at 40°C+ and observe whether it **doubles in volume** during the build, or merely ferments without visible expansion. If it doubles, the yeast are reproducing at 40°C — definitive evidence of thermotolerance. If it produces acid and flavour but does not expand significantly, the LAB are active but the yeast are not dividing, which points toward temporal escape. The leavening observed in the final bread would then come from pre-existing yeast cells metabolising without reproducing.
 
+A note elsewhere in this repository takes a position on these two hypotheses rather than leaving them balanced: [Why the Hot Protocol Works](../notes/why-the-hot-protocol-works.md) argues that temporal escape, compounded with thermal lag, the protective ramp, the fresh-feed-before-heat pattern, low water activity and the cool-core refuge, is sufficient to explain the result without an unusual culture. It is a bet rather than a finding, and it names the levain-doubling test above as the one that would falsify it.
+
 ## Implications for Culture Maintenance
 
 Under either hypothesis, the question of how the mother culture is maintained between bakes is critical.
