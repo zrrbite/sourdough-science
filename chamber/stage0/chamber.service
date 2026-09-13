@@ -1,0 +1,22 @@
+# sudo cp chamber.service /etc/systemd/system/
+# sudo systemctl daemon-reload && sudo systemctl enable --now chamber
+#
+# Note: a restart starts a NEW run directory. That is deliberate - a run that
+# was interrupted should not silently look continuous in the data.
+[Unit]
+Description=Fermentation chamber (stage 0)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/chamber/stage0
+ExecStart=/usr/bin/python3 /home/pi/chamber/stage0/chamber.py --config /home/pi/chamber/stage0/chamber.toml
+Restart=on-failure
+RestartSec=10
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

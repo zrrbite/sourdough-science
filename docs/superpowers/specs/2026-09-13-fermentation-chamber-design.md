@@ -1,9 +1,14 @@
 # Fermentation Chamber — Design
 
 **Date:** 2026-09-13
-**Status:** design approved, awaiting implementation plan
+**Status:** design approved. **Stage 0 is built** (`chamber/stage0/`) — see §15.
+The full instrument below is not built.
 **Scope:** a temperature-controlled, logging fermentation chamber, built as the
 `chamber/` subtree of this repository.
+
+> **Read §15 first if you want to do something this week.** Sections 1–14
+> describe the full instrument. Stage 0 is a ~€45 subset of it that already runs
+> and already answers the measurement questions; it was built first on purpose.
 
 ---
 
@@ -369,3 +374,91 @@ setpoint to chase.
   is comfortable for the planned programme, and it is what makes the empirical
   claims checkable — consistent with the document's stated
   empirical-versus-literature convention.
+
+## 15. Stage 0 — the smallest version, built first
+
+Sections 1–14 describe an instrument worth building. They also describe one that
+measures nothing until parts arrive and firmware works. Stage 0 exists because
+of a property of the problem worth stating plainly: **the design has two
+separable halves — hold a temperature, and record what happened — and the
+recording half is both cheaper and the one that produces knowledge.** Every open
+thread here is a measurement question. None of them need temperature held better
+than an oven already holds it; they need to know what temperature actually
+occurred.
+
+### What was considered
+
+| | Approach | Cost | What it gives up |
+|---|---|---|---|
+| 0 | Probe thermometer and a notebook | €0 | No overnight, ~12 points, human sampling error |
+| 1 | 4-probe WiFi BBQ thermometer | ~€45 | Unknown probe calibration, vendor app owns the data |
+| 2 | ITC-308 plug-in thermostat + heat mat | ~€50 | Holds but does not log — no data at all |
+| 3 | 1 + 2 together | ~€95 | No manifest discipline, no duty record, no path to profiles |
+| **4** | **Pi + heat source + smart plug + probes** | **~€45** | PID, hardware cut-out, RH, profiles |
+
+### What was built
+
+A Raspberry Pi reading DS18B20 probes over the kernel's 1-Wire driver, switching
+a **ceramic heat emitter** through a **smart plug's local HTTP API**, holding a
+setpoint by hysteresis and logging every sample to CSV. `chamber/stage0/`,
+~€45 assuming a Pi and a box already exist.
+
+Two decisions inside that are worth recording:
+
+- **A smart plug rather than a relay board.** The Pi's entire involvement with
+  230 V becomes one HTTP request, and nothing mains-side sits in a humid box. It
+  removes the mains question rather than managing it, for about €15.
+- **A ceramic heat emitter rather than a lightbulb.** Same socket, no light,
+  rated for continuous humid duty — and it sidesteps the fact that LED bulbs make
+  no heat and incandescents are increasingly hard to buy. It does need clearance:
+  its surface will scorch foam or cardboard.
+
+### Why hysteresis is adequate, not a compromise
+
+The dough's own thermal mass low-passes the air swing: a ±1 °C wobble in chamber
+air barely reaches the core. That is ch. 10's thermal lag working in the baker's
+favour. PID is a refinement, not a requirement, and the control law is isolated
+in `controller.py` so swapping it touches one function.
+
+### What Stage 0 keeps from the full design
+
+Everything that outlives the hardware — which is the whole point of §4's
+contract:
+
+- The file layout: one directory per run, `samples.csv` + `manifest.json`, both
+  carrying `schema_version`.
+- One CSV column per probe role, so adding a probe adds a column.
+- Calibration offsets recorded in every manifest, applied additively, so
+  `raw = logged − offset` exactly and no information is lost by storing one
+  number per probe.
+- The `load` block as the experiment log.
+- `heating` logged 0/1 per sample, so duty over any window is its mean.
+- The heater switched off on every exit path, including crashes and
+  `systemctl stop`.
+
+Runs recorded by Stage 0 therefore stay directly comparable with runs recorded
+by the full instrument, and `analyse.py` will not know the difference.
+
+### What it drops, and the honest consequence
+
+PID, the PTC heater and MOSFET, humidity logging, the backfill ring buffer, and
+profiles. Most of those are refinements. One is not: **the hardware thermal
+cut-out.** Stage 0's `max_temp_c` is a software check and cannot help if the Pi
+hangs. The €2 KSD9700 from §5 is worth adding before anything runs unattended
+overnight, and it is independent of everything in this repository.
+
+### Verification
+
+50 unit tests, standard library only. The HTTP switch is tested against a real
+local server rather than a mock; the control loop is tested with real probe
+files and a real run directory. End-to-end, with simulated probes warming past
+the setpoint: heater on while cold, off at 41.0 °C against a 40 °C setpoint and
+a 0.25 °C band, clean SIGTERM shutdown with the heater left off and the manifest
+patched with `ended_utc`.
+
+### What Stage 0 tells you about whether to build §1–14 at all
+
+A few logged runs will show how badly the box actually drifts. If it holds
+43 ± 2 °C, the full PID instrument is a luxury. If it swings 30–55 °C, the case
+is made with your own data. Either way the €45 was the right spend, and nothing
+is thrown away.

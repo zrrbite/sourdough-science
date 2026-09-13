@@ -1,0 +1,44 @@
+# Copy to chamber.toml and edit. Nothing here is secret.
+
+setpoint_c   = 40.0     # what the chamber air is held at
+band_c       = 0.25     # heat below setpoint-band, stop above setpoint+band
+min_dwell_s  = 60       # minimum time between plug switches; spares the relay
+max_temp_c   = 55.0     # software cut-out. NOT the safety layer, just the first one
+interval_s   = 10       # seconds between samples
+control_role = "air"    # which probe closes the loop; log the rest
+data_dir     = "~/chamber-runs"
+
+# Smart plug with a local HTTP API. No cloud account, no mains wiring.
+#   Shelly Gen1  http://IP/relay/0?turn=on              http://IP/relay/0?turn=off
+#   Shelly Gen2  http://IP/rpc/Switch.Set?id=0&on=true  http://IP/rpc/Switch.Set?id=0&on=false
+#   Tasmota      http://IP/cm?cmnd=Power%20On           http://IP/cm?cmnd=Power%20Off
+[switch]
+on_url  = "http://192.168.1.50/relay/0?turn=on"
+off_url = "http://192.168.1.50/relay/0?turn=off"
+
+# One block per probe. Get the ids from: ./chamber.py --list-probes
+# offset_c comes from the calibration bath; it is recorded in every run manifest,
+# so a run stays interpretable even if you recalibrate later.
+[[probes]]
+role     = "air"
+id       = "28-0000063d1f2a"
+offset_c = 0.0
+
+[[probes]]
+role     = "core"
+id       = "28-0000063d4b11"
+offset_c = -0.12
+
+# [[probes]]
+# role = "ambient"
+# id   = "28-0000063d9c07"
+
+# Free-form, copied verbatim into the run manifest. This is the experiment log:
+# without it, run two is not comparable with run one.
+[load]
+dough_mass_g = 1000
+container    = "2.4 L round PP tub, lid on"
+flour        = "Caputo Oro"
+hydration_pct = 70
+levain_pct   = 20
+notes        = "thermal lag, ch. 10"
