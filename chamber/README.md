@@ -15,6 +15,8 @@ are all arguing about.
   the chamber's own physics, and a listener. Simulated end to end, no hardware needed. It
   exists because a wired dough-core probe means a cable through the chamber seal; a probe that
   advertises does not.
+- **[`term/`](term/)** — the same run in a terminal, drawn with braille graphs. Follows the
+  local listener, or replays a recorded CSV. No dependencies.
 - **Full instrument** — designed, not built:
   [`../docs/superpowers/specs/2026-09-13-fermentation-chamber-design.md`](../docs/superpowers/specs/2026-09-13-fermentation-chamber-design.md).
   ESP32, PID over a PTC heater, four probes, three independent safety layers,
