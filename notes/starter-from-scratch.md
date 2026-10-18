@@ -21,6 +21,8 @@
 - **Notes PDF:** free from [her Gumroad page](https://fullproofbaking.gumroad.com/l/hdAXB),
   with timestamps and her answers to common questions.
 - **After day 14:** [her maintenance video](https://www.youtube.com/watch?v=beKzcOe6w_o).
+- **To print:** the schedule on one A4 page, [starter-cheatsheet.pdf](starter-cheatsheet.pdf)
+  ([markdown](starter-cheatsheet.md)).
 
 ---
 
