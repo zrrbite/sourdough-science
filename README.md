@@ -86,6 +86,10 @@ The lookup end of the document: what to buy, what to weigh, what to check.
 
 ### Notes
 
+- [Starting a Starter From Scratch](notes/starter-from-scratch.md) — the step before every
+  chapter: Full Proof Baking's 14-day method day by day, in grams and hours, alongside the
+  microbial succession it follows (the early rise is bacteria, the day-5 lull is the hand-over).
+  Also why to start warm but not hot, and what changes for this kitchen.
 - [Accelerating Proteolysis: pH, Heat, and Salt](notes/proteolysis-ph-heat.md) — working notes on
   whether a heat boost can substitute for long fermentation in driving protease activity.
 - [The Heat-Driven Levain Bank](notes/heat-driven-levain-bank.md) — the protocol as currently
