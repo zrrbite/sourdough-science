@@ -6,7 +6,8 @@
 > the level of grams and hours so it can be followed at the bench. Alongside it is what the
 > literature says is happening in the jar at each stage. Most of the steps that put people
 > off, such as the early rise that dies and the smell, turn out to be an ordinary and
-> well-documented succession of microbes.
+> well-documented succession of microbes. A later section covers the other way to get a
+> working culture: drying a backup and reviving it.
 >
 > The method below is taken from the title card she puts up at every feed, which gives the
 > day's observations and the feed in grams, and checked against her narration on
@@ -108,7 +109,7 @@ for 2× and 3×:
   1:10:10 if the starter can take it.
 - **Write down** volume increase, consistency and smell at every feed.
 - **Storage:** the fridge covers 2–4 weeks with no feed at all. Dehydrated, it keeps for
-  years as a backup.
+  years as a backup. See *Drying a backup and reviving it* below.
 - Her closing card sums it up: **"Feed at peak! Monitor your starter! Keep it warm!"**
 
 ---
@@ -244,6 +245,113 @@ combination is this note's suggestion and has not been tried.
 
 ---
 
+## Drying a backup and reviving it
+
+Her storage rule says a dried starter keeps for years as a backup. Chapter 11 gives the
+reason to keep one: after a heat kill, a backup is the only way back to the original culture,
+rather than to whatever the flour supplies. The revival recipe below was worked out in a
+conversation with Claude in September 2026, after a starter was left too long in a hot oven,
+and is checked here against the literature. The recipe holds up. Two of the reasons given
+with it do not, and correcting one of them changes the method (*Soak warm, not cool*).
+
+### Drying it
+
+- **Spread it thin** on baking paper and leave it at room temperature until it snaps, about
+  24–48 h (Country Roads Sourdough). Crumble it and store it airtight, dry, cool and dark.
+- **No oven and no warm dehydrator.** Until the film is dry it is a wet culture, and chapter
+  11's limits apply: hours at 40–45°C is high risk. The same guide allows a dehydrator only
+  below 37°C. Once the film is dry, heat is much less of a threat (below).
+- **Which stage to dry is open.** The usual advice is a starter at peak (Country Roads
+  Sourdough). *(Hypothesis:)* the literature points later. In *S. cerevisiae*, fewer than
+  one growing cell in a million survived air-drying, against 20–40% from cultures that had
+  run out of food and stopped growing (Calahan et al. 2011). A starter at peak is running out
+  of food, and one that has peaked and begun to fall is further along. The transfer is
+  uncertain: the study ties the tolerance to the switch to respiration when sugar runs out,
+  a starter jar is short of oxygen, and no sourdough yeast was tested. That is open test 4.
+
+### Reviving it
+
+1. **Soak:** crumble about 10 g of flakes into 20–30 g of water at 35–38°C (see below) and
+   leave it 30–60 min to soften.
+2. **Flour:** stir in about 20 g, whole rye or wholemeal for the fastest start. Cover
+   loosely and keep at 24–26°C.
+3. **Wait for bubbles**, then feed 1:1:1 every 12 h.
+4. **Expect** activity within 24–48 h and a reliable doubling by day 3–4. Give it one or two
+   feeds on the usual flour and ratio before baking with it.
+5. **Dry a new backup** from it once it doubles reliably.
+
+Country Roads Sourdough gives almost the same recipe (5 g of flakes, 20 g of water, 30 min,
+20 g of flour, 25–29°C) but feeds once a day at 1:2:2 and expects it to take about a week.
+Treat day 3–4 as the fast end of the range, and a week as normal.
+
+**Why 1:1:1, when chapter 11 recovers a culture at 1:10:10.** Chapter 11 dilutes hard
+because its survivors sit in the acid and ethanol the culture made while it was dying.
+Rehydrated flakes carry only the acid of the starter they were dried from, diluted about as
+much as a 1:1:1 feed would dilute it. Diluting a small population hard also hands the jar
+to whatever arrives with the fresh flour. This is reasoning, not a measured result; the
+from-scratch method makes the same choice on days 3–8.
+
+**Record** the age of the flakes, the soak temperature, and the day of the first bubbles and
+of the first doubling. Open tests 4 and 5 need those numbers.
+
+### Soak warm, not cool
+
+The chat advised lukewarm rather than hot water, then put lukewarm at 25–30°C, because the
+cells are most fragile in the first minutes as water rushes back in. The fragility is real,
+but it runs the other way: the documented hazard is **cold** water.
+
+As a dry cell takes up water, its membrane lipids pass from a gel to a fluid state. If that
+happens in cold water, the membrane leaks while it changes state and the cell loses its
+contents. This is imbibitional damage. It was measured in pollen, with dry yeast named as a
+case of the same mechanism (Crowe et al. 1989). In active dry yeast rehydrated at 0°C
+against 40°C, the cold-soaked cells respired and fermented less, their membranes did not
+reseal even after hours at 40°C, and few of them grew on plates (Peña et al. 1992).
+
+So soak at 35–38°C, warm on the wrist but not hot, then hold the jar at 24–26°C. Half an
+hour at 38°C is a brief excursion by chapter 11's standards. Cold tap water is the case to
+avoid. Country Roads Sourdough asks for room-temperature water and notes only that cold
+slows things down.
+
+The limits: the mechanism was measured in pollen, and the yeast result is from commercial
+*S. cerevisiae* dried pure. Flakes are wild yeast and LAB embedded in flour, which may wet
+more slowly and soften the effect. Peña et al. compared 0 with 40°C and say nothing about 20°C. The direction is
+supported; the size of the penalty at room temperature is not known. That is open test 5.
+
+### Dry is heat-proof; drying is not
+
+The chat also said dried cells "lose the water that normally buffers them against
+temperature", so that their heat tolerance drops. That is backwards, and it contradicts
+chapter 11's section on water activity. Dried *S. cerevisiae* kept full viability through
+60 min at 75°C, and through 10 min at 100°C at 12% relative humidity (Ribert et al. 2021).
+In a wet culture, the D-value is already under a minute at 55°C (chapter 11).
+
+The risk it was reaching for is real, but it belongs to the wet start of drying, not the dry
+end. A thin film in a warm oven stays wet for hours, and a wet culture held hot for hours is
+chapter 11's territory. The conclusion stands for a different reason: dry it at room
+temperature.
+
+### How long it keeps
+
+Her rule says years. The data say it loses ground every month, but slowly enough not to
+matter much:
+
+- Air-dried *S. cerevisiae* held about 20% survival over a month (Calahan et al. 2011).
+- Dried *S. cerevisiae* at 25°C and 55% relative humidity lost 1.24 log, about 94%, in a
+  year (Ribert et al. 2021).
+- A spray-dried sourdough powder lost about 2.5 log of both LAB and yeast in 90 days, in the
+  best of four packagings (Hajar-Azhari et al. 2024). That sourdough was started from
+  kombucha, so it is a loose analogue.
+
+Each tenfold loss costs about 3.3 doublings to make up, so an old backup wakes more slowly
+rather than not at all. Chapter 11's point that even a 4–5 log reduction leaves survivors
+applies here. What may not come back intact is the balance. Yeast and LAB need not survive
+drying equally, and no study found here measured that for a home-dried starter, so a revival
+is a small bottleneck of the kind chapter 11 describes under *After Recovery*. Replacing the
+backup once a year from the live starter, as Country Roads Sourdough suggests, keeps the
+storage loss small.
+
+---
+
 ## What to record
 
 Her list, plus what [the doubling test](levain-doubling-test.md) learned about making
@@ -267,6 +375,12 @@ rubber-band readings comparable:
 2. **Does a culture begun at 30°C take to the hot protocol better** than one begun at 24°C?
    Only meaningful once both pass the tripling test, and run on split lineages per chapter 08.
 3. **Juice versus water**, Wink's own design: two identical jars, one with juice on days 1–3.
+4. **Dry at peak or after it.** Two films from the same jar, one spread at peak and one a few
+   hours after it has fallen. Revive equal weights the same way and compare the day each
+   first doubles. Calahan et al. (2011) predicts the later film wins.
+5. **Soak temperature.** Equal weights of the same flakes, one soaked at 37°C and one in cold
+   tap water, then both held at 24–26°C. Compare the first bubbles and the first doubling.
+   Peña et al. (1992) predicts the cold soak is slower.
 
 ---
 
@@ -276,7 +390,8 @@ rubber-band readings comparable:
 - Chapter 08 for maintaining the mother at room temperature and building hot from it.
 - Chapter 09 for temperature as a selection pressure, and the Van der Meulen 2011 result.
 - Chapter 11 for the recovery protocol, which is the same problem as a new start at lower
-  stakes, and for why feeding a collapsed culture costs strength.
+  stakes, for why feeding a collapsed culture costs strength, and for the case for keeping a
+  backup.
 - [The Levain Doubling Test](levain-doubling-test.md) for making rubber-band readings
   comparable.
 - [The Heat-Driven Levain Bank](heat-driven-levain-bank.md) for where a finished starter
@@ -312,6 +427,27 @@ rubber-band readings comparable:
 - Reese AT, Madden AA, Joossens M, Lacaze G, Dunn RR (2020). Influences of ingredients and
   bakers on the bacteria and fungi in sourdough starters and bread. *mSphere*
   5(1):e00950-19.
+- Country Roads Sourdough. *Dehydrating and Rehydrating Sourdough Starter: A How To Guide*.
+  https://countryroadssourdough.com/dehydrating-and-rehydrating-sourdough-starter/ —
+  Practitioner recipe for drying and reviving. Not peer-reviewed.
+- Calahan D, Dunham M, DeSevo C, Koshland DE (2011). Genetic analysis of desiccation
+  tolerance in *Saccharomyces cerevisiae*. *Genetics* 189(2):507–519. — Fewer than one
+  growing cell in a million survives air-drying, against 20–40% from saturated cultures;
+  respiration before drying is required, trehalose is not.
+- Crowe JH, Hoekstra FA, Crowe LM (1989). Membrane phase transitions are responsible for
+  imbibitional damage in dry pollen. *PNAS* 86(2):520–523. — The leakage mechanism on
+  rehydration; measured in pollen, with dry yeast named as a case of it.
+- Peña A, Uribe S, Clemente M, Sánchez N (1992). Rehydration temperature is critical for
+  metabolic competence and for membrane integrity in active dry yeast (ADY). *Archives of
+  Microbiology* 158(2):75–80. — Rehydration at 0°C against 40°C.
+- Ribert P, Dupont S, Roudaut G, Beney L (2021). Effect of devitrification on the survival
+  and resistance of dried *Saccharomyces cerevisiae* yeast. *Applied Microbiology and
+  Biotechnology* 105(16–17):6409–6418. — Dried yeast survives 75°C for 60 min; 1.24 log
+  lost in a year at 25°C.
+- Hajar-Azhari S, Mohd Roby BH, Jemain SN, Meor Hussin AS (2024). Sourdough powder:
+  physicochemical, microbiological properties and shelf-life stability in different
+  package type. *Journal of Food Science and Technology* 61(9):1701–1710. — Storage losses
+  in a spray-dried, kombucha-started sourdough.
 
 ---
 
