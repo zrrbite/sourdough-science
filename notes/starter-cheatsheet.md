@@ -31,6 +31,7 @@ jar with a rubber band, a 0.1 g scale and 24°C. Cloth cover until day 8, then a
 - **Day 12:** 10% rye mix = leftover 30% mix + twice its weight in bread flour.
 - **Done** when it triples in 4–6 h on 1:2:2 at 27°C (oven, light on). Video's day 14: 3× in 7 h.
 - **Discard** if pink, orange or fuzzy. **No 40°C+ builds** until done. Fridge: 2–4 weeks.
+- **Dried backup:** soak 10 g in 25 g water at 35–38°C, 30 min; +20 g flour; then as day 4.
 
 Source: [Full Proof Baking, 2019](https://www.youtube.com/watch?v=m6pGkOuZnrk)
 

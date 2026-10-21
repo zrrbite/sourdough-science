@@ -275,7 +275,9 @@ with it do not, and correcting one of them changes the method (*Soak warm, not c
    leave it 30–60 min to soften.
 2. **Flour:** stir in about 20 g, whole rye or wholemeal for the fastest start. Cover
    loosely and keep at 24–26°C.
-3. **Wait for bubbles**, then feed 1:1:1 every 12 h.
+3. **Wait for bubbles**, then feed 1:1:1 every 12 h. Keep 20 g, discard the rest, and add
+   20 g each of water and flour, the same feed as day 4. Feeding the whole jar instead lets
+   the ratio fall with every feed.
 4. **Expect** activity within 24–48 h and a reliable doubling by day 3–4. Give it one or two
    feeds on the usual flour and ratio before baking with it.
 5. **Dry a new backup** from it once it doubles reliably.
