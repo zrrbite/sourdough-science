@@ -16,7 +16,7 @@ The effect of acid on pizza dough is paradoxical. Moderate acidity increases ext
 
 ## Volatile Precursor Loss
 
-Extended fermentation also costs flavour, counterintuitively. During each degas, fold, or punch-down, CO₂ leaving the dough acts as a carrier gas, stripping volatile alcohols and early-formed esters from the dough matrix. A dough fermented for 72 hours has been degassed multiple times, and each event removes some of the aromatic precursors that would otherwise contribute to crust flavour during baking. The dough may taste more acidic (non-volatile acids remain), but the aromatic complexity — the fruity, estery top notes — can actually diminish.
+Extended fermentation also costs flavour, counterintuitively. During each degas, fold, or punch-down, CO₂ leaving the dough acts as a carrier gas, stripping volatile alcohols and early-formed esters from the dough matrix. A dough fermented for 72 hours has been degassed multiple times, and each event removes some of the esters and alcohols the yeast has made. The dough may taste more acidic (non-volatile acids remain), but the aromatic complexity — the fruity, estery top notes — can actually diminish.
 
 ## Crust Texture: Gummy vs. Crisp
 

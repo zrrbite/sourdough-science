@@ -1,12 +1,12 @@
 # Why Cold Ferment With Commercial Yeast at All?
 
-If esterification requires organic acids reacting with alcohols, and commercial yeast produces far less organic acid than LAB, why does a pure commercial yeast cold ferment produce complex flavour at all? The answer is that the dominant flavour engine in a long commercial yeast retard is not ester chemistry — it is Maillard precursor accumulation. Understanding this distinction clarifies exactly what the hybrid approach adds.
+Chapter 13 placed ester synthesis in enzymes rather than in the levain's acids, so a commercial yeast dough with no levain still makes esters. But esters are not what makes a long commercial yeast cold ferment taste complex. The dominant flavour engine there is Maillard precursor accumulation. Understanding this distinction clarifies exactly what the hybrid approach adds.
 
 ## Yeast Does Produce Some Acids and Esters
 
-Commercial *S. cerevisiae* is not acid-silent. It produces pyruvic acid, succinic acid, malic acid, and small amounts of acetic acid as normal metabolic byproducts. However, the concentrations are in the millimolar range — far below the tens of millimolar concentrations produced by LAB. The free organic acid pool available for chemical esterification is therefore limited, and ester yield from this pool alone is modest.
+Commercial *S. cerevisiae* is not acid-silent. It produces pyruvic acid, succinic acid, malic acid, and small amounts of acetic acid as normal metabolic byproducts. However, the concentrations are in the millimolar range — far below the tens of millimolar concentrations produced by LAB, so a commercial yeast dough tastes far less sour.
 
-More importantly, yeast produces esters **enzymatically**, independent of free organic acids in the dough. The ATF1 and ATF2 alcohol acetyltransferase enzymes catalyse ester synthesis directly from **acetyl-CoA** (an intracellular metabolic intermediate) and alcohols. This pathway does not require free lactic or acetic acid — it uses acetyl-CoA as the acyl donor. This is the same enzymatic route responsible for isoamyl acetate (banana character) and ethyl acetate (fruity, solvent-like) in brewing. During the cold retard, these enzymes continue working, albeit at reduced rates because cold suppresses enzyme kinetics. The result is a low but non-zero baseline of ester production even without LAB.
+Yeast produces esters **enzymatically**, independent of free organic acids in the dough. The ATF1 and ATF2 alcohol acetyltransferase enzymes catalyse ester synthesis directly from **acetyl-CoA** (an intracellular metabolic intermediate) and alcohols. This pathway does not require free lactic or acetic acid — it uses acetyl-CoA as the acyl donor. This is the same enzymatic route responsible for isoamyl acetate (banana character) and ethyl acetate (fruity, solvent-like) in brewing. EHT1 and EEB1 do the same for the ethyl esters, from fatty acyl-CoA and ethanol. During the cold retard, these enzymes continue working, albeit at reduced rates because cold suppresses enzyme kinetics. The result is a low but non-zero baseline of ester production even without LAB.
 
 ## The Real Engine: Maillard Precursor Accumulation
 
@@ -18,19 +18,19 @@ When the dough enters the oven, this accumulated pool of reducing sugars and fre
 
 ## What Commercial Yeast Cold Ferment Lacks
 
-A pure commercial yeast cold ferment therefore gives you: strong Maillard flavour complexity (from precursor accumulation), sugar depletion (for burn prevention at high heat), dough relaxation (for easier stretching), and a low baseline of enzymatic esters. What it does *not* give you is a significant pool of organic acids for chemical esterification, the direct flavour compounds produced by LAB metabolism (diacetyl, acetaldehyde, organic acids themselves as taste-active molecules), or the acid-modified gluten rheology that gives sourdough its distinctive handling character.
+A pure commercial yeast cold ferment therefore gives you: strong Maillard flavour complexity (from precursor accumulation), sugar depletion (for burn prevention at high heat), dough relaxation (for easier stretching), and a low baseline of enzymatic esters. What it does *not* give you is the direct flavour compounds produced by LAB metabolism (diacetyl, acetaldehyde, organic acids themselves as taste-active molecules), the esters some LAB make (chapter 13), or the acid-modified gluten rheology that gives sourdough its distinctive handling character.
 
 ## The Hybrid Completes the Picture: Three Flavour Systems
 
-This is precisely the gap the hybrid approach fills. By combining commercial yeast (for leavening and Maillard precursor development) with a sourdough levain (for organic acid substrate and LAB flavour compounds), the hybrid stacks three distinct flavour systems in a single dough:
+This is precisely the gap the hybrid approach fills. By combining commercial yeast (for leavening and Maillard precursor development) with a sourdough levain (for organic acids and LAB flavour compounds), the hybrid stacks three distinct flavour systems in a single dough:
 
 **1. Maillard chemistry** — free amino acids + reducing sugars, accumulated during the long cold retard, reacting at oven temperatures to produce melanoidins, pyrazines, furanones, and Strecker aldehydes. This system is driven by time and enzymatic breakdown, and benefits from the long retard regardless of which organism does the leavening.
 
-**2. Ester chemistry** — yeast-produced alcohols + LAB-produced organic acids (lactic, acetic), reacting both enzymatically (ATF1/ATF2 during fermentation) and thermally (in the oven crust). This system is uniquely enabled by the hybrid because it requires both the alcohol pool (from yeast) and the organic acid pool (from levain). A pure commercial yeast dough has the alcohols but lacks the acids. A pure sourdough has both but loses volatile alcohols during its longer fermentation.
+**2. Ester chemistry** — fruity esters made by enzymes during fermentation (chapter 13): acetate and ethyl esters by the yeast, from acyl donors it makes itself, and ethyl acetate and ethyl lactate by some LAB, plausibly from their acid and the yeast's ethanol. The yeast route works in any dough with active yeast. The LAB route needs both partners, so the levain adds it, though not every levain carries LAB that do it. The esters are volatile: the oven can keep or lose them, but does not make them.
 
 **3. Direct LAB metabolites** — lactic acid, acetic acid, diacetyl, acetaldehyde, and other compounds produced by LAB metabolism, contributing their own taste and aroma directly. These are present in the levain and carry through to the final dough. They provide the tang, the creamy notes, and the aromatic complexity that no amount of Maillard chemistry can replicate.
 
-No single-culture approach gives you all three systems at full expression. Commercial yeast alone provides system 1 and a weak version of system 2. Pure sourdough provides all three but compromises system 2 (volatile precursor loss) and imposes structural and timing penalties. The hybrid maximises all three while maintaining structural integrity and schedule predictability. This is why it is more than the sum of its parts.
+No single-culture approach gives you all three systems at full expression. Commercial yeast alone provides system 1 and the yeast half of system 2. Pure sourdough provides all three, but with a smaller yeast population whose ester genes vary by strain (chapter 13), a longer ferment that may lose more volatiles (chapter 16), and structural and timing penalties. The hybrid maximises all three while maintaining structural integrity and schedule predictability. This is why it is more than the sum of its parts.
 
 ```mermaid
 flowchart TD
@@ -38,7 +38,7 @@ flowchart TD
         A["Free Amino Acids<br/>+ Reducing Sugars"] -->|"Oven heat"| B["Melanoidins · Pyrazines<br/>Furanones · Strecker Aldehydes"]
     end
     subgraph S2 ["2 · Ester Chemistry"]
-        C["Yeast Alcohols<br/>+ LAB Organic Acids"] -->|"Enzymatic + thermal"| D["Ethyl Acetate · Ethyl Lactate<br/>Complex Aromatic Esters"]
+        C["Yeast: Alcohols + Acetyl-CoA<br/>LAB: Lactic Acid + Ethanol"] -->|"Enzymes, during fermentation"| D["Acetate Esters · Ethyl Esters<br/>Ethyl Lactate"]
     end
     subgraph S3 ["3 · Direct LAB Metabolites"]
         E["LAB Metabolism"] --> F["Lactic Acid · Acetic Acid<br/>Diacetyl · Acetaldehyde"]

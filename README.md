@@ -127,7 +127,7 @@ Formulas and temperatures assume this setup. Adjust accordingly.
 
 - **Empirical vs. literature.** Where my own results contradict published findings, both are
   stated and the conflict is left open rather than resolved. See chapter 08 in particular.
-- **Contested evidence is flagged inline**, not hidden. Chapter 13 carries a note on
+- **Contested evidence is flagged inline**, not hidden. Chapter 07 carries a note on
   conflicting ester/temperature findings; chapter 25 carries one on chemical vs. biological
   acidification.
 - **Baker's percentages** throughout, on total flour including levain flour unless stated.
@@ -163,7 +163,7 @@ This is a live document, not a finished text. Things currently unresolved:
   one. Neither has been run, and [`chamber/`](chamber/) exists to run them.
 - **Post-recovery culture assessment** (ch. 11) — the recovered culture has not yet been
   compared against a control on thermotolerance, flavour, and vigour.
-- **Ester/temperature direction** (ch. 13) — the literature genuinely conflicts. Needs a
+- **Ester/temperature direction** (ch. 07) — the literature genuinely conflicts. Needs a
   side-by-side taste test against a room-temperature control.
 - **Strecker/pyrazine crust claim** (ch. 17) — the least directly evidenced claim in the
   document. Wants a sensory comparison.

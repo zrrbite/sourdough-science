@@ -13,7 +13,7 @@
 | Stone recovery | N/A | 3–5 min at full flame between pizzas |
 | Primary burn risk | Low — more browning fuel is welcome | High — residual sugar carbonises at max flame |
 | Raw centre risk | Very low (long bake) | High at max flame — moderate flame solves this |
-| Ester development | Extended thermal phase, rich expression | Good at 2–3 min; compressed at 60s |
+| Crust aroma (Maillard) | Extended thermal phase, rich expression | Good at 2–3 min; compressed at 60s |
 | Key advantage of hybrid | Flavour complexity in longer bake | Sugar depletion + flavour + cooked-through centre |
 
 ---
