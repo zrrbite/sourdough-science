@@ -290,6 +290,64 @@ does not seem sensitive to them.
 **Record** the age of the flakes, roughly how much went in, the water temperature, and the
 day of the first activity and of the first doubling. Open tests 4–6 need those numbers.
 
+### What drying does, and what water undoes
+
+A dried starter is not a paused starter. Drying removes some of what was in the jar, keeps
+the rest, and kills most of the cells, and rehydration starts from what is left.
+
+| What | Through drying | Why |
+|---|---|---|
+| Water | Leaves, down to equilibrium with the room | — |
+| CO₂ and ethanol | Leave | A gas and a volatile, from a thin film |
+| Acetic acid | About half leaves | Volatile: 57% kept through freeze-drying (Kline 1979) |
+| Lactic acid | Mostly stays | Not volatile: 85% kept through freeze-drying (Kline 1979) |
+| Spent flour: starch, gluten, bran, minerals | Stays | Already part-fermented, so little food is left in it |
+| Flour enzymes | Stay, idle until wet | Flour is itself a dry product whose enzymes work once wetted |
+| Cells | A minority survive dormant; the rest die | Below |
+
+The acid figures are from freeze-drying, which is fast and cold. Slow air-drying probably
+loses at least as much acetic acid. What the flake carries back is therefore mostly lactic
+acid, which is why the dose matters (*Why a pinch, not a spoonful*).
+
+**The first hours: still a starter.** A freshly spread film keeps fermenting until it has
+lost too much water to grow, so it goes on making acid for a while. As the water goes,
+everything dissolved in it concentrates: sugars, salts and acids. The cells face rising
+osmotic and acid stress before they are ever dry. This part is reasoning; nothing here
+measured it.
+
+**Drying: who survives.** Cells that have stopped growing survive drying far better than
+growing ones (Calahan et al. 2011, under *Drying it*). The damage that kills the rest is
+mechanical, structural and oxidative (Dupont et al. 2014, for yeast). In LAB, the membrane
+is the main site of injury, at the points where it changes phase during drying or
+rehydration (Santivarangkna et al. 2008). The two partners do not survive equally. In a
+freeze-dried San Francisco starter, 35% of the bacterium, *L. sanfrancisco* (now
+*Fructilactobacillus sanfranciscensis*), survived with a protective additive, and 0.7%
+without. The yeast, then called *Torulopsis holmii*, fell below 0.01%: the
+patent calls it "destroyed by freeze-drying" (Kline 1979). Freeze-drying is not air-drying,
+and this is a patent rather than a paper. But it is the only sourdough-specific comparison
+found, and it points the same way as the revival here: the yeast is the bottleneck.
+
+**The dry flake.** Air-dried flakes end up in equilibrium with the room. Water activity
+equals the relative humidity divided by 100 (FDA 1984), so a kitchen at 50% gives about
+0.5, far below anything that grows. Metabolism stops. Dried yeast kept at 55% relative
+humidity survived 3 months with no loss (Ribert et al. 2021). Losses in storage come mainly
+from oxidation of membrane lipids, and temperature and moisture set the rate (Santivarangkna
+et al. 2008). That is the reason for airtight, cool and dark.
+
+**Rehydration.** Four things happen at once:
+
+- The lactic acid redissolves. A pinch gives the fresh flour a small dose; a spoonful gives
+  close to full-strength starter acid.
+- The flour enzymes in the fresh flour, and any left in the flake, start freeing sugar
+  again.
+- Surviving cells take up water and their membranes pass back through the phase change.
+  That is the moment of leakage, worse in cold water (*Water: not cold*).
+- Dead cells leak their contents into the mix.
+
+The survivors then need a lag while they repair before they divide. From there the revival
+is a race between regrowth and the flour's own microbes, and the next two sections cover
+how it goes.
+
 ### What it skips: the first week
 
 From scratch, the first week is a succession (*What is happening in the jar*, above): a
@@ -306,8 +364,8 @@ reasoning that fits the run here; no pH was measured.
 
 The days it did take were regrowth, not succession. Each tenfold loss in drying and storage
 costs about 3.3 doublings to make up (*How long it keeps*). The yeast probably lags most. A
-starter holds far more LAB than yeast, so the same proportional loss leaves the yeast nearer
-zero, and the yeast is what makes the rise.
+starter holds far more LAB than yeast, drying likely kills a larger share of it (above), and
+the yeast is what makes the rise.
 
 ### Why a pinch, not a spoonful
 
@@ -487,6 +545,22 @@ rubber-band readings comparable:
   physicochemical, microbiological properties and shelf-life stability in different
   package type. *Journal of Food Science and Technology* 61(9):1701–1710. — Storage losses
   in a spray-dried, kombucha-started sourdough.
+- Kline L (1979). Freeze-dried natural sour dough starter. US Patent 4,140,800, filed 13 June
+  1977, granted 20 February 1979. https://patents.google.com/patent/US4140800A/en —
+  Lactic acid 85% and acetic acid 57% retained through freeze-drying; *L. sanfrancisco*
+  30–45% recovered with stabiliser, 0.7% without; the yeast below 0.01%. A patent, not
+  peer-reviewed.
+- Dupont S, Rapoport A, Gervais P, Beney L (2014). Survival kit of *Saccharomyces
+  cerevisiae* for anhydrobiosis. *Applied Microbiology and Biotechnology*
+  98(21):8821–8834. — Review: mechanical, structural and oxidative damage in drying, and the
+  yeast's defences.
+- Santivarangkna C, Kulozik U, Foerst P (2008). Inactivation mechanisms of lactic acid
+  starter cultures preserved by drying processes. *Journal of Applied Microbiology*
+  105(1):1–13. — The membrane as the main site of damage; storage losses from lipid
+  oxidation.
+- US Food and Drug Administration (1984). *Water Activity (aw) in Foods*. Inspection
+  Technical Guide. https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-technical-guides/water-activity-aw-foods
+  — Water activity equals equilibrium relative humidity divided by 100.
 
 ---
 
