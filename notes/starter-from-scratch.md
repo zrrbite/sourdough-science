@@ -249,7 +249,8 @@ combination is this note's suggestion and has not been tried.
 
 Her storage rule says a dried starter keeps for years as a backup. Chapter 11 gives the
 reason to keep one: after a heat kill, a backup is the only way back to the original culture,
-rather than to whatever the flour supplies. The revival below is the one that worked here in
+rather than to whatever the flour supplies. That holds for the bacteria; the yeast may not
+come through the drying (*What it skips*). The revival below is the one that worked here in
 October 2026, on flakes a year old. A first attempt followed a recipe worked out in a
 conversation with Claude in September 2026: a larger amount of flakes, soaked in warm water.
 It did not take. *Why a pinch, not a spoonful* gives the likely reason, and the sections
@@ -287,8 +288,10 @@ does not seem sensitive to them.
    flour before baking with it.
 5. **Dry a new backup** from it once it doubles reliably.
 
-**Record** the age of the flakes, roughly how much went in, the water temperature, and the
-day of the first activity and of the first doubling. Open tests 4–6 need those numbers.
+**Record** the age of the flakes, roughly how much went in, the water temperature, the day
+it first smells sour, and the days of the first rise and the first doubling. Sour without a
+rise is the LAB back and the yeast not yet (*What it skips*). Open tests 4–7 need those
+numbers.
 
 ### What drying does, and what water undoes
 
@@ -355,17 +358,43 @@ first wave of gassy bacteria rises and collapses, the jar goes quiet and smells,
 then do the sourdough organisms take over from tiny numbers. The revival here skipped all of
 it. It took days, but there was no false start and no lull.
 
-The likely reason is the inoculum. The survivors in the flakes are sourdough organisms that
-months of feeding already selected, and they grow well at the acidity they make. They
+The likely reason is the inoculum. The LAB surviving in the flakes are sourdough organisms
+that months of feeding already selected, and they grow well at the acidity they make. They
 acidify the fresh flour before its first wave builds up, closing the window Wink measured:
 the gas producers grow at pH 5 and above and not at 4.5 and below (Wink 2008a). From scratch,
 nothing acid-tolerant is present in numbers, which is why the first wave gets days. This is
 reasoning that fits the run here; no pH was measured.
 
-The days it did take were regrowth, not succession. Each tenfold loss in drying and storage
-costs about 3.3 doublings to make up (*How long it keeps*). The yeast probably lags most. A
-starter holds far more LAB than yeast, drying likely kills a larger share of it (above), and
-the yeast is what makes the rise.
+The days it did take were mostly the yeast. Here the revival behaved as if the LAB had come
+through and the yeast had to be caught again (October 2026), and the numbers fit that. A
+ripe starter holds about 10⁷ yeast cells per gram (Van der Meulen et al. 2007) and far more
+LAB. In Kline's starter, drying killed the yeast at least 70 times harder than the bacterium
+(below 0.01% surviving, against 0.7%), and a year in storage cost even commercial dried
+yeast 94% (Ribert et al. 2021). Applied to a 1 g pinch, about 2 g of starter before drying,
+that leaves perhaps a hundred live yeast cells, possibly none. That is one or two per gram of
+the fresh mix, over 20 doublings short of a ripe starter (each tenfold is about 3.3, *How
+long it keeps*). The LAB start from far more survivors. This is arithmetic on borrowed
+figures, not a count: Kline's starter was freeze-dried, and Ribert's yeast was grown to be
+dried.
+
+So the yeast in the revived starter may not be the original. Whatever survives in the
+flakes competes with yeast arriving the way it does from scratch: with the flour, and from
+the baker's hands (Reese et al. 2020; *Where the video and the literature differ*). A kitchen
+that kept the starter for years may hold its yeast too. In four bakeries, the sourdough's
+dominant yeast also dominated the walls, air, storage boxes and mixers (Minervini et al.
+2015). A bakery holds far more flour and dough than a home kitchen, and the study cannot say
+which way the yeast moved, so this is a loose analogue. A "new" yeast may be the old one
+coming back from the kitchen.
+
+Either way, the yeast does not arrive in a from-scratch jar. The LAB have already acidified
+it, and from scratch Wink saw yeast appear the day after the pH reached 3.5 (Wink 2008a). So
+the yeast's clock starts at once instead of after a week of bacterial succession, and the
+acid favours yeasts that tolerate it. The revival skipped the bacterial half of the first
+week, not the yeast half.
+
+For the backup, this means it reliably brings back the bacteria, and perhaps the yeast.
+Drying later in the cycle may save more of the yeast (*Drying it*, open test 4). Whether the
+yeast now in the jar is the old one is open test 7.
 
 ### Why a pinch, not a spoonful
 
@@ -437,9 +466,11 @@ matter much:
 
 Each tenfold loss costs about 3.3 doublings to make up, so an old backup wakes more slowly
 rather than not at all. Chapter 11's point that even a 4–5 log reduction leaves survivors
-applies here. What may not come back intact is the balance. Yeast and LAB need not survive
-drying equally, and no study found here measured that for a home-dried starter, so a revival
-is a small bottleneck of the kind chapter 11 describes under *After Recovery*. Replacing the
+applies to the LAB. The yeast is less certain. Drying kills it far harder (*What drying does,
+and what water undoes*), the revival here behaved as if it had to be caught again (*What it
+skips*), and no study found here measured a home-dried starter. So a revival is at least a
+small bottleneck of the kind chapter 11 describes under *After Recovery*, and possibly a new
+yeast. Replacing the
 backup once a year from the live starter, as Country Roads Sourdough suggests, keeps the
 storage loss small.
 
@@ -478,6 +509,10 @@ rubber-band readings comparable:
    pinch of flakes and one with 10 g. This separates the two things that changed between
    the failed run and the working one here. The acid account predicts the spoonful is
    slower, and a pH strip at the start of each should show why.
+7. **Same yeast or a new one?** No kitchen test separates them. Sequencing the fungal ITS
+   region, as Reese et al. (2020) did, from the flakes and from the revived starter would.
+   Dead cells keep their DNA, so the flakes still show which yeast the old starter carried.
+   A match at species level would not prove the same strain.
 
 ---
 
@@ -523,7 +558,12 @@ rubber-band readings comparable:
   driven by flour microbiota and nutrients. *Frontiers in Microbiology* 9:1984.
 - Reese AT, Madden AA, Joossens M, Lacaze G, Dunn RR (2020). Influences of ingredients and
   bakers on the bacteria and fungi in sourdough starters and bread. *mSphere*
-  5(1):e00950-19.
+  5(1):e00950-19. — 16S and ITS sequencing of starters, flour and bakers' hands; starters
+  most resemble the flour and share some species with the hands.
+- Minervini F, Lattanzi A, De Angelis M, Celano G, Gobbetti M (2015). House microbiotas as
+  sources of lactic acid bacteria and yeasts in traditional Italian sourdoughs. *Food
+  Microbiology* 52:66–76. — In four bakeries, the sourdough's dominant yeast also dominated
+  walls, air, storage boxes and mixers.
 - Country Roads Sourdough. *Dehydrating and Rehydrating Sourdough Starter: A How To Guide*.
   https://countryroadssourdough.com/dehydrating-and-rehydrating-sourdough-starter/ —
   Practitioner recipe for drying and reviving. Not peer-reviewed.
