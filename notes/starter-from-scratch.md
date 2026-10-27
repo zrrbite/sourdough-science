@@ -351,6 +351,41 @@ The survivors then need a lag while they repair before they divide. From there t
 is a race between regrowth and the flour's own microbes, and the next two sections cover
 how it goes.
 
+### How the revival unfolds
+
+A map of the sections that follow, set beside the first week from scratch. The timings are
+the run here (October 2026). The order of events inside them is the reasoning in *What it
+skips*: no pH or counts were taken.
+
+```mermaid
+flowchart TD
+    subgraph P ["From a pinch of dried flakes"]
+        direction TB
+        P0["<b>Start</b><br/>~1 g crushed flakes<br/>+ 30 g water + 30 g wholemeal/rye"]
+        P1["<b>First hours</b><br/>lactic acid redissolves · flour enzymes free sugar<br/>survivors rehydrate and repair before dividing"]
+        P2["<b>Surviving LAB regrow</b><br/>many survivors, already acid-tolerant<br/>pH falls below 4.5"]
+        P3["Flour's gassy first wave shut out<br/>no false rise, no lull"]
+        P4["<b>Yeast</b><br/>perhaps a hundred survivors, maybe none<br/>+ newcomers from flour, hands, kitchen<br/>acid admits the tolerant ones"]
+        P5["<b>Several days, unfed</b><br/>sour but no rise · dry crust on top<br/>yeast regrows over ~20 doublings"]
+        P6["<b>First rise</b><br/>lift off the crust · feed bread flour + wholemeal 1:1:1<br/>then keep 20 g, as on day 4"]
+        P7["Feed at peak until it doubles reliably<br/>→ dry a new backup"]
+        P0 --> P1 --> P2 --> P4 --> P5 --> P6 --> P7
+        P2 --> P3
+    end
+    subgraph S ["From scratch, for comparison"]
+        direction TB
+        S1["<b>Days 1–4</b><br/>flour's first wave: <i>Leuconostoc</i>, <i>Enterobacter</i><br/>big rise, bad smell"]
+        S2["<b>Day 5: the lull</b><br/>acid stops the first wave"]
+        S3["<b>Days 6–9</b><br/>sourdough LAB take over<br/>yeast the day after pH 3.5"]
+        S4["<b>Days 9–14</b><br/>ratios climb until it triples"]
+        S1 --> S2 --> S3 --> S4
+    end
+```
+
+The pinch skips the first two boxes of the from-scratch column, the bacterial half of the
+first week: its surviving LAB supply the acid the third box waits for. The yeast still has
+to build up.
+
 ### What it skips: the first week
 
 From scratch, the first week is a succession (*What is happening in the jar*, above): a
