@@ -249,10 +249,11 @@ combination is this note's suggestion and has not been tried.
 
 Her storage rule says a dried starter keeps for years as a backup. Chapter 11 gives the
 reason to keep one: after a heat kill, a backup is the only way back to the original culture,
-rather than to whatever the flour supplies. The revival recipe below was worked out in a
-conversation with Claude in September 2026, after a starter was left too long in a hot oven,
-and is checked here against the literature. The recipe holds up. Two of the reasons given
-with it do not, and correcting one of them changes the method (*Soak warm, not cool*).
+rather than to whatever the flour supplies. The revival below is the one that worked here in
+October 2026, on flakes a year old. A first attempt followed a recipe worked out in a
+conversation with Claude in September 2026: a larger amount of flakes, soaked in warm water.
+It did not take. *Why a pinch, not a spoonful* gives the likely reason, and the sections
+after it correct two other things that conversation got wrong.
 
 ### Drying it
 
@@ -271,32 +272,62 @@ with it do not, and correcting one of them changes the method (*Soak warm, not c
 
 ### Reviving it
 
-1. **Soak:** crumble about 10 g of flakes into 20–30 g of water at 35–38°C (see below) and
-   leave it 30–60 min to soften.
-2. **Flour:** stir in about 20 g, whole rye or wholemeal for the fastest start. Cover
-   loosely and keep at 24–26°C.
-3. **Wait for bubbles**, then feed 1:1:1 every 12 h. Keep 20 g, discard the rest, and add
-   20 g each of water and flour, the same feed as day 4. Feeding the whole jar instead lets
-   the ratio fall with every feed.
-4. **Expect** activity within 24–48 h and a reliable doubling by day 3–4. Give it one or two
-   feeds on the usual flour and ratio before baking with it.
+The method as run here. The amounts are rough estimates rather than weighed, and the method
+does not seem sensitive to them.
+
+1. **Start:** crush a good pinch of flakes, around 1 g, into a day-1 mix of wholemeal and
+   rye: about 30 g of water and 30 g of flour, half of each. Use water at room temperature or
+   a little above, not cold from the tap (*Water: not cold*, below). No separate soak.
+2. **Wait, unfed, for several days** at 24–26°C, until it is clearly active. A dry crust
+   forms on top. It is the same skin as day 2 of the main method, and does no harm.
+3. **Lift off the crust and feed what is underneath**, now with bread flour and wholemeal,
+   at about 1:1:1. From the next feed on, keep 20 g and discard the rest, as on day 4.
+   Feeding the whole jar every time lets the ratio fall with every feed.
+4. **From there, feed at peak** as in the main method. Give it one or two feeds on the usual
+   flour before baking with it.
 5. **Dry a new backup** from it once it doubles reliably.
 
-Country Roads Sourdough gives almost the same recipe (5 g of flakes, 20 g of water, 30 min,
-20 g of flour, 25–29°C) but feeds once a day at 1:2:2 and expects it to take about a week.
-Treat day 3–4 as the fast end of the range, and a week as normal.
+**Record** the age of the flakes, roughly how much went in, the water temperature, and the
+day of the first activity and of the first doubling. Open tests 4–6 need those numbers.
 
-**Why 1:1:1, when chapter 11 recovers a culture at 1:10:10.** Chapter 11 dilutes hard
-because its survivors sit in the acid and ethanol the culture made while it was dying.
-Rehydrated flakes carry only the acid of the starter they were dried from, diluted about as
-much as a 1:1:1 feed would dilute it. Diluting a small population hard also hands the jar
-to whatever arrives with the fresh flour. This is reasoning, not a measured result; the
-from-scratch method makes the same choice on days 3–8.
+### What it skips: the first week
 
-**Record** the age of the flakes, the soak temperature, and the day of the first bubbles and
-of the first doubling. Open tests 4 and 5 need those numbers.
+From scratch, the first week is a succession (*What is happening in the jar*, above): a
+first wave of gassy bacteria rises and collapses, the jar goes quiet and smells, and only
+then do the sourdough organisms take over from tiny numbers. The revival here skipped all of
+it. It took days, but there was no false start and no lull.
 
-### Soak warm, not cool
+The likely reason is the inoculum. The survivors in the flakes are sourdough organisms that
+months of feeding already selected, and they grow well at the acidity they make. They
+acidify the fresh flour before its first wave builds up, closing the window Wink measured:
+the gas producers grow at pH 5 and above and not at 4.5 and below (Wink 2008a). From scratch,
+nothing acid-tolerant is present in numbers, which is why the first wave gets days. This is
+reasoning that fits the run here; no pH was measured.
+
+The days it did take were regrowth, not succession. Each tenfold loss in drying and storage
+costs about 3.3 doublings to make up (*How long it keeps*). The yeast probably lags most. A
+starter holds far more LAB than yeast, so the same proportional loss leaves the yeast nearer
+zero, and the yeast is what makes the rise.
+
+### Why a pinch, not a spoonful
+
+The first attempt here used a larger amount of flakes, soaked in warm water, and did not
+take. The pinch did. The likely difference is acid. Flakes are the old starter's flour plus
+all of its lactic acid, which does not evaporate in drying. A spoonful in a little water and
+flour leaves the survivors in close to full-strength starter acid with little fresh food.
+That is chapter 11's dying culture, which its recovery protocol dilutes out at 1:10:10.
+
+A pinch in 60 g of fresh wholemeal and rye is far more dilute than that. It also gives the
+survivors plenty of food, and wholegrain flour is what chapter 11 adds for recovery.
+Country Roads Sourdough's recipe is the high-dose kind (5 g of flakes into 20 g of water and
+20 g of flour) and expects about a week.
+
+Two things changed between the runs, the amount and the soak, so one run cannot separate
+them; that is open test 6. The warm soak is the less likely culprit. At 35–38°C for half an
+hour it is a brief excursion by chapter 11's standards, unless the water was hotter than
+that.
+
+### Water: not cold
 
 The chat advised lukewarm rather than hot water, then put lukewarm at 25–30°C, because the
 cells are most fragile in the first minutes as water rushes back in. The fragility is real,
@@ -309,15 +340,16 @@ case of the same mechanism (Crowe et al. 1989). In active dry yeast rehydrated a
 against 40°C, the cold-soaked cells respired and fermented less, their membranes did not
 reseal even after hours at 40°C, and few of them grew on plates (Peña et al. 1992).
 
-So soak at 35–38°C, warm on the wrist but not hot, then hold the jar at 24–26°C. Half an
-hour at 38°C is a brief excursion by chapter 11's standards. Cold tap water is the case to
-avoid. Country Roads Sourdough asks for room-temperature water and notes only that cold
-slows things down.
+With a pinch there is no separate soak: the flakes take up water in the mix. So mix with
+water at room temperature or a little above, up to about 35°C, then hold the jar at
+24–26°C. Cold tap water is the case to avoid. Country Roads Sourdough asks for
+room-temperature water and notes only that cold slows things down.
 
 The limits: the mechanism was measured in pollen, and the yeast result is from commercial
 *S. cerevisiae* dried pure. Flakes are wild yeast and LAB embedded in flour, which may wet
-more slowly and soften the effect. Peña et al. compared 0 with 40°C and say nothing about 20°C. The direction is
-supported; the size of the penalty at room temperature is not known. That is open test 5.
+more slowly and soften the effect. Peña et al. compared 0 with 40°C and say nothing about
+20°C. The direction is supported; the size of the penalty at room temperature is not known.
+That is open test 5.
 
 ### Dry is heat-proof; drying is not
 
@@ -343,6 +375,7 @@ matter much:
 - A spray-dried sourdough powder lost about 2.5 log of both LAB and yeast in 90 days, in the
   best of four packagings (Hajar-Azhari et al. 2024). That sourdough was started from
   kombucha, so it is a loose analogue.
+- Here, flakes a year old came back from a pinch in several days (October 2026).
 
 Each tenfold loss costs about 3.3 doublings to make up, so an old backup wakes more slowly
 rather than not at all. Chapter 11's point that even a 4–5 log reduction leaves survivors
@@ -380,9 +413,13 @@ rubber-band readings comparable:
 4. **Dry at peak or after it.** Two films from the same jar, one spread at peak and one a few
    hours after it has fallen. Revive equal weights the same way and compare the day each
    first doubles. Calahan et al. (2011) predicts the later film wins.
-5. **Soak temperature.** Equal weights of the same flakes, one soaked at 37°C and one in cold
-   tap water, then both held at 24–26°C. Compare the first bubbles and the first doubling.
-   Peña et al. (1992) predicts the cold soak is slower.
+5. **Water temperature.** Two jars started the same way from the same flakes, one mixed with
+   water at 35°C and one with cold tap water, then both held at 24–26°C. Compare the first
+   activity and the first doubling. Peña et al. (1992) predicts the cold jar is slower.
+6. **Pinch versus spoonful.** Two jars, same flour and same water temperature, one with a
+   pinch of flakes and one with 10 g. This separates the two things that changed between
+   the failed run and the working one here. The acid account predicts the spoonful is
+   slower, and a pH strip at the start of each should show why.
 
 ---
 

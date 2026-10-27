@@ -90,7 +90,7 @@ The lookup end of the document: what to buy, what to weigh, what to check.
   chapter: Full Proof Baking's 14-day method day by day, in grams and hours, alongside the
   microbial succession it follows (the early rise is bacteria, the day-5 lull is the hand-over).
   Also why to start warm but not hot, what changes for this kitchen, and how to dry a backup
-  and revive it (soak warm, not cool). The schedule on one printable A4 page: [cheat
+  and revive it (a pinch, not a spoonful). The schedule on one printable A4 page: [cheat
   sheet](notes/starter-cheatsheet.pdf).
 - [Accelerating Proteolysis: pH, Heat, and Salt](notes/proteolysis-ph-heat.md) — working notes on
   whether a heat boost can substitute for long fermentation in driving protease activity.
