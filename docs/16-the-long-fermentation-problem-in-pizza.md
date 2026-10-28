@@ -14,9 +14,9 @@ A long-fermented dough has a narrower usable window than most bakers appreciate.
 
 The effect of acid on pizza dough is paradoxical. Moderate acidity increases extensibility (useful for stretching), but as acid accumulates beyond a threshold, the dough can become excessively slack and lose the elastic recovery needed to hold its shape on a peel or in the oven. Acetic acid in particular can cause the dough to feel tight and resistant initially, then suddenly give way — an unforgiving combination for hand stretching. In a long sourdough ferment, the acid load keeps climbing, and the baker has limited ability to control the ratio of lactic to acetic acid once the dough is mixed.
 
-## Volatile Precursor Loss
+## Volatile Loss
 
-Extended fermentation also costs flavour, counterintuitively. During each degas, fold, or punch-down, CO₂ leaving the dough acts as a carrier gas, stripping volatile alcohols and early-formed esters from the dough matrix. A dough fermented for 72 hours has been degassed multiple times, and each event removes some of the esters and alcohols the yeast has made. The dough may taste more acidic (non-volatile acids remain), but the aromatic complexity — the fruity, estery top notes — can actually diminish.
+Extended fermentation may also cost flavour, counterintuitively. During each degas, fold, or punch-down, CO₂ leaving the dough plausibly acts as a carrier gas, stripping volatile alcohols and esters from the dough matrix. This is a hypothesis; no measurement in dough was found (chapter 13). A dough fermented for 72 hours has been degassed multiple times, and each event removes some of the esters and alcohols the yeast has made. The dough may taste more acidic (non-volatile acids remain), but the aromatic complexity — the fruity, estery top notes — can actually diminish.
 
 ## Crust Texture: Gummy vs. Crisp
 

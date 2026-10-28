@@ -45,7 +45,7 @@ A larger ball opened to a 10–11” diameter (leaving clearance from the stone 
 
 A smaller ball stretched thinner produces a crust that cooks through faster, which means less total time on the stone and, in principle, less opportunity to burn. At moderate flame, a thin crust can be fully baked in 90 seconds to 2 minutes. The raw-centre problem essentially disappears because there is almost no centre to speak of — the entire cross-section reaches gelatinisation temperature almost immediately.
 
-The tradeoff is that the margin for error shrinks. A very thin crust has almost no thermal mass, so the bottom transitions from done to carbonised within seconds. Turning precision and timing become more critical. Additionally, the shorter bake gives less thermal time for ester chemistry to develop in the crust, and the eating experience is cracker-crisp rather than bread-tender. If you prefer a thinner, crispier style and are confident with fast turns in the 12” chamber, this is a viable approach.
+The tradeoff is that the margin for error shrinks. A very thin crust has almost no thermal mass, so the bottom transitions from done to carbonised within seconds. Turning precision and timing become more critical. Additionally, the shorter bake gives the crust less time for Maillard browning and its roasted aroma, and the eating experience is cracker-crisp rather than bread-tender. If you prefer a thinner, crispier style and are confident with fast turns in the 12” chamber, this is a viable approach.
 
 ### The Choice Is Stylistic
 
@@ -79,7 +79,7 @@ The fix is to trade surface heat intensity for diffusion time. By reducing the f
 
 The moderate-heat, longer-bake protocol is synergistic with the hybrid dough in several ways. The 48h cold retard has depleted residual sugars, so the moderate heat still produces attractive browning rather than a pale underside — there is enough remaining sugar for Maillard reactions, but not so much that the crust carbonises. The 2–3 minute bake gives the crust significantly more time for Maillard and Strecker reactions, which build the roasted, malty aroma that a 60-second bake compresses (chapter 14). The fruity esters are set during fermentation, not in the oven (chapter 13). And the thicker crust, now properly cooked through, develops a satisfying crisp-to-tender gradient from surface to centre rather than the burnt-shell-around-raw-dough failure mode.
 
-In practice, this means the 12” Ooni at moderate flame produces a pizza that is closer in character to a Roman-style or New York-style bake than a Neapolitan one — slightly longer bake, slightly thicker crust, more flavour development, but with the blistering and char notes that only a 350°C+ stone can provide. For a hybrid sourdough dough optimised for ester complexity, this is arguably the ideal bake profile.
+In practice, this means the 12” Ooni at moderate flame produces a pizza that is closer in character to a Roman-style or New York-style bake than a Neapolitan one — slightly longer bake, slightly thicker crust, more flavour development, but with the blistering and char notes that only a 350°C+ stone can provide. For a hybrid sourdough dough optimised for flavour complexity, this is arguably the ideal bake profile.
 
 ### Stone Recovery Between Pizzas
 
