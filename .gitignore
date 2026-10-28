@@ -4,3 +4,7 @@ __pycache__/
 chamber/stage0/chamber.toml
 chamber/collector/telemetry.json
 chamber/stage0/runs/
+
+# The global gitignore drops PDFs; these are built outputs the README links to.
+!slides/*.pdf
+!notes/*.pdf
