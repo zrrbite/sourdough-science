@@ -218,7 +218,7 @@ so at the video's 24°C the first wave may never fully leave.
 
 So the choice of 24°C or 30°C is a choice of culture, not just of pace. *(Hypothesis:)* a
 starter begun around 30°C may suit a warm-maintained regime better from the outset. That is
-open test 1 below. Either way, wait until it passes her tripling test before any hot build,
+open tests 1 and 2 below. Either way, wait until it passes her tripling test before any hot build,
 and then follow chapter 08's advice: keep the mother at room temperature and build hot from
 it.
 
@@ -261,7 +261,7 @@ after it correct two other things that conversation got wrong.
 - **Spread it thin** on baking paper and leave it at room temperature until it snaps, about
   24–48 h (Country Roads Sourdough). Crumble it and store it airtight, dry, cool and dark.
 - **No oven and no warm dehydrator.** Until the film is dry it is a wet culture, and chapter
-  11's limits apply: hours at 40–45°C is high risk. The same guide allows a dehydrator only
+  11's limits apply: six hours or more at 40–45°C is high risk. The same guide allows a dehydrator only
   below 37°C. Once the film is dry, heat is much less of a threat (below).
 - **Which stage to dry is open.** The usual advice is a starter at peak (Country Roads
   Sourdough). *(Hypothesis:)* the literature points later. In *S. cerevisiae*, fewer than
@@ -290,7 +290,7 @@ does not seem sensitive to them.
 
 **Record** the age of the flakes, roughly how much went in, the water temperature, the day
 it first smells sour, and the days of the first rise and the first doubling. Sour without a
-rise is the LAB back and the yeast not yet (*What it skips*). Open tests 4–7 need those
+rise is the LAB back and the yeast not yet (*What it skips*). Open tests 4–6 need those
 numbers.
 
 ### What drying does, and what water undoes
@@ -323,7 +323,7 @@ growing ones (Calahan et al. 2011, under *Drying it*). The damage that kills the
 mechanical, structural and oxidative (Dupont et al. 2014, for yeast). In LAB, the membrane
 is the main site of injury, at the points where it changes phase during drying or
 rehydration (Santivarangkna et al. 2008). The two partners do not survive equally. In a
-freeze-dried San Francisco starter, 35% of the bacterium, *L. sanfrancisco* (now
+freeze-dried San Francisco starter, 30–45% of the bacterium, *L. sanfrancisco* (now
 *Fructilactobacillus sanfranciscensis*), survived with a protective additive, and 0.7%
 without. The yeast, then called *Torulopsis holmii*, fell below 0.01%: the
 patent calls it "destroyed by freeze-drying" (Kline 1979). Freeze-drying is not air-drying,
