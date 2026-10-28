@@ -1,0 +1,367 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{preamble}
+
+% Local styles for this deck only.
+\tikzset{
+  cell/.style={draw=crust,fill=crumb,rounded corners=2pt,align=center,
+    font=\footnotesize,minimum height=1.45cm,text width=2.65cm},
+  axislabel/.style={font=\scriptsize,color=muted,align=right},
+  colhead/.style={font=\scriptsize\bfseries,color=muted,anchor=south},
+}
+\newcommand{\muted}[1]{{\color{muted}#1}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+\title[Foundations]{Preferments: The Foundations}
+\subtitle{What a preferment is, and the two axes that sort them:\\
+  microbiology and hydration}
+
+\begin{document}
+
+\begin{frame}[plain]\titlepage\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{What this deck covers}
+  Practical questions, answered from Part~I of the notes:
+  \medskip
+  \begin{itemize}\setlength{\itemsep}{0.5em}
+    \item What does a preferment actually do for my dough?
+    \item Biga, poolish, stiff levain, liquid levain: what separates them?
+    \item What does a wild culture do that commercial yeast cannot?
+    \item How do I steer a levain toward a sharper or a milder sour?
+    \item Why would a stiff levain survive a hot build better than a liquid one?
+  \end{itemize}
+  \source{chapters 01--04 of the notes}
+\end{frame}
+
+% ===============================================================
+\section{A preferment and its two axes}
+
+\begin{frame}{A preferment is dough fermented ahead of the final mix}
+  \centering
+  \begin{tikzpicture}
+    \node[box=8cm,font=\footnotesize] (p)
+      {\textbf{Preferment:} a portion of dough fermented before the final mix};
+    \node[box=3.6cm,below=0.6cm of p] (gl)
+      {\textbf{Gluten:} structure modified\\before the final dough};
+    \node[box=3.6cm,left=0.5cm of gl] (fl)
+      {\textbf{Flavour:} complexity from\\extended fermentation};
+    \node[box=3.6cm,right=0.5cm of gl] (gas)
+      {\textbf{Gas:} a head start\\on gas production};
+    \draw[arrow] (p.south) -- (gl.north);
+    \draw[arrow] (p.south -| fl.north) -- (fl.north);
+    \draw[arrow] (p.south -| gas.north) -- (gas.north);
+  \end{tikzpicture}
+  \par\medskip\raggedright
+  \begin{itemize}
+    \item Every preferment does these three jobs
+    \item They diverge sharply in microbiology and hydration, and so in how
+      the dough behaves and what the bread becomes
+  \end{itemize}
+  \takeaway{choosing a preferment is choosing its organisms and its water;
+    those two decide what it does to your dough and your bread.}
+  \source{ch.~01, \emph{What Is a Preferment?}}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Two independent choices define every preferment}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.44\textwidth}
+      \begin{itemize}\setlength{\itemsep}{0.3em}
+        \item \textbf{Microbiology:} a monoculture of commercial
+          \textit{S.~cerevisiae}, or a mixed consortium of wild yeast and
+          lactic acid bacteria (LAB)
+        \item \textbf{Hydration:} stiff (50--60\%) or liquid (100\%)
+        \item Four types, each with its own flavour, fermentation kinetics
+          and dough rheology
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.54\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \node[cell] (sl) at (0,1.6)
+          {\textbf{Stiff levain}\\[1pt]\muted{sharper, vinegary\\acetic}};
+        \node[cell] (ll) at (3.05,1.6)
+          {\textbf{Liquid levain}\\[1pt]\muted{milder, rounder\\lactic}};
+        \node[cell] (bi) at (0,0)
+          {\textbf{Biga}\\[1pt]\muted{tighter, elastic\\minimal acid}};
+        \node[cell] (po) at (3.05,0)
+          {\textbf{Poolish}\\[1pt]\muted{very extensible\\enzymatic}};
+        % hydration axis
+        \draw[arrow] ($(bi.south west)+(0,-0.2)$) -- ($(po.south east)+(0,-0.2)$);
+        \node[axislabel,anchor=north west] at ($(bi.south west)+(0,-0.25)$)
+          {Stiff · 50--60\%};
+        \node[axislabel,anchor=north east] at ($(po.south east)+(0,-0.25)$)
+          {Liquid · 100\%};
+        \node[font=\scriptsize\bfseries,anchor=north] at
+          ($(bi.south east)!0.5!(po.south west)+(0,-0.25)$) {Hydration};
+        % microbiology axis
+        \draw[arrow] ($(bi.south west)+(-0.2,0)$) -- ($(sl.north west)+(-0.2,0)$);
+        \node[axislabel,anchor=east] at ($(sl.west)+(-0.3,0)$)
+          {Sourdough\\(wild)};
+        \node[axislabel,anchor=east] at ($(bi.west)+(-0.3,0)$)
+          {Commercial\\yeast};
+        \node[font=\scriptsize\bfseries,anchor=south] at
+          ($(sl.north west)+(-0.2,0.05)$) {Microbiology};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{make the two decisions separately: which organisms, and how much
+    water.}
+  \source{ch.~02, \emph{The Four Quadrants}}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Each quadrant has its own flavour and dough}
+  \footnotesize
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries\raggedright}p{1.75cm}LL@{}}
+    \toprule
+     & \textbf{Stiff (50--60\%)} & \textbf{Liquid (100\%)} \\
+    \midrule
+    Commercial yeast &
+      \textbf{Biga} · Italian tradition\newline
+      Long, cool ferment (12--24\,h)\newline
+      Yeast aromatics: esters, aldehydes, alcohols\newline
+      Minimal acidification\newline
+      Tighter, more elastic gluten &
+      \textbf{Poolish} · French/Polish origin\newline
+      8--16\,h at room temperature\newline
+      More amylase and protease (more water)\newline
+      Sweeter, wheaty flavour\newline
+      Very extensible dough \\
+    \midrule
+    Sourdough (wild) &
+      \textbf{Stiff levain} · heterofermentative LAB\newline
+      Lower water activity: toward acetic acid\newline
+      Sharper, more vinegary tang\newline
+      Wider timing window for the baker &
+      \textbf{Liquid levain} · homofermentative LAB\newline
+      Higher water activity: promotes lactate\newline
+      Milder, rounder acidity\newline
+      Handles like a poolish; full sourdough microbiology \\
+    \bottomrule
+  \end{tabularx}
+  \takeaway{extensible dough: poolish. Elastic gluten: biga. Wider timing
+    window: stiff levain.}
+  \source{ch.~02, \emph{The Four Quadrants}}
+\end{frame}
+
+% ===============================================================
+\section{One yeast or a consortium}
+
+\begin{frame}{Biga and poolish run on one yeast: aroma, not acid}
+  \begin{itemize}\setlength{\itemsep}{0.35em}
+    \item A pure culture of \textit{S.~cerevisiae}: domesticated, single strain
+    \item The long ferment is not there to grow a microbiome; it gives the
+      yeast time to build flavour precursors slowly
+    \item Alcohols, esters and aldehydes accumulate: nuanced aroma without
+      significant acidification
+    \item Some minor organic acid from the yeast's own metabolism, nothing
+      near the lactic and acetic acid that LAB make
+    \item The dough stays near neutral (pH 5.5--6.0), so acid does not modify
+      the gluten
+  \end{itemize}
+  \takeaway{a long biga or poolish buys aroma, not sourness. For a sweet,
+    wheaty character from enzymatic starch breakdown, the wetter poolish is
+    the stronger of the two.}
+  \source{ch.~03, \emph{Microbiology}; ch.~04, \emph{Acidity}}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{A levain is a stable partnership of wild yeast and bacteria}
+  \begin{itemize}\setlength{\itemsep}{0.3em}
+    \item \textbf{Wild yeast:} often \textit{Kazachstania humilis} or wild
+      \textit{Saccharomyces} strains
+    \item \textbf{Lactic acid bacteria (LAB):} primarily \textit{Lactobacillus}
+      and \textit{Leuconostoc} spp.
+    \item The two live in symbiotic equilibrium
+  \end{itemize}
+  \bigskip
+  \centering
+  \begin{tikzpicture}[node distance=0.45cm]
+    \node[box=2.6cm,minimum height=1cm] (a) {LAB make lactic\\and acetic acid};
+    \node[box=2.6cm,minimum height=1cm,right=of a] (b)
+      {pH drops into\\the 3.5--4.5 range};
+    \node[box=2.6cm,minimum height=1cm,right=of b] (c)
+      {Wild yeast, adapted\\to the acid, thrive};
+    \node[box=3.8cm,minimum height=1cm,right=of c] (d)
+      {Competitors suppressed:\\a stable, self-sustaining culture};
+    \draw[arrow] (a) -- (b);
+    \draw[arrow] (b) -- (c);
+    \draw[arrow] (c) -- (d);
+  \end{tikzpicture}
+  \raggedright
+  \takeaway{the sourness is not a side effect. The low pH is what keeps
+    competing organisms out and the culture stable.}
+  \source{ch.~03, \emph{Microbiology}. Background in ch.~25: De Vuyst et al.\
+    (2017); Carbonetto et al.\ (2020) on \textit{K.~humilis}--LAB interactions}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The mixed culture changes the dough in ways yeast alone cannot}
+  \begin{itemize}\setlength{\itemsep}{0.15em}
+    \item \textbf{Gluten is cut:} proteolytic enzymes from the LAB partially
+      degrade the gluten network during fermentation
+    \item \textbf{Gas is uneven:} organisms with different growth curves and
+      temperature optima compete and cooperate, so gas production is less
+      uniform
+    \item \textbf{Gluten charge shifts:} the acid load directly modifies
+      gluten charge state and hydration behaviour
+    \item \contested\ Bottled acid is not the same: several studies report that
+      adding acid directly \emph{firms} dough and cuts extensibility, while
+      long fermentation (acid plus time-dependent proteolysis) softens it.
+      The notes describe the fermentation case.
+  \end{itemize}
+  \takeaway{expect a levain dough to keep changing as it ferments, in ways
+    biga and poolish cannot reproduce.}
+  \source{ch.~03, \emph{Microbiology}; charge-state mechanism: Clarke et al.\
+    (2004); contested note: ch.~25}
+\end{frame}
+
+% ===============================================================
+\section{Acid and hydration}
+
+\begin{frame}{Hydration steers which acid a levain makes}
+  \centering
+  \begin{tikzpicture}[
+      col/.style={box=2.9cm,minimum height=1.25cm},
+      wide/.style={box=3.5cm,minimum height=1.25cm},
+    ]
+    \def\ry{1.45}
+    \def\xa{0}\def\xb{3.63}\def\xc{7.26}\def\xd{11.19}
+    \foreach \x/\t in {\xa/Preferment hydration,\xb/LAB metabolism,\xc/Acid,
+        \xd/Perceived · suits}
+      \node[colhead] at (\x,\ry+0.65) {\t};
+    % stiff levain row
+    \node[col] (B) at (\xa,\ry) {\textbf{Stiff levain} · 50--60\%\\lower water activity};
+    \node[col] (E) at (\xb,\ry) {Heterofermentative LAB\\shift via acetyl-CoA};
+    \node[col] (H) at (\xc,\ry) {\textbf{Acetic acid}\\sharp, vinegary,\\more volatile};
+    \node[wide] (J) at (\xd,\ry) {Perceived on the nose\\→ rustic, whole-grain loaves};
+    % liquid levain row
+    \node[col] (C) at (\xa,0) {\textbf{Liquid levain} · 100\%\\higher water activity};
+    \node[col] (F) at (\xb,0) {Homofermentative LAB};
+    \node[col] (I) at (\xc,0) {\textbf{Lactic acid}\\milder, rounder,\\less volatile};
+    \node[wide] (K) at (\xd,0) {Perceived on the palate\\→ enriched and lighter\\breads};
+    % commercial yeast row
+    \node[col] (D) at (\xa,-\ry) {\textbf{Biga or poolish}\\commercial yeast};
+    \node[col] (G) at (\xc,-\ry) {No meaningful\\acidification\\pH stays 5.5--6.0};
+    \node[wide] (L) at (\xd,-\ry) {Gluten unmodified by acid\\→ fruity esters, sweet wheat};
+    \draw[arrow] (B) -- (E); \draw[arrow] (E) -- (H); \draw[arrow] (H) -- (J);
+    \draw[arrow] (C) -- (F); \draw[arrow] (F) -- (I); \draw[arrow] (I) -- (K);
+    \draw[arrow] (D) -- (G); \draw[arrow] (G) -- (L);
+  \end{tikzpicture}
+  \raggedright
+  \takeaway{hydration is one of the most important levers you have on the
+    type and intensity of a levain's acid.}
+  \source{ch.~04, \emph{Acidity: Lactic vs.\ Acetic and the Hydration Effect}}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Acetic reads on the nose, lactic on the palate}
+  \footnotesize
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries\raggedright}p{1.9cm}LL@{}}
+    \toprule
+     & \textbf{Stiff levain} · 50--60\% · lower water activity
+     & \textbf{Liquid levain} · 100\% · higher water activity \\
+    \midrule
+    LAB metabolism & Heterofermentative; shifts toward acetic acid via
+      acetyl-CoA pathways when water is limiting
+      & Homofermentative; produces primarily lactic acid \\
+    Character & Sharper, more vinegary tang; more volatile, so perceived more
+      intensely by the nose
+      & Milder, rounder; less volatile, so perceived mainly on the palate \\
+    Suits & Hearty, rustic loaves with whole-grain or high-extraction
+      flour, where the sharpness reads as complexity
+      & Enriched doughs, lighter breads, or wherever the acid should stay in
+      the background and let wheat, butter or other ingredients come forward \\
+    \bottomrule
+  \end{tabularx}
+  \takeaway{rustic whole-grain loaf: build the levain stiff. Enriched or
+    lighter bread: liquid.}
+  \source{ch.~04, \emph{Acidity: Lactic vs.\ Acetic and the Hydration Effect}}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The stiff levain is also the heat-tolerant one}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.50\textwidth}
+      \begin{itemize}\setlength{\itemsep}{0.35em}
+        \item Lower water activity does more than shift LAB toward acetic
+          acid
+        \item It makes the matrix itself protective against heat
+        \item Why: irreversible protein unfolding and membrane disordering
+          are both water-mediated
+        \item Matters only for hot builds (ch.~11)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \node[box=3.6cm] (s) {\textbf{Stiff levain} · 50--60\%\\lower water activity};
+        \node[box=2.7cm,below left=0.7cm and -1.6cm of s] (a)
+          {LAB shift toward\\acetic acid:\\\textbf{sharper}};
+        \node[box=2.7cm,below right=0.7cm and -1.6cm of s] (h)
+          {Matrix protects\\against heat:\\\textbf{more heat-tolerant}};
+        \draw[arrow] (s) -- (a);
+        \draw[arrow] (s) -- (h);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{building levains hot? A stiff one gives the culture more
+    protection, and the sharper acid comes with it.}
+  \source{ch.~04, \emph{Acidity}; detail in ch.~11, \emph{Water Activity:
+    The Matrix Is a Thermal Protectant}}
+\end{frame}
+
+% ===============================================================
+\begin{frame}{Takeaways}
+  \begin{itemize}\setlength{\itemsep}{0.3em}
+    \item A preferment is dough fermented ahead: flavour, gluten change and a
+      head start on gas
+    \item Two independent choices define it: commercial yeast or wild culture;
+      stiff (50--60\%) or liquid (100\%)
+    \item Biga and poolish: one yeast, aroma without sourness; the dough stays
+      at pH 5.5--6.0
+    \item A levain: wild yeast plus LAB, which drop the pH to 3.5--4.5; acid
+      and LAB enzymes reshape the gluten
+    \item Stiff levain → acetic: sharp, on the nose, for rustic whole-grain
+      loaves
+    \item Liquid levain → lactic: mild, on the palate, for enriched and
+      lighter breads
+    \item The stiff levain is also the more heat-tolerant one, if you build
+      hot
+  \end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Sources}
+  \scriptsize
+  This deck draws on chapters 01--04 of the notes, which cite no literature
+  inline. The references below are from ch.~25 and bear on the same ground.
+  \medskip
+
+  \begin{itemize}\setlength{\itemsep}{0.25em}
+    \item Clarke CI, Schober TJ, Dockery P, O'Sullivan K, Arendt EK (2004).
+      Wheat sourdough fermentation: effects of time and acidification on
+      fundamental rheological properties. \emph{Cereal Chemistry}
+      81(3):409--417. \muted{Source for the charge-state mechanism.}
+    \item Thiele C, Grassl S, Gänzle MG (2004). Gluten hydrolysis and
+      depolymerization during sourdough fermentation. \emph{Journal of
+      Agricultural and Food Chemistry} 52(5):1307--1314.
+    \item Wehrle K, Grau H, Arendt EK (1997). Effects of lactic acid, acetic
+      acid, and table salt on fundamental rheological properties of wheat
+      dough. \emph{Cereal Chemistry} 74(6):739--744.
+    \item De Vuyst L, Van Kerrebroeck S, Leroy F (2017). Microbial ecology and
+      process technology of sourdough fermentation. \emph{Advances in Applied
+      Microbiology} 100:49--160.
+    \item Carbonetto B, Nidelet T, Guezenec S, Perez M, Segond D, Sicard D
+      (2020). Interactions between \textit{Kazachstania humilis} yeast species
+      and lactic acid bacteria in sourdough. \emph{Microorganisms} 8(2):240.
+      \muted{Maltose/glucose cross-feeding mutualism.}
+    \item Note on contested evidence, ch.~25: chemical and biological
+      acidification do not produce equivalent rheology.
+  \end{itemize}
+\end{frame}
+
+\end{document}

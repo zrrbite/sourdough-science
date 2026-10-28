@@ -1,0 +1,674 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{preamble}
+
+% Local additions for this deck only.
+% A short inline qualifier, as a filled tag like the status flags.
+\newcommand{\caveat}[1]{\flagtag{flag}{#1}}
+% A 7 pt size for dense diagrams.
+\newcommand{\diagfont}{\fontsize{7}{8.4}\selectfont}
+\tikzset{
+  stage/.style={draw=crust,fill=crust,text=white,rounded corners=2pt,align=center,
+    font=\scriptsize\bfseries,inner sep=3pt,text width=#1,minimum height=0.55cm},
+  stage/.default=3.05cm,
+  cell/.style={draw=crust!50,fill=crumb,rounded corners=2pt,align=left,
+    font=\diagfont,inner sep=3pt,text width=#1,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  cell/.default=3.05cm,
+  skipped/.style={draw=muted,dashed,fill=white,text=muted,rounded corners=2pt,
+    align=left,font=\diagfont,inner sep=3pt,text width=#1,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  rowlabel/.style={font=\scriptsize\bfseries,text=muted,align=right,text width=1.3cm},
+  nohyph/.style={execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}},
+  tcell/.style={draw=crust!50,fill=crumb,rounded corners=2pt,align=left,
+    font=\scriptsize,inner sep=3pt,text width=3.05cm,
+    execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000\hbadness=10000}},
+}
+
+\title[Starters]{Starters: From Scratch, Dried, and Revived}
+\subtitle{The 14-day method, what is happening in the jar,\\and a backup that comes back from a pinch}
+
+\begin{document}
+
+\begin{frame}[plain]\titlepage\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}{What this deck covers}
+  \begin{enumerate}
+    \item \textbf{The 14-day method}: Full Proof Baking's schedule in grams, and her rules
+    \item \textbf{What is happening in the jar}: the early rise is bacteria; the day-5 lull is the hand-over
+    \item \textbf{Video, literature and this kitchen}: where the explanations differ; warm, not hot
+    \item \textbf{Drying a backup and reviving it}: a pinch, not a spoonful
+    \item \textbf{Open tests}: seven experiments the note leaves open
+  \end{enumerate}
+  \bigskip
+  {\small Flags carried over from the notes: \hypothesis\ \untested\ \caveat{not peer-reviewed}\ \caveat{loose analogue}.
+  Results from this kitchen are marked \ownresult; everything else is cited at the foot of the slide.}
+  \source{notes/starter-from-scratch.md and notes/starter-cheatsheet.md}
+\end{frame}
+
+% ===========================================================================
+\section{The 14-day method}
+
+\begin{frame}{What you need: a 30\% rye mix, a rubber band and 24°C}
+  \begin{itemize}
+    \item \textbf{Flour mix, 30\% rye:} 350\,g bread flour + 150\,g dark rye, whisked together. Every feed until day 12 uses it
+    \item \textbf{A straight-sided jar} with a rubber band at the level of each fresh feed; a fresh jar on day 2, and whenever it gets messy
+    \item \textbf{A scale reading to 0.1\,g}, tared before each ingredient: the feeds go down to 5\,g
+    \item \textbf{24°C} (75°F), ``warm room temperature'', for all 14 days
+    \item \textbf{Cheesecloth} and a rubber band until day 8, then a loosely fitted lid
+  \end{itemize}
+  \medskip
+  Ratios are \textbf{starter\,:\,water\,:\,flour by weight}, so every feed is at 100\% hydration.
+  \takeaway{Rye for its nutrients and enzymes, bread flour for strength. Plain flour also works for the base.}
+  \source{Kristen, Full Proof Baking (2019), from her on-screen title cards and narration}
+\end{frame}
+
+\begin{frame}{Two weeks in grams: 1:1:1 for a week, then the ratio climbs}
+  \footnotesize
+  \renewcommand{\arraystretch}{0.95}
+  \begin{tabularx}{\linewidth}{@{}c c c X@{}}
+    \toprule
+    \textbf{Day} & \textbf{Morning, g} & \textbf{Evening, g} & \textbf{What you'll see} \\
+    \midrule
+    1   & --- & 0 / 30 / 30 & Mix only, rest 24\,h \\
+    2   & --- & Stir, clean jar & Dry skin on top: fine \\
+    3   & --- & 20 / 20 / 20 & Risen: bacteria, not yeast yet \\
+    4   & 20 / 20 / 20 & 16 / 16 / 16 & 3--4×, runny, cheesy smell \\
+    \textbf{5} & \textbf{15 / 15 / 15} & \textbf{16 / 16 / 16} & \textbf{Almost no rise, vomit smell: normal} \\
+    6--7 & 15 / 15 / 15 & 15 / 15 / 15 & 1.2--2×, milder, first sour notes \\
+    8   & 15 / 15 / 15 & 15 / 15 / 15 & \textasciitilde 2×. Save discard, loose lid \\
+    9   & 15 / 15 / 15 & 8 / 16 / 16 & 2.5× \\
+    10  & 8 / 16 / 16 & 5 / 15 / 15 & 2.5×, falls before the feed \\
+    11  & 5 / 20 / 20 & 5 / 25 / 25 & 2.5× \\
+    12  & 5 / 25 / 25 & 5 / 20 / 20 & Evening: switch to 10\% rye mix \\
+    13  & 5 / 25 / 25 & 5 / 25 / 25 & 2.5× \\
+    14  & 8 / 16 / 16 ×2 & 10 / 50 / 50 & Feeds 7\,h apart; three a day now \\
+    \bottomrule
+  \end{tabularx}
+  \source{Full Proof Baking (2019), as tabulated in the cheat sheet. Feeds in grams of starter / water / flour: two a day from day 4, three from day 14}
+\end{frame}
+
+\begin{frame}{Feed at peak; it is done when it triples in 4--6\,h at 27°C}
+  \small
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \textbf{\color{crust}Feeding}
+      \begin{itemize}
+        \item Fallen before the feed? Next feed one ratio up: 1:2:2 → 1:3:3 → 1:4:4 → 1:5:5
+        \item Fewer than three feeds a day: higher ratios, up to 1:10:10
+        \item Day 12: 10\% rye mix = leftover 30\% mix + twice its weight in bread flour, for a ``higher peak, hold peak longer''
+        \item \textbf{Discard} if pink, orange or fuzzy
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \textbf{\color{crust}Done}
+      \begin{itemize}
+        \item Triples in 4--6\,h on 1:2:2 at \textbf{27°C}, not room temperature
+        \item No 40°C+ builds until done. Fridge: 2--4 weeks unfed
+      \end{itemize}
+      \smallskip
+      {\footnotesize
+      \begin{tabular}{@{}lll@{}}
+        \toprule
+        Video, day 14 & 2× at & Peak \\
+        \midrule
+        1:5:5 & 5\,h & 2.9× at 7.5\,h \\
+        1:2:2 & 4\,h & 3× at 7\,h \\
+        \bottomrule
+      \end{tabular}\par\smallskip
+      Not there yet: ``still pretty young''}
+    \end{column}
+  \end{columns}
+  \takeaway{Her closing card: ``Feed at peak! Monitor your starter! Keep it warm!''}
+  \source{Full Proof Baking (2019); the day-14 time-lapse, in an oven with the light on at 27°C (80°F)}
+\end{frame}
+
+% ===========================================================================
+\section{What is happening in the jar}
+
+\begin{frame}{The first two weeks are a succession of microbes}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \foreach \i/\head in {0/{Days 1--4\\the first wave},1/{Day 5\\the lull},2/{Days 6--9\\the hand-over},3/{Days 9--14\\building strength}}{
+      \node[stage] (h\i) at (2.95+\i*3.35,0) {\head};
+    }
+    \foreach \i in {0,1,2}{
+      \pgfmathtruncatemacro{\j}{\i+1}
+      \draw[arrow] (h\i.east) -- (h\j.west);
+    }
+    \node[rowlabel,anchor=east] at (1.3,-1.7) {In the jar};
+    \node[rowlabel,anchor=east] at (1.3,-3.4) {She saw};
+    \foreach \x/\t in {2.95/{\textit{Leuconostoc}, \textit{Lactococcus}, \textit{Enterococcus}, \textit{Enterobacter} from the flour},
+                       6.30/{Acid stops the first wave; the sourdough organisms are not yet in numbers},
+                       9.65/{\textit{Lactobacillus}, \textit{Pediococcus}, \textit{Weissella} take over; yeast the day after pH 3.5},
+                       13.00/{Community largely settled; what remains is matching food to appetite}}{
+      \node[tcell,minimum height=2.2cm,anchor=north] at (\x,-0.6) {\t};
+    }
+    \foreach \x/\t in {2.95/{3--4× rise, unpleasant smells},
+                       6.30/{``No significant growth!'', the worst smell},
+                       9.65/{1.2× → 2×; ``bit of sour'' on day 7},
+                       13.00/{Steady 2.5×; the ratio climbs}}{
+      \node[tcell,minimum height=0.9cm,anchor=north] at (\x,-2.95) {\t};
+    }
+  \end{tikzpicture}
+  \raggedright
+  \takeaway{The early rise that dies and the smell put people off, but they are an ordinary, well-documented succession.}
+  \source{The two lab studies, both refreshed daily: Van der Meulen et al.\ (2007) at 30°C; Ercolini et al.\ (2013) 5\,h a day at 25°C, 10°C between. Also Wink (2008a, b); Full Proof Baking (2019)}
+\end{frame}
+
+\begin{frame}{Days 1--4: the early rise is bacteria, not yeast}
+  \small
+  \begin{itemize}
+    \item Flour brings mostly \textit{Proteobacteria}: \textit{Pantoea}, \textit{Pseudomonas}, \textit{Enterobacter}. Within a day all but the \textit{Enterobacteriaceae} are suppressed and lactic acid bacteria (LAB) take over
+    \item The first LAB are not sourdough organisms: \textit{Leuconostoc}, \textit{Lactococcus}, \textit{Enterococcus}. At 30°C they fall below detection within a day or two
+    \item Rye is the exception: it arrives with \textit{Weissella} already dominant
+    \item Wink had a day-two starter analysed by two labs. The gas came from \textit{Leuconostoc citreum}, with a little \textit{Enterobacter cloacae}; neither lab found lactobacilli or yeast \caveat{not peer-reviewed}
+    \item She links \textit{Enterobacter}, \textit{Aerococcus} and \textit{Leuconostoc} to the bad smell
+  \end{itemize}
+  \takeaway{The 3--4× rise and the smell on day 4 are this first wave. Keep to the schedule.}
+  \source{Ercolini et al.\ (2013); Van der Meulen et al.\ (2007); Wink (2008b), not peer-reviewed}
+\end{frame}
+
+\begin{frame}{Day 5: the lull is acid shutting down the first wave}
+  \begin{columns}[T]
+    \begin{column}{0.66\textwidth}
+      \small
+      \begin{itemize}
+        \item As acid builds, the first wave stops before the sourdough organisms have numbers: ``No significant growth!''
+        \item Wink's pH paper: gassy bacteria grew at pH ≥\,5, not ≤\,4.5; yeast usually came the day after pH 3.5 \caveat{careful amateur work; no replicate counts}
+        \item \hypothesis\ (hers): \textit{L.\ citreum}'s bacteriocins hold back the lactobacilli, so a bigger early rise means a longer lull
+        \item Lab data agree: at 30°C, pH below 4.0 after day 2; yeast at 10⁷\,CFU/g after 4--5 days (one dough in four: 8)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \centering
+      \begin{tikzpicture}[x=1cm,y=1.05cm]
+        \fill[crumb] (0,5) rectangle (0.5,6);
+        \fill[crust!25] (0,3) rectangle (0.5,4.5);
+        \draw[crust,thick] (0,3) rectangle (0.5,6);
+        \foreach \p in {6,5,4.5,4,3.5,3}{
+          \draw[crust] (0,\p) -- (-0.1,\p) node[left,font=\tiny,text=rye] {\p};
+        }
+        \node[font=\scriptsize\bfseries,text=crust] at (0.25,6.3) {pH};
+        \node[right,font=\scriptsize,align=left,text width=2.6cm] at (0.6,5.5) {≥\,5: the gassy first wave grows};
+        \node[right,font=\scriptsize,align=left,text width=2.6cm,text=muted] at (0.6,4.75) {between: the paper reads to 0.5};
+        \node[right,font=\scriptsize,align=left,text width=2.6cm] at (0.6,4.15) {≤\,4.5: it does not};
+        \draw[flag,very thick] (-0.05,3.5) -- (0.55,3.5);
+        \node[right,font=\scriptsize,align=left,text width=2.6cm] at (0.6,3.5) {3.5: yeast usually the next day};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{Almost no rise and a vomit smell on day 5 is normal. A pH strip at each feed, days 3--7, tests Wink's thresholds.}
+  \source{Wink (2008a, b), not peer-reviewed; Van der Meulen et al.\ (2007)}
+\end{frame}
+
+\begin{frame}{Days 6--9: the sourdough bacteria take over, then little changes}
+  \small
+  Sourdough-specific LAB, such as \textit{Lactobacillus}, \textit{Pediococcus} and \textit{Weissella}, replace the first wave.
+  \medskip
+
+  \begin{tabularx}{\linewidth}{@{}l l >{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \textbf{Where} & \textbf{Conditions} & \textbf{When it settles} \\
+    \midrule
+    Van der Meulen et al.\ (2007) & 30°C, refreshed daily & Well-adapted strains dominate from about day 5 \\
+    Ercolini et al.\ (2013) & 25°C, 5\,h a day & Mature in 5--7 days; lactobacilli prominent by day 10 \\
+    The video & 24°C & ``Bit of sour'' on day 7: about a day behind 30°C \\
+    \bottomrule
+  \end{tabularx}
+  \takeaway{The first sour smell, with the rise back to 2×, is the hand-over: sourdough bacteria replacing the first wave.}
+  \source{Van der Meulen et al.\ (2007); Ercolini et al.\ (2013); Full Proof Baking (2019)}
+\end{frame}
+
+\begin{frame}{Days 9--14: raising the ratio is about timing, not species}
+  \small
+  \begin{itemize}
+    \item By day 9 the community has largely settled. What remains is matching food to appetite
+    \item A 1:2:2 feed that peaks and collapses within 12\,h ran out of food well before the next feed, and then sits in its own acid
+    \item A higher ratio dilutes the starter, so it takes longer to peak, and dilutes the acid it carried over: the same lever as chapter 11's recovery at 1:10:10
+    \item ``Feed at peak'' is \textbf{a practitioner's rule, not a measured result}
+    \item The plausible mechanism is chapter 11's compounding stressors: past peak the food is spent and acid and ethanol are at their highest, so a starter always fed after collapse is always fed at its most stressed
+  \end{itemize}
+  \takeaway{If it peaks well before the next feed is due, raise the ratio. That is the whole of days 9--13.}
+  \source{Full Proof Baking (2019); chapter 11, \emph{Compounding Stressors} and \emph{Recovery Protocol}}
+\end{frame}
+
+% ===========================================================================
+\section{Video, literature and this kitchen}
+
+\begin{frame}{The method works; three of its explanations do not}
+  \footnotesize
+  \begin{tabularx}{\linewidth}{@{}c >{\raggedright\arraybackslash}p{3.9cm} X@{}}
+    \toprule
+    & \textbf{The video says} & \textbf{The evidence says} \\
+    \midrule
+    1 & It ``picks up the wild bacteria and yeasts from the air'' &
+      \textbf{The flour, then the baker's hands.} Same recipe and flour on two continents: much of each community traced to the flour, the differences to the bakers' hands. In bakeries over a year, flour drove the LAB; the bakery's own microbes played a minor role. It happens in a covered jar too \\
+    \addlinespace
+    2 & Day 3: ``We've caught some wild yeast!'' &
+      In a two-day-old starter the rise is bacterial. Her narration says ``not the correct balance'' at once: only the label is wrong \\
+    \addlinespace
+    3 & Day 8: a loose lid, as ``this is a live culture that requires air'' &
+      Yeast and LAB ferment without oxygen. The lid is loose so CO₂ can escape, not so air can get in \\
+    \bottomrule
+  \end{tabularx}
+  \takeaway{The cheesecloth does no harm, but it is not what inoculates the jar: the flour is.}
+  \source{Reese et al.\ (2020); Minervini et al.\ (2018); Wink (2008a), not peer-reviewed}
+\end{frame}
+
+\begin{frame}{Start warm, not hot: 24°C or 30°C picks a different culture}
+  \begin{columns}[T]
+    \begin{column}{0.6\textwidth}
+      \small
+      \begin{itemize}
+        \item New starters are small and unsettled, like chapter 11's depleted culture: 22--25°C, no selection pressure
+        \item Warm is fine: her target is 27°C; Van der Meulen et al.\ (2007) had a stable culture in a week at 30°C
+        \item \textit{L.\ citreum} is behind Wink's false start: at 24°C the first wave may never fully leave
+        \item \hypothesis\ begun near 30°C, a starter may suit a warm-kept regime better (open tests 1--2)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.37\textwidth}
+      \centering
+      {\scriptsize\color{muted} Daily backslopping: dominant LAB}\par\smallskip
+      \begin{tikzpicture}
+        \node[box=1.3cm] (t1) {\textbf{23°C}};
+        \node[box=2.2cm,right=0.45cm of t1] (s1) {\textit{Leuconostoc citreum}};
+        \node[box=1.3cm,below=0.35cm of t1] (t2) {\textbf{30°C, 37°C}};
+        \node[box=2.2cm,right=0.45cm of t2] (s2) {\textit{Lactobacillus fermentum}};
+        \draw[arrow] (t1) -- (s1);
+        \draw[arrow] (t2) -- (s2);
+      \end{tikzpicture}
+      \par\smallskip
+      {\scriptsize Van der Meulen et al.\ (2011), via chapter 09}
+    \end{column}
+  \end{columns}
+  \takeaway{No hot builds until it passes the tripling test; then keep the mother at room temperature and build hot from it.}
+  \source{Van der Meulen et al.\ (2007, 2011); Wink (2008b), not peer-reviewed; chapters 08, 09, 11}
+\end{frame}
+
+\begin{frame}{Tap water and ordinary flour will do; juice is optional}
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \small
+      \textbf{\color{crust}Water}
+      \begin{itemize}
+        \item Bottled water is usually about chlorine. Danish tap water is groundwater, normally unchlorinated: tap water should do
+      \end{itemize}
+      \textbf{\color{crust}Flour}
+      \begin{itemize}
+        \item Any bread flour for the base; the Manitoba is more than strong enough
+        \item Dark wholemeal rye (\textit{fuldkornsrugmel}): the whole grain is the point, as when chapter 11 adds wholemeal in recovery
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \small
+      \textbf{\color{crust}A shortcut through the lull}
+      \begin{itemize}
+        \item Wink: pineapple juice (or orange juice, or apple cider) for water on days 1--3 acidifies the mix below what the gas producers tolerate
+        \item Yeast on or before day 4, against about day 7 with water
+        \item It ``doesn't change the end result''; never necessary, ``only patience''
+        \item Here: juice for the day-1 mix and the day-3 feed \untested
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \source{Wink (2008a, b), not peer-reviewed. Juice in this method is the note's suggestion and has not been tried.}
+\end{frame}
+
+% ===========================================================================
+\section{Drying a backup and reviving it}
+
+\begin{frame}{A pinch worked where a soaked spoonful failed \ownresult}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{First attempt}
+        \small
+        A recipe worked out in a September 2026 conversation with Claude:
+        \begin{itemize}
+          \item a larger amount of flakes
+          \item soaked in warm water first
+        \end{itemize}
+        \textbf{It did not take.}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{October 2026}
+        \small
+        Flakes a year old:
+        \begin{itemize}
+          \item a good pinch, about 1\,g, crushed into a fresh 30\,g water + 30\,g wholemeal/rye mix
+          \item no separate soak
+        \end{itemize}
+        \textbf{Clearly active in several days.}
+      \end{block}
+    \end{column}
+  \end{columns}
+  \medskip
+  {\small Why keep a backup: after a heat kill, it is the only way back to the original culture, rather than to whatever the flour supplies. That holds for the bacteria; the yeast may not come through drying.}
+  \source{Own runs, September and October 2026; chapter 11, \emph{Recovery Protocol}}
+\end{frame}
+
+\begin{frame}{Dry it cool: a wet film is heat-fragile, a dry flake is not}
+  \begin{columns}[T]
+    \begin{column}{0.43\textwidth}
+      \small
+      \textbf{\color{crust}Drying it}
+      \begin{itemize}
+        \item Spread thin on baking paper; room temperature until it snaps, about 24--48\,h
+        \item Crumble; store airtight, dry, cool and dark
+        \item No oven, no warm dehydrator: the guide allows one only below 37°C
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.54\textwidth}
+      \small
+      \textbf{\color{crust}Dry is heat-proof; drying is not}
+      \begin{itemize}
+        \item Until dry, the film is a wet culture: six hours or more at 40--45°C is high risk, and the D-value is under a minute at 55°C (chapter 11)
+        \item Dried \textit{S.\ cerevisiae} kept full viability through 60\,min at 75°C, and 10\,min at 100°C at 12\% relative humidity
+        \item The September chat said dried cells lose heat tolerance: backwards
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \takeaway{The heat risk is the wet start of drying, not the dry end: dry at room temperature.}
+  \source{Country Roads Sourdough, not peer-reviewed; Ribert et al.\ (2021); chapter 11}
+\end{frame}
+
+\begin{frame}{Reviving it in five steps, with amounts by eye \ownresult}
+  \small
+  \begin{enumerate}\setlength{\itemsep}{1pt}
+    \item \textbf{Start:} crush a good pinch of flakes, about 1\,g, into about 30\,g water + 30\,g flour, half wholemeal, half rye. Water at room temperature or a little above, not cold; no separate soak
+    \item \textbf{Wait, unfed, for several days} at 24--26°C until clearly active. A dry crust forms on top: the day-2 skin, harmless
+    \item \textbf{Lift off the crust and feed what is underneath} with bread flour and wholemeal at about 1:1:1. From the next feed, keep 20\,g and discard the rest, as on day 4
+    \item \textbf{Feed at peak} as in the main method; one or two feeds on the usual flour before baking with it
+    \item \textbf{Dry a new backup} once it doubles reliably
+  \end{enumerate}
+  \takeaway{Record flake age, rough amount, water temperature, first sour smell, first rise, first doubling. Sour without a rise: the LAB are back, the yeast not yet.}
+  \source{The method as run here, October 2026; amounts estimated, not weighed, and it does not seem sensitive to them}
+\end{frame}
+
+\begin{frame}{A dried starter is not a paused starter}
+  \footnotesize
+  \renewcommand{\arraystretch}{0.92}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{5.5cm} >{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \textbf{What} & \textbf{Through drying} & \textbf{Why} \\
+    \midrule
+    Water & Leaves, to equilibrium with the room & --- \\
+    CO₂ and ethanol & Leave & A gas and a volatile, from a thin film \\
+    Acetic acid & About half leaves & Volatile: 57\% kept in freeze-drying \\
+    Lactic acid & Mostly stays & Not volatile: 85\% kept in freeze-drying \\
+    Spent flour: starch, gluten, bran, minerals & Stays & Already part-fermented: little food left in it \\
+    Flour enzymes & Stay, idle until wet & Flour is itself a dry product whose enzymes work once wetted \\
+    Cells & A minority survive dormant; most die & Next slide \\
+    \bottomrule
+  \end{tabularx}
+  \takeaway{Slow air-drying probably loses at least as much acetic acid, so a flake brings back mostly lactic acid. That is why the dose matters.}
+  \source{Acid figures: Kline (1979), a patent, not peer-reviewed}
+\end{frame}
+
+\begin{frame}{Drying kills most cells, the yeast hardest}
+  \begin{columns}[T]
+    \begin{column}{0.59\textwidth}
+      \small
+      \begin{itemize}
+        \item First hours: the film keeps fermenting as sugars, salts and acids concentrate \caveat{reasoning; nothing measured}
+        \item Damage: mechanical, structural and oxidative in yeast; in LAB mainly the membrane, as it changes phase
+        \item Air-drying \textit{S.\ cerevisiae}: under 1 in a million growing cells survive; 20--40\% of cells that ran out of food
+        \item \hypothesis\ so dry later than the usual ``at peak''? Uncertain: tolerance comes with respiration, a jar is short of oxygen, no sourdough yeast was tested (open test 4)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \centering
+      {\scriptsize\textbf{Survival, freeze-dried San Francisco starter}}\par\smallskip
+      \begin{tikzpicture}[x=1.15cm,y=1cm]
+        % log10 scale: x = log10(%) + 2, from 0.01 % to 100 %
+        \foreach \x/\l in {0/0.01,1/0.1,2/1,3/10,4/100}{
+          \draw[muted!40] (\x,-2.25) -- (\x,-2.35);
+          \node[font=\tiny,text=muted] at (\x,-2.55) {\l\%};
+        }
+        \draw[muted!60] (0,-2.25) -- (4,-2.25);
+        \foreach \y in {-0.45,-1.25}{\foreach \x in {1,2,3}{\draw[muted!30] (\x,\y-0.2) -- (\x,\y+0.2);}}
+        \fill[own] (0,-0.25) rectangle (3.477,-0.65);
+        \fill[own!45] (3.477,-0.25) rectangle (3.653,-0.65);
+        \node[font=\tiny,anchor=south west,inner sep=1pt] at (0,-0.22) {\textit{L.\ sanfrancisco}, with additive: 30--45\%};
+        \fill[own!60] (0,-1.05) rectangle (1.845,-1.45);
+        \node[font=\tiny,anchor=south west,inner sep=1pt] at (0,-1.02) {\textit{L.\ sanfrancisco}, without: 0.7\%};
+        \draw[flag,very thick] (0,-1.85) -- (0,-2.2);
+        \node[font=\tiny,anchor=south west,inner sep=1pt] at (0,-1.82) {Yeast (\textit{Torulopsis holmii}): below 0.01\%};
+      \end{tikzpicture}
+      \par
+      {\tiny Kline (1979) \caveat{a patent, not peer-reviewed}}\par
+      {\tiny\color{muted} Freeze-drying is not air-drying, but this is the only sourdough-specific comparison found.}
+    \end{column}
+  \end{columns}
+  \source{Calahan et al.\ (2011); Dupont et al.\ (2014); Santivarangkna et al.\ (2008); Kline (1979), a patent, not peer-reviewed}
+\end{frame}
+
+
+\begin{frame}{Water starts four things at once}
+  \centering
+  \begin{tikzpicture}[every node/.append style={font=\small,minimum height=1.45cm}]
+    \node[box=6.5cm,align=left] (a) {\textbf{1. The lactic acid redissolves.} A pinch gives the fresh flour a small dose; a spoonful gives close to full-strength starter acid};
+    \node[box=6.5cm,align=left,right=0.4cm of a] (b) {\textbf{2. Flour enzymes start freeing sugar again}, in the fresh flour and any left in the flake};
+    \node[box=6.5cm,align=left,below=0.35cm of a] (c) {\textbf{3. Survivors take up water} and their membranes pass back through the phase change: the moment of leakage, worse in cold water};
+    \node[box=6.5cm,align=left,below=0.35cm of b] (d) {\textbf{4. Dead cells leak} their contents into the mix};
+    \path (a.north) -- (b.north) coordinate[midway] (m);
+    \node[above=0.25cm of m,font=\small\bfseries,text=crust,minimum height=0pt] {Rehydration};
+  \end{tikzpicture}
+  \par\bigskip
+  \raggedright\small
+  Then a lag, while the survivors repair before they divide. From there the revival is a race between their regrowth and the flour's own microbes.
+  \takeaway{Step 3 is where water temperature matters: the leakage is worse in cold water.}
+  \source{Santivarangkna et al.\ (2008); Crowe et al.\ (1989)}
+\end{frame}
+
+\begin{frame}{A pinch skips the first wave; the yeast still has to build up}
+  \centering
+  \begin{tikzpicture}[node distance=0.13cm,every node/.append style={inner sep=2.4pt}]
+    \node[font=\scriptsize\bfseries,text=crust,anchor=west] (ph) at (0,0) {From a pinch of dried flakes \ownresult};
+    \node[cell=8.3cm,below=0.1cm of ph.south west,anchor=north west] (p0) {\textbf{Start:} about 1\,g crushed flakes + 30\,g water + 30\,g wholemeal/rye};
+    \node[cell=8.3cm,below=of p0] (p1) {\textbf{First hours:} lactic acid redissolves · flour enzymes free sugar · survivors rehydrate and repair before dividing};
+    \node[cell=8.3cm,below=of p1] (p2) {\textbf{Surviving LAB regrow:} many survivors, already acid-tolerant · pH falls below 4.5 → the flour's gassy first wave is shut out: no false rise, no lull};
+    \node[cell=8.3cm,below=of p2] (p4) {\textbf{Yeast:} perhaps a hundred survivors, maybe none, + newcomers from flour, hands, kitchen · the acid admits the tolerant ones};
+    \node[cell=8.3cm,below=of p4] (p5) {\textbf{Several days, unfed:} sour but no rise · dry crust on top · yeast regrows over about 20 doublings};
+    \node[cell=8.3cm,below=of p5] (p6) {\textbf{First rise:} lift off the crust · feed bread flour + wholemeal 1:1:1 · then keep 20\,g, as on day 4};
+    \node[cell=8.3cm,below=of p6] (p7) {Feed at peak until it doubles reliably → dry a new backup};
+    \foreach \a/\b in {p0/p1,p1/p2,p2/p4,p4/p5,p5/p6,p6/p7}{\draw[arrow,thin] (\a) -- (\b);}
+    % from scratch
+    \node[font=\scriptsize\bfseries,text=crust,anchor=west] (sh) at (9.6,0) {From scratch, for comparison};
+    \node[skipped=4.4cm,below=0.1cm of sh.south west,anchor=north west] (s1) {\textbf{Days 1--4:} the flour's first wave, \textit{Leuconostoc}, \textit{Enterobacter} · big rise, bad smell};
+    \node[skipped=4.4cm,below=0.3cm of s1] (s2) {\textbf{Day 5: the lull} · acid stops the first wave};
+    \node[cell=4.4cm,anchor=north west] (s3) at (s1.west |- p4.north) {\textbf{Days 6--9:} sourdough LAB take over · yeast the day after pH 3.5};
+    \node[cell=4.4cm,anchor=north west] (s4) at (s1.west |- p6.north) {\textbf{Days 9--14:} ratios climb until it triples};
+    \draw[arrow,thin] (s1) -- (s2);
+    \draw[arrow,thin] (s2) -- (s3);
+    \draw[arrow,thin] (s3) -- (s4);
+    \draw[arrow,thin,dashed,draw=own] (p2.east) -- ++(0.35,0) |- ($(s1.south west)!0.5!(s2.north west)$)
+      node[pos=0.75,above,font=\tiny,text=own] {skipped};
+  \end{tikzpicture}
+  \raggedright
+  \source{own run, October 2026, for the timings. The order of events inside them is reasoning \caveat{no pH or counts were taken}}
+\end{frame}
+
+\begin{frame}{The surviving bacteria close the window the first wave needs}
+  \small
+  \begin{itemize}
+    \item From scratch, a gassy first wave rises and collapses and the jar goes quiet before the sourdough organisms take over
+    \item The revival took days, but had \textbf{no false start and no lull} \ownresult
+    \item The likely reason is the inoculum: the surviving LAB are sourdough organisms, selected by months of feeding, that grow well at their own acidity
+    \item They acidify the fresh flour before its first wave builds, closing Wink's window: the gas producers grow at pH ≥\,5 and not at ≤\,4.5
+    \item From scratch nothing acid-tolerant is there in numbers, so the first wave gets days \caveat{reasoning that fits the run here; no pH was measured}
+  \end{itemize}
+  \takeaway{From flakes, expect quiet days that turn sour before rising: no day-4 surge, no lull.}
+  \source{Wink (2008a), not peer-reviewed; own run, October 2026}
+\end{frame}
+
+\begin{frame}{The yeast restarts from perhaps a hundred cells, possibly none}
+  \centering
+  \begin{tikzpicture}[node distance=0.26cm,every node/.append style={nohyph}]
+    \node[box=2.45cm,minimum height=1.35cm] (a) {\textbf{1\,g pinch}\\ about 2\,g of starter before drying};
+    \node[box=2.45cm,minimum height=1.35cm,right=of a] (b) {\textbf{≈\,10⁷ yeast/g}\\ in a ripe starter, and far more LAB};
+    \node[box=2.45cm,minimum height=1.35cm,right=of b] (c) {\textbf{Drying: under 0.01\%}\\ yeast survive; the bacterium 0.7\%, at least 70× better};
+    \node[box=2.45cm,minimum height=1.35cm,right=of c] (d) {\textbf{A year stored: −94\%}\\ even for commercial dried yeast};
+    \node[box=2.45cm,minimum height=1.35cm,right=of d,fill=own!12,draw=own] (e) {\textbf{Perhaps 100 cells}\\ possibly none: 1 or 2 per gram of fresh mix};
+    \foreach \x/\y in {a/b,b/c,c/d,d/e}{\draw[arrow] (\x) -- (\y);}
+    \node[font=\tiny,text=muted,below=0.05cm of b,minimum height=0pt] {Van der Meulen 2007};
+    \node[font=\tiny,text=muted,below=0.05cm of c,minimum height=0pt] {Kline 1979};
+    \node[font=\tiny,text=muted,below=0.05cm of d,minimum height=0pt] {Ribert 2021};
+  \end{tikzpicture}
+  \par\medskip\raggedright\small
+  \begin{itemize}
+    \item That is over 20 doublings short of a ripe starter: each tenfold is about 3.3 doublings
+    \item The LAB start from far more survivors. The revival behaved as if the LAB had come through and the yeast had to be caught again \ownresult
+    \item \caveat{arithmetic on borrowed figures, not a count}: Kline's starter was freeze-dried, and Ribert's yeast was grown to be dried
+  \end{itemize}
+  \source{Van der Meulen et al.\ (2007); Kline (1979), a patent, not peer-reviewed; Ribert et al.\ (2021)}
+\end{frame}
+
+\begin{frame}{It skipped the bacterial half of the first week, not the yeast half}
+  \small
+  \begin{itemize}
+    \item \textbf{The yeast may not be the original.} Survivors compete with yeast arriving as it does from scratch: with the flour, and from the baker's hands
+    \item A kitchen that kept the starter for years may hold its yeast: in four bakeries, the sourdough's dominant yeast also dominated walls, air, storage boxes and mixers. A ``new'' yeast may be the old one coming back \caveat{loose analogue}
+    \item The yeast does not arrive in a from-scratch jar: the LAB have already acidified it. From scratch, yeast appeared the day after pH 3.5, so its clock starts at once, and the acid favours tolerant yeasts
+  \end{itemize}
+  \takeaway{A backup reliably brings back the bacteria, and perhaps the yeast. Drying later may save more of it (open test 4); whether it is the old yeast is open test 7.}
+  \source{Reese et al.\ (2020); Minervini et al.\ (2015): bakeries hold far more flour and dough than a home, and the study cannot say which way the yeast moved; Wink (2008a), not peer-reviewed}
+\end{frame}
+
+\begin{frame}{A pinch, not a spoonful: the flakes carry the old starter's acid}
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \centering
+      \begin{tikzpicture}[node distance=0.3cm,every node/.append style={nohyph}]
+        \node[box=2.95cm] (sp) {\textbf{A spoonful}\\in a little water and flour};
+        \node[box=2.95cm,below=of sp,minimum height=1.5cm] (spo) {Close to full-strength starter acid, little fresh food: chapter 11's dying culture};
+        \node[box=2.95cm,right=0.3cm of sp] (pi) {\textbf{A pinch}\\in 60\,g fresh wholemeal and rye};
+        \node[box=2.95cm,below=of pi,fill=own!12,draw=own,minimum height=1.5cm] (pio) {Far more dilute, plenty of food; wholegrain is what chapter 11 adds};
+        \draw[arrow] (sp) -- (spo);
+        \draw[arrow] (pi) -- (pio);
+        \node[font=\scriptsize,below=0.1cm of spo,text=flag,align=center,text width=3.2cm] {first attempt, also warm-soaked: did not take \ownresult};
+        \node[font=\scriptsize,below=0.1cm of pio,text=own] {worked \ownresult};
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \small
+      \begin{itemize}
+        \item Flakes are the old flour plus all its lactic acid, which does not evaporate in drying
+        \item Chapter 11 dilutes a dying culture out at 1:10:10
+        \item Country Roads' recipe is the high-dose kind, 5\,g of flakes into 20\,g water + 20\,g flour, and expects about a week
+        \item Two things changed, amount and soak: one run cannot separate them (open test 6). The soak is the less likely culprit: 35--38°C for half an hour is brief by chapter 11's standards, unless the water was hotter
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \source{Own runs, 2026; chapter 11, \emph{Recovery Protocol}; Country Roads Sourdough, not peer-reviewed}
+\end{frame}
+
+\begin{frame}{Water: not cold. The documented hazard is cold, not warm}
+  \small
+  \begin{itemize}
+    \item The September chat advised lukewarm, 25--30°C, because cells are most fragile as water rushes back in. The fragility is real; the direction is wrong
+    \item As a dry cell takes up water, its membrane lipids pass from gel to fluid. In cold water the membrane leaks while it changes state: \textbf{imbibitional damage}, measured in pollen, with dry yeast named as a case
+    \item Active dry yeast rehydrated at 0°C against 40°C: less respiration and fermentation, membranes that did not reseal even after hours at 40°C, few cells growing on plates
+    \item Limits: pollen; pure commercial \textit{S.\ cerevisiae}; flakes in flour may wet more slowly; nothing about 20°C. The direction is supported; the room-temperature penalty is unknown (test 5)
+  \end{itemize}
+  \takeaway{Mix with water at room temperature or a little above, up to about 35°C, then hold the jar at 24--26°C. Avoid cold tap water.}
+  \source{Crowe et al.\ (1989); Peña et al.\ (1992); Country Roads Sourdough (room-temperature water; cold only slows things), not peer-reviewed}
+\end{frame}
+
+\begin{frame}{A backup loses ground every month, but slowly}
+  \scriptsize
+  \begin{tabularx}{\linewidth}{@{}l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{4.6cm}@{}}
+    \toprule
+    \textbf{Source} & \textbf{What was stored} & \textbf{Loss} \\
+    \midrule
+    Calahan et al.\ (2011) & Air-dried \textit{S.\ cerevisiae} & About 20\% survival over a month \\
+    Ribert et al.\ (2021) & Dried \textit{S.\ cerevisiae}, 25°C, 55\% relative humidity & 1.24 log, about 94\%, in a year \\
+    Hajar-Azhari et al.\ (2024) & Spray-dried, kombucha-started sourdough powder, best of four packagings \caveat{loose analogue} & About 2.5 log of LAB and yeast in 90 days \\
+    Here \ownresult & Flakes a year old (October 2026) & Back from a pinch in several days \\
+    \bottomrule
+  \end{tabularx}
+  \smallskip
+  \small
+  \begin{itemize}
+    \item A dry flake follows the room: water activity about 0.5 in a 50\% kitchen, far below anything that grows. Losses are mainly oxidation of membrane lipids: hence airtight, cool, dark
+    \item Each tenfold loss costs about 3.3 doublings: an old backup wakes more slowly, not never. True of the LAB; the yeast is less certain
+  \end{itemize}
+  \takeaway{Replace the backup once a year from the live starter to keep the loss small.}
+  \source{As in the table; FDA (1984); Santivarangkna et al.\ (2008); Country Roads Sourdough, not peer-reviewed; chapter 11}
+\end{frame}
+
+% ===========================================================================
+\begin{frame}{Takeaways}
+  \begin{itemize}
+    \item The day-4 rise is bacteria and the day-5 lull is normal: keep to the schedule through both
+    \item Feed at peak. When it falls before the next feed, go one ratio up
+    \item Done means tripling in 4--6\,h on 1:2:2 at 27°C. No hot builds before that
+    \item Start warm, not hot: 24°C or 30°C is a choice of culture as well as pace
+    \item The microbes come from the flour and your hands, not the air
+    \item Dry a backup thin at room temperature; store it airtight, cool and dark; replace it yearly
+    \item Revive with a pinch in a fresh wholemeal and rye mix, water not cold. The bacteria come back first; the yeast later, and perhaps a new one
+  \end{itemize}
+\end{frame}
+
+% ===========================================================================
+\section{Open tests}
+
+\begin{frame}{Seven open tests \untested}
+  \scriptsize
+  \begin{columns}[T]
+    \begin{column}{0.45\textwidth}
+      \textbf{\color{crust}Starting from scratch}
+      \begin{enumerate}
+        \item \textbf{Start temperature.} Two jars, same flour and day-1 mix: room temperature against 30°C (the chamber can hold it). Compare the end of the lull, the first tripling at 1:2:2, the smell. Van der Meulen et al.\ (2011) predicts different dominant LAB
+        \item \textbf{Does a 30°C start take to the hot protocol better} than a 24°C one? Only once both pass the tripling test, on split lineages (chapter 08)
+        \item \textbf{Juice versus water}, Wink's own design: two identical jars, one with juice on days 1--3
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.53\textwidth}
+      \textbf{\color{crust}The dried backup}
+      \begin{enumerate}
+        \setcounter{enumi}{3}
+        \item \textbf{Dry at peak or after it.} Two films from one jar, at peak and a few hours after the fall; revive equal weights; compare the first doubling. Calahan et al.\ (2011) predicts the later film wins
+        \item \textbf{Water temperature.} Same flakes, 35°C water against cold tap, both then at 24--26°C. Peña et al.\ (1992) predicts the cold jar is slower
+        \item \textbf{Pinch versus spoonful}: a pinch against 10\,g, same flour and water temperature. The acid account predicts a slower spoonful; a pH strip at the start should show why
+        \item \textbf{Same yeast or a new one?} No kitchen test; sequencing the fungal ITS region of flakes and revived starter, as Reese et al.\ (2020) did, would. Dead cells keep their DNA; a species match would not prove the same strain
+      \end{enumerate}
+    \end{column}
+  \end{columns}
+  \source{The Open tests section of notes/starter-from-scratch.md}
+\end{frame}
+
+% ===========================================================================
+\begin{frame}{Sources}
+  \tiny
+  \begin{columns}[T]
+    \begin{column}{0.49\textwidth}
+      \textbf{\color{crust}The method and the first two weeks}\par\vspace{1.5pt}
+      Kristen, Full Proof Baking (2019). \emph{How To Make A Sourdough Starter From Scratch.} YouTube, 7 Feb 2019.\par\vspace{1.5pt}
+      Wink D (2008a). The pineapple juice solution, Part 1. \emph{Bread Lines} 16(1). Not peer-reviewed.\par\vspace{1.5pt}
+      Wink D (2008b). The pineapple juice solution, Part 2. \emph{Bread Lines}, June 2008. Not peer-reviewed.\par\vspace{1.5pt}
+      Van der Meulen R et al.\ (2007). \emph{Appl. Environ. Microbiol.} 73(15):4741--4750.\par\vspace{1.5pt}
+      Van der Meulen R et al.\ (2011). \emph{Appl. Environ. Microbiol.} 77(8):2716--2726.\par\vspace{1.5pt}
+      Ercolini D et al.\ (2013). Microbial ecology dynamics during rye and wheat sourdough preparation. \emph{Appl. Environ. Microbiol.} 79(24):7827--7836.\par\vspace{1.5pt}
+      Minervini F et al.\ (2018). \emph{Frontiers in Microbiology} 9:1984.\par\vspace{1.5pt}
+      Reese AT et al.\ (2020). Influences of ingredients and bakers on the bacteria and fungi in sourdough starters and bread. \emph{mSphere} 5(1):e00950-19.\par\vspace{1.5pt}
+      Minervini F et al.\ (2015). House microbiotas as sources of LAB and yeasts in traditional Italian sourdoughs. \emph{Food Microbiology} 52:66--76.
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \textbf{\color{crust}Drying and reviving}\par\vspace{1.5pt}
+      Country Roads Sourdough. \emph{Dehydrating and Rehydrating Sourdough Starter: A How To Guide.} Not peer-reviewed.\par\vspace{1.5pt}
+      Kline L (1979). Freeze-dried natural sour dough starter. US Patent 4,140,800. A patent, not peer-reviewed.\par\vspace{1.5pt}
+      Calahan D et al.\ (2011). Genetic analysis of desiccation tolerance in \emph{S.\ cerevisiae}. \emph{Genetics} 189(2):507--519.\par\vspace{1.5pt}
+      Dupont S et al.\ (2014). Survival kit of \emph{S.\ cerevisiae} for anhydrobiosis. \emph{Appl. Microbiol. Biotechnol.} 98(21):8821--8834.\par\vspace{1.5pt}
+      Santivarangkna C et al.\ (2008). Inactivation mechanisms of LAB starter cultures preserved by drying. \emph{J. Appl. Microbiol.} 105(1):1--13.\par\vspace{1.5pt}
+      Crowe JH et al.\ (1989). Membrane phase transitions are responsible for imbibitional damage in dry pollen. \emph{PNAS} 86(2):520--523.\par\vspace{1.5pt}
+      Peña A et al.\ (1992). Rehydration temperature is critical for metabolic competence and membrane integrity in active dry yeast. \emph{Arch. Microbiol.} 158(2):75--80.\par\vspace{1.5pt}
+      Ribert P et al.\ (2021). Effect of devitrification on the survival and resistance of dried \emph{S.\ cerevisiae}. \emph{Appl. Microbiol. Biotechnol.} 105(16--17):6409--6418.\par\vspace{1.5pt}
+      Hajar-Azhari S et al.\ (2024). Sourdough powder: shelf-life stability in different package type. \emph{J. Food Sci. Technol.} 61(9):1701--1710.\par\vspace{1.5pt}
+      US FDA (1984). \emph{Water Activity (aw) in Foods.} Inspection Technical Guide.
+    \end{column}
+  \end{columns}
+  \source{Full entries in the References section of notes/starter-from-scratch.md; chapter 11 of the main document}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,84 @@
+% Shared look for every deck: Metropolis with a progress bar under each frame title.
+% Build with Tectonic: `make` in this directory.
+
+\usetheme[progressbar=frametitle,numbering=fraction,sectionpage=progressbar,block=fill]{metropolis}
+
+% Metropolis looks Fira Sans up by system name; load it from the TeX bundle instead,
+% Light for body text as Metropolis intends, with lining figures for data.
+\usepackage[sfdefault,light,lf]{FiraSans}
+\usepackage{booktabs,tabularx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc}
+
+% Metropolis's palette, with the decks' own colour names mapped onto it.
+\definecolor{mDarkTeal}{HTML}{23373B}
+\definecolor{mDarkBrown}{HTML}{604C38}
+\definecolor{mLightBrown}{HTML}{EB811B}
+\colorlet{crust}{mDarkBrown}
+\definecolor{crumb}{HTML}{FAEEE2}
+\colorlet{rye}{mDarkTeal}
+\definecolor{flag}{HTML}{B03A2E}
+\definecolor{own}{HTML}{2E7D4F}
+\definecolor{muted}{HTML}{7A7F80}
+
+% Top-align frames, so the \vfill in \source puts the source line at the bottom.
+% A slimmer title bar and narrower margins than Metropolis's defaults leave room
+% for the denser slides.
+\makeatletter
+\beamer@centeredfalse
+\setlength{\metropolis@frametitle@padding}{1.4ex}
+% A progress bar you can see: under every frame title and on section pages.
+\setlength{\metropolis@progressinheadfoot@linewidth}{2pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{1.5pt}
+\setlength{\metropolis@titleseparator@linewidth}{1pt}
+% Metropolis's title page is \paperheight tall, which overflows a top-aligned frame.
+\setbeamertemplate{title page}{%
+  \begin{minipage}[b][\textheight]{\textwidth}
+    \vfill
+    \usebeamertemplate*{title}
+    \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+    \usebeamertemplate*{title separator}
+    \usebeamertemplate*{author}
+    \usebeamertemplate*{institute}
+    \vfill
+  \end{minipage}}
+\makeatother
+\setbeamersize{text margin left=1.2em,text margin right=1.2em}
+
+\setbeamertemplate{frame footer}{\insertshorttitle}
+\setbeamertemplate{footline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.6ex,dp=1.2ex,leftskip=1.2em,rightskip=1.2em]{footline}%
+    \usebeamerfont{page number in head/foot}%
+    \usebeamertemplate*{frame footer}\hfill\usebeamertemplate*{frame numbering}%
+  \end{beamercolorbox}}
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamercolor{footline}{fg=muted}
+
+% The practical point of a slide, for the baker.
+\newcommand{\takeaway}[1]{%
+  \par\medskip
+  \colorbox{crumb}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small\textbf{\color{crust}In the kitchen:} #1}}}
+
+% Small source line, placed at the bottom of a frame.
+\newcommand{\source}[1]{%
+  \vfill{\color{muted}\tiny Source: #1}}
+
+% Status flags, mirroring the notes' conventions. Filled tags, so they read on the
+% dark title bar as well as on the slide body.
+\newcommand{\flagtag}[2]{\mbox{\setlength{\fboxsep}{1.2pt}\colorbox{#1}{\color{white}\scriptsize\bfseries\,#2\,}}}
+\newcommand{\hypothesis}{\flagtag{flag}{hypothesis}}
+\newcommand{\contested}{\flagtag{flag}{contested}}
+\newcommand{\ownresult}{\flagtag{own}{own result}}
+\newcommand{\untested}{\flagtag{flag}{not yet tested}}
+
+% Flowchart nodes for TikZ diagrams.
+\tikzset{
+  box/.style={draw=crust,fill=crumb,rounded corners=2pt,align=center,
+    font=\scriptsize,inner sep=4pt,text width=#1},
+  box/.default=2.6cm,
+  arrow/.style={-{Stealth[length=5pt]},draw=crust,thick},
+}
+
+\author{Sourdough Science}
+\institute{github.com/zrrbite/sourdough-science}
+\date{}

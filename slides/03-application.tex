@@ -1,0 +1,918 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{preamble}
+
+% Local styles for this deck only.
+\tikzset{
+  nohyph/.style={execute at begin node={\hyphenpenalty=10000
+    \exhyphenpenalty=10000}},
+  sbox/.style={box=#1,minimum height=2.5em,nohyph},
+  sbox/.default=2.6cm,
+  hbox/.style={box=#1,fill=crust!18,font=\scriptsize\bfseries,nohyph},
+  hbox/.default=2.6cm,
+  darrow/.style={arrow,dashed},
+  lbl/.style={font=\tiny\itshape,text=muted,align=center},
+  head/.style={font=\scriptsize\bfseries,text=crust,align=center},
+}
+\newcommand{\muted}[1]{{\color{muted}#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\tablefont}{\footnotesize\renewcommand{\arraystretch}{1.15}}
+
+\title[Application]{Application: From Flavour Chemistry to the Bake}
+\subtitle{The hybrid dough, pizza, bread and oven spring:\\
+  Part~III of the notes}
+
+\begin{document}
+
+\begin{frame}[plain]\titlepage\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{What this deck covers}
+  Practical questions, answered from Part~III of the notes:
+  \medskip
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.485\textwidth}
+      \begin{block}{The hybrid dough}\small
+        Why leaven with commercial yeast and add a little levain?
+        Where do the fruity esters come from, and what does the oven do
+        to them?
+      \end{block}
+      \begin{block}{Bread}\small
+        How do you get the benefits of proteolysis without a long
+        ferment? Which lever matters most?
+      \end{block}
+    \end{column}
+    \begin{column}{0.485\textwidth}
+      \begin{block}{Pizza}\small
+        Why is a longer ferment not always better? Why does pizza burn,
+        and how do you run a 12" Ooni?
+      \end{block}
+      \begin{block}{Handling and oven spring}\small
+        What do you do with dough straight from the fridge? What,
+        besides gas, decides how much it rises?
+      \end{block}
+    \end{column}
+  \end{columns}
+  \source{chapters 12--20 of the notes, and the note \emph{Accelerating
+    Proteolysis: pH, Heat, and Salt}}
+\end{frame}
+
+% ===============================================================
+\section{The hybrid and its three flavour systems}
+
+\begin{frame}{Let commercial yeast leaven and the levain flavour}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.52\textwidth}
+      \begin{itemize}\setlength{\itemsep}{0.35em}
+        \item In 100\% sourdough the wild yeast does all the leavening
+        \item That needs a long ferment, so LAB proteases work on the
+          gluten for longer
+        \item Result: fragile, tear-prone dough that is hard to time
+        \item Hybrid: commercial \textit{S.~cerevisiae} makes the gas;
+          a small levain brings acid and flavour
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \node[sbox=2.5cm] (y) at (0,0) {Commercial yeast};
+        \node[sbox=2.5cm] (l) at (3.3,0) {Small levain};
+        \node[sbox=2.5cm,below=0.55cm of y] (g)
+          {Reliable gas,\\predictable schedule};
+        \node[sbox=2.5cm,below=0.55cm of l] (f) {Organic acids,\\flavour};
+        \node[hbox=5.6cm,below=0.55cm of $(g.south)!0.5!(f.south)$] (h)
+          {Shorter ferment, less protease exposure:\\gluten stays intact for
+          hand stretching};
+        \draw[arrow] (y) -- (g);
+        \draw[arrow] (l) -- (f);
+        \draw[arrow] (g.south) -- (g.south |- h.north);
+        \draw[arrow] (f.south) -- (f.south |- h.north);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{treat leavening and flavour as two separate jobs and tune each
+    on its own. The levain works even at a small percentage.}
+  \source{ch.~12}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Esters are made by enzymes, not by acid meeting alcohol}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.1em}
+    \item Acid + alcohol → ester + water is the minor route in dough: very slow
+      without a catalyst, and the excess water pushes it back
+      \muted{(general chemistry; no measurement in dough found)}
+    \item Yeast enzymes make their acyl donor inside the cell: the levain's
+      acids are not the feedstock, the alcohols are
+  \end{itemize}
+  \smallskip
+  \begingroup\tablefont
+  \begin{tabularx}{\linewidth}{@{}l l Y@{}}
+    \toprule
+    \textbf{Yeast genes} & \textbf{Join} & \textbf{To give} \\
+    \midrule
+    \textit{ATF1}, \textit{ATF2} & acetyl-CoA + an alcohol &
+      ethyl acetate (fruity, solvent-like), isoamyl acetate (banana),
+      \mbox{2-phenylethyl} acetate (rose, honey) \\
+    \textit{EHT1}, \textit{EEB1} & fatty acyl-CoA + ethanol &
+      ethyl hexanoate (apple), ethyl octanoate \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \takeaway{any dough with active yeast makes these esters, levain or not.
+    More fusel alcohol tends to mean more acetate esters; the genes vary by
+    strain.}
+  \source{Verstrepen et al.\ (2003); Saerens et al.\ (2010); Pradal et al.\
+    (2025); ch.~13}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Some sourdough LAB make esters too, with the yeast's help}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.6\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{0.25em}
+        \item In a medium built like wheat sourdough, strains of several LAB
+          species made ethyl acetate and ethyl lactate
+        \item Output was limited by the supply of precursors
+        \item Esterase genes vary by species; the \textit{Fructilactobacillus
+          sanfranciscensis} strains tested made neither
+        \item Ethyl lactate is lactic acid + ethanol, so this route plausibly
+          needs both partners
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \node[sbox=1.9cm] (lab) at (0,0) {LAB:\\lactic acid};
+        \node[sbox=1.9cm] (yst) at (2.55,0) {Yeast:\\ethanol};
+        \node[hbox=3.4cm,below=0.7cm of $(lab.south)!0.5!(yst.south)$] (el)
+          {Ethyl lactate (creamy)\\and ethyl acetate};
+        \draw[arrow] (lab.south) -- (lab.south |- el.north);
+        \draw[arrow] (yst.south) -- (yst.south |- el.north);
+        \node[lbl,below=0.1cm of el] {LAB enzyme, during fermentation:\\the
+          one route close to ``acid + alcohol''};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{the levain may add ethyl lactate and more ethyl acetate, but not
+    every levain carries LAB that make them.}
+  \source{Pradal et al.\ (2025); ch.~13}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The oven keeps or loses esters; it does not make them}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.2em}
+    \item Esters and ethanol are volatile: the crumb stays near 98°C while
+      water leaves through a crust past 150°C, carrying them with it
+    \item Crust aroma is Maillard and Strecker chemistry: pyrazines,
+      furanones, Strecker aldehydes, melanoidins
+    \item Pumpernickel: aroma formed mostly in baking (malty 3-methylbutanal,
+      2-methylbutanal, potato-like methional); ester levels were set by the
+      fermentation \muted{(hours at low heat: extreme, but the same way)}
+    \item No source was found for esters forming in the crust
+  \end{itemize}
+  \takeaway{the fruity character is set while the yeast works. A shorter
+    ferment may keep more of it, since CO₂ leaving the dough during folds
+    and degassing plausibly carries esters away. \hypothesis}
+  \source{Majcher et al.\ (2020); ch.~13}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{A long cold ferment's complexity is Maillard, not esters}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.3em}
+    \item 48--72\,h at 3--5°C: flour enzymes keep working, at reduced but
+      significant rates
+    \item Amylases turn damaged starch into maltose and glucose: roughly
+      10--15\% of room-temperature activity, but 48\,h adds up
+    \item Flour proteases cut gluten and other proteins into free amino
+      acids and short peptides
+    \item In the oven these react: melanoidins (crust colour), pyrazines
+      (roasted, nutty), furanones (caramel-like), Strecker aldehydes (malty,
+      bready, chocolatey)
+    \item Yeast's own acids are millimolar, LAB's tens of millimolar: far
+      less sour. Its esters give only a low baseline
+  \end{itemize}
+  \takeaway{the Maillard gain comes from time and enzyme breakdown, so a
+    long retard pays off whichever organism does the leavening.}
+  \source{ch.~14}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The hybrid stacks three flavour systems in one dough}
+  \centering
+  \begin{tikzpicture}
+    \foreach \x/\n/\t in {-5/h1/{1 · Maillard chemistry},
+        0/h2/{2 · Ester chemistry}, 5/h3/{3 · Direct LAB metabolites}}
+      \node[head] (\n) at (\x,0) {\t};
+    \node[sbox=4.1cm,below=0.12cm of h1] (a)
+      {Free amino acids + reducing sugars,\\built up in the cold retard};
+    \node[sbox=4.1cm,below=0.12cm of h2] (c)
+      {Yeast: alcohols + acetyl-CoA\\LAB: lactic acid + ethanol};
+    \node[sbox=4.1cm,below=0.12cm of h3] (e)
+      {LAB metabolism\\in the levain};
+    \node[sbox=4.1cm,below=0.45cm of a] (b)
+      {Melanoidins · pyrazines\\furanones · Strecker aldehydes};
+    \node[sbox=4.1cm,below=0.45cm of c] (d)
+      {Acetate esters · ethyl esters\\ethyl lactate};
+    \node[sbox=4.1cm,below=0.45cm of e] (f)
+      {Lactic acid · acetic acid\\diacetyl · acetaldehyde};
+    \draw[arrow] (a) -- node[lbl,right]{oven heat} (b);
+    \draw[arrow] (c) -- node[lbl,right]{enzymes, in fermentation} (d);
+    \draw[arrow] (e) -- (f);
+    \node[hbox=4.1cm,below=0.35cm of d] (g) {Complete hybrid flavour profile};
+    \draw[arrow] (b.south) |- (g.west);
+    \draw[arrow] (d) -- (g);
+    \draw[arrow] (f.south) |- (g.east);
+  \end{tikzpicture}
+  \par\raggedright
+  \takeaway{commercial yeast alone gives system 1 and the yeast half of 2.
+    Pure sourdough gives all three, but with a smaller yeast population, a longer ferment
+    that may lose more volatiles, and structural and timing penalties. The
+    hybrid keeps all three, with structure and schedule intact.}
+  \source{ch.~14}
+\end{frame}
+
+% ===============================================================
+\section{Pizza: the dough, the long ferment and the Ooni}
+
+\begin{frame}{The oven decides which preferment suits a pizza}
+  \centering
+  \begin{tikzpicture}
+    \node[hbox=1.5cm] (q) at (0,0) {Which oven?};
+    \node[sbox=2.9cm] (deck) at (3.35,1.2)
+      {Neapolitan deck oven\\450°C+, 60--90\,s bake};
+    \node[sbox=2.9cm] (home) at (3.35,-1.1)
+      {Home oven\\250--300°C, longer bake};
+    \node[sbox=3.1cm] (char) at (6.95,1.2)
+      {Char dominates;\\subtle flavour\\differences compress};
+    \node[sbox=3.1cm] (acid) at (6.95,-1.1)
+      {Crust has time: sourdough can be the \emph{more} flavourful choice,
+      if you manage the acid};
+    \node[sbox=3.9cm] (pool) at (11.15,1.2)
+      {Poolish or direct commercial yeast, 24--72\,h cold: maximum
+      extensibility, no acid interference};
+    \node[sbox=3.9cm] (young) at (11.15,-0.4)
+      {Young liquid levain at peak:\\cornicione puff, less acid};
+    \node[sbox=3.9cm] (stiff) at (11.15,-1.8)
+      {Stiff levain: slower ferment,\\wider timing window};
+    \draw[arrow] (q) |- (deck);
+    \draw[arrow] (q) |- (home);
+    \draw[arrow] (deck) -- (char);
+    \draw[arrow] (home) -- (acid);
+    \draw[arrow] (char) -- (pool);
+    \draw[arrow] (acid.east) -- (young.west);
+    \draw[arrow] (acid.east) -- (stiff.west);
+  \end{tikzpicture}
+  \par\raggedright
+  \takeaway{acid-modified gluten is more extensible but less elastic: less
+    snap-back, less resilience if overworked. Reduce hydration slightly or
+    raise flour protein.}
+  \source{ch.~15}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Longer is not automatically better for pizza}
+  \centering
+  \begin{tikzpicture}
+    \node[hbox=5cm] (top) at (0,0) {Extended fermentation:\\48--72\,h and beyond};
+    \foreach \x/\n/\c/\e in {
+        -6/1/{Proteolysis:\\peptide bonds cut}/{Stretches willingly,\\then tears},
+        -3/2/{LAB active at 3--5°C,\\yeast is not}/{48\,h: perfect;\\56\,h: over-proofed},
+        0/3/{Acid load\\keeps climbing}/{Slack; loses\\elastic recovery},
+        3/4/{CO₂ from degassing carries volatiles out \hypothesis}/{Estery top notes
+          fade, acidity rises},
+        6/5/{Amylase turns more\\starch to sugar}/{Less starch to crisp:\\gummy crust}} {
+      \node[sbox=2.55cm,anchor=north] (c\n) at (\x,-0.8) {\c};
+      \node[sbox=2.55cm,anchor=north] (e\n) at (\x,-2.35) {\e};
+      \draw[arrow] (c\n) -- (e\n);
+      \draw[arrow] (top.south) -- (c\n.north);
+    }
+    \node[hbox=7cm] (end) at (0,-3.85)
+      {Diminishing returns, then losses};
+    \foreach \n in {1,...,5} \draw[arrow] (e\n.south) -- (end.north);
+  \end{tikzpicture}
+  \par\raggedright
+  \takeaway{many excellent pizzas use 48--72\,h cold doughs, but longer is
+    not better by default. A shorter, controlled ferment with a hybrid's
+    flavour can be more reliable, and arguably more complex.}
+  \source{ch.~16; CO₂ stripping of volatiles is a hypothesis (ch.~13)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Over-fermented pizza dough fails suddenly, not gradually}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.3em}
+    \item LAB proteases, and to a lesser extent flour proteases, keep
+      cutting the gluten network
+    \item A loaf can use that; a pizza must survive being stretched by hand
+      into a thin, continuous sheet
+    \item Degraded dough stretches willingly until it suddenly doesn't: thin
+      spots and holes, worst in the thin centre
+    \item Acid: moderate acidity helps stretching, too much turns it slack;
+      acetic acid feels tight, then suddenly gives way
+    \item LAB keep working at 3--5°C while yeast nearly stops: perfect at
+      48\,h, over-proofed at 56\,h
+  \end{itemize}
+  \takeaway{with sourdough the usable window is narrow and hard to predict.
+    Low-dose commercial yeast in a 48--72\,h cold ferment can give a window
+    several hours wide.}
+  \source{ch.~16}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Residual sugar, not hydration, is why pizza burns}
+  \begingroup\tablefont
+  \begin{tabularx}{\linewidth}{@{}l Y Y@{}}
+    \toprule
+    \textbf{Ferment} & \textbf{Sugar at launch} & \textbf{At 450°C+} \\
+    \midrule
+    Short & yeast has not eaten the sugar pool & uniform carbonisation in
+      seconds \\
+    24--72\,h cold retard & yeast has eaten most simple sugars & controlled
+      leopard spots \\
+    Too long & amylase outruns the yeast: sugars re-accumulate &
+      burns \emph{and} handles poorly \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.1em}
+    \item Flour has about 1.5--2\% free sugars, plus damaged starch that
+      amylases turn into maltose and glucose
+    \item Water pins the surface near 100°C until it dries: a large buffer
+      at 250--300°C, mere seconds at 450°C+
+  \end{itemize}
+  \takeaway{fix burning through the ferment, not the water: more hydration
+    buys seconds but cannot rescue a sugar-rich dough.}
+  \source{ch.~18}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{In a 12" Ooni, two ball sizes both work}
+  \begingroup\tablefont\renewcommand{\arraystretch}{1.0}
+  \begin{tabularx}{\linewidth}{@{}l Y Y@{}}
+    \toprule
+    & \textbf{Larger ball: forgiving} & \textbf{Smaller ball: crisp} \\
+    \midrule
+    Ball → pie & 270--280\,g → 10--11" & 220--230\,g → 11--12" \\
+    Crust & thicker, more thermal mass & thinner, cooks through fast \\
+    At 40--50\% flame & 2--3\,min bake & 90\,s to 2\,min bake \\
+    Margin for error & wide & small: done to carbonised in seconds \\
+    Maillard aroma & more time & less time \\
+    Eats like & bread-tender, crisp outside; Roman/NY & cracker-crisp, no
+      raw centre \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \smallskip
+  \small
+  \begin{itemize}
+    \item Hydration 63--67\%: above about 68--70\% the dough sticks on launch
+      and sags, and if it folds on the stone there is no room to recover
+  \end{itemize}
+  \takeaway{the choice is stylistic. Both want a 48\,h cold retard (sugar
+    depletion) and a moderate 40--50\% of max flame.}
+  \source{ch.~18}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Twice the crust thickness, four times the time to cook through}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.67\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{0.1em}
+        \item Heat comes from stone and flame and diffuses slowly inward
+        \item Neapolitan crust (\textasciitilde3\,mm): gelatinised (60--80°C)
+          right through, well within 60\,s
+        \item 275\,g ball at 10--11": \textasciitilde6--8\,mm, the path
+          roughly doubles
+        \item Time scales with distance squared (Fick's law): about 4×
+        \item Full flame chars the surface first: burnt outside, gummy or raw
+          inside
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.31\textwidth}
+      \centering
+      \begin{tikzpicture}
+        % thin crust
+        \fill[crumb,draw=crust] (0,2.2) rectangle (1.8,2.5);
+        \foreach \x in {0.3,0.9,1.5} {
+          \draw[arrow,flag] (\x,2.95) -- (\x,2.55);
+          \draw[arrow,flag] (\x,1.75) -- (\x,2.15);
+        }
+        \node[font=\scriptsize,anchor=west,align=left] at (1.9,2.35)
+          {\textasciitilde3\,mm\\\muted{through in}\\\muted{seconds}};
+        % thick crust
+        \fill[crumb,draw=crust] (0,0) rectangle (1.8,0.75);
+        \foreach \x in {0.3,0.9,1.5} {
+          \draw[arrow,flag] (\x,1.2) -- (\x,0.8);
+          \draw[arrow,flag] (\x,-0.45) -- (\x,-0.05);
+        }
+        \node[font=\scriptsize,anchor=west,align=left] at (1.9,0.375)
+          {\textasciitilde6--8\,mm\\\muted{2× the path,}\\\muted{\textasciitilde4×
+          the time}};
+        \node[lbl,anchor=north] at (0.9,-0.55) {flame above,\\stone below};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{trade surface heat for diffusion time: lower flame, longer bake,
+    so the centre cooks before the outside chars.}
+  \source{Sadot et al.\ (2017); ch.~18}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Ooni 12": preheat hard, bake moderate, boost at the end}
+  \begingroup\tablefont
+  \begin{tabularx}{\linewidth}{@{}l l Y@{}}
+    \toprule
+    \textbf{Step} & \textbf{Flame} & \textbf{Target} \\
+    \midrule
+    Preheat & full, about 15\,min & stone heat-soaked; IR reading 380--420°C.
+      Longer risks an overheated thin stone \\
+    Pre-launch & 40--50\% of max & stone 350--380°C; check 30--60\,s after
+      the flame settles \\
+    Bake & 40--50\% & 2--3\,min, turning every 20--30\,s \\
+    Char boost & briefly up & final 15--20\,s, optional: leopard spots on
+      the cornicione \\
+    Recovery & full & stone drops 50--100°C per pizza; 3--5\,min back to
+      target, then 40--50\% \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \takeaway{this suits the hybrid. The retard leaves enough sugar to brown
+    but not burn; 2--3\,min gives more Maillard and Strecker time than a
+    60\,s bake; the esters were set in fermentation. A cold stone gives a
+    pale, soggy bottom.}
+  \source{ch.~18}
+\end{frame}
+
+% ===============================================================
+\section{Bread: controlled proteolysis}
+
+\begin{frame}{For bread, proteolysis is a tool rather than a failure}
+  \begingroup\tablefont
+  \begin{tabularx}{\linewidth}{@{}l Y Y@{}}
+    \toprule
+    & \textbf{Pizza} & \textbf{Bread} \\
+    \midrule
+    Failure mode & tears when stretched to a 3--6\,mm sheet & loses gas
+      retention: flat, dense loaf \\
+    Threshold & near & much further out \\
+    Tolerable levain & 10--15\% & 20--30\% \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \smallskip
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.1em}
+    \item \textbf{Extensibility:} easier shaping, more oven spring before
+      the network resists
+    \item \textbf{Softer crumb:} partly depolymerised glutenin bites less
+      chewy
+    \item \textbf{Free amino acids:} Maillard substrate, fully expressed in
+      a 40--50\,min bake, near-irrelevant in a 2--3\,min pizza bake
+  \end{itemize}
+  \takeaway{a loaf takes far more proteolysis than a pizza before it fails:
+    use it on purpose.}
+  \source{Bombara et al.\ (1997); ch.~17; note \emph{Accelerating
+    Proteolysis}}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Acidifying the levain barely acidifies the dough}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.56\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{0.3em}
+        \item Cereal aspartic proteases peak around pH 3.5--4.0
+        \item Buffering is molar: pH 6.0 → 4.0 needs a fixed quantity of
+          acid, however fast it is made
+        \item Hot LAB (40--45°C) acidify perhaps 2--4× faster: 8\,h might
+          become 2--3\,h, not 30\,min
+        \item Higher-ash flour buffers harder: its minerals resist the drop
+          that would activate its proteases
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \centering
+      \begin{tikzpicture}[node distance=0.42cm]
+        \node[sbox=3.6cm] (l) {Hot levain reaches pH 3.8};
+        \node[sbox=3.6cm,below=of l] (m)
+          {Mixed in at 10--15\% of total flour};
+        \node[sbox=3.6cm,below=of m] (d)
+          {Bulk flour buffers it back: dough pH 5.2--5.5};
+        \node[hbox=3.6cm,below=of d] (r)
+          {Bulk flour's own proteases stay largely dormant};
+        \draw[arrow] (l) -- (m);
+        \draw[arrow] (m) -- (d);
+        \draw[arrow] (d) -- (r);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{getting the levain acidic is easy; getting the final dough to
+    pH 3.5--4.0 quickly is not, and heat alone will not do it.}
+  \source{Thiele et al.\ (2004); ch.~17}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{In a hot bulk, heat does the work that pH cannot}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.58\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{0.3em}
+        \item Enzyme rates roughly double for every 10°C rise
+          (Q₁₀\,≈\,2), up to denaturation
+        \item Wheat proteases stay stable to about 50°C
+        \item Further from the pH optimum but nearer the thermal optimum:
+          the two effects partly cancel
+        \item Not a dramatic acidification: ordinary proteases running hot
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \node[sbox=2.3cm] (a) at (0,0) {pH 4.5\\25°C};
+        \node[sbox=2.3cm] (b) at (3.3,0) {pH 5.5\\40°C};
+        \node[font=\Large\bfseries,text=crust] at (1.65,0) {≈};
+        \node[lbl] at (1.65,-0.9) {comparable total proteolytic\\throughput};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \bigskip
+  {\footnotesize\muted{Caveat: Q₁₀\,≈\,2 is a general biochemical
+    approximation, not a bread measurement. Use it as an order-of-magnitude
+    guide.}}
+  \takeaway{don't chase a low pH; use the temperature axis of the enzyme
+    curve instead.}
+  \source{Bloksma \& Bushuk (1988); ch.~17}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Salt is the biggest brake on proteolysis}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.35em}
+    \item Salt suppresses cereal proteases two ways: higher ionic strength
+      (enzyme meets substrate less well) and lower water activity (less
+      hydrolysis)
+    \item It works regardless of pH, and the effect is substantial at normal
+      bread levels of 1.8--2.2\% of flour
+    \item An unsalted dough lets its proteases run considerably faster
+    \item Calvel's autolyse is usually explained as hydration. That is
+      correct but incomplete: part of its softening is enzymatic
+  \end{itemize}
+  \takeaway{hold the salt back until the final mix. It is a bigger
+    proteolytic lever than any realistic pH change, costs nothing, and is
+    reversed by salting.}
+  \source{Beck et al.\ (2012); Calvel et al.\ (2001); ch.~17}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{A warm autolyse gives proteolysis in an hour, no fermentation}
+  \centering
+  \begin{tikzpicture}
+    \node[sbox=2.5cm] (a) at (0,0) {Flour + all water at 40--42°C;
+      no salt, levain or yeast};
+    \node[sbox=2.3cm] (b) at (3.05,0) {Hold 60--90\,min at 38--42°C};
+    \node[hbox=2.3cm] (c) at (6.1,0) {Assess: soft, stretches thin?};
+    \node[sbox=2.3cm] (d) at (9.15,0) {Final mix: add levain and salt};
+    \node[sbox=2.3cm] (e) at (12.2,0) {Salt closes the window; bulk and
+      shape as normal};
+    \node[sbox=2.9cm] (t) at (6.1,1.2) {Too tight: extend 30\,min, re-assess};
+    \node[sbox=2.9cm] (s) at (6.1,-1.2) {Too slack: less time or heat next bake};
+    \draw[arrow] (a) -- (b);
+    \draw[arrow] (b) -- (c);
+    \draw[arrow] (c) -- node[lbl,above]{yes} (d);
+    \draw[arrow] (d) -- (e);
+    \draw[arrow] ([xshift=-4mm]c.north) -- ([xshift=-4mm]t.south);
+    \draw[arrow] ([xshift=4mm]t.south) -- ([xshift=4mm]c.north);
+    \draw[arrow] (c.south) -- (s.north);
+  \end{tikzpicture}
+  \par\smallskip\raggedright\small
+  \begin{itemize}\setlength{\itemsep}{0em}
+    \item Proteases at pH \textasciitilde6.0 but 2--4× faster (Q₁₀), no salt:
+      no acid, buffering or microbes to manage
+    \item Stay below about 50°C: starch gelatinises from 55--60°C, making a
+      scald (\textit{Brühstück}) that denatures the proteases
+    \item Thermal lag: a large mass in a plastic tub takes 30--45\,min to
+      reach the setpoint at its core
+  \end{itemize}
+  \source{Eliasson (1980); ch.~17. \untested{} against a room-temperature
+    control}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Rank the levers: salt first, pH last}
+  \begingroup\tablefont
+  \begin{tabularx}{\linewidth}{@{}c l Y@{}}
+    \toprule
+    & \textbf{Lever} & \textbf{Why} \\
+    \midrule
+    1 & Remove salt from the autolyse & the largest single effect; free;
+      reversed by salting at the final mix \\
+    2 & Raise autolyse or bulk to 38--42°C & doubles to quadruples enzyme
+      rate via Q₁₀, no pH change needed \\
+    3 & Increase the levain percentage & moves acid and LAB protease load
+      together; bread tolerates 20--30\%, but the loaf gets more acidic \\
+    4 & Extend time & always works, but it is what we set out to avoid \\
+    5 & Manipulate pH directly & least efficient via fermentation: buffering
+      and dilution \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \takeaway{with fermentation and proteolysis decoupled, the ferment can be
+    as long or as short as the flavour goal needs.}
+  \source{ch.~17}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Direct acidification: a shortcut that tightens before it
+    softens}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.3em}
+    \item A little food-grade lactic acid reaches the target pH at once, with
+      no wait for LAB
+    \item With a 40°C hold: rapid proteolysis with no extended fermentation
+    \item But added acid first firms the dough and cuts extensibility
+      (charge-state and hydration changes)
+    \item Held warm, enzymatic softening catches up and overtakes; expect a
+      phase where the dough seems to go the wrong way
+    \item Chemical and biological acidification do not give the same
+      rheology: the literature here is contested \contested
+  \end{itemize}
+  \takeaway{a specialist tool. For most bread, the no-salt warm autolyse
+    gives enough proteolysis with fewer variables and no risk of a dough
+    that cannot hold gas.}
+  \source{Clarke et al.\ (2004); Wehrle et al.\ (1997); ch.~17; ch.~25}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The promised flavour dividend is the least-evidenced claim}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.35em}
+    \item The claim: the warm autolyse enlarges the free amino acid pool
+    \item In a 40--50\,min bake that pool feeds Strecker degradation
+    \item Expected result: malty, nutty and roasted crust notes from
+      Strecker aldehydes and pyrazines
+    \item The payoff a short pizza bake cannot access
+  \end{itemize}
+  \medskip
+  \colorbox{crumb}{\parbox{\dimexpr\linewidth-2\fboxsep}{\small
+    \untested{} The repo calls this the least directly evidenced claim in
+    the document. It wants a sensory comparison: warm-autolyse loaf against
+    a control on the same formula.}}
+  \source{Strecker chemistry: Yang et al.\ (2022); claim: ch.~17 and note
+    \emph{Accelerating Proteolysis}; status: README}
+\end{frame}
+
+% ===============================================================
+\section{Handling and oven spring}
+
+\begin{frame}{After the retard, pull the dough; don't press it}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.44\textwidth}
+      \centering
+      \begin{tikzpicture}[node distance=0.42cm]
+        \node[sbox=4.6cm] (a) {Retard at 3--5°C: more CO₂ dissolves (Henry's
+          law)};
+        \node[sbox=4.6cm,below=of a] (b) {Tempering warms the dough: the CO₂
+          is supersaturated};
+        \node[sbox=4.6cm,below=of b] (c) {It needs nucleation sites; a still
+          ball has few fresh surfaces};
+        \node[hbox=4.6cm,below=of c] (d) {A gentle pull makes micro-voids:
+          many small new bubbles};
+        \draw[arrow] (a) -- (b);
+        \draw[arrow] (b) -- (c);
+        \draw[arrow] (c) -- (d);
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.54\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{0.3em}
+        \item Like tapping a carbonated drink: disturbance triggers
+          nucleation, not more yeast activity
+        \item The pull also re-tensions the gluten, which holds the bubbles
+          and lifts vertically
+        \item Pressing flat expels gas; sluggish post-retard yeast must
+          re-inflate from scratch
+        \item Pull \emph{adds} gas; press \emph{removes} it
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \takeaway{lift an edge, stretch without tearing, fold over the centre;
+    rotate 90° and repeat 2--3 times. Re-round loosely, don't degas. Expect
+    fast rise in 20--30\,min; tempering stays 1.5--2\,h.}
+  \source{ch.~19; CO₂ partitioning: Chiotellis \& Campbell (2003)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Same dough, three handlings, three different rises
+    \ownresult}
+  \begingroup\tablefont
+  \begin{tabularx}{\linewidth}{@{}c l Y l@{}}
+    \toprule
+    & \textbf{Retarded in} & \textbf{Then} & \textbf{Result} \\
+    \midrule
+    1 & wide, flat container & turned out, cut into rolls & good rise \\
+    2 & bowl & turned out, cut into rolls & less rise \\
+    3 & wide (dough of 1) & flattened like a pizza centre, slapped, baked
+      flat & great rise, open crumb \\
+    \bottomrule
+  \end{tabularx}\endgroup
+  \smallskip
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.15em}
+    \item Same formula, retard and yeast activity: only the mechanical state
+      of the gluten changed
+    \item Wide container: dough spreads under gravity, strands align
+      horizontally (laminar), gas finds an easier path upward
+    \item Bowl: a tangled, random mesh with a compressed bottom, resisting
+      expansion in every direction
+  \end{itemize}
+  \takeaway{retard in a wide, flat container rather than a bowl.}
+  \source{ch.~20; the author's own experiments}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Steam delamination: gluten alignment beats gas volume}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.53\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{0.25em}
+        \item A thin disc reaches steam temperature right through at once;
+          a roll heats as a slow wave
+        \item Water turns to steam, about 1,600-fold in volume
+        \item Steam follows the weak interfaces between aligned gluten
+          planes and pushes them apart in one event: pita physics
+        \item The holes are gaps between separated layers, not coalesced
+          fermentation bubbles
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      \centering
+      \begin{tikzpicture}[node distance=0.25cm]
+        \node[sbox=3.4cm] (a) {1 · Gluten alignment\\(dominant)};
+        \node[sbox=3.4cm,below=of a] (b) {2 · Heating uniformity};
+        \node[sbox=3.4cm,below=of b] (c) {3 · Network extensibility};
+        \node[sbox=3.4cm,below=of c] (d) {4 · Gas volume, nucleation\\
+          (secondary)};
+        \node[hbox=1.95cm,right=0.4cm of $(b.east)!0.5!(c.east)$] (e)
+          {Explosive delamination:\\oven spring};
+        \foreach \n in {a,b,c,d} \draw[darrow] (\n.east) -- (e.west);
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{a well-aligned, largely degassed dough outperforms a gassy dough
+    with random gluten orientation. Thinner pieces spring more per gram.}
+  \source{ch.~20; the hierarchy is drawn from the author's own experiments
+    \ownresult}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Fold to multiply the layers, then rest 15--30 minutes}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.485\textwidth}
+      \textbf{\color{crust}Fold}\par\small
+      \begin{itemize}\setlength{\itemsep}{0.2em}
+        \item Letter fold in thirds, rotate 90°, flatten, fold again: 2
+          cycles \textasciitilde9 layers, 3 cycles \textasciitilde27
+        \item Puff pastry without the fat: rougher open crumb, not flakes
+        \item Plain dough blurs at about 20--40 effective layers (puff
+          pastry: 700--900)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.485\textwidth}
+      \textbf{\color{crust}Rest}\par\small
+      \begin{itemize}\setlength{\itemsep}{0.2em}
+        \item Just folded, the gluten is elastic and would contract against
+          the steam
+        \item Resting relaxes it (thiol--disulfide interchange) while CO₂
+          nucleates into the new interfaces
+        \item Beyond 30--40\,min the layers merge and the dough spreads
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \takeaway{for rolls or flatbreads: turn out from a wide container, flatten,
+    letter-fold twice, portion loosely, rest 15--20\,min until slightly
+    puffed, bake at high heat.}
+  \source{ch.~20}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{In pizza, shaping makes the cornicione puff}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.35em}
+    \item Hand-stretching aligns the gluten laminarly in the rim; oven steam
+      then delaminates those layers
+    \item A well-aligned rim on slightly under-proofed dough out-puffs a
+      poorly handled rim on perfectly proofed dough
+    \item Neapolitan slapping is not just shaping the disc: it builds that
+      alignment
+    \item The pressed-thin centre has too little cross-section to puff; the
+      rim has both alignment and thermal mass
+  \end{itemize}
+  \takeaway{for the hybrid dough in an Ooni: gentle pull, temper 1.5--2\,h,
+    then open with deliberate attention to the rim's alignment. Shaping
+    matters more than fermentation state for the puff.}
+  \source{ch.~20, applying the author's roll and flatbread experiments to
+    pizza}
+\end{frame}
+
+% ===============================================================
+% Wrap-up
+
+\begin{frame}{Takeaways}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.25em}
+    \item Let commercial yeast leaven and a small levain flavour: three
+      flavour systems, intact gluten, a predictable schedule
+    \item Esters are made by enzymes while the yeast works; the oven only
+      keeps or loses them. Crust aroma is Maillard and Strecker chemistry
+    \item For pizza, longer is not automatically better: proteolysis, acid,
+      a narrowing window and returning sugar all turn against you
+    \item Burning is residual sugar. In a 12" Ooni: 48\,h retard, 63--67\%
+      hydration, 40--50\% flame, 2--3\,min on a 350--380°C stone
+    \item For bread proteolysis, hold back the salt and warm the autolyse to
+      38--42°C (below 50°C) before chasing pH
+    \item After the retard, pull, don't press. For oven spring, gluten
+      alignment beats gas volume
+  \end{itemize}
+  \source{chapters 12--20}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Open questions}
+  \small
+  \begin{itemize}\setlength{\itemsep}{0.45em}
+    \item Warm autolyse against a room-temperature control on the same
+      formula: extensibility by hand, crumb softness after the bake
+      \untested
+    \item Crust aroma, warm-autolyse loaf vs control: a sensory check of the
+      Strecker/pyrazine claim, the least directly evidenced in the document
+      \untested
+    \item Log the core dough temperature during the warm autolyse to measure
+      the thermal lag \untested
+    \item Direct lactic acid + 40°C hold as a comparison arm: expect
+      tightening before the enzymes soften it \untested
+    \item Does CO₂ leaving during folds and degassing strip esters? No
+      measurement in dough was found \hypothesis
+  \end{itemize}
+  \source{note \emph{Accelerating Proteolysis} (open threads); README
+    (status); ch.~13; ch.~16}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Sources}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.485\textwidth}
+      \tiny\raggedright
+      \textbf{\color{crust}Esters and fermentation volatiles}\par
+      Verstrepen KJ et al.\ (2003). Expression levels of the yeast alcohol
+      acetyltransferase genes \textit{ATF1}, \textit{Lg-ATF1}, and
+      \textit{ATF2} control the formation of a broad range of volatile
+      esters. \textit{Appl Environ Microbiol} 69(9):5228--5237.\par\smallskip
+      Saerens SMG, Delvaux FR, Verstrepen KJ, Thevelein JM (2010). Production
+      and biological function of volatile esters in \textit{Saccharomyces
+      cerevisiae}. \textit{Microb Biotechnol} 3(2):165--177.\par\smallskip
+      Pradal I, Weckx S, De Vuyst L (2025). The production of esters by
+      specific sourdough lactic acid bacteria species is limited by the
+      precursor concentrations. \textit{Appl Environ Microbiol}
+      91(3):e0221624.\par\smallskip
+      Majcher MA et al.\ (2020). Formation of key aroma compounds during
+      preparation of pumpernickel bread. \textit{J Agric Food Chem}
+      68(38):10352--10360.\par\smallskip
+      Yang Y et al.\ (2022). Research progress on the formation mechanism
+      and detection technology of bread flavor. \textit{J Food Sci}
+      87(8):3330--3351.\par\medskip
+      \textbf{\color{crust}Gas and heat}\par
+      Chiotellis E, Campbell GM (2003). Proving of bread dough I: modelling
+      the evolution of the bubble size distribution. \textit{Food Bioprod
+      Process} 81(3):194--206.\par\smallskip
+      Sadot M et al.\ (2017). Numerical modelling of convective heat
+      transfer during bread baking. \textit{J Food Eng}.
+    \end{column}
+    \begin{column}{0.485\textwidth}
+      \tiny\raggedright
+      \textbf{\color{crust}Acidification, proteolysis, salt and autolyse}\par
+      Thiele C, Grassl S, Gänzle MG (2004). Gluten hydrolysis and
+      depolymerization during sourdough fermentation. \textit{J Agric Food
+      Chem} 52(5):1307--1314.\par\smallskip
+      Clarke CI et al.\ (2004). Wheat sourdough fermentation: effects of time
+      and acidification on fundamental rheological properties.
+      \textit{Cereal Chem} 81(3):409--417.\par\smallskip
+      Wehrle K, Grau H, Arendt EK (1997). Effects of lactic acid, acetic
+      acid, and table salt on fundamental rheological properties of wheat
+      dough. \textit{Cereal Chem} 74(6):739--744.\par\smallskip
+      Calvel R, Wirtz RL, MacGuire JJ (2001). \textit{The Taste of Bread}.
+      Aspen Publishers.\par\smallskip
+      Beck M, Jekle M, Becker T (2012). Impact of sodium chloride on wheat
+      flour dough for yeast-leavened products. \textit{J Sci Food Agric}
+      92(2):299--306.\par\smallskip
+      Bombara N, Añón MC, Pilosof AMR (1997). Functional properties of
+      protease modified wheat flours. \textit{LWT} 30(5):441--447.\par
+      \smallskip
+      Bloksma AH, Bushuk W (1988). Rheology and chemistry of dough. In
+      \textit{Wheat: Chemistry and Technology}, 3rd ed., AACC.\par\smallskip
+      Eliasson AC (1980). Effect of water content on the gelatinization of
+      wheat starch. \textit{Starch/Stärke} 32(8):270--272.\par\medskip
+      {\color{muted}Full list: ch.~25 of the notes.}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}

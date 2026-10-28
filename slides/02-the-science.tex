@@ -1,0 +1,842 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{preamble}
+
+% Local styles for this deck only.
+\usetikzlibrary{fit,backgrounds}
+\setbeamerfont{itemize/enumerate body}{size=\small}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\tikzset{
+  hot/.style={box=#1,draw=flag,fill=flag!8},
+  hot/.default=2.6cm,
+  cool/.style={box=#1,draw=rye!45,fill=muted!12},
+  cool/.default=2.6cm,
+  panel/.style={draw=muted,dashed,rounded corners=3pt,inner sep=6pt},
+  plabel/.style={font=\scriptsize\bfseries,text=crust},
+  elabel/.style={font=\tiny,text=muted,align=center},
+}
+% Own kitchen results get their own green box, so they never read as literature.
+\newcommand{\ownbox}[1]{\par\smallskip{\setlength{\fboxsep}{5pt}%
+  \colorbox{own!10}{\parbox{\dimexpr\linewidth-10pt}{\small\ownresult\ #1}}}\par}
+\newcommand{\muted}[1]{{\color{muted}#1}}
+% Tables: a group (not braces, which swallow tabularx inside a frame).
+\newcommand{\tablestart}[2]{\begingroup\renewcommand{\arraystretch}{#1}#2}
+\newcommand{\tableend}{\endgroup\par}
+
+\title[The Science]{The Science: Gluten, Heat and Survival}
+\subtitle{What acid, enzymes and heat do to a dough and a culture}
+
+\begin{document}
+
+\begin{frame}[plain]\titlepage\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{What this deck covers}
+  Seven practical questions, each answered with its mechanism and its source:
+  \begin{enumerate}\setlength{\itemsep}{0pt}
+    \item Why does sourdough make dough slack and open, and when does it turn fragile?
+    \item Do you need to knead and fold, or will time and the fridge do the work?
+    \item Can heat buy flavour, and where does it start to cost leavening?
+    \item How can a pure sourdough rise after hours at a 40°C+ setpoint?
+    \item How hot is the dough really, when the oven says 45°C?
+    \item How long can a culture take the heat, and how do you rescue one that didn't?
+    \item Is a hot-kept culture special, and which test would settle it?
+  \end{enumerate}
+  \smallskip
+  {\footnotesize\muted{Flags: \ownresult\ the author's own kitchen results, kept apart
+  from the literature; \hypothesis, \contested, \untested\ as in the notes.
+  Temperatures are oven setpoints, not dough temperatures, unless stated.}\par}
+  \source{chapters 05--11 and two notes: \emph{Why the Hot Protocol Works},
+    \emph{The Levain Doubling Test}}
+\end{frame}
+
+% ===============================================================
+\section{Gluten}
+
+\begin{frame}{Gluten is springs plus lubricant}
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+      {\color{crust}\textbf{Glutenin: the springs}}
+      \begin{itemize}
+        \item Very large polymers: subunits linked end to end by S–S (disulfide) bonds
+        \item Gives \textbf{elasticity}: resists stretching and snaps back
+      \end{itemize}
+    \column{0.48\textwidth}
+      {\color{crust}\textbf{Gliadin: the lubricant}}
+      \begin{itemize}
+        \item Smaller single chains, folded by internal S–S bonds only
+        \item Gives \textbf{extensibility}: lets the network flow and stretch
+      \end{itemize}
+  \end{columns}
+  \smallskip
+  \begin{itemize}
+    \item More glutenin: strong, snap-back dough (high-protein bread flour).
+      Less: softer, more extensible (Tipo 00, pastry flour)
+    \item S–S bonds keep breaking and re-forming: why dough can be reshaped, and attacked
+  \end{itemize}
+  \takeaway{acid, proteases and hydration changes all shift this balance. What you feel
+    as stretch versus snap-back is this ratio moving.}
+  \source{ch.~05; Wieser (2007); Shewry et al.\ (2002)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Fermentation loosens gluten four ways at once}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[box=1.7cm] (F) at (0,0) {Sourdough\\fermentation};
+    \node[box=3.3cm] (a) at (3.1, 0.99) {pH falls to 3.5–4.5};
+    \node[box=3.3cm] (b) at (3.1, 0.33) {LAB + flour proteases};
+    \node[box=3.3cm] (c) at (3.1,-0.33) {Glutathione};
+    \node[box=3.3cm] (d) at (3.1,-0.99) {Uneven gas production};
+    \node[box=3.6cm] (a2) at (7.2, 0.99) {Chains repel: stretch ↑};
+    \node[box=3.6cm] (b2) at (7.2, 0.33) {Chains cut: elasticity ↓};
+    \node[box=3.6cm] (c2) at (7.2,-0.33) {S–S cross-links undone};
+    \node[box=3.6cm] (d2) at (7.2,-0.99) {Patchy, uneven bubbles};
+    \node[box=3.1cm,fill=white,very thick] (r) at (11.35,0)
+      {\textbf{Synergistic:}\\open, irregular crumb\\+ dramatic ear};
+    \foreach \n in {a,b,c,d} {
+      \draw[arrow] (F.east) -- (\n.west);
+      \draw[arrow] (\n) -- (\n2);
+      \draw[arrow] (\n2.east) -- (r.west);
+    }
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}
+    \item Acid scales with pH: modest at pH 5.0 (10–15\% levain hybrid), dramatic at 3.8
+    \item Proteases keep cutting, and flour proteases work faster at pH 3.5–4.5 than at
+      neutral: modest after a 4\,h bulk, extensive after 12\,h bulk + 48\,h retard
+    \item \contested\ Several studies find added acid firms dough; slackening is the
+      fermentation case
+  \end{itemize}
+  \takeaway{levain \% sets how slack the dough gets; fermentation time decides when
+    extensible tips into fragile. For pizza, that line is thin.}
+  \source{ch.~05; Clarke et al.\ (2004); Thiele, Grassl \& Gänzle (2004); acidification
+    note in ch.~25}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Time builds gluten without kneading}
+  \tablestart{1.0}{\footnotesize}
+  \begin{tabularx}{\linewidth}{@{}P{2.0cm}LP{4.4cm}@{}}
+    \toprule
+    \textbf{Mechanism} & \textbf{What it does} & \textbf{Time} \\
+    \midrule
+    Diffusion & Thiol groups meet and form S–S bonds, as in kneading, only slower
+      & 12–18\,h at ≈22°C (no-knead); 3–5× slower at 3–5°C \\
+    Oxidation & Air folded in turns –SH into S–S all through the retard (what ascorbic
+      acid and bromate speed up) & Builds over 3–4 days \\
+    Gas pressure & Each growing bubble stretches the gluten around it: a stretch-and-fold
+      from inside, everywhere at once & Continuous, even in the fridge; possibly the
+      largest contributor \\
+    Hydration & Water slowly unfolds the proteins, exposing buried bonding sites
+      & More complete after 3–4 days \\
+    \bottomrule
+  \end{tabularx}
+  \tableend
+  {\footnotesize\muted{Kneading and folding only \emph{accelerate} these reactions, and
+  the slow network is arguably more uniform.}\par}
+  \takeaway{one coil fold initialises the network: it evens out hydration, adds air for
+    oxidation and gives an alignment bias. For a 72–96\,h retard, one fold is enough.}
+  \source{ch.~06}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Cold slows demolition more than construction}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[box=2.4cm] (rc) at (0,0.5) {Construction\\≈100\% rate};
+    \node[box=2.4cm] (rd) at (3.1,0.5) {Demolition\\≈100\% rate};
+    \node[hot=5.5cm] (rr) at (1.55,-0.72) {After 18\,h+: demolition wins\\→ dough degrades};
+    \draw[arrow] (rc.south) -- (rc.south |- rr.north);
+    \draw[arrow] (rd.south) -- (rd.south |- rr.north);
+    \node[box=2.4cm] (cc) at (7.6,0.5) {Construction\\20–30\% rate};
+    \node[box=2.4cm] (cd) at (10.7,0.5) {Demolition\\5–10\% rate};
+    \node[box=5.5cm,fill=own!12,draw=own] (cr) at (9.15,-0.72)
+      {Over 3–4 days: construction wins\\→ strong network};
+    \draw[arrow] (cc.south) -- (cc.south |- cr.north);
+    \draw[arrow] (cd.south) -- (cd.south |- cr.north);
+    \begin{scope}[on background layer]
+      \node[panel,fit=(rc)(rd)(rr),label={[plabel]above:Room temperature · 22°C}] {};
+      \node[panel,fit=(cc)(cd)(cr),label={[plabel]above:Cold retard · 3–5°C}] {};
+    \end{scope}
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}
+    \item Building (diffusion, oxidation, gas pressure) has low activation energies and
+      keeps going in the cold; demolition (proteases, glutathione) has higher ones, so the
+      cold suppresses it disproportionately. The rates are rough estimates
+  \end{itemize}
+  \takeaway{mix, fold once, ball and retard for 48–72\,h. Hands-on time drops from
+    3–4\,h to about 30\,min, and the cold builds the network as it develops flavour.}
+  \source{ch.~06}
+\end{frame}
+
+% ===============================================================
+\section{Heat as a flavour tool}
+
+\begin{frame}{Heat-stressed yeast make more flavour compounds, not fewer}
+  \begin{itemize}
+    \item Usual ranges (levain 25–28°C, bulk 22–25°C) target schedule and leavening, not flavour
+    \item Near their stress threshold (roughly 35–40°C for most strains) yeast mount a
+      \textbf{heat shock response}: chaperone proteins (HSPs), trehalose, more
+      saturated membranes
+    \item Fusel alcohols rise (isoamyl alcohol, isobutanol, 2-phenylethanol): the
+      precursors of fruity, floral esters. The ATF1/ATF2 ester enzymes also run faster
+    \item LAB thrive where yeast are stressed (\textit{L.~delbrueckii} grows best at
+      42–45°C; many lactobacilli fully active at 35–40°C): more acid, proteolysis, LAB aromas
+    \item Net: more flavour per hour, in a shorter window than 8–12\,h at 25°C
+  \end{itemize}
+  \takeaway{a warm levain is a flavour lever, not just a speed-up. The next slide is
+    the catch.}
+  \source{ch.~07; Verstrepen et al.\ (2003); Saerens et al.\ (2010); Kucharczyk \&
+    Tuszyński (2018); Landaud et al.\ (2001)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Hotter does not reliably mean more esters \contested}
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+      {\color{crust}\textbf{More with heat: brewing}}
+      \begin{itemize}\footnotesize
+        \item Kucharczyk \& Tuszyński (2018): esters and higher alcohols rose
+          significantly with temperature, at industrial scale
+        \item Landaud et al.\ (2001): temperature drives fusel alcohols independently
+          of pressure
+      \end{itemize}
+    \column{0.48\textwidth}
+      {\color{crust}\textbf{Fewer with heat: sourdough yeast}}
+      \begin{itemize}\footnotesize
+        \item Ferrández-Gómez et al.\ (2024): sourdough strains in beer wort at 37°C gave
+          a \emph{drastic reduction} in volatiles, esters especially
+      \end{itemize}
+  \end{columns}
+  \medskip
+  \begin{itemize}
+    \item Likely reason: heat speeds both ester synthesis and volatile loss. Which wins
+      depends on strain, headspace, surface-to-volume and duration
+    \item Brief, closed, dough-bound: likely a net gain. Long, open, runny: likely a loss
+  \end{itemize}
+  \takeaway{don't assume hotter means fruitier: taste it against a room-temperature
+    control. That side-by-side is still to be done. \untested}
+  \source{ch.~07, caveat on conflicting evidence}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The thermal risk gradient is a slope, not a cliff}
+  \tablestart{1.0}{\footnotesize}
+  \begin{tabularx}{\linewidth}{@{}P{1.3cm}LP{3.7cm}P{3.4cm}@{}}
+    \toprule
+    & \textbf{Yeast} & \textbf{LAB} & \textbf{For the baker} \\
+    \midrule
+    25–30°C & Comfort zone; no stress response & Active & Most recipes \\
+    30–35°C & Near optimum; mild stress at the top & Accelerate in step
+      & Faster; most cope \\
+    \textbf{35–40°C} & Full heat shock response; growth slows, metabolites rise
+      & Thriving; may dominate & \textbf{The flavour sweet spot} \\
+    40–45°C & Most strains lose viability toward the top; a gradual decline
+      & Thermophiles may stay fully active & Flavour; gas may fail \\
+    45°C+ & Thermal kill for most yeast & Mesophiles decline; thermophiles may persist
+      & Not useful for dough \\
+    \bottomrule
+  \end{tabularx}
+  \tableend
+  {\footnotesize\muted{Strain- and culture-dependent, from lab studies: a warm-kept or
+  heat-selected culture may exceed these.}\par}
+  \takeaway{if a 40–45°C build leavens sluggishly, the yeast have fallen below functional
+    levels. The LAB still make flavour, so it tastes right but won't rise.}
+  \source{ch.~07, from the literature on the most studied sourdough species}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Hot sprint, cold coast: make flavour hot, keep it cold}
+  \centering
+  \begin{tikzpicture}
+    \node[hot=4.6cm] (hs) {\textbf{Hot sprint · 35–40°C}\\[2pt]
+      heat shock response\\fusel alcohols ↑ · LAB flavour ↑\\fast acid production};
+    \node[cool=4.6cm,right=2.6cm of hs] (cc) {\textbf{Cold coast · 3–5°C, 48–72\,h}\\[2pt]
+      volatiles preserved\\gluten builds · sugars depleted\\Maillard precursors ↑};
+    \draw[arrow] (hs) -- node[above,font=\scriptsize]{precursor pool}
+      node[below,font=\scriptsize]{locked in} (cc);
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}
+    \item The catch: more LAB activity means more proteases, so a hot front end loads
+      gluten damage onto the dough before the fridge
+    \item Limit it: keep the \emph{dough} hot 30–60\,min at most; use 10\% levain rather
+      than 15–20\%; use a high-W flour (Caputo Oro W 350–380+). W 280–310 may not survive
+  \end{itemize}
+  \takeaway{build the levain at 35–38°C: it peaks in 4–6\,h rather than 8–12, and passes
+    peak faster, so catch it right at peak. Mix the dough at ≈22°C, fold once, retard.}
+  \source{ch.~07}
+\end{frame}
+
+% ===============================================================
+\section{The hot culture and Kveik}
+
+\begin{frame}{A pure sourdough rose after ≈3\,h at a 40°C+ setpoint}
+  \centering
+  \begin{tikzpicture}[node distance=0.55cm]
+    \node[hot=2.7cm] (s1) {\textbf{1 · Levain}\\40°C+, ≈1\,h};
+    \node[hot=2.7cm,right=of s1] (s2) {\textbf{2 · Bulk}\\40°C+, ≈2\,h};
+    \node[cool=2.7cm,right=of s2] (s3) {\textbf{3 · Cold retard}\\3–5°C, 10–12\,h};
+    \node[box=2.7cm,fill=own!12,draw=own,right=of s3] (s4)
+      {\textbf{4 · Bake}\\good rise, no failure};
+    \draw[arrow] (s1) -- (s2); \draw[arrow] (s2) -- (s3); \draw[arrow] (s3) -- (s4);
+  \end{tikzpicture}
+  \raggedright
+  \ownbox{Repeated with success: well-leavened crumb, no structural failure, and no
+    commercial yeast. All the gas came from the culture's wild yeast.}
+  \begin{itemize}
+    \item The literature predicts inhibition or death here: \textit{K.~humilis}, a
+      textbook sourdough yeast, is inhibited at 35°C (Brandt et al.\ 2004)
+    \item 40°C+ is the oven setting. The dough itself was never probed
+  \end{itemize}
+  \takeaway{test your own culture rather than trusting species data. If a 40°C+ build
+    gives a well-risen loaf, it is heat-tolerant enough for that protocol.}
+  \source{ch.~08 (own kitchen results); Brandt et al.\ (2004)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Two explanations, and they fail in different ways}
+  \tablestart{1.05}{\footnotesize}
+  \begin{tabularx}{\linewidth}{@{}P{2.6cm}LL@{}}
+    \toprule
+    & \textbf{1 · Genuine thermotolerance} \hypothesis
+    & \textbf{2 · Temporal escape} \hypothesis \\
+    \midrule
+    The idea & The culture holds heat-adapted yeast, active and dividing at 40°C
+      & Ordinary yeast, genuinely stressed; ≈3\,h is short enough that enough survive \\
+    Gas comes from & Yeast still growing at temperature
+      & Non-dividing cells still fermenting sugar, plus CO₂ dissolved in the cold \\
+    Why plausible & \textit{Pichia kudriavzevii} survives 40°C in sourdough (Meroth et
+      al.\ 2003); warm builds could select, as with Kveik
+      & Heat kill is time-dependent: at 40°C, gradual rather than instant \\
+    Hot bulk stretched to 4–8\,h & Still makes gas (gluten may fail first)
+      & Leavening collapses abruptly, probably between 4 and 8\,h \\
+    \bottomrule
+  \end{tabularx}
+  \tableend
+  \smallskip
+  \begin{itemize}
+    \item \untested\ \textbf{Open.} Neither the extended-bulk test nor the levain doubling
+      test has been run. A note bets on explanation 2 (last section)
+  \end{itemize}
+  \source{ch.~08; Meroth et al.\ (2003); Brandt et al.\ (2004)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Warm practice selects microbes, over centuries or days}
+  \tablestart{1.0}{\footnotesize}
+  \begin{tabularx}{\linewidth}{@{}P{3.4cm}L@{}}
+    \toprule
+    \textbf{Study} & \textbf{What it found} \\
+    \midrule
+    \multicolumn{2}{@{}l}{\scriptsize\color{muted}KVEIK: farmhouse yeast pitched warm
+      (often 28–40°C+) and reused from good batches} \\
+    Preiss et al.\ (2018) & Kveik from nine Norwegian sources: a genetically distinct
+      group of domesticated \textit{S.~cerevisiae}, with marked ethanol and heat tolerance \\
+    Foster et al.\ (2022) & More trehalose than standard ale yeast: a direct
+      heat-tolerance mechanism \\
+    \midrule
+    \multicolumn{2}{@{}l}{\scriptsize\color{muted}SOURDOUGH: same backslopping,
+      different temperatures} \\
+    Van der Meulen et al.\ (2011) & Wheat sourdough: 23°C selected
+      \textit{Leuconostoc citreum}; 30 and 37°C selected \textit{L.~fermentum}, a
+      complete shift within 10 backslopping cycles \\
+    Urien et al.\ (2014) & Rye sourdough, 56 daily cycles: at 20°C
+      \textit{Kazachstania unispora} alone; at 30°C \textit{S.~cerevisiae},
+      \textit{P.~kudriavzevii} and \textit{C.~glabrata} \\
+    \bottomrule
+  \end{tabularx}
+  \tableend
+  \takeaway{your feeding temperature is a selection pressure: on its own it can replace
+    a sourdough's dominant species in about ten feeds.}
+  \source{ch.~09; Preiss et al.\ (2018); Foster et al.\ (2022); Van der Meulen et al.\
+    (2011); Urien et al.\ (2014)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{At home, heat selects species, not new genes}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[hot=1.5cm] (A) at (0,0) {Repeated hot builds, 40°C+};
+    \node[box=2.3cm] (B) at (2.63,0) {Heat-tolerant cells keep dividing; mesophiles
+      stall};
+    \node[box=2.3cm] (C) at (5.61,0) {Competitive exclusion: species shift in
+      ≈10 cycles};
+    \node[box=3.6cm] (E) at (9.29,0.72) {\textbf{Yeast} → \textit{P.~kudriavzevii}
+      (to 45°C), wild \textit{S.~cerevisiae}, \textit{W.~anomalus}};
+    \node[box=3.6cm] (G) at (9.29,-0.72) {\textbf{LAB} → from
+      \textit{F.~sanfranciscensis} (to ≈40°C) to \textit{L.~delbrueckii},
+      \textit{helveticus}, \textit{fermentum}};
+    \node[box=2.2cm,fill=white,very thick] (I) at (12.85,0.85) {Species-level
+      selection,\\months to years};
+    \node[cool=2.2cm] (K) at (12.85,-0.95) {\textbf{Kveik}: centuries,\\plus genomic
+      change};
+    \draw[arrow] (A) -- (B); \draw[arrow] (B) -- (C);
+    \draw[arrow] (C.east) -- (E.west); \draw[arrow] (C.east) -- (G.west);
+    \draw[arrow] (E.east) -- (I.west); \draw[arrow] (G.east) -- (I.west);
+    \draw[arrow,dashed] (I) -- (K);
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}
+    \item The LAB shift favours lactic over acetic: may suit pizza, as acetic tightens dough
+    \item \hypothesis\ That this has happened to the author's culture is ch.~08's open
+      explanation 1
+  \end{itemize}
+  \takeaway{selection only bites if you backslop from hot builds: 10–20 cycles reshape
+    the culture. A mother kept at 20–25°C keeps its full consortium, so keep one as backup.}
+  \source{ch.~08–09; Van der Meulen et al.\ (2011); Meroth et al.\ (2003); Limtong et al.\
+    (2018); Brandt et al.\ (2004)}
+\end{frame}
+
+% ===============================================================
+\section{Thermal lag}
+
+\begin{frame}{The oven setpoint is not the dough temperature}
+  Dough's thermal diffusivity is like water's (≈1.4\,×\,10\textsuperscript{−7}\,m²/s);
+  plastic insulates further.\par\smallskip
+  \tablestart{1.0}{\footnotesize}
+  \begin{tabularx}{\linewidth}{@{}P{3.6cm}L@{}}
+    \toprule
+    \textbf{Vessel at a 45°C setpoint} & \textbf{How long the centre lags} \\
+    \midrule
+    Small jar, 75\,g & Warms through in a small fraction of an hour \\
+    Levain jar, 200–300\,g & May take 30–45\,min to reach setpoint \\
+    Dough tub, 1\,kg+ & An hour or more \\
+    \bottomrule
+  \end{tabularx}
+  \tableend
+  \begin{itemize}
+    \item ``1\,h at 40°C+'', 200–300\,g jar: core 25–35°C for the first half; average
+      probably 30–38°C
+    \item \untested\ At 40–50°C settings the core is likely 5–15°C below setpoint most of
+      the time: an estimate, as no dough has been probed yet
+  \end{itemize}
+  \takeaway{probe the centre of the dough and log it through a build: time to setpoint,
+    time-weighted average, and the surface-to-core gap.}
+  \source{ch.~10; Sadot et al.\ (2017); 75\,g jar: \emph{The Levain Doubling Test};
+    oven air measured ≈45°C on the usual setting (2026-09-13)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{One dough, two fermentations: hot shell, cool core}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[box=2.1cm] (S) at (0,0) {Setpoint 45°C;\\dough from 22–24°C;\\core lags};
+    \node[hot=3.0cm] (O) at (3.28,0.62) {\textbf{Outer layer · 40–45°C}\\LAB at peak;
+      yeast stressed};
+    \node[cool=3.0cm] (C) at (3.28,-0.62) {\textbf{Core · 30–35°C}\\wild yeast dividing};
+    \node[box=3.4cm] (OF) at (7.21,0.62) {Flavour reactor:\\acids, proteases, diacetyl};
+    \node[box=3.4cm] (CF) at (7.21,-0.62) {Leavening zone:\\CO₂, fusel alcohols};
+    \node[box=3.0cm,fill=white,very thick] (Z) at (11.14,0) {Flavour \emph{and}\\
+      leavening together};
+    \draw[arrow] (S.east) -- (O.west); \draw[arrow] (S.east) -- (C.west);
+    \draw[arrow] (O) -- (OF); \draw[arrow] (C) -- (CF);
+    \draw[arrow] (OF.east) -- (Z.west); \draw[arrow] (CF.east) -- (Z.west);
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}
+    \item A uniform 40°C would cost leavening; a uniform 30°C would cost flavour
+    \item The yeast may never feel what the dial implies, so heat selection is softer than
+      the setpoint suggests (the shell is still above 40°C)
+  \end{itemize}
+  \takeaway{if the unstirred hot build works, don't stir: it collapses the gradient, and
+    its oxygen grows more yeast but fewer fusels and esters. To test, stir once at halfway.}
+  \source{ch.~10}
+\end{frame}
+
+% ===============================================================
+\section{Thermal death and recovery}
+
+\begin{frame}{Thermal death is a rate, not a threshold}
+  \ownbox{Brief excursions to 40°C+ (≈1\,h levain, ≈2\,h bulk, each then retarded cold)
+    did no apparent harm over several days. One prolonged session at the same temperature
+    killed, or very nearly killed, the culture.}
+  \begin{itemize}
+    \item Heat kills at a rate: numbers fall exponentially with time at temperature
+    \item \textbf{D-value}: time for a 90\% (one-log) kill. \textbf{z-value}: the rise
+      that cuts D tenfold
+    \item So 10\,min at 45°C and 2\,h at 42°C may kill about equally
+    \item Lab D-values for \textit{S.~cerevisiae}: 22.3 down to 0.8\,min across 45–55°C,
+      in buffer or media. In dough they are lower bounds on survival: use qualitatively
+  \end{itemize}
+  \takeaway{a temperature on its own says nothing about survival. Always give the time
+    at temperature too.}
+  \source{ch.~11; Guerrero, López-Malo \& Alzamora (1999/2001)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{The heat-shock defence is a budget, and the fridge refills it}
+  \begin{itemize}
+    \item It works (a mild 37°C pre-shock induces tolerance to otherwise lethal heat;
+      Morano et al.\ 2012) but burns ATP, uses up trehalose, and repairs damage without
+      preventing it
+  \end{itemize}
+  \medskip
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \node[plabel,anchor=east,align=right] at (-0.15,0.6) {Brief, repeated\\≈1–2\,h};
+    \node[hot=2.0cm] (a) at (1.2,0.6) {Hot session\\40°C+};
+    \node[box=2.0cm] (b) at (3.75,0.6) {Heat shock response};
+    \node[cool=2.0cm] (c) at (6.3,0.6) {Cold retard:\\recovery window};
+    \node[box=2.0cm] (d) at (8.85,0.6) {Rebuild proteins, trehalose, ATP};
+    \node[box=1.9cm,fill=own!12,draw=own] (e) at (11.4,0.6) {Dips, recovers:
+      sustainable};
+    \draw[arrow] (a) -- (b); \draw[arrow] (b) -- (c); \draw[arrow] (c) -- (d);
+    \draw[arrow] (d.north) -- ++(0,0.25) -| (a.north);
+    \draw[arrow] (d) -- (e);
+    \node[plabel,anchor=east,align=right] at (-0.15,-0.95) {One long\\session};
+    \node[hot=2.0cm] (f) at (1.2,-0.95) {Continuous stress, no recovery};
+    \node[box=2.0cm] (g) at (3.75,-0.95) {ATP drained, trehalose spent};
+    \node[box=2.0cm] (h) at (6.3,-0.95) {Repair falls behind damage};
+    \node[hot=2.0cm] (i) at (8.85,-0.95) {Stressed → dead, irreversible};
+    \node[box=1.9cm] (j) at (11.4,-0.95) {Defence runs to depletion};
+    \draw[arrow] (f) -- (g); \draw[arrow] (g) -- (h); \draw[arrow] (h) -- (i);
+    \draw[arrow] (i) -- (j);
+  \end{tikzpicture}
+  \raggedright
+  \takeaway{the cold retard after each hot session is part of the method, not a pause:
+    it is where the culture recovers.}
+  \source{ch.~11; Morano et al.\ (2012)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Two free protections: a slow ramp and a stiff levain}
+  \begin{columns}[T]
+    \column{0.48\textwidth}
+      {\color{crust}\textbf{Ramp, not shock}}
+      \begin{itemize}\footnotesize\setlength{\itemsep}{1pt}
+        \item \textit{S.~cerevisiae} survives a later hour at 50°C considerably better
+          after a slow, linear warm-up than after a sudden shock
+        \item Gained mainly between 40 and 50°C on the way up, by membrane remodelling,
+          not Hsp104 or trehalose
+        \item So the container's lag protects: pre-warming it, or dropping a small levain
+          into a hot water bath, is harsher than it looks
+      \end{itemize}
+    \column{0.48\textwidth}
+      {\color{crust}\textbf{Lower water activity}}
+      \begin{itemize}\footnotesize\setlength{\itemsep}{1pt}
+        \item Heat resistance rises as water activity falls: a stiff levain does from
+          outside what trehalose does inside
+        \item 100\% vs 50\% hydration is perhaps a\textsubscript{w} 0.99 vs 0.95: plausibly
+          a factor of a few in D-value. \untested\ No published value at 40–45°C
+        \item 100\% to 85\% buys very little; a true 50–60\% stiff levain buys more
+      \end{itemize}
+  \end{columns}
+  \takeaway{start hot builds from cool, in their container, and stiffen the levain
+    \emph{before} raising the heat. A margin, not a licence: neither extends a safe
+    session.}
+  \source{ch.~11; Guyot, Ferret \& Gervais; Morano et al.\ (2012)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Long sessions are harsher: acid, ethanol and hunger compound}
+  \begin{columns}[T]
+    \column{0.44\textwidth}
+      \begin{itemize}\footnotesize
+        \item \textbf{Falling pH} speeds heat kill; pH control and heat defence share
+          one ATP budget
+        \item \textbf{Ethanol} speeds heat kill exponentially; both hit the membrane, so
+          they multiply (Leão \& van Uden 1982; Piper 1995)
+        \item \textbf{Sugar runs out}: no fuel for the defence, no carbon to rebuild
+          trehalose
+      \end{itemize}
+      \smallskip
+      {\footnotesize\itshape ``Yeast that comfortably survives 45°C at pH 5.5 with ample
+      maltose may die at 45°C at pH 3.8 with none.''\par}
+    \column{0.54\textwidth}
+      \tablestart{1.2}{\scriptsize}
+      \begin{tabularx}{\linewidth}{@{}P{2.7cm}L@{}}
+        \toprule
+        \textbf{Regime} & \textbf{Assessment} \\
+        \midrule
+        Brief (1–3\,h) at 40–45°C, recovery between & Sustainable, mildly selective:
+          the documented working protocol \\
+        Extended (6\,h+) at 40–45°C, no recovery & High risk: the defence exhausts,
+          stressors pile up \\
+        Any duration at 50°C+ & Thermal kill for most sourdough yeast \\
+        Hot session on an acidic, sugar-depleted culture & Substantially more lethal
+          than on a fresh feed \\
+        \bottomrule
+      \end{tabularx}
+      \tableend
+  \end{columns}
+  \takeaway{feed immediately \emph{before} a hot session, not after, and build stiff.
+    Neither extends the time a culture can take; both raise its odds.}
+  \source{ch.~11; Leão \& van Uden (1982); Piper (1995)}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Sour but flat means the yeast died first}
+  \begin{columns}[T]
+    \column{0.50\textwidth}
+      \tablestart{1.2}{\scriptsize}
+      \begin{tabularx}{\linewidth}{@{}P{2.6cm}L@{}}
+        \toprule
+        \textbf{You see} & \textbf{It means} \\
+        \midrule
+        Sharp acid, no gas, no rise & \textbf{Yeast lost, LAB surviving.} The most
+          common outcome \\
+        No acid, no gas, flat or ``off'' smell & Both badly damaged; poorer prognosis \\
+        Gas back within 1–2 feeds, acid intact & Reduced but viable; recovering \\
+        Sweet or solvent smell, no gas, slimy & Possible spoilage: discard \\
+        \bottomrule
+      \end{tabularx}
+      \tableend
+      \smallskip
+      {\footnotesize LAB are considerably more heat-tolerant, so a culture can smell
+      healthy and sour with no leavening left.\par}
+    \column{0.47\textwidth}
+      {\color{crust}\textbf{Recovery}: a 4–5 log kill leaves survivors}\par
+      \vspace{-0.6em}
+      \begin{enumerate}\footnotesize\setlength{\itemsep}{1pt}
+        \item Feed at 22–25°C: warmth was the stressor
+        \item Feed ≥1:10:10 to dilute acid and ethanol
+        \item Add wholemeal or high-extraction flour
+        \item Feed daily for 3–7 days before judging
+        \item Pink, orange, fuzzy or putrid: discard
+      \end{enumerate}
+  \end{columns}
+  \takeaway{keep the recovered culture as a second culture, not a replacement, and
+    compare it with the original or a room-temperature backup.}
+  \source{ch.~11}
+\end{frame}
+
+% ===============================================================
+\section{Why the hot protocol works}
+
+\begin{frame}{At 28°C nothing is stressed: the usual advice is about schedule}
+  \begin{itemize}\setlength{\itemsep}{0.3em}
+    \item \textit{S.~cerevisiae} grows best around 30–33°C; most sourdough LAB at
+      30–40°C. A levain at 28°C is near an \textbf{optimum}, not a limit
+    \item Why the usual advice says 24–26°C:
+      \begin{itemize}
+        \item \textbf{Schedule control}: cooler widens the timing window and forgives a
+          late baker. The largest single reason
+        \item \textbf{A flavour preference stated as a rule}: warmer means more acid per
+          unit of gas, and more lactic than acetic. A tradition chasing acetic sharpness
+          runs cool
+      \end{itemize}
+    \item It is not even universal: Italian \emph{lievito madre} is classically kept
+      around 28°C, and panettone practice runs at 26–30°C
+  \end{itemize}
+  \takeaway{at 28°C you trade a narrower timing window and a rounder, more lactic sour.
+    Not viability.}
+  \source{\emph{Why the Hot Protocol Works}, part 1; ch.~07}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Six ordinary effects compound: no exotic culture needed \hypothesis}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm,eff/.style={box=3.0cm,inner sep=3pt,minimum height=1.15cm}]
+    \node[eff] (e1) at (3.1,0) {\textbf{1 · Thermal lag}\\core below setpoint;
+      mean probably low-to-mid 30s};
+    \node[eff] (e2) at (6.5,0) {\textbf{2 · Short, then cold}\\≈1\,h levain,
+      ≈2\,h bulk, then fridge};
+    \node[eff] (e3) at (9.9,0) {\textbf{3 · Fed just before}\\most sugar, least
+      acid and ethanol};
+    \node[eff,anchor=north] (e4) at ([yshift=-4pt]e1.south) {\textbf{4 · Slow ramp}\\not
+      shock: membranes remodel on the climb};
+    \node[eff] (e5) at (e2 |- e4) {\textbf{5 · Low water activity}\\a stiff levain
+      protects more};
+    \node[eff] (e6) at (e3 |- e4) {\textbf{6 · Cool-core refuge}\\shell makes
+      flavour, core makes gas};
+    \begin{scope}[on background layer]
+      \node[panel,inner sep=3pt,fit=(e1)(e2)(e3)(e4)(e5)(e6)] (stack) {};
+    \end{scope}
+    \node[hot=1.5cm,anchor=east] (SP) at ([xshift=-0.4cm]stack.west)
+      {Setpoint 45°C: what the dial says};
+    \node[box=1.8cm,fill=own!12,draw=own,anchor=west] (OUT) at ([xshift=0.4cm]stack.east)
+      {Well-leavened loaf, without an unusual culture};
+    \draw[arrow] (SP) -- (stack.west);
+    \draw[arrow] (stack.east) -- (OUT);
+    \node[elabel,anchor=north] at ([yshift=-3pt]OUT.south) {multiplying,\\not adding};
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}
+    \item \textbf{The position}: temporal escape plus five other effects does nearly all
+      the work. ``It works'' is weak evidence: a 90\% kill still leaves enough to leaven
+  \end{itemize}
+  {\footnotesize\color{flag}\textbf{A stated bet, not a result.} Heat-tolerant selection
+  is at most a small extra term; the test that would falsify the bet has not been run.\par}
+  \source{\emph{Why the Hot Protocol Works}, parts 2–3; ch.~08, 10, 11}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{A doubling levain shows gas, not cell division \untested}
+  \begin{columns}[T]
+    \column{0.53\textwidth}
+      {\footnotesize One feed split into two equal jars: one hot, one at room
+      temperature.\par}
+      \smallskip
+      \tablestart{1.2}{\scriptsize}
+      \begin{tabularx}{\linewidth}{@{}P{2.5cm}L@{}}
+        \toprule
+        \textbf{Hot jar does} & \textbf{It supports} \\
+        \midrule
+        Strong, prompt rise, like the control & Yeast active at temperature:
+          \textbf{consistent with either explanation} \\
+        Acid and aroma, little or no rise & LAB active, yeast not contributing gas:
+          temporal escape \\
+        Rise markedly slower than the control & Yeast impaired but working: temporal
+          escape \\
+        \bottomrule
+      \end{tabularx}
+      \tableend
+      \smallskip
+      {\footnotesize Stressed, non-dividing yeast still make CO₂. A negative result is
+      informative; a positive one is \textbf{not decisive}.\par}
+    \column{0.44\textwidth}
+      {\color{crust}\textbf{At the bench}}
+      \begin{itemize}\footnotesize
+        \item Same mother, same feed, \textbf{equal mass}: mass drives the thermal lag
+        \item Identical tall, narrow jars; rubber band at the start line
+        \item Control at room temperature, \emph{measured} and written down
+        \item Height every 15\,min (photo with a ruler); oven air each time; core probe if
+          you have one
+        \item Feed the mother the day before; run until the hot jar peaks and recedes
+      \end{itemize}
+  \end{columns}
+  \source{\emph{The Levain Doubling Test}; ch.~08}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Serial hot passage is the test that would settle it \untested}
+  \begin{columns}[T]
+    \column{0.56\textwidth}
+      \begin{itemize}\footnotesize
+        \item At a 1:1:1 feed the old starter is a third of the new mass
+        \item If the yeast are not dividing, cells per gram fall to
+          (1/3)\textsuperscript{\emph{n}}: a twenty-seventh by build 3, under a
+          two-hundredth by build 5
+        \item Five hot builds in a row, each backslopped \textbf{from the hot jar}, not
+          the fridge or the mother; same ratio, time, setpoint
+        \item If build 5 still rises like build 1, the yeast are dividing at
+          temperature: explanation 1, and the bet is wrong
+      \end{itemize}
+    \column{0.41\textwidth}
+      \centering
+      \begin{tikzpicture}[x=0.75cm,y=2.3cm]
+        \node[font=\scriptsize,align=center,text=rye] at (2.5,1.32)
+          {Cells per gram if the yeast\\are \emph{not} dividing (1:1:1)};
+        \draw[muted] (-0.5,0) -- (5.5,0);
+        \foreach \n/\v/\l in {0/1/1, 1/0.3333/{1/3}, 2/0.1111/{1/9}, 3/0.0370/{1/27},
+                              4/0.0123/{1/81}, 5/0.0041/{<\,1/200}} {
+          \fill[crust!80] (\n-0.3,0) rectangle (\n+0.3,\v);
+          \node[font=\tiny,above] at (\n,\v) {\l};
+          \node[font=\tiny,below,text=muted] at (\n,0) {\n};
+        }
+        \node[font=\tiny,text=muted] at (2.5,-0.2) {build \emph{n}};
+      \end{tikzpicture}
+  \end{columns}
+  \takeaway{split off a test jar first. Never run this on the only culture in the house.}
+  \source{\emph{The Levain Doubling Test}; ch.~08}
+\end{frame}
+
+% ===============================================================
+\begin{frame}{Takeaways}
+  \begin{itemize}\setlength{\itemsep}{0.35em}
+    \item Acid, proteases and glutathione slacken gluten: levain \% sets how much,
+      fermentation time decides when extensible turns fragile
+    \item Time and cold build gluten: one fold and a 48–72\,h retard replace most kneading
+    \item Heat can buy flavour (35–40°C), but more esters is \emph{not} guaranteed: taste
+      against a control, and keep the dough's own hot phase short
+    \item The dial is not the dough: a 200–300\,g jar's centre may lag 30–45\,min, a 1\,kg
+      tub an hour or more
+    \item Survival is time at temperature: brief hot sessions with a cold recovery are
+      sustainable, long ones high risk
+    \item Feed right before the heat, start from cool, build stiff, keep a
+      room-temperature backup
+    \item Sour but flat means the yeast died: recover at 22–25°C, 1:10:10, for 3–7 days
+  \end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Open questions}
+  \tablestart{1.0}{\footnotesize}
+  \begin{tabularx}{\linewidth}{@{}P{4.6cm}LP{2.3cm}@{}}
+    \toprule
+    \textbf{Question} & \textbf{Test} & \textbf{Status} \\
+    \midrule
+    Heat-adapted, or temporal escape? (ch.~08; a note bets on escape)
+      & Serial hot passage (decisive); levain doubling; extend the hot bulk until
+      leavening fails & \untested \\
+    How hot is the dough really? (ch.~10) & Log the jar core in a hot build; 75\,g jar
+      vs 1\,kg tub & \untested \\
+    Does heat raise or lower esters? (ch.~07) & Taste side by side with a
+      room-temperature control & \contested \\
+    How much does a stiff levain protect? (ch.~11) & Stiff vs liquid, same setpoint and
+      time; then feed and time to peak & \untested \\
+    Is the recovered culture better? (ch.~11) & Against a control: heat tolerance,
+      flavour, timing at 25°C & \untested \\
+    Stir the hot build or not? (ch.~10) & One stir at halfway vs none: rise and flavour
+      & \leavevmode\muted{suggested} \\
+    \bottomrule
+  \end{tabularx}
+  \tableend
+  \source{ch.~07, 08, 10, 11; notes; README status list. The \texttt{chamber/} logger
+    meant to run these has its first stage built; nothing is instrumented yet}
+\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{Sources}
+  \begin{columns}[T]
+    \column{0.49\textwidth}
+      \tiny
+      \textbf{\color{crust}Gluten and acidification}\par
+      Wieser H (2007). Chemistry of gluten proteins. \emph{Food Microbiology}
+        24(2):115–119.\par
+      Shewry PR, Halford NG, Belton PS, Tatham AS (2002). The structure and properties of
+        gluten. \emph{Phil.\ Trans.\ R.\ Soc.\ B} 357:133–142.\par
+      Clarke CI et al.\ (2004). Wheat sourdough fermentation: effects of time and
+        acidification on rheological properties. \emph{Cereal Chemistry} 81(3):409–417.\par
+      Thiele C, Grassl S, Gänzle MG (2004). Gluten hydrolysis and depolymerization during
+        sourdough fermentation. \emph{J.\ Agric.\ Food Chem.} 52(5):1307–1314.\par
+      \smallskip
+      \textbf{\color{crust}Flavour and temperature}\par
+      Verstrepen KJ et al.\ (2003). Expression levels of the yeast alcohol acetyltransferase
+        genes. \emph{Appl.\ Environ.\ Microbiol.} 69(9):5228–5237.\par
+      Saerens SMG et al.\ (2010). Production and biological function of volatile esters in
+        \textit{S.~cerevisiae}. \emph{Microbial Biotechnology} 3(2):165–177.\par
+      Landaud S, Latrille E, Corrieu G (2001). \emph{J.\ Inst.\ Brewing} 107(2):107–117.\par
+      Kucharczyk K, Tuszyński T (2018). \emph{J.\ Inst.\ Brewing} 124(3):230–235.\par
+      Ferrández-Gómez B et al.\ (2024). Sourdough yeast strains \ldots\ in beer wort.
+        \emph{Foods} 13.\par
+      \smallskip
+      \textbf{\color{crust}Heat transfer}\par
+      Sadot M et al.\ (2017). Numerical modelling of convective heat transfer during bread
+        baking. \emph{J.\ Food Engineering}.\par
+    \column{0.49\textwidth}
+      \tiny
+      \textbf{\color{crust}Selection, Kveik and sourdough ecology}\par
+      Preiss R et al.\ (2018). Traditional Norwegian kveik are a genetically distinct
+        group of domesticated \textit{S.~cerevisiae}. \emph{Front.\ Microbiol.}
+        9:2137.\par
+      Foster B et al.\ (2022). Kveik brewing yeasts \ldots\ enhanced trehalose
+        accumulation. \emph{Front.\ Microbiol.} 13:747546.\par
+      Van der Meulen R et al.\ (2011). \emph{Appl.\ Environ.\ Microbiol.}
+        77(8):2716–2726.\par
+      Urien C et al.\ (2014). \emph{PLOS ONE} 9(4):e95449.\par
+      Meroth CB, Hammes WP, Hertel C (2003). \emph{Appl.\ Environ.\ Microbiol.}
+        69(12):7453–7461.\par
+      Brandt MJ, Hammes WP, Gänzle MG (2004). \emph{Eur.\ Food Res.\ Technol.}
+        218:333–338.\par
+      Limtong S, Sringiew C, Yongmanitchai W (2018). \emph{Agriculture and Natural
+        Resources} 52.\par
+      \smallskip
+      \textbf{\color{crust}Thermal death and stress}\par
+      Morano KA, Grant CM, Moye-Rowley WS (2012). \emph{Genetics} 190(4):1157–1195.\par
+      Guyot S, Ferret E, Gervais P. Thermal death rate of \textit{S.~cerevisiae}:
+        dependence on the kinetics of heat perturbation.\par
+      Guerrero S, López-Malo A, Alzamora SM (1999/2001). \textit{S.~cerevisiae}
+        thermal inactivation kinetics combined with ultrasound.\par
+      Leão C, van Uden N (1982). \emph{Biotechnol.\ Bioeng.} 24:1581–1590.\par
+      Piper PW (1995). \emph{FEMS Microbiol.\ Lett.} 134(2–3):121–127.\par
+      \medskip
+      \muted{Full list: \texttt{docs/25-references.md}}\par
+  \end{columns}
+\end{frame}
+
+\end{document}

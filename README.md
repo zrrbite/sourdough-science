@@ -105,6 +105,14 @@ The lookup end of the document: what to buy, what to weigh, what to check.
   there, and the norm is a scheduling convention), and that the 40–50°C case is six ordinary
   effects compounding rather than an unusual culture. Takes a position on ch. 08's open question.
 
+### Slides
+
+One Beamer deck per part, for bakers who like science: practical points first, each with
+its mechanism and source. [Foundations](slides/01-foundations.pdf) ·
+[The Science](slides/02-the-science.pdf) · [Application](slides/03-application.pdf) ·
+[Practical](slides/04-practical.pdf) · [Starters](slides/05-starters.pdf). Sources are in
+[`slides/`](slides/); `make` there rebuilds them with [Tectonic](https://tectonic-typesetting.github.io/).
+
 ---
 
 ## Equipment and materials this is written around
@@ -143,6 +151,11 @@ time, on GitHub or in an editor, which is how it actually gets used. The
 consequence to be aware of: **chapter order is load-bearing.** Most chapters
 open by referring to the one before, so moving a file means rewriting its first
 paragraph.
+
+**[`slides/`](slides/) is derived from the document, not part of it.** Each deck
+summarises one part, and its PDF is built with Tectonic from the `.tex` source next
+to it. A deck can lag behind a chapter that changes after it was written; where
+they disagree, the chapter wins.
 
 **[`chamber/`](chamber/) is a project, not prose**, and has its own toolchain —
 Python, tests, a systemd unit. It is kept here rather than in its own repository

@@ -1,0 +1,530 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{preamble}
+
+% Local additions for this deck only.
+\usetikzlibrary{fit}
+\definecolor{hot}{HTML}{F2D3C2}
+\definecolor{cold}{HTML}{D9E5EE}
+\definecolor{coldline}{HTML}{4A6F8A}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\ca}{\textasciitilde}
+% The flag reads poorly in the dark title bar, so mechanism slides carry it in the body.
+\newcommand{\hypline}{{\small\hypothesis{} {\color{muted}a mechanism proposed in the note, not yet tested}}\par\smallskip}
+\newcommand{\tablesetup}{\renewcommand{\arraystretch}{1.2}\setlength{\tabcolsep}{4pt}}
+% A brace group around tabularx loses the table here; an environment does not.
+\newenvironment{tablebox}[1][\footnotesize]{\par\tablesetup#1}{\par}
+\tikzset{
+  hotbox/.style={box=#1,fill=hot},
+  hotbox/.default=2.6cm,
+  coldbox/.style={box=#1,fill=cold,draw=coldline},
+  coldbox/.default=2.6cm,
+  group/.style={draw=muted,dashed,rounded corners=4pt,inner sep=4pt},
+  grouplabel/.style={font=\scriptsize\bfseries,text=muted,anchor=south west},
+  head/.style={draw=crust,fill=crust,text=white,rounded corners=2pt,align=center,
+    font=\footnotesize\bfseries,inner sep=4pt,text width=#1},
+}
+
+\title[Practical]{Practical: Flour, Formulas and the Protocol as Run}
+\subtitle{Part IV of the reference, the heat-driven levain bank, and a plan for maximum flavour}
+
+\begin{document}
+
+\begin{frame}[plain]\titlepage\end{frame}
+
+% ---------------------------------------------------------------
+\begin{frame}{What this deck covers}
+  \begin{enumerate}
+    \item \textbf{Flour} --- why protein \% is not enough; what to buy (ch.~21)
+    \item \textbf{Formulas and method} --- ratios, two pizza formulas, seven steps (ch.~22)
+    \item \textbf{Quick references} --- home oven vs Ooni 12”; five preferments (ch.~23--24)
+    \item \textbf{The protocol as run} --- the heat-driven levain bank, its hypotheses and open tests
+    \item \textbf{A plan for maximum flavour} --- seven steps aimed at acids, esters or the crust
+  \end{enumerate}
+  \medskip
+  {\small Flags:\quad \ownresult{} this kitchen's experience \quad \hypothesis{} proposed mechanism\par
+  \phantom{Flags:}\quad \contested{} the literature conflicts \quad \untested{} open, not yet checked\par}
+  \takeaway{Formulas assume a domestic oven to 300°C, an Ooni 12” gas, Caputo Oro Manitoba, a pure
+  sourdough culture kept warm, and a fridge at 3--5°C. Adjust for your own kit.}
+  \source{README.md (equipment and conventions).}
+\end{frame}
+
+% ===============================================================
+\section{Flour}
+
+\begin{frame}{The protein number says how much, not how good}
+  \begin{itemize}
+    \item Protein \% on the bag is Kjeldahl nitrogen × a factor: the total, not the composition
+    \item What matters: the glutenin-to-gliadin ratio and the \textbf{HMW glutenin subunit} alleles
+    \item Glu-D1 \textbf{5+10}: longer, more cross-linked polymers --- tighter mesh, more elasticity, better gas retention
+    \item Glu-D1 \textbf{2+12}: shorter, weaker polymers --- yet the same protein \% on the bag
+    \item European retail “Manitoba” is essentially unregulated, meaning roughly “high protein”: no origin or CWRS genetics guaranteed
+  \end{itemize}
+  \takeaway{Two flours at the same protein \% can make very different doughs. The label cannot tell you which.}
+  \source{ch.~21; Payne 1987 (Glu-1 scoring, 5+10 vs 2+12); Shewry, Halford \& Lafiandra 2003.}
+\end{frame}
+
+\begin{frame}{Four numbers predict whether a dough survives 48 h}
+  \begin{tablebox}[\footnotesize\renewcommand{\arraystretch}{1.05}]
+  \begin{tabularx}{\linewidth}{@{}L{2.2cm}YYY@{}}
+    \toprule
+    \textbf{Measure} & \textbf{What it tells you} & \textbf{Caputo Oro Manitoba} & \textbf{Generic flour} \\
+    \midrule
+    W index\newline (J × 10\textsuperscript{−4}) & Energy to inflate a dough sheet to bursting: strength + extensibility & W~350--380+ & “Manitoba” at 13\%: often W~280--310 \\
+    P/L ratio & Tenacity vs extensibility; ideal \ca0.5--0.7 & Formulated to hit 0.5--0.7 & High P: snaps back, tears. Low P: puddles on the peel \\
+    Damaged starch & Broken granules feed amylase: more sugar & Controlled by calibrated milling & Often more, from aggressive rollers \\
+    Ash & Minerals that activate amylases and proteases & \ca0.45--0.55\% (Tipo 00 spec) & 0.65--0.80\%, even at the same protein \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{The 50--80 W gap decides whether a 48 h dough reaches the oven intact. More damaged starch or
+  ash leaves more sugar after the retard: an Ooni burn risk.}
+  \source{ch.~21; Chopin 1927 (alveograph, W index); Barrera et al.\ 2013 (damaged starch).}
+\end{frame}
+
+\begin{frame}{For a long retard, buy flour by W, not protein}
+  \begin{tablebox}[\footnotesize\renewcommand{\arraystretch}{1.05}]
+  \begin{tabularx}{\linewidth}{@{}L{2.0cm}YY@{}}
+    \toprule
+    \textbf{Choice} & \textbf{Spec} & \textbf{Why / how to use it} \\
+    \midrule
+    First choice & Caputo Oro Manitoba / premium Tipo 00: W~320+, P/L 0.5--0.7, protein 13.5--14.5\%, ash <0.55\% & Made for long ferments; survives 48 h with the network intact \\
+    Acceptable & Any Tipo 00 or strong bread flour with verified W~300+ & No W given? Protein over 13.5\% from a reputable mill: a fair, imperfect proxy \\
+    Use with caution & Generic “Manitoba” under 13\% or unknown W: fine short, likely to degrade in 48 h & Retard 24 h, cut the levain (less acid, less protease), or blend in 20--30\% Caputo Oro \\
+    Levain flour & Whole wheat or high-extraction & Minerals, flavour precursors, enzymes --- kept to the levain's 10--15\% of the flour \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{Flour barely matters for a 2-hour direct dough; for a 48 h retarded hybrid in an Ooni, it is the highest-impact ingredient.}
+  \source{ch.~21.}
+\end{frame}
+
+% ===============================================================
+\section{Formulas and method}
+
+\begin{frame}{Levain up, yeast down: three starting ratios}
+  \begin{tablebox}[\footnotesize\renewcommand{\arraystretch}{1.0}]
+  \begin{tabularx}{\linewidth}{@{}L{3.3cm}L{3.3cm}L{3.9cm}Y@{}}
+    \toprule
+    & \textbf{Conservative} & \textbf{Moderate} & \textbf{Bold} \\
+    \midrule
+    Levain (\% of total flour) & 10\% & 15\% & 20\% \\
+    IDY (\% of total flour) & 0.3\% & 0.2\% & 0.15\% \\
+    Levain hydration & 100\% (liquid) & 100\% (liquid) & 60\% (stiff) \\
+    Levain maturity & Young, just peaked & Just peaked & Peaked, slight decline OK \\
+    Acid character & Subtle background tang & Noticeable lactic roundness & Distinct, complex tang \\
+    Gluten impact & Minimal & Slight softening & Moderate --- may need stronger flour \\
+    Flavour in home oven & Mild enhancement & Clear sourdough character & Pronounced, rustic \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{More levain brings more wild yeast, so cut the IDY: at 20\% with a mature culture, 0.1\% may do.
+  A stiff levain brings less water: add it to the dough.}
+  \source{ch.~22 (home oven pizza, 250--300°C).}
+\end{frame}
+
+\begin{frame}{The Ooni formula is drier and carries far less yeast}
+  \begin{tablebox}[\footnotesize\renewcommand{\arraystretch}{1.0}]
+  \begin{tabularx}{\linewidth}{@{}Yrrrr@{}}
+    \toprule
+    & \multicolumn{2}{c}{\textbf{Home oven, 4 × \ca250\,g}} & \multicolumn{2}{c}{\textbf{Ooni 12”, 4 × \ca275\,g}} \\
+    \cmidrule(lr){2-3}\cmidrule(l){4-5}
+    \textbf{Ingredient} & \textbf{Weight} & \textbf{Baker's \%} & \textbf{Weight} & \textbf{Baker's \%} \\
+    \midrule
+    Flour, W280--320 (Ooni: Tipo 00 only) & 550\,g & 100\% & 600\,g & 100\% \\
+    Water & 340\,g & \ca62\% & 350\,g & \ca58\% \\
+    Liquid levain (100\% hydration, at peak) & 165\,g & 15\% flour equiv. & 150\,g & \ca12.5\% flour equiv. \\
+    Fine sea salt & 16\,g & 2.9\% & 18\,g & 2.7\% \\
+    Instant dry yeast & 1.1\,g & 0.2\% & 0.4\,g & 0.06\% \\
+    Olive oil (optional) & 15\,g & 2.7\% & 12\,g & 1.8\% \\
+    \midrule
+    True flour / water, incl.\ the levain's & \ca632 / \ca422\,g & \textbf{\ca67\%} & \ca675 / \ca425\,g & \textbf{\ca63\%} \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{Ooni: 48 h minimum retard, non-negotiable: the yeast eats most of the sugar, so
+  leopard spots, not burning. Under-proofed? 0.1\% IDY next batch. Blown? Less, or retard longer.}
+  \source{ch.~22. Home flour: Tipo 00 or strong bread flour.}
+\end{frame}
+
+\begin{frame}{Steps 1--4: young levain, acid in late, folds early}
+  \begin{tablebox}
+  \begin{tabularx}{\linewidth}{@{}L{2.1cm}L{2.3cm}YY@{}}
+    \toprule
+    \textbf{Step} & \textbf{When} & \textbf{Do} & \textbf{Why} \\
+    \midrule
+    1. Build the levain & 8--12 h before mixing; room temperature & Feed 1:5:5 (culture:flour:water) with white bread flour, until just peaked: domed, bubbly, floats & Caught at or just before peak: most yeast vigour relative to LAB \\
+    2. Autolyse & 30--60 min & Flour + most of the water (hold back \ca30\,g); mix until no dry flour; cover & Hydrates the flour and starts gluten before the levain's acid arrives \\
+    3. Final mix & --- & Add levain, the rest of the water with the yeast dissolved in it, salt, oil & Mix to smooth, slightly tacky, a moderate windowpane \\
+    4. Bulk & 2--3 h at \ca22°C & 3--4 stretch-and-fold sets, 30 min apart, in the first 90 min; then leave it & Expect +50--70\% volume; the commercial yeast keeps timing predictable \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \source{ch.~22 (method for both formulas).}
+\end{frame}
+
+\begin{frame}{Steps 5--7: cold retard, gentle pull, hot bake}
+  \begin{tablebox}[\footnotesize\renewcommand{\arraystretch}{1.0}]
+  \begin{tabularx}{\linewidth}{@{}L{1.9cm}L{2.4cm}YY@{}}
+    \toprule
+    \textbf{Step} & \textbf{When} & \textbf{Do} & \textbf{Why} \\
+    \midrule
+    5. Ball, retard & 3--5°C. Home 24--72 h; Ooni 48--72 h minimum & Home 250\,g; Ooni 270--280\,g (thicker, forgiving) or 220--230\,g (thinner, crisp). Round tightly; oiled tubs & LAB acidify slowly, yeast nearly stops, ester precursors build. Ooni: sugar depletion \\
+    6. Temper, gentle pull & 1.5--2 h, room temperature & Stretch and fold each ball 2--3 times, turning 90°; re-round loosely, no degassing & CO₂ dissolved in the cold nucleates (Henry's law): visible rise in 20--30 min \\
+    7a. Bake, home & 250--300°C, 6--10 min & Preheated stone or steel & Longer bake, more roasted, malty crust aroma (ch.~14) \\
+    7b. Bake, Ooni & 350--380°C stone & Preheat full flame \ca15 min, then 40--50\%. 270--280\,g: 10--11”, 2--3 min, turn every 20--30\,s. 220--230\,g: 11--12”, 90\,s--2 min & Optional final 15--20\,s boost for leopard spots; 3--5 min stone recovery at full flame between pizzas \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \source{ch.~22 (method); ch.~19 for the gentle pull.}
+\end{frame}
+
+% ===============================================================
+\section{Quick references}
+
+\begin{frame}{Sugar is fuel in the home oven, a burn risk in the Ooni}
+  \begin{tablebox}[\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{4pt}]
+  \begin{tabularx}{\linewidth}{@{}L{3.1cm}L{4.3cm}Y@{}}
+    \toprule
+    \textbf{Parameter} & \textbf{Home oven (250--300°C)} & \textbf{Ooni 12” (350--380°C stone)} \\
+    \midrule
+    Total hydration & 65--68\% & 63--65\% \\
+    Ball weight / pie diameter & \ca250\,g / 12” & \ca275\,g / 10--11” \\
+    Commercial yeast (IDY) & 0.2\% & 0.05--0.1\% \\
+    Levain \% & 15\% (moderate) & 10--15\% \\
+    Cold retard & 24--72 h (flavour) & 48--72 h (mandatory for sugar depletion) \\
+    Flame setting & N/A (thermostat) & 40--50\% of max (preheat at full, drop before launch) \\
+    Bake time / stone recovery & 6--10 min / N/A & 2--3 min + optional 15--20\,s char boost / 3--5 min at full flame \\
+    Primary burn risk & Low --- more browning fuel is welcome & High --- residual sugar carbonises at max flame \\
+    Raw centre risk & Very low (long bake) & High at max flame --- moderate flame solves this \\
+    Crust aroma (Maillard) & Extended thermal phase, rich expression & Good at 2--3 min; compressed at 60\,s \\
+    Key advantage of hybrid & Flavour complexity in longer bake & Sugar depletion + flavour + cooked-through centre \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \source{ch.~23.}
+\end{frame}
+
+\begin{frame}{Hydration and organism set acid, flavour and gluten}
+  \begin{tablebox}[\scriptsize\renewcommand{\arraystretch}{1.0}\setlength{\tabcolsep}{3pt}]
+  \begin{tabularx}{\linewidth}{@{}L{1.85cm}L{2.05cm}L{2.35cm}L{2.15cm}L{2.15cm}Y@{}}
+    \toprule
+    & \textbf{Biga} & \textbf{Poolish} & \textbf{Stiff levain} & \textbf{Liquid levain} & \textbf{Hybrid (yeast + levain)} \\
+    \midrule
+    Hydration & 50--60\% & 100\% & 50--60\% & 100\% & Any (levain separate) \\
+    Microbiology & \textit{S.~cerevisiae} & \textit{S.~cerevisiae} & Wild yeast + LAB & Wild yeast + LAB & \textit{S.~cerevisiae} + LAB \\
+    Primary acid & Minimal & Minimal & Acetic (sharp) & Lactic (mild) & Tuneable (levain type) \\
+    pH range & 5.5--6.0 & 5.5--6.0 & 3.5--4.5 & 3.8--4.5 & 4.5--5.5 \\
+    Flavour & Yeast aromatics & Sweet, wheaty & Sharp, vinegary & Round, creamy & Complex esters, balanced tang \\
+    Gluten effect & Elastic, tight & Extensible, soft & Extensible + protease & Extensible + protease & Mostly elastic, slight acid softening \\
+    Crumb & Fine, uniform & Open, regular & Wild, irregular & Open, moderate & Controlled open, uniform \\
+    Ferment time & 12--24 h & 8--16 h & 6--12 h (cycle) & 4--8 h (cycle) & 2--3 h bulk + cold retard \\
+    Best for & Ciabatta, focaccia & Baguettes, Neapolitan pizza & Country bread & Enriched doughs & Home oven pizza \\
+    Pizza suitability & Good & Excellent (traditional) & Viable & Good & Optimal for home oven \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \source{ch.~24 --- \textit{“Same vessel, same hydration, completely different ecology. Or: combine them.”}}
+\end{frame}
+
+% ===============================================================
+\section{The protocol as run}
+
+\begin{frame}{Hot, cold for days, hot, hot, cold overnight, then bulk}
+  \centering
+  \begin{tikzpicture}[node distance=0.2cm and 0.9cm]
+    % Bank day
+    \node[box=2.7cm] (A) {25/25/25\,g starter/flour/water\\white flour only};
+    \node[hotbox=2.7cm, below=of A] (B) {\textbf{Hot build}\\oven, \mbox{40--50°C} setpoint\\to near-peak};
+    \node[coldbox=2.7cm, below=of B] (C) {\textbf{Fridge}\\keeps for days};
+    % Bake day, two columns
+    \node[box=2.7cm, right=1.3cm of A] (D) {\textbf{Refeed}\\+ whole wheat + rye};
+    \node[hotbox=2.7cm, below=of D] (E) {\textbf{Hot again}\\until active};
+    \node[box=2.7cm, below=of E] (F) {\textbf{Mix dough}};
+    \node[hotbox=2.7cm, right=0.9cm of D] (G) {\textbf{Hot pulse}\\brief};
+    \node[coldbox=2.7cm, below=of G] (H) {\textbf{Fridge overnight}\\before bulk};
+    \node[box=2.7cm, below=of H] (I) {Bulk · folds · shape · bake};
+    \draw[arrow] (A) -- (B);
+    \draw[arrow] (B) -- (C);
+    \draw[arrow] (D) -- (E);
+    \draw[arrow] (E) -- (F);
+    \draw[arrow] (G) -- (H);
+    \draw[arrow] (H) -- (I);
+    \draw[arrow] (C.east) -- ++(0.32,0) |- (D.west);
+    \draw[arrow] (F.east) -- ++(0.32,0) |- (G.west);
+    % Groups
+    \node[group, fit=(A)(C)] (bank) {};
+    \node[group, fit=(D)(I)] (bake) {};
+    \node[grouplabel] at (bank.north west) {Bank day · repeat weekly};
+    \node[grouplabel] at (bake.north west) {Bake day};
+    % Legend
+    \node[hotbox=1.1cm, right=0.6cm of G, font=\tiny] (lh) {oven};
+    \node[coldbox=1.1cm, below=0.15cm of lh, font=\tiny] (lc) {fridge, 3--5°C};
+  \end{tikzpicture}
+
+  \raggedright
+  \takeaway{Bank several jars at once; on bake day, one jar refed with wholegrain is the levain.
+  This is how the bread is made here now \ownresult; why it works is still hypothesis.}
+  \source{notes/heat-driven-levain-bank.md.}
+\end{frame}
+
+\begin{frame}{What changed: the cold rest now comes before bulk}
+  \begin{tablebox}
+  \begin{tabularx}{\linewidth}{@{}L{2.6cm}YY@{}}
+    \toprule
+    & \textbf{Chapter 08 protocol} & \textbf{This protocol} \\
+    \midrule
+    Levain & Built hot, used at once & Built hot, banked cold for days, refed hot \\
+    Wholegrain & In the build & Withheld until the bake-day refeed \\
+    Hot dough phase & 2 h bulk at 40°C+ & Brief pulse straight after mixing \\
+    Cold phase & After bulk (retard) & Before bulk (enzymatic rest), optionally also after \\
+    Bulk & Hot & Room temperature, after the cold rest \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \begin{itemize}\small
+    \item The cold-before-bulk step is the one that changes the character of the result \ownresult
+    \item The idea, from the \textit{Double Enzymatic Activation} notes: amylase works overnight while
+      the microbes are dormant, so the dough reaches bulk pre-sweetened and extensible
+    \item Here that rest is stacked on a hot front end instead of replacing it
+  \end{itemize}
+  \source{notes/heat-driven-levain-bank.md.}
+\end{frame}
+
+\begin{frame}{Every hot session follows a fresh feed and a rest}
+  \hypline
+  \begin{itemize}
+    \item Ch.~11: the most useful defence against heat stress is to \textbf{feed right before a hot
+      session} --- most substrate, least acid and ethanol, a full ATP budget
+    \item This protocol does it at every hot step without being designed to: the bank build, the
+      bake-day refeed, and the dough mix (the largest feed of all)
+    \item Ch.~11 frames safe heat as brief excursions with recovery between; days at 3--5°C between
+      build and refeed are a long recovery window
+    \item So each hot pulse meets a culture that is rested, not depleted
+  \end{itemize}
+  \takeaway{If you heat a levain, feed it just before. A ripe, sour one carries the acid and ethanol that make heat more lethal.}
+  \source{notes/heat-driven-levain-bank.md; ch.~11.}
+\end{frame}
+
+\begin{frame}{White flour in storage, wholegrain at activation}
+  \hypline
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.48\textwidth}
+      \textbf{\color{coldline}In the fridge: keep it inert}
+      \begin{itemize}\small
+        \item The enemy is over-acidification
+        \item Acid and ethanol make the \emph{next} heat exposure more lethal (ch.~11)
+        \item White flour has less amylase, fewer minerals and less LAB fuel, so the jar sours more slowly
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\color{crust}On bake day: load it}
+      \begin{itemize}\small
+        \item The goal flips: most enzyme fuel, most microbial kick
+        \item Whole wheat and rye: amylase, protease, minerals, lysine-rich protein for the crust
+        \item Fuel arrives just before two hot pulses and the overnight rest, not burnt off in the fridge
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \takeaway{Test: bank one jar with 10\% rye and one white-only; refeed and heat side by side; compare
+  smell, rise and heat tolerance. \untested}
+  \source{notes/heat-driven-levain-bank.md.}
+\end{frame}
+
+\begin{frame}{Hot pulse for the enzymes, fridge to still the microbes}
+  \hypline
+  \centering
+  \begin{tikzpicture}[node distance=0.45cm]
+    \node[box=3.1cm] (m) {\textbf{Mix}\\sugar-rich, still-neutral dough};
+    \node[hotbox=3.1cm, right=of m] (p) {\textbf{Brief hot pulse}\\yeast and LAB wake;\\amylase and protease\\run hot; pH starts to fall};
+    \node[coldbox=3.1cm, right=of p] (f) {\textbf{Fridge overnight}\\microbes near zero; amylase keeps working};
+    \node[box=3.1cm, right=of f] (b) {\textbf{Bulk}\\big maltose and free\\amino acid pool; gluten\\loosened, not degraded};
+    \draw[arrow] (m) -- (p);
+    \draw[arrow] (p) -- (f);
+    \draw[arrow] (f) -- (b);
+  \end{tikzpicture}
+  \raggedright
+  \begin{itemize}\small
+    \item Enzyme rate roughly doubles per 10°C (Q₁₀): a dough at pH 5.5 and 40°C has proteolytic
+      throughput comparable to one at pH 4.5 and 25°C
+    \item Q₁₀ ≈ 2 is a general rule of biochemistry, an order-of-magnitude guide, not a dough measurement
+    \item A plausible reason the dough comes out feeling “truly enzymatically activated” \ownresult
+  \end{itemize}
+  \source{notes/heat-driven-levain-bank.md; notes/proteolysis-ph-heat.md; ch.~25 (note on Q₁₀).}
+\end{frame}
+
+\begin{frame}{The risk is a slack dough, and four levers limit it}
+  \begin{itemize}
+    \item An early cold rest relies on a high pH: protease stays quiet, only amylase works
+    \item A hot pulse before the fridge erodes that: heat partly substitutes for low pH in driving protease
+    \item The failure mode: the dough leaves the fridge slack rather than extensible
+  \end{itemize}
+  \smallskip
+  \begin{tablebox}
+  \begin{tabularx}{\linewidth}{@{}YYYY@{}}
+    \toprule
+    \textbf{Brief pulse} & \textbf{Low levain} & \textbf{Strong flour} & \textbf{Salt at the mix} \\
+    \midrule
+    Ch.~07: no more than 30--60 min for the dough itself & 10--15\% & W~350+ & Salt is the largest single inhibitor of cereal protease \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{Here the overnight rest beats going straight to bulk \ownresult, which suggests the balance is
+  on the right side --- with this flour.}
+  \source{notes/heat-driven-levain-bank.md; ch.~07; notes/proteolysis-ph-heat.md.}
+\end{frame}
+
+\begin{frame}{The oven air is 45°C; the levain core is still unknown}
+  \begin{itemize}
+    \item “Lots of heat” is an oven setpoint, not the dough temperature (ch.~10)
+    \item 75\,g of levain in a glass jar ramps slowly in air; its core likely sits well below the setpoint for most of the session \hypothesis
+    \item A slow ramp protects better than a sudden shock (ch.~11): that could reconcile the protocol with ch.~07's 40--45°C viability-decline range
+    \item \textbf{Measured 2026-09-13:} empty-oven air \ca45°C on the usual setting \ownresult. A spot reading, not a logged hold, and not a loaded oven
+    \item 45°C is where ch.~07 moves from “viability decline” to “thermal kill territory for most yeast”, so the explanation must come from the core
+  \end{itemize}
+  \takeaway{The honest statement: the air is measured at 45°C, the core temperature is unknown, and the bread rises.}
+  \source{notes/heat-driven-levain-bank.md; ch.~07, 10, 11; Guyot et al.\ (slow ramps); Sadot et al.\ 2017 (core lag).}
+\end{frame}
+
+% ===============================================================
+\section{A plan for maximum flavour}
+
+\begin{frame}{Flavour has three sources; each step works on one}
+  \centering
+  \begin{tikzpicture}[node distance=0.22cm]
+    \node[head=4.2cm] (h1) {Acids\\[-1pt]{\scriptsize\mdseries from the bacteria}};
+    \node[head=4.2cm, right=0.5cm of h1] (h2) {Esters\\[-1pt]{\scriptsize\mdseries from the yeast}};
+    \node[head=4.2cm, right=0.5cm of h2] (h3) {Crust browning\\[-1pt]{\scriptsize\mdseries in the oven}};
+    \node[box=4.2cm, below=0.3cm of h1] (s1) {\textbf{1} Whole-grain levain, stiffer for sharpness};
+    \node[box=4.2cm, below=of s1] (s2) {\textbf{2} More levain in bread: 20--30\%};
+    \node[box=4.2cm, below=0.3cm of h2] (s4) {\textbf{4} Keep the yeast active; handle gently late on};
+    \node[box=4.2cm, below=of s4] (s8) {\textbf{+} A pinch of commercial yeast};
+    \node[box=4.2cm, below=0.3cm of h3] (s3) {\textbf{3} Warm autolyse, no salt};
+    \node[box=4.2cm, below=of s3] (s5) {\textbf{5} Cold retard the shaped loaf};
+    \node[box=4.2cm, below=of s5] (s6) {\textbf{6} Bake darker than feels right};
+    \node[box=4.2cm, below=of s6] (s7) {\textbf{7} Eat the crust the same day};
+  \end{tikzpicture}
+  \raggedright
+  \takeaway{Change one thing per bake and taste it against your usual loaf. Several of these steps are
+  bets, not measurements.}
+  \source{the flavour plan, synthesised from ch.~04, 07, 12--14, 16, 17.}
+\end{frame}
+
+\begin{frame}{Steps 1--2: a stiffer, bigger levain for more acid}
+  \textbf{1. Levain: whole grain, and stiffer if you want sharpness}
+  \begin{itemize}\small
+    \item Rye or wholemeal in the bake-day feed, as the levain bank already does
+    \item A stiff levain (50--60\% water) shifts the acid toward acetic, which is sharper (ch.~04)
+    \item Not to extremes: enough acetic acid stops sourdough yeast growing altogether --- complete
+      inhibition at 150\,mmol/L undissociated acetic acid --- and the yeast makes the esters
+  \end{itemize}
+  \textbf{2. More levain in bread: 20--30\%}
+  \begin{itemize}\small
+    \item More acid, and more of the bacteria's protein-cutting enzymes; commits to a sourer loaf (ch.~17)
+    \item Tension: the levain bank holds levain to 10--15\% so a hot-pulsed dough won't go slack
+  \end{itemize}
+  \takeaway{Raise levain or stiffness one bake at a time. Pizza ratios stop at 20\% (ch.~22); 20--30\% is for bread.}
+  \source{ch.~04, 17; Gänzle et al.\ 1998 (acetic acid and sourdough yeast); notes/heat-driven-levain-bank.md.}
+\end{frame}
+
+\begin{frame}{Steps 3--4: free amino acids early, keep the esters in}
+  \textbf{3. Warm autolyse, no salt: 60--90 min at 38--42°C, then add levain and salt}
+  \begin{itemize}\small
+    \item Frees amino acids, which become the crust's malty, roasted aroma (ch.~17) \untested
+    \item The levain bank's hot pulse and overnight cold rest do the same job \hypothesis
+  \end{itemize}
+  \textbf{4. Keep the yeast active, and handle gently late on}
+  \begin{itemize}\small
+    \item Esters are made while the yeast works (ch.~13)
+    \item A warm bulk may raise them, but the evidence conflicts: check by taste (ch.~07) \contested
+    \item Fold early, handle gently late: escaping CO₂ probably carries esters away (ch.~16) \hypothesis
+    \item A pinch of commercial yeast adds a large ester-making population without losing the rise (ch.~12--14)
+  \end{itemize}
+  \source{ch.~07, 12--14, 16, 17; Calvel et al.\ 2001 (autolyse); Kucharczyk \& Tuszyński 2018 vs Ferrández-Gómez et al.\ 2024 (esters and heat).}
+\end{frame}
+
+\begin{frame}{Steps 5--7: retard cold, bake dark, eat it the same day}
+  \textbf{5. Cold retard the shaped loaf: 12--36 h at 3--5°C}
+  \begin{itemize}\small
+    \item Flour enzymes keep making sugar and amino acids for the crust, and the acid keeps building (ch.~14)
+    \item Stop before the sugar runs out: sugar is what browns
+  \end{itemize}
+  \textbf{6. Bake darker than feels right}
+  \begin{itemize}\small
+    \item Most of a loaf's aroma forms in the bake (pumpernickel, Majcher et al.\ 2020); acid slows browning
+    \item Steam for about 20 min at 250°C, then bake uncovered until deep brown \untested
+  \end{itemize}
+  \textbf{7. Eat the crust the same day}
+  \begin{itemize}\small
+    \item The roasty crust aroma is believed to fade within hours \untested; the sourness holds
+  \end{itemize}
+  \source{ch.~13, 14; Majcher et al.\ 2020. The bake times and temperatures are general practice, not from the repo.}
+\end{frame}
+
+% ===============================================================
+\begin{frame}{Takeaways}
+  \begin{itemize}
+    \item Buy flour by W and P/L, not protein \%: for a 48 h retard, W~320+ and P/L 0.5--0.7
+    \item Levain up, yeast down: pizza takes 10--20\% levain, bread tolerates 20--30\%
+    \item In the Ooni, a 48 h minimum retard uses up the sugar that would burn; a 40--50\% flame cooks the centre
+    \item Hydration and organism pick the preferment: stiff is acetic, liquid is lactic, the hybrid is tuneable
+    \item The levain bank --- hot builds after every feed, a cold rest before bulk --- works here
+      \ownresult; why it works is still hypothesis, and the core temperature is unmeasured
+    \item Flavour is acids, esters and crust: change one thing per bake and taste
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Open questions}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.5\textwidth}
+      \textbf{The levain bank} \untested
+      \begin{enumerate}\footnotesize
+        \item Log core temperature in a banked jar and in the dough during the hot pulse
+        \item Bank life: how many fridge days before the refeed lags?
+        \item Does the hot build double? Doubling shows gas, not cell division; serial hot passage decides
+        \item 10\% rye vs white-only at storage
+        \item With and without the overnight rest
+        \item Hot pulse of 30, 60, 90 min: where does extensible turn slack?
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \textbf{Flavour and wider threads}
+      \begin{itemize}\footnotesize
+        \item Warm bulk and esters: taste side by side against a room-temperature control (ch.~07) \contested
+        \item The Strecker/pyrazine crust claim: the least directly evidenced in the repo; wants a sensory comparison (ch.~17)
+        \item The plan's bake times, and how fast crust aroma fades \untested
+        \item Every temperature here is still a setpoint, not a reading: the logging chamber (\texttt{chamber/}) is designed, first stage built, not yet instrumented
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \source{notes/heat-driven-levain-bank.md (open tests); README.md (status and open threads); the flavour plan.}
+\end{frame}
+
+\begin{frame}{Sources}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \scriptsize
+      \textbf{Flour}\par
+      Payne PI (1987). Genetics of wheat storage proteins and the effect of allelic variation on bread-making quality. \textit{Annu Rev Plant Physiol} 38:141--153.\par\vspace{1pt}
+      Shewry PR, Halford NG, Lafiandra D (2003). Genetics of wheat gluten proteins. \textit{Adv Genet} 49:111--184.\par\vspace{1pt}
+      Chopin M (1927). Determination of baking value of wheat by measure of specific energy of deformation of dough. \textit{Cereal Chem} 4:1--13.\par\vspace{1pt}
+      Barrera GN et al.\ (2013). Effect of damaged starch on the rheological properties of wheat starch suspensions. \textit{J Food Eng} 116(1):233--239.\par\vspace{3pt}
+      \textbf{Heat and the levain}\par
+      Guyot S, Ferret E, Gervais P. Thermal death rate of \textit{Saccharomyces cerevisiae}: dependence on the kinetics of heat perturbation.\par\vspace{1pt}
+      Sadot M et al.\ (2017). Numerical modelling of convective heat transfer during bread baking. \textit{J Food Eng}.
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \scriptsize
+      \textbf{Flavour}\par
+      Calvel R, Wirtz RL, MacGuire JJ (2001). \textit{The Taste of Bread}. Aspen.\par\vspace{1pt}
+      Majcher MA et al.\ (2020). Formation of key aroma compounds during preparation of pumpernickel bread. \textit{J Agric Food Chem} 68(38):10352--10360.\par\vspace{1pt}
+      Kucharczyk K, Tuszyński T (2018). The effect of temperature on fermentation and beer volatiles at an industrial scale. \textit{J Inst Brew} 124(3):230--235.\par\vspace{1pt}
+      Ferrández-Gómez B et al.\ (2024). Sourdough yeast strains exhibit thermal tolerance, high fermentative performance, and a distinctive aromatic profile in beer wort. \textit{Foods} 13.\par\vspace{1pt}
+      Gänzle et al.\ (1998). Cited in the flavour plan for 150\,mmol/L acetic acid; not yet in ch.~25.\par\vspace{3pt}
+      \textbf{In the repo}\par
+      docs/21--25; notes/heat-driven-levain-bank.md; notes/proteolysis-ph-heat.md; the flavour plan (from ch.~04, 07, 12--14, 16, 17).
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}
