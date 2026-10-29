@@ -71,6 +71,17 @@
 \newcommand{\ownresult}{\flagtag{own}{own result}}
 \newcommand{\untested}{\flagtag{flag}{not yet tested}}
 
+% Source lists: one source per bullet, author and year in bold, optional group
+% headings. Use in a [allowframebreaks] frame; long lists continue on "(cont.)" slides.
+\newenvironment{sourcelist}{%
+  \setbeamerfont{itemize/enumerate body}{size=\scriptsize}%
+  \setbeamerfont{itemize item}{size=\scriptsize}%
+  \scriptsize\begin{itemize}\setlength{\itemsep}{2pt}}{\end{itemize}}
+\newcommand{\src}[2]{\item\textbf{#1}\enspace #2}
+% \nobreak keeps a group heading on the same slide as its first source.
+\newcommand{\srcgroup}[1]{\par\smallskip{\small\bfseries\color{crust}#1}\par\nobreak\vspace{-2pt}\nobreak}
+\setbeamertemplate{frametitle continuation}[from second][(cont.)]
+
 % Flowchart nodes for TikZ diagrams.
 \tikzset{
   box/.style={draw=crust,fill=crumb,rounded corners=2pt,align=center,
