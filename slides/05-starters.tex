@@ -35,7 +35,7 @@
 \begin{frame}{What this deck covers}
   \begin{enumerate}
     \item \textbf{The 14-day method}: Full Proof Baking's schedule in grams, and her rules
-    \item \textbf{What is happening in the jar}: the early rise is bacteria; the day-5 lull is the hand-over
+    \item \textbf{What is happening in the jar}: the early rise is bacteria, the day-5 lull is the hand-over, and what the settled culture is
     \item \textbf{Video, literature and this kitchen}: where the explanations differ; warm, not hot
     \item \textbf{Drying a backup and reviving it}: a pinch, not a spoonful
     \item \textbf{Open tests}: seven experiments the note leaves open
@@ -234,6 +234,100 @@
 \end{frame}
 
 % ===========================================================================
+\begin{frame}{A settled starter: one yeast and a few bacteria}
+  \begin{columns}[T]
+    \begin{column}{0.56\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{2pt}
+        \item 500 home starters: a median of one yeast and three bacteria, often one of each dominating
+        \item \textbf{Yeast:} wild \textit{S.\ cerevisiae}, over half the fungal DNA in 77\%
+        \item \textbf{Bacteria:} most often \textit{L.\ plantarum} with \textit{L.\ brevis} (177 of 500)
+        \item \textit{F.\ sanfranciscensis} dominates where present, mainly in older and bought starters
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.40\textwidth}
+      \footnotesize
+      \begin{block}{The bakery classic}
+        \textit{F.\ sanfranciscensis} with the yeast \textit{Kazachstania humilis} (ex \textit{Candida milleri}). Two Italian bakeries kept it, with \textit{S.\ cerevisiae}, stable for three years.
+      \end{block}
+      \begin{block}{Heat picks the team}
+        The classic pair wins at 20--30°C. At 35--40°C, \textit{L.\ reuteri} and \textit{L.\ johnsonii} with the yeast \textit{I.\ orientalis} win instead.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \takeaway{A home starter is usually wild \textit{S.\ cerevisiae} and a couple of lactobacilli. The San Francisco pair is the exception.}
+  \source{Landis et al.\ (2021); Venturi et al.\ (2012); Vogelmann and Hertel (2011)}
+\end{frame}
+
+\begin{frame}{They share the maltose without fighting over it}
+  \small
+  \begin{itemize}\setlength{\itemsep}{2pt}
+    \item The flour's enzymes keep releasing maltose, and sourdough LAB prefer it
+    \item \textit{F.\ sanfranciscensis} splits maltose; \textit{K.\ humilis} cannot use it at all, so they don't compete for the main sugar
+    \item Together they use more of it, and leaven as well as LAB paired with \textit{S.\ cerevisiae}
+    \item ``The bacterium leaks glucose to feed the yeast'': not universal; Greek sourdough strains showed none
+    \item What kept a bakery pair stable for three years: no main sugar ever ran out
+  \end{itemize}
+  \takeaway{The partners coexist because the food never runs short, not because they divide it neatly.}
+  \source{Gänzle (2014); Ehrmann and Vogel (1998); Carbonetto et al.\ (2020); De Vuyst et al.\ (2002); Venturi et al.\ (2012)}
+\end{frame}
+
+\begin{frame}{A one-sided partnership}
+  \begin{columns}[T]
+    \begin{column}{0.56\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{2pt}
+        \item \textbf{The bacteria gain:} yeasts supply valine and leucine, and lactobacilli grow faster beside them
+        \item \textit{F.\ sanfranciscensis} grows poorly alone and persists only with \textit{K.\ humilis}
+        \item \textbf{The yeast does not:} its numbers fall when LAB are present; the LAB rarely notice the yeast
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.40\textwidth}
+      \footnotesize
+      \textbf{Both take the acid; the bacterium more}\par\smallskip
+      \begin{tabular}{@{}lll@{}}
+        \toprule
+        & Grows at & Stops at\textsuperscript{*} \\
+        \midrule
+        Yeast & pH 3.5--7 & 150 mmol/L \\
+        Bacterium & pH 3.9--6.7 & over 160 \\
+        \bottomrule
+      \end{tabular}\par\smallskip
+      {\tiny * undissociated acetic acid; \textit{C.\ milleri} and \textit{F.\ sanfranciscensis}}
+    \end{column}
+  \end{columns}
+  \takeaway{``Symbiotic'' is loose: the bacteria gain from the yeast, the yeast puts up with them, and the pair ferments better than either alone.}
+  \source{Gobbetti et al.\ (1994); Landis et al.\ (2021); Carbonetto et al.\ (2020); Gänzle et al.\ (1998)}
+\end{frame}
+
+\begin{frame}{Settled in a week, ready in two, never finished}
+  \centering
+  \begin{tikzpicture}[x=1cm,y=1cm,
+      seg/.style={draw=crust,fill=crumb,rounded corners=1.5pt,font=\tiny,align=center,inner sep=2pt,minimum height=0.62cm},
+      lab/.style={font=\scriptsize\bfseries,anchor=west,align=left,text width=1.5cm}]
+    % Days
+    \node[lab] at (0,0) {Days\\(from scratch)};
+    \node[seg,minimum width=3.4cm] at (3.65,0) {Days 1--4: first wave};
+    \node[seg,minimum width=0.9cm] at (5.85,0) {5: lull};
+    \node[seg,minimum width=3.4cm] at (8.05,0) {6--9: sourdough LAB take over};
+    \node[seg,minimum width=4.3cm] at (11.95,0) {9--14: ratios climb};
+    \draw[arrow] (6.85,-0.62) -- (6.85,-0.34);
+    \node[font=\tiny,anchor=north] at (6.85,-0.6) {settled: day 5--7};
+    \draw[arrow] (13.85,-0.62) -- (13.85,-0.34);
+    \node[font=\tiny,anchor=north] at (13.3,-0.6) {ready: triples in 4--6\,h};
+    % One feed
+    \node[lab] at (0,-1.7) {One feed\\(hours)};
+    \node[seg,minimum width=3.4cm] at (3.65,-1.7) {Fed: both start growing};
+    \node[seg,minimum width=4.35cm,fill=own!15,draw=own] at (7.575,-1.7) {Mid-rise to peak:\\best balance \hypothesis};
+    \node[seg,minimum width=4.3cm] at (11.95,-1.7) {Past peak: acid and ethanol highest;\\balance tips to the bacteria};
+    % Months
+    \node[lab] at (0,-3.0) {Months\\and years};
+    \node[seg,minimum width=12.15cm] at (8.025,-3.0) {Species hold; strains replaced within 6--12 months; LAB counts swing 10--100×. Older home starters more often hold \textit{F.\ sanfranciscensis}};
+  \end{tikzpicture}
+  \takeaway{Judge readiness by the tripling test, not the calendar, and feed at peak to keep it in its best window.}
+  \source{Van der Meulen et al.\ (2007); Ercolini et al.\ (2013); Venturi et al.\ (2012); Gänzle et al.\ (1998); Carbonetto et al.\ (2020); Minervini et al.\ (2018); Landis et al.\ (2021)}
+\end{frame}
+
 \section{Video, literature and this kitchen}
 
 \begin{frame}{The method works; three of its explanations do not}
@@ -706,6 +800,26 @@
     \end{column}
   \end{columns}
   \source{Full entries in the References section of notes/starter-from-scratch.md; chapter 11 of the main document}
+\end{frame}
+
+\begin{frame}{Sources: the finished culture}
+  \tiny
+  \begin{columns}[T]
+    \begin{column}{0.49\textwidth}
+      Landis EA et al.\ (2021). The diversity and function of sourdough starter microbiomes. \emph{eLife} 10:e61644.\par\vspace{1.5pt}
+      Venturi M et al.\ (2012). Stable and non-competitive association of \emph{S.\ cerevisiae}, \emph{C.\ milleri} and \emph{L.\ sanfranciscensis}. \emph{Food Microbiology} 31(1):107--115.\par\vspace{1.5pt}
+      Carbonetto B et al.\ (2020). Interactions between \emph{K.\ humilis} and lactic acid bacteria in sourdough. \emph{Microorganisms} 8(2):240.\par\vspace{1.5pt}
+      Gobbetti M et al.\ (1994). Interactions between LAB and yeasts: metabolism of amino acids. \emph{World J. Microbiol. Biotechnol.} 10(3):275--279.\par\vspace{1.5pt}
+      Vogelmann SA, Hertel C (2011). Ecological factors and the stability of sourdough associations. \emph{Food Microbiology} 28(3):583--589.
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      Ehrmann MA, Vogel RF (1998). Maltose metabolism of \emph{L.\ sanfranciscensis}. \emph{FEMS Microbiol. Lett.} 169(1):81--86.\par\vspace{1.5pt}
+      De Vuyst L et al.\ (2002). LAB in Greek traditional wheat sourdoughs. \emph{Appl. Environ. Microbiol.} 68(12):6059--6069.\par\vspace{1.5pt}
+      Gänzle MG (2014). Enzymatic and bacterial conversions during sourdough fermentation. \emph{Food Microbiology} 37:2--10.\par\vspace{1.5pt}
+      Gänzle MG et al.\ (1998). Modeling of growth of \emph{L.\ sanfranciscensis} and \emph{C.\ milleri}. \emph{Appl. Environ. Microbiol.} 64(7):2616--2623.
+    \end{column}
+  \end{columns}
+  \source{Full entries in the References section of notes/starter-from-scratch.md}
 \end{frame}
 
 \end{document}

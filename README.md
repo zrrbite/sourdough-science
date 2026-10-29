@@ -88,7 +88,9 @@ The lookup end of the document: what to buy, what to weigh, what to check.
 
 - [Starting a Starter From Scratch](notes/starter-from-scratch.md) — the step before every
   chapter: Full Proof Baking's 14-day method day by day, in grams and hours, alongside the
-  microbial succession it follows (the early rise is bacteria, the day-5 lull is the hand-over).
+  microbial succession it follows (the early rise is bacteria, the day-5 lull is the hand-over),
+  and the culture it ends in: who lives there, how one-sided the partnership is, and when it is
+  settled, ready and at its best.
   Also why to start warm but not hot, what changes for this kitchen, and how to dry a backup
   and revive it (a pinch, not a spoonful). The schedule on one printable A4 page: [cheat
   sheet](notes/starter-cheatsheet.pdf).

@@ -6,7 +6,9 @@
 > the level of grams and hours so it can be followed at the bench. Alongside it is what the
 > literature says is happening in the jar at each stage. Most of the steps that put people
 > off, such as the early rise that dies and the smell, turn out to be an ordinary and
-> well-documented succession of microbes. A later section covers the other way to get a
+> well-documented succession of microbes. *The finished culture* describes where the
+> succession ends: who lives in a settled starter, how its yeast and bacteria get along, and
+> when it is settled, ready and at its best. A later section covers the other way to get a
 > working culture: drying a backup and reviving it.
 >
 > The method below is taken from the title card she puts up at every feed, which gives the
@@ -173,6 +175,114 @@ dilution lever chapter 11's recovery protocol uses at 1:10:10.
 mechanism is chapter 11's compounding stressors. Past peak, the substrate is spent and acid
 and ethanol are at their highest, so a starter that is always fed after collapse is always
 fed in its most stressed state.
+
+---
+
+## The finished culture
+
+The succession above ends in a culture that stays put. This section describes what that
+culture is, how its yeast and bacteria get along, and three timelines: when it has settled,
+when it is ready, and when in each feed it is at its best.
+
+### Who lives there
+
+Most starters are simpler than the word "consortium" suggests. In 500 home starters from
+four continents, the median held one yeast and three LAB or acetic acid bacteria, and many
+were dominated by a single yeast and a single bacterium (Landis et al. 2021):
+
+- **The yeast** was usually *Saccharomyces cerevisiae*, the same species as baker's yeast
+  but wild strains. It made up more than half the fungal DNA in 77% of starters.
+- **The bacteria** were most often *L. plantarum* and *L. brevis*, found together in 177 of
+  the 500.
+- ***Fructilactobacillus sanfranciscensis***, the bacterium of San Francisco sourdough,
+  dominated wherever it occurred, but it was the exception. It turned up mainly in older
+  starters and ones bought from a business.
+
+Bakery sourdoughs are where the classic pairing lives: *F. sanfranciscensis* with the yeast
+*Kazachstania humilis* (earlier *Candida milleri* or *C. humilis*). Two Italian bakeries
+kept that pair, alongside *S. cerevisiae*, stable for three years (Venturi et al. 2012).
+
+### How they share the food
+
+The main sugar is maltose. The flour's own enzymes keep releasing it from starch, and the
+heterofermentative LAB of wheat and rye sourdoughs prefer it (Gänzle 2014).
+*F. sanfranciscensis* splits maltose with a maltose phosphorylase (Ehrmann and Vogel 1998),
+and *K. humilis* cannot use maltose at all, so the classic pair does not compete for the
+main sugar. Together they use more of it. Paired with LAB of the obligately
+heterofermentative group *F. sanfranciscensis* belongs to, *K. humilis* leavened dough as
+well as *S. cerevisiae* did with the same partners, though on its own it never matched
+*S. cerevisiae* (Carbonetto et al. 2020).
+
+Two common claims need care:
+
+- **That the bacterium leaks glucose to feed the yeast.** It is not universal: in Greek
+  sourdough LAB, no glucose built up outside the cells (De Vuyst et al. 2002).
+- **That they divide the food neatly.** In the three-year bakery study, all three species
+  grew at about the same rate and none of the main sugars ran out. The authors credit that,
+  not a division of labour, for the stable association (Venturi et al. 2012).
+
+The yeast can also feed the bacteria. In co-culture with sourdough yeasts, two sourdough
+lactobacilli grew faster and to higher numbers, and when their medium lacked valine or
+leucine, amino acids they need, the yeasts supplied them (Gobbetti et al. 1994).
+
+Both partners tolerate the acid the bacteria make. *C. milleri* grew unaffected from pH 3.5
+to 7, and *F. sanfranciscensis* grew between pH 3.9 and 6.7. Undissociated acetic acid sets
+the limit: the yeast stopped at 150 mmol/L, while the bacterium tolerated more than 160
+(Gänzle et al. 1998).
+
+### Is it a symbiosis?
+
+Loosely, yes: the partners live together and stay together. Strictly, the evidence is
+mixed. In the most direct test, the yeasts' numbers fell when LAB were present, the LAB
+were rarely affected by the yeasts, and no pairing benefited in numbers. The authors call
+for rethinking the idea that the partners coexist by helping each other (Carbonetto et al.
+2020). Yet in a synthetic sourdough, *F. sanfranciscensis* grew poorly alone and persisted
+only when paired with *K. humilis* (Landis et al. 2021), and the amino acid supply above is
+a real benefit to the bacteria. The fairest summary: the bacteria gain from the yeast, the
+yeast mostly tolerates the bacteria, and the pair ferments better than either does alone.
+
+### Heat changes who wins
+
+The classic pair held its ground against every competitor tried at 20–30°C, with 12–24 h
+between feeds and 5–20% of the old dough carried over. At 35–40°C a different association
+won: *L. reuteri* and *L. johnsonii* with the yeast *Issatchenkia orientalis*, which could
+only grow with enough oxygen (Vogelmann and Hertel 2011). Chapter 09 describes the same
+kind of shift for repeated hot builds.
+
+### Three timelines: settled, ready, at its best
+
+| Timeline | What happens | When |
+| --- | --- | --- |
+| **Settled** (days) | The species stop changing | About day 5–7 at 25–30°C (*Days 6–9*). Yeast reaches 10⁷ per gram after 4–5 days of feeding, in one dough only after 8 (Van der Meulen et al. 2007) |
+| **Ready** (days) | It triples in 4–6 h on 1:2:2 at 27°C | Day 14 in the video. The second week builds numbers and timing, not new species |
+| **At its best** (hours) | Both partners growing, sugar still there | From mid-rise to peak *(hypothesis)* |
+| **Past peak** (hours) | Acid and ethanol at their highest; the balance tips toward the bacteria | From the peak until the next feed |
+| **Long term** (months to years) | The species hold, the strains turn over | Strains replaced within 6–12 months; LAB counts swing ten- to a hundredfold (Minervini et al. 2018) |
+
+**When it is ready.** A starter is microbially settled in about a week, and ready to bake
+with once it passes the tripling test, about two weeks in. Settled comes first: the second
+week does not bring new species, only enough of them to rise on time.
+
+**When it is at its best, within each feed.** *(Hypothesis:)* the culture is most in
+balance from mid-rise to peak. Then both partners are growing on sugar that is still there,
+as the bakery study found them doing (Venturi et al. 2012). Past peak the bacteria keep
+making acid, and the yeast suffers first. It stops at less undissociated acetic acid than
+the bacterium tolerates (Gänzle et al. 1998), and in co-culture the bacteria already hold
+its numbers down (Carbonetto et al. 2020). This is the mechanism behind feeding at peak,
+which is still a practitioner's rule, not a measured one (*Days 9–14*).
+
+**Over months and years.** Ready is not finished. In bakeries followed for a year, the
+species stayed the same but the strains were replaced within six months to a year, with
+flour the main driver (Minervini et al. 2018). Across home starters, younger ones were
+often dominated by *L. plantarum* and *L. brevis*, and older ones more often held
+*F. sanfranciscensis*. Landis et al. (2021) read that as bakers selecting it over
+generations. No study found here shows that an older starter makes better bread.
+
+**For the revived starter here.** The flakes brought back the old culture's bacteria; its
+yeast may be new (*What it skips*). *(Hypothesis:)* a new yeast is most likely
+*S. cerevisiae*, the yeast of most home starters. If the old bacterium was
+*F. sanfranciscensis*, that is the pairing Landis et al. found negatively associated, and
+the bacterium may give way over the coming months. Open test 7 would show it.
 
 ---
 
@@ -613,6 +723,41 @@ rubber-band readings comparable:
   sources of lactic acid bacteria and yeasts in traditional Italian sourdoughs. *Food
   Microbiology* 52:66–76. — In four bakeries, the sourdough's dominant yeast also dominated
   walls, air, storage boxes and mixers.
+- Landis EA, Oliverio AM, McKenney EA, Nichols LM, Kfoury N, Biango-Daniels M, Shell LK,
+  Madden AA, Shapiro L, Sakunala S, Drake K, Robbat A, Booker M, Dunn RR, Fierer N, Wolfe BE
+  (2021). The diversity and function of sourdough starter microbiomes. *eLife* 10:e61644. —
+  500 home starters: a median of one yeast and three bacteria; *S. cerevisiae* dominant in
+  77%; *F. sanfranciscensis* in older and bought starters, and in a synthetic sourdough able
+  to persist only with *K. humilis*.
+- Venturi M, Guerrini S, Vincenzini M (2012). Stable and non-competitive association of
+  *Saccharomyces cerevisiae*, *Candida milleri* and *Lactobacillus sanfranciscensis* during
+  manufacture of two traditional sourdough baked goods. *Food Microbiology* 31(1):107–115.
+  — Three years in two bakeries; stable because no main sugar ran out.
+- Carbonetto B, Nidelet T, Guezenec S, Perez M, Segond D, Sicard D (2020). Interactions
+  between *Kazachstania humilis* yeast species and lactic acid bacteria in sourdough.
+  *Microorganisms* 8(2):240. — No positive interactions in population terms; LAB held the
+  yeasts down; the *K. humilis* pairs still used more maltose and leavened better.
+- Gobbetti M, Corsetti A, Rossi J (1994). The sourdough microflora. Interactions between
+  lactic acid bacteria and yeasts: metabolism of amino acids. *World Journal of
+  Microbiology and Biotechnology* 10(3):275–279. — Yeasts supplied valine and leucine;
+  lactobacilli grew faster in co-culture.
+- Ehrmann MA, Vogel RF (1998). Maltose metabolism of *Lactobacillus sanfranciscensis*:
+  cloning and heterologous expression of the key enzymes, maltose phosphorylase and
+  phosphoglucomutase. *FEMS Microbiology Letters* 169(1):81–86.
+- De Vuyst L, Schrijvers V, Paramithiotis S, Hoste B, Vancanneyt M, Swings J,
+  Kalantzopoulos G, Tsakalidou E, Messens W (2002). The biodiversity of lactic acid bacteria
+  in Greek traditional wheat sourdoughs is reflected in both composition and metabolite
+  formation. *Applied and Environmental Microbiology* 68(12):6059–6069. — No glucose built
+  up outside the cells.
+- Gänzle MG (2014). Enzymatic and bacterial conversions during sourdough fermentation.
+  *Food Microbiology* 37:2–10.
+- Gänzle MG, Ehmann M, Hammes WP (1998). Modeling of growth of *Lactobacillus
+  sanfranciscensis* and *Candida milleri* in response to process parameters of sourdough
+  fermentation. *Applied and Environmental Microbiology* 64(7):2616–2623. — pH ranges and
+  the undissociated acetic acid limits of both partners.
+- Vogelmann SA, Hertel C (2011). Impact of ecological factors on the stability of microbial
+  associations in sourdough fermentation. *Food Microbiology* 28(3):583–589. — The classic
+  pair wins at 20–30°C; another association at 35–40°C.
 - Country Roads Sourdough. *Dehydrating and Rehydrating Sourdough Starter: A How To Guide*.
   https://countryroadssourdough.com/dehydrating-and-rehydrating-sourdough-starter/ —
   Practitioner recipe for drying and reviving. Not peer-reviewed.
