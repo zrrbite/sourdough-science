@@ -94,6 +94,10 @@ The lookup end of the document: what to buy, what to weigh, what to check.
   Also why to start warm but not hot, what changes for this kitchen, and how to dry a backup
   and revive it (a pinch, not a spoonful). The schedule on one printable A4 page: [cheat
   sheet](notes/starter-cheatsheet.pdf).
+- [Holding a Temperature at Home](notes/holding-temperature.md) — the temperatures the rest asks
+  for (24–27°C starter, 35–38°C levain, 38–42°C autolyse, 3–5°C retard) and how to hold them:
+  oven light and residual heat, water bath, an Inkbird-style controller in a box, Brød & Taylor's
+  proofer and Sourdough Home, and chamber Stage 0. Measure the dough, not the air.
 - [Accelerating Proteolysis: pH, Heat, and Salt](notes/proteolysis-ph-heat.md) — working notes on
   whether a heat boost can substitute for long fermentation in driving protease activity.
 - [The Heat-Driven Levain Bank](notes/heat-driven-levain-bank.md) — the protocol as currently

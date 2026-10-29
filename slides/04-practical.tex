@@ -39,6 +39,7 @@
     \item \textbf{Formulas and method} --- ratios, two pizza formulas, seven steps (ch.~22)
     \item \textbf{Quick references} --- home oven vs Ooni 12”; five preferments (ch.~23--24)
     \item \textbf{The protocol as run} --- the heat-driven levain bank, its hypotheses and open tests
+    \item \textbf{Holding the temperature} --- the targets, and how to hold them at home
     \item \textbf{A plan for maximum flavour} --- seven steps aimed at acids, esters or the crust
   \end{enumerate}
   \medskip
@@ -387,6 +388,113 @@
 \end{frame}
 
 % ===============================================================
+\section{Holding the temperature}
+
+\begin{frame}{Measure the dough, not the air}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.52\textwidth}
+      \begin{tablebox}[\scriptsize]
+      \begin{tabularx}{\linewidth}{@{}Y l@{}}
+        \toprule
+        What & Temperature \\
+        \midrule
+        New starter, first two weeks & 24--27°C \\
+        Reviving a dried starter & 24--26°C \\
+        Tripling test (``done'') & 27°C \\
+        Hot levain build & 35--38°C \\
+        Levain bank, oven setpoint & 40--50°C \\
+        Warm autolyse, 60--90 min & 38--42°C \\
+        Bulk, hybrid formulas & ≈\,22°C \\
+        Cold retard & 3--5°C \\
+        \bottomrule
+      \end{tabularx}
+      \end{tablebox}
+    \end{column}
+    \begin{column}{0.44\textwidth}
+      \small
+      \begin{itemize}\setlength{\itemsep}{1pt}
+        \item Air is a poor conductor: a jar or tub lags the air, more for bigger masses
+        \item Here the oven air is measured at ≈\,45°C; the levain core never has been
+        \item A dual-probe thermometer, air and core: the gap is the number that matters
+        \item The ramp matters too: a hot water bath is harsher than it looks
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \takeaway{Whatever heats it, put a probe in the dough.}
+  \source{notes/holding-temperature.md; ch.~07, 10, 11, 14, 17, 22; starter note; levain bank note}
+\end{frame}
+
+\begin{frame}{Free and improvised: fine for a starter, blind for hot builds}
+  \begin{tablebox}[\footnotesize]
+  \begin{tabularx}{\linewidth}{@{}l l Y@{}}
+    \toprule
+    Method & Range & Best for, and the catch \\
+    \midrule
+    Oven, light on & what the lamp gives; 27°C in the video & a starter at 27°C; LED lamps barely heat \\
+    Oven, low setting & ≈\,45°C air here & hot builds; dials are unreliable low, so probe the core \\
+    Residual heat & falling & short boosts; no control, overshoots easily \\
+    Water bath & up to hot tap; exact with a sous-vide stick & a steady starter; fast ramp, so not for hot builds \\
+    Warm spots & a few °C above the room & a cold day: a mug of boiling water in a closed microwave \\
+    Fridge & 3--5°C, measure yours & retards \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{Leave a note on the oven whenever something is proving in it.}
+  \source{notes/holding-temperature.md; starter note; levain bank note; ch.~11}
+\end{frame}
+
+\begin{frame}{Boxes that hold a setpoint}
+  \begin{tablebox}[\footnotesize]
+  \begin{tabularx}{\linewidth}{@{}l l Y@{}}
+    \toprule
+    Box & Range & Best for, and the catch \\
+    \midrule
+    Controller in a box & what the heater reaches & any target; see the next slide \\
+    Chamber Stage 0 & to ≈\,45°C & any run you want measured: the only one that logs air and core \\
+    B\&T Folding Proofer & 21--35°C humid, 21--49°C dry & doughs, covered warm autolyse, levain to 49°C; heats from below, does not cool \\
+    B\&T Sourdough Home & 5--50°C, heats and cools & one starter jar up to 1\,L, held within 0.5--1.5°C \\
+    \bottomrule
+  \end{tabularx}
+  \end{tablebox}
+  \takeaway{Starter: the oven light if it really gives 24--27°C, else a water bath or a box. Hot builds: the oven with a core probe, or Stage 0 for a record.}
+  \source{notes/holding-temperature.md; Brød \& Taylor FAQ (manufacturer's figures); chamber/stage0}
+\end{frame}
+
+\begin{frame}{A controller in a box holds any target}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}\setlength{\itemsep}{0pt}
+        \item \textbf{Controller:} e.g.\ Inkbird ITC-308: heat and cool outlets, alarms
+        \item \textbf{Heater:} 40--60\,W ceramic emitter in a ceramic socket, or a seedling mat; an LED bulb makes no heat
+        \item \textbf{Box:} cooler, styrofoam or a dead fridge; ≈\,16\,W holds 45°C in 35\,L
+        \item \textbf{Probe:} in the air or a water jar the dough's size; not in the dough \hypothesis
+        \item \textbf{Safety:} guard, air gap, aim along a wall, never at the dough
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \begin{tikzpicture}[font=\tiny,
+          part/.style={draw=crust,fill=crumb,rounded corners=1.5pt,align=center,inner sep=2pt}]
+        \draw[crust,thick,rounded corners=4pt,fill=white] (0,0) rectangle (4.3,3.0);
+        \node[font=\tiny\bfseries,text=crust,anchor=north west] at (0.08,2.95) {Insulated box};
+        \node[part,minimum width=1.35cm,minimum height=1.05cm] (dough) at (1.0,1.05) {Dough or\\levain};
+        \node[part,minimum width=0.85cm,minimum height=0.75cm,fill=cold] (proxy) at (2.45,0.9) {Water\\jar};
+        \node[part,fill=hot,minimum width=0.9cm,minimum height=0.55cm] (heat) at (3.6,2.2) {Heater};
+        \node[part,minimum width=1.6cm,minimum height=0.7cm] (ctl) at (2.45,-1.35) {Controller\\heat / cool};
+        \node[part,minimum width=1.3cm,minimum height=0.6cm] (thermo) at (0.75,-1.35) {Thermometer};
+        \draw[arrow] (ctl.east) -| (heat.south);
+        \node[right] at (3.6,-0.55) {heat outlet};
+        \draw[coldline,thick] (ctl.north) -- (proxy.south) node[pos=0.22,right] {control probe};
+        \draw[own,thick] (thermo.north) -- (dough.south) node[pos=0.22,left] {core probe};
+        \draw[muted,dashed] (ctl.south) -- ++(0,-0.3) node[below] {cool outlet: mini fridge (optional)};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  \takeaway{The controller holds the air; a separate core probe shows what the dough did.}
+  \source{notes/holding-temperature.md; Inkbird ITC-308 specifications (manufacturer); chamber/stage0}
+\end{frame}
+
 \section{A plan for maximum flavour}
 
 \begin{frame}{Flavour has three sources; each step works on one}

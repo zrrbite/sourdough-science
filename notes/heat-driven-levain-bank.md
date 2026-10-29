@@ -159,7 +159,8 @@ literature says should not work, which puts more weight on the gradient and lag 
 not less — the explanation has to come from the core.
 
 So the honest statement is now: **the air is measured at 45°C, the core temperature is still
-unknown, and the bread rises.**
+unknown, and the bread rises.** Ways to hold and measure these temperatures without the oven
+are in [Holding a Temperature at Home](holding-temperature.md).
 
 ## Open tests
 

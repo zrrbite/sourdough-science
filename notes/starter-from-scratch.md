@@ -330,7 +330,8 @@ So the choice of 24°C or 30°C is a choice of culture, not just of pace. *(Hypo
 starter begun around 30°C may suit a warm-maintained regime better from the outset. That is
 open tests 1 and 2 below. Either way, wait until it passes her tripling test before any hot build,
 and then follow chapter 08's advice: keep the mother at room temperature and build hot from
-it.
+it. How to hold any of these temperatures at home: [Holding a Temperature at
+Home](holding-temperature.md).
 
 ### Water
 
