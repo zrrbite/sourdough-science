@@ -330,6 +330,20 @@ patent calls it "destroyed by freeze-drying" (Kline 1979). Freeze-drying is not 
 and this is a patent rather than a paper. But it is the only sourdough-specific comparison
 found, and it points the same way as the revival here: the yeast is the bottleneck.
 
+**Why the bacteria come back.** Not because they are tough: without the additive, over 99%
+of Kline's bacterium died. They come back on numbers. A ripe starter holds about 10⁷ yeast
+cells per gram and far more LAB (*What it skips*), and the bacteria then lose a smaller
+share, so their survivors outnumber the yeast's by much more than the 70-fold gap in
+survival alone. Before any storage loss, 0.7% of the bacteria in a 1 g pinch is more than a
+hundred thousand cells, against fewer than about two thousand yeast. Why the bacterium dies
+less is not established. Kline does not say, and bacteria range from dying within seconds of
+drying to surviving it for millennia, by mechanisms still largely unexplained (Potts 1994).
+Two easy explanations are weaker than they look. Having stopped growing protects yeast
+(Calahan et al. 2011), but no such comparison for sourdough LAB was found. And the starter's
+acidity is not itself a shield: acid-adapted *Lactococcus lactis* survived spray-drying no
+better than unadapted cells (Cnossen et al. 2020). The flour around the cells may protect
+them a little, as Kline's additive protected them a lot; nobody has measured that in a flake.
+
 **The dry flake.** Air-dried flakes end up in equilibrium with the room. Water activity
 equals the relative humidity divided by 100 (FDA 1984), so a kitchen at 50% gives about
 0.5, far below anything that grows. Metabolism stops. Dried yeast kept at 55% relative
@@ -629,6 +643,13 @@ rubber-band readings comparable:
   cerevisiae* for anhydrobiosis. *Applied Microbiology and Biotechnology*
   98(21):8821–8834. — Review: mechanical, structural and oxidative damage in drying, and the
   yeast's defences.
+- Potts M (1994). Desiccation tolerance of prokaryotes. *Microbiological Reviews*
+  58(4):755–805. — Bacteria range from dying within seconds of air-drying to surviving it for
+  millennia; most of the mechanisms remain unexplained.
+- Cnossen DC, Rodrigues RC, Martins E, Junior JCC, Carvalho AF (2020). The influence of
+  adaptive stresses on the survival of spray-dried *Lactococcus lactis* cells. *Journal of
+  Dairy Research* 87(3):382–385. — Acid or osmotic pre-adaptation did not improve survival
+  of drying; oxidative pre-adaptation did.
 - Santivarangkna C, Kulozik U, Foerst P (2008). Inactivation mechanisms of lactic acid
   starter cultures preserved by drying processes. *Journal of Applied Microbiology*
   105(1):1–13. — The membrane as the main site of damage; storage losses from lipid

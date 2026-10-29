@@ -444,6 +444,41 @@
 \end{frame}
 
 
+\begin{frame}{The bacteria come back on numbers, not toughness}
+  \begin{columns}[T]
+    \begin{column}{0.6\textwidth}
+      \footnotesize
+      \begin{itemize}\setlength{\itemsep}{1pt}
+        \item Not toughness: without the additive, over 99\% of Kline's bacterium died
+        \item Numbers: far more LAB than yeast (≈\,10⁷/g) to start, and a smaller share lost
+        \item Why the bacterium dies less is not established (Potts 1994)
+        \item Not the acid: acid-adapted \textit{L.\ lactis} dried no better; stopping growth is shown to protect only yeast
+        \item Flour may protect a little \untested
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.37\textwidth}
+      \centering
+      {\scriptsize\textbf{Survivors in a 1\,g pinch, before storage}}\par\smallskip
+      \begin{tikzpicture}[x=0.62cm,y=1cm]
+        % log10 scale: x = log10(cells), from 1 to 10^6
+        \foreach \x/\l in {0/1,2/10²,4/10⁴,6/10⁶}{
+          \draw[muted!40] (\x,-1.85) -- (\x,-1.95);
+          \node[font=\tiny,text=muted] at (\x,-2.15) {\l};
+        }
+        \draw[muted!60] (0,-1.85) -- (6,-1.85);
+        \fill[own] (0,-0.25) rectangle (5.15,-0.65);
+        \node[font=\tiny,anchor=south west,inner sep=1pt] at (0,-0.22) {LAB: more than 100\,000};
+        \fill[flag!70] (0,-1.05) rectangle (3.3,-1.45);
+        \node[font=\tiny,anchor=south west,inner sep=1pt] at (0,-1.02) {Yeast: fewer than ≈\,2\,000};
+      \end{tikzpicture}
+      \par\smallskip
+      {\tiny\caveat{borrowed figures, not a count}}
+    \end{column}
+  \end{columns}
+  \takeaway{Sour comes back first because the bacteria were never scarce; the rise waits on the yeast.}
+  \source{Kline (1979), a patent, not peer-reviewed; Van der Meulen et al.\ (2007); Potts (1994); Calahan et al.\ (2011); Cnossen et al.\ (2020)}
+\end{frame}
+
 \begin{frame}{Water starts four things at once}
   \centering
   \begin{tikzpicture}[every node/.append style={font=\small,minimum height=1.45cm}]
@@ -658,13 +693,15 @@
       \textbf{\color{crust}Drying and reviving}\par\vspace{1.5pt}
       Country Roads Sourdough. \emph{Dehydrating and Rehydrating Sourdough Starter: A How To Guide.} Not peer-reviewed.\par\vspace{1.5pt}
       Kline L (1979). Freeze-dried natural sour dough starter. US Patent 4,140,800. A patent, not peer-reviewed.\par\vspace{1.5pt}
-      Calahan D et al.\ (2011). Genetic analysis of desiccation tolerance in \emph{S.\ cerevisiae}. \emph{Genetics} 189(2):507--519.\par\vspace{1.5pt}
-      Dupont S et al.\ (2014). Survival kit of \emph{S.\ cerevisiae} for anhydrobiosis. \emph{Appl. Microbiol. Biotechnol.} 98(21):8821--8834.\par\vspace{1.5pt}
-      Santivarangkna C et al.\ (2008). Inactivation mechanisms of LAB starter cultures preserved by drying. \emph{J. Appl. Microbiol.} 105(1):1--13.\par\vspace{1.5pt}
-      Crowe JH et al.\ (1989). Membrane phase transitions are responsible for imbibitional damage in dry pollen. \emph{PNAS} 86(2):520--523.\par\vspace{1.5pt}
-      Peña A et al.\ (1992). Rehydration temperature is critical for metabolic competence and membrane integrity in active dry yeast. \emph{Arch. Microbiol.} 158(2):75--80.\par\vspace{1.5pt}
-      Ribert P et al.\ (2021). Effect of devitrification on the survival and resistance of dried \emph{S.\ cerevisiae}. \emph{Appl. Microbiol. Biotechnol.} 105(16--17):6409--6418.\par\vspace{1.5pt}
-      Hajar-Azhari S et al.\ (2024). Sourdough powder: shelf-life stability in different package type. \emph{J. Food Sci. Technol.} 61(9):1701--1710.\par\vspace{1.5pt}
+      Calahan D et al.\ (2011). \emph{Genetics} 189(2):507--519.\par\vspace{1.5pt}
+      Dupont S et al.\ (2014). \emph{Appl. Microbiol. Biotechnol.} 98(21):8821--8834.\par\vspace{1.5pt}
+      Santivarangkna C et al.\ (2008). \emph{J. Appl. Microbiol.} 105(1):1--13.\par\vspace{1.5pt}
+      Crowe JH et al.\ (1989). \emph{PNAS} 86(2):520--523.\par\vspace{1.5pt}
+      Peña A et al.\ (1992). \emph{Arch. Microbiol.} 158(2):75--80.\par\vspace{1.5pt}
+      Ribert P et al.\ (2021). \emph{Appl. Microbiol. Biotechnol.} 105(16--17):6409--6418.\par\vspace{1.5pt}
+      Hajar-Azhari S et al.\ (2024). \emph{J. Food Sci. Technol.} 61(9):1701--1710.\par\vspace{1.5pt}
+      Potts M (1994). \emph{Microbiol. Rev.} 58(4):755--805.\par\vspace{1.5pt}
+      Cnossen DC et al.\ (2020). \emph{J. Dairy Res.} 87(3):382--385.\par\vspace{1.5pt}
       US FDA (1984). \emph{Water Activity (aw) in Foods.} Inspection Technical Guide.
     \end{column}
   \end{columns}
