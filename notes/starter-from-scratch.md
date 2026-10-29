@@ -8,8 +8,9 @@
 > off, such as the early rise that dies and the smell, turn out to be an ordinary and
 > well-documented succession of microbes. *The finished culture* describes where the
 > succession ends: who lives in a settled starter, how its yeast and bacteria get along, and
-> when it is settled, ready and at its best. A later section covers the other way to get a
-> working culture: drying a backup and reviving it.
+> when it is settled, ready and at its best. *Keeping it strong* covers how to measure a
+> starter's strength and build it. A later section covers the other way to get a working
+> culture: drying a backup and reviving it.
 >
 > The method below is taken from the title card she puts up at every feed, which gives the
 > day's observations and the feed in grams, and checked against her narration on
@@ -283,6 +284,88 @@ yeast may be new (*What it skips*). *(Hypothesis:)* a new yeast is most likely
 *S. cerevisiae*, the yeast of most home starters. If the old bacterium was
 *F. sanfranciscensis*, that is the pairing Landis et al. found negatively associated, and
 the bacterium may give way over the coming months. Open test 7 would show it.
+
+---
+
+## Keeping it strong
+
+A starter that passes the readiness test can still be weak next to an old one. This section
+covers how to measure strength, why it keeps building after day 14, why a revived starter
+starts behind, and what builds it.
+
+### Measuring strength
+
+Two numbers carry it: **time to peak** and **height at peak**, both at a fixed ratio and a
+measured temperature. Her readiness test fixes all four: more than triple in 4–6 h on 1:2:2
+at 27°C (*Her rules*). A reading at another ratio or temperature says little, and two
+starters compare fairly only on the same feed in the same place.
+
+- **Judge at peak, not an hour in.** Early in a feed even a strong starter shows little. The
+  feed has diluted the cells, a 1:2:2 feed to a fifth, and the first gas dissolves in the
+  water before it forms bubbles.
+- **Repeat it.** Two or three feeds in a row with the same result, not one good rise.
+- **Smell at peak.** Sour with little rise means the bacteria are ahead of the yeast
+  (*Reviving it*). Sharp vinegar is a warning sign (item 8 below).
+- **The real test is the dough:** [the levain doubling test](levain-doubling-test.md).
+
+*What to record* lists the rest.
+
+### Why it keeps getting stronger
+
+Ready is a floor, not a ceiling. Her day-14 starter tripled in 7 h, short of the test her
+3.5-year-old starter passes, and she expects it to strengthen if fed at peak (*Her rules*).
+Bakers widely report the same. No study found here measures leavening against a starter's
+age, though, and none shows an older starter makes better bread (*Over months and years*).
+
+*(Hypothesis:)* the reason is selection. Each feed is a race: the strains that grow fastest
+on this flour, at this temperature and ratio, leave the most cells in the portion kept, and
+over hundreds of feeds they take over. There is room for it: in bakeries followed for a
+year, the species held while the strains were replaced within six months to a year
+(Minervini et al. 2018). Chapter 09 makes the same argument for kveik and hot builds. If it
+holds, the feeding regime is what the culture adapts to, and changing the regime restarts
+the race.
+
+### Why a revived starter starts weaker
+
+The flakes bring back the old culture's bacteria, already selected by months of feeding,
+but probably not its yeast (*What it skips*). The yeast in the jar is new or rebuilt from a
+few cells, and has had none of that selection. It also starts against strong bacteria. In
+co-culture, sourdough LAB held the yeasts' numbers down (Carbonetto et al. 2020), and the
+yeast stops at less undissociated acetic acid than the bacterium tolerates (Gänzle et al.
+1998). A revived starter that is sour but rises weakly is the expected result, not a
+failure.
+
+### Getting the most active starter
+
+Most of this is practitioners' rules rather than measured results: levers to test, not
+guarantees.
+
+1. **Warm, measured in the jar: 24–27°C.** Her test is at 27°C. The classic sourdough yeast
+   *C. milleri* grows best at 27°C, lower than the lactobacilli (Gänzle et al. 1998); that
+   was not measured for *S. cerevisiae*. Not hot: at 35–40°C a different association wins
+   (*Heat changes who wins*). Keep the mother at room temperature and build hot from it
+   (chapter 08). [Holding a Temperature at Home](holding-temperature.md) has the means.
+2. **Feed at peak.** Fed after collapse, the culture sits in its own acid and ethanol, and
+   the yeast suffers first (*Three timelines*).
+3. **Set the ratio so the peak lands at the next feed.** Raise it from 1:2:2 towards 1:5:5
+   or 1:10:10 as the starter gets faster (*Days 9–14*). A higher ratio also dilutes the acid
+   carried over, which is the point of chapter 11's 1:10:10 recovery feed. *(Hypothesis:)*
+   that is what a yeast-short revived starter needs most. Open test 8.
+4. **Some wholemeal or dark rye in the feed,** for enzymes and minerals (chapter 11's
+   recovery protocol), and one or two feeds on the baking flour before a bake.
+5. **Keep the regime fixed:** flour, ratio, temperature, timing. If the selection account
+   is right, this is what the culture adapts to.
+6. **Keep a small mother.** Keeping 20 g makes high ratios cheap.
+7. **After the fridge, two or three warm feeds at peak** before using it in dough.
+8. **Watch for vinegar.** In 40 starters whose rise was measured in the lab, the more
+   acetic acid bacteria, the slower the rise (ρ = −0.51; Landis et al. 2021). The authors
+   suggest acetic acid or inhibition of the yeast or LAB as the cause, untested. A sharp
+   vinegar smell or a film calls for more frequent feeds. *(Untested here:)* these bacteria
+   need oxygen, so a lid resting on the jar may hold them back better than a cloth.
+9. **Give it weeks, and log time to peak and height at every feed.** The trend shows
+   whether it is still strengthening.
+10. **Dry a new backup once it doubles reliably** (*Drying it*), so the flakes hold the
+    stronger culture.
 
 ---
 
@@ -647,6 +730,8 @@ rubber-band readings comparable:
 4. **Room temperature, measured** rather than assumed: the stage timings above depend on it
 5. *Optional:* pH paper at each feed through days 3–7, which tests Wink's thresholds for
    the price of a strip
+6. **Time to peak and height at peak**, the two numbers that track strength from day 14 on
+   (*Keeping it strong*)
 
 ---
 
@@ -673,6 +758,10 @@ rubber-band readings comparable:
    region, as Reese et al. (2020) did, from the flakes and from the revived starter would.
    Dead cells keep their DNA, so the flakes still show which yeast the old starter carried.
    A match at species level would not prove the same strain.
+8. **Does a higher ratio help the revived yeast catch up?** Split the revived starter into
+   two jars at the same temperature, one fed 1:2:2 and one 1:5:5, each at its own peak.
+   After two weeks, feed both 1:2:2 side by side and compare time to peak and height. The
+   dilution account predicts the 1:5:5 jar is faster.
 
 ---
 
@@ -729,7 +818,8 @@ rubber-band readings comparable:
   (2021). The diversity and function of sourdough starter microbiomes. *eLife* 10:e61644. —
   500 home starters: a median of one yeast and three bacteria; *S. cerevisiae* dominant in
   77%; *F. sanfranciscensis* in older and bought starters, and in a synthetic sourdough able
-  to persist only with *K. humilis*.
+  to persist only with *K. humilis*; in 40 starters, more acetic acid bacteria went with a
+  slower rise.
 - Venturi M, Guerrini S, Vincenzini M (2012). Stable and non-competitive association of
   *Saccharomyces cerevisiae*, *Candida milleri* and *Lactobacillus sanfranciscensis* during
   manufacture of two traditional sourdough baked goods. *Food Microbiology* 31(1):107–115.
@@ -755,7 +845,8 @@ rubber-band readings comparable:
 - Gänzle MG, Ehmann M, Hammes WP (1998). Modeling of growth of *Lactobacillus
   sanfranciscensis* and *Candida milleri* in response to process parameters of sourdough
   fermentation. *Applied and Environmental Microbiology* 64(7):2616–2623. — pH ranges and
-  the undissociated acetic acid limits of both partners.
+  the undissociated acetic acid limits of both partners; *C. milleri*'s optimum of 27°C,
+  lower than the lactobacilli's.
 - Vogelmann SA, Hertel C (2011). Impact of ecological factors on the stability of microbial
   associations in sourdough fermentation. *Food Microbiology* 28(3):583–589. — The classic
   pair wins at 20–30°C; another association at 35–40°C.
