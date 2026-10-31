@@ -301,7 +301,8 @@ the bacterium may give way over the coming months. Open test 7 would show it.
 
 A starter that passes the readiness test can still be weak next to an old one. This section
 covers how to measure strength, why it keeps building after day 14, why a revived starter
-starts behind, what builds it, and how to set the ratio by how often you feed.
+starts behind, what builds it, how to set the ratio by how often you feed, and how to plan
+the next feed around an absence.
 
 ### Measuring strength
 
@@ -406,6 +407,55 @@ A cooler spot or a stiffer mix slows it too, but both change the regime the cult
 adapting to (item 5); the ratio does not. The readings are practitioners' signs, not
 measured ones. Holding 1:2:2 twice a day into the second week is how a good starter fades
 (*Days 9–14*).
+
+### Planning the next feed
+
+*Setting the ratio by the interval* reads the jar after the fact. This is the forward
+version: from how fast the starter is now and how long until the next feed, choose the feed
+so the peak lands when you are back. Three levers buy different amounts of time.
+
+**Estimate the activity first.** Time to peak at the current ratio and temperature, from
+the last two or three feeds in the log (*What to record*). The trend matters as much as the
+number: if each feed has peaked earlier than the one before, go up a step now rather than
+waiting for a sunken jar. In the second week that trend is steep (*Days 9–14*).
+
+**What each lever buys** *(hypothesis; open test 10 calibrates it)*:
+
+- **Ratio buys hours.** A feed of 1:r:r leaves the old starter as 1/(1+2r) of the jar, so
+  each step dilutes the yeast and adds doublings it must grow back before the peak: 1:2:2
+  to 1:5:5 is about 1.1 doublings, 1:5:5 to 1:10:10 about 0.9, the whole ladder about two.
+  At a generation time on the order of two hours at 27°C, a figure borrowed from laboratory
+  yeast rather than measured in a jar, the ladder buys a few hours, not a day. For a young
+  starter it buys less: in her day-14 time-lapse, 1:2:2 and 1:5:5 peaked within half an
+  hour of each other (*The method as run in the video*), so the peak there was set by
+  something other than cell count.
+- **Temperature buys more.** Below the yeast's optimum of about 27°C (Gänzle et al. 1998),
+  rates roughly double per 8–10°C, the same Q₁₀ rule of thumb the
+  [proteolysis note](proteolysis-ph-heat.md) uses for enzymes, so a jar at 20°C takes
+  about half again as long as one at 27°C. Above the optimum the rate falls, and 35°C and
+  up selects a different culture (*Heat changes who wins*), so cooler is the direction to
+  use.
+- **Stiffness buys some.** A stiffer feed rises more slowly and holds its peak longer, and
+  chapter 11 already favours a stiff levain for its acid balance and heat margin. For a
+  one-off absence it is fine, although item 5 says keep the regime fixed.
+- **The fridge buys days.** Her storage rule is 2–4 weeks with no feed, then two or three
+  warm feeds at peak before it goes into dough (item 7).
+
+**By how long you will be away**, at 24–27°C, for a starter that peaks in about 6 h on
+1:2:2. The hours are the hypothesis above; the shape is the rule.
+
+| Away for | Feed |
+| --- | --- |
+| Less than its time to peak | The current ratio |
+| About 1.5× it | One step up, 1:3:3 to 1:5:5 |
+| About 2× it, a working day | 1:10:10, or 1:5:5 in a cooler spot |
+| Overnight, 12–16 h | 1:10:10 in a cooler spot, or a stiff feed such as 1:6:10 |
+| 24–48 h | Feed 1:5:5 and straight into the fridge |
+| Days | The fridge |
+
+The forward rule and the reactive one meet at the jar. If the table put the peak at your
+return, the top is level when you get there; if it is sunken, the next guess goes one step
+further.
 
 ---
 
@@ -810,6 +860,12 @@ rubber-band readings comparable:
    24–27°C, fed at peak from here. Record feeds to the first 2.5× peak and to the tripling
    test. Chapter 11 predicts days, not weeks, and the slide account predicts the
    from-scratch jar comes back without new organisms, since only the yeast's share fell.
+10. **Hours per step, and per degree.** One mother, three jars at 1:2:2, 1:5:5 and 1:10:10
+    at the same measured temperature; time to peak and height for each. Then one ratio at
+    20°C against 27°C. The two numbers calibrate *Planning the next feed* for this starter.
+    The dilution account predicts about one generation per doubling of the dilution; the
+    day-14 time-lapse predicts almost no difference while the starter is young. The chamber
+    holds the temperatures.
 
 ---
 
