@@ -260,6 +260,44 @@ won: *L. reuteri* and *L. johnsonii* with the yeast *Issatchenkia orientalis*, w
 only grow with enough oxygen (Vogelmann and Hertel 2011). Chapter 09 describes the same
 kind of shift for repeated hot builds.
 
+*Issatchenkia orientalis* is the yeast chapters 08 and 09 call *Pichia kudriavzevii*, earlier
+*Candida krusei*: one species under three names, so the two parts of this document describe
+the same organism. The two associations also map onto the two kinds of sourdough the
+literature distinguishes (De Vuyst and Neysens 2005). Type I is the traditional starter,
+backslopped daily at 20–30°C, and it leavens the bread itself. Type II is the industrial
+acidifier: liquid, held above 30°C for days, dominated by *L. reuteri*, *L. pontis*,
+*L. johnsonii* and their relatives with little or no yeast, and used for acid and flavour
+while baker's yeast does the lifting. Repeated hot builds push a home culture from the first
+toward the second.
+
+**What each team gives the bread.** The cool team is the one the literature was written
+about; the hot team is sketched from Type II sourdoughs, which are not a home jar.
+
+| | Cool team, 20–30°C | Hot team, 35–40°C |
+| --- | --- | --- |
+| Who | *F. sanfranciscensis* with *K. humilis*; at home, *S. cerevisiae* with *L. plantarum* and *L. brevis* | *L. reuteri* and *L. johnsonii*, with *I. orientalis* or no yeast |
+| Leavening | Self-sufficient. *S. cerevisiae* is baker's yeast; *K. humilis* leavened as well in co-culture (*How they share the food*) | Weak. *I. orientalis* grew only with oxygen (Vogelmann and Hertel 2011), and Type II sourdoughs are leavened with added baker's yeast. The gas comes from whatever cool-team yeast survives |
+| Acid | Heterofermentative: lactic and acetic; chapter 04 has the lever. Acetate production falls off at 35°C (Brandt et al. 2004) | Fast and deep, pH toward 3.5 in a day. *L. johnsonii* makes lactic only; *L. reuteri* adds some acetic and ethanol. Lactic-dominant, as chapter 09 says |
+| Dough | Heterofermenters with glutathione reductase accumulate thiols and depolymerise the gluten macropolymer, so the dough softens and extends (Vermeulen et al. 2006) | Exopolysaccharides: *L. reuteri* strains make reuteran and levan from sucrose, which soften the crumb and add volume (Tieking and Gänzle 2005). Some *F. sanfranciscensis* strains make levan too |
+| Aroma | Yeast esters and higher alcohols on top of the acid | Little from the yeast. *L. reuteri* accumulates glutamate, which reads as umami in the bread (Zhao et al. 2015) |
+
+What is solid: the species, the Type I and II split, the oxygen dependence of *I. orientalis*,
+acetate falling at 35°C, and the homo- against heterofermentative acid split. What is weaker:
+the exopolysaccharide and glutamate effects are strain-dependent and were measured in
+industrial or laboratory sourdoughs; Vermeulen et al. found the thiol effect in
+heterofermenters with glutathione reductase and not in the homofermenters they tested, and
+whether this kitchen's *L. reuteri*, if it has any, carries the enzyme was not checked; and
+the hot team's aroma is thin in the literature. No study found here measured *I. orientalis*
+leavening a dough on its own.
+
+The practical reading is chapter 08's rule with its reason attached. The hot team is good at
+what a hot build is for, fast and deep acidification with a lactic profile that suits pizza
+(chapter 09), and bad at what the mother is for, which is rising on time. A culture built hot
+for months drifts toward a Type II acidifier, and chapter 11's diagnosis table already
+describes the end state: sharp sour and no rise is the hot team on its own. Keep the mother
+cool to keep the leavening team; the fridge-banked levains of the
+[levain bank](heat-driven-levain-bank.md) are a hedge, not a cure.
+
 ### Three timelines: settled, ready, at its best
 
 | Timeline | What happens | When |
@@ -954,6 +992,24 @@ rubber-band readings comparable:
 - Vogelmann SA, Hertel C (2011). Impact of ecological factors on the stability of microbial
   associations in sourdough fermentation. *Food Microbiology* 28(3):583–589. — The classic
   pair wins at 20–30°C; another association at 35–40°C.
+- De Vuyst L, Neysens P (2005). The sourdough microflora: biodiversity and metabolic
+  interactions. *Trends in Food Science & Technology* 16(1–3):43–56. — Type I, II and III
+  sourdoughs; Type II as a warm, liquid, days-long acidifier leavened with baker's yeast.
+- Brandt MJ, Hammes WP, Gänzle MG (2004). Effects of process parameters on growth and
+  metabolism of *Lactobacillus sanfranciscensis* and *Candida humilis* during rye sourdough
+  fermentation. *European Food Research and Technology* 218(4):333–338. — Acetate production
+  and *C. humilis* growth decline at 35°C. Full entry in chapter 25.
+- Vermeulen N, Kretzer J, Machalitza H, Vogel RF, Gänzle MG (2006). Influence of
+  redox-reactions catalysed by homo- and hetero-fermentative lactobacilli on gluten in wheat
+  sourdoughs. *Journal of Cereal Science* 43(2):137–143. — Glutathione reductase in
+  heterofermenters accumulates thiols and depolymerises the gluten macropolymer.
+- Tieking M, Gänzle MG (2005). Exopolysaccharides from cereal-associated lactobacilli.
+  *Trends in Food Science & Technology* 16(1–3):79–84. — Reuteran and levan from *L. reuteri*
+  and levan from *L. sanfranciscensis* improve dough and bread texture.
+- Zhao CJ, Kinner M, Wismer W, Gänzle MG (2015). Effect of glutamate accumulation during
+  sourdough fermentation with *Lactobacillus reuteri* on the taste of bread and
+  sodium-reduced bread. *Cereal Chemistry* 92(2):224–230. — Glutamate from an *L. reuteri*
+  sourdough raises umami and perceived saltiness.
 - Country Roads Sourdough. *Dehydrating and Rehydrating Sourdough Starter: A How To Guide*.
   https://countryroadssourdough.com/dehydrating-and-rehydrating-sourdough-starter/ —
   Practitioner recipe for drying and reviving. Not peer-reviewed.
