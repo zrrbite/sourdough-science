@@ -419,6 +419,10 @@ guarantees.
    whether it is still strengthening.
 10. **Dry a new backup once it doubles reliably** (*Drying it*), so the flakes hold the
     stronger culture.
+11. **Stir with a purpose, or not at all.** A stir resets the rubber band, so it costs the
+    time-to-peak and height numbers that item 9 and the readiness test depend on. Never in
+    the oven. Pour the liquid off a collapsed jar rather than stir it back in. *Stirring,
+    and what it moves* has the reasoning.
 
 ### Setting the ratio by the interval
 
@@ -494,6 +498,45 @@ waiting for a sunken jar. In the second week that trend is steep (*Days 9–14*)
 The forward rule and the reactive one meet at the jar. If the table put the peak at your
 return, the top is level when you get there; if it is sunken, the next guess goes one step
 further.
+
+### Stirring, and what it moves
+
+Her method stirs once, on day 2, to break the skin and mix the jar before the first feed
+(*Day by day*). Beyond that, a stir does three things at once, and they pull in different
+directions.
+
+- **It lets the gas out.** CO₂ is a product, not a resource, so losing it costs the culture
+  nothing. It costs the baker the measurement: the rubber band, time to peak and height at
+  peak all assume an uninterrupted rise, and a stirred jar reads from zero again.
+- **It moves cells to fresh food.** In a 100% batter the cells barely move, so each colony
+  sits in its own depletion zone and its own acid, and a stir redistributes both.
+  *(Reasoning:)* a small benefit is plausible; nothing found here measured it in a jar.
+  Industrial Type II sourdoughs are stirred tanks (De Vuyst and Neysens 2005), which shows
+  that stirring does a liquid culture no harm, not that it helps.
+- **It folds in air,** and this one cuts both ways. Yeast need a little oxygen to make the
+  sterols and unsaturated fatty acids their membranes are built from (Andreasen and Stier
+  1953, 1954), which is why brewers aerate wort before pitching, so a stirred levain may
+  build more cells. But *F. sanfranciscensis* uses oxygen as an electron acceptor and turns
+  it into acetate (Stolz et al. 1995; Gänzle 2014), so a stirred levain also trends sharper.
+  And acetic acid bacteria need oxygen (item 8): a jar that already smells of vinegar or
+  carries a film gets worse with stirring, not better.
+
+**Not in the oven.** Chapters 10 and 11 make the slow ramp and the surface-to-core gradient
+the protective factors in a hot build. A stir mixes the hot skin into the core and shortens
+the ramp toward the shock conditions that killed more cells in Guyot et al.'s work (chapter
+11). It also aerates at the temperature where the hot team's *I. orientalis*, the yeast that
+grew only with oxygen (*Heat changes who wins*), is the one that benefits. *(Reasoning:)* a
+stirred hot levain selects for the team that does not leaven.
+
+**Early in a feed** nothing is depleted yet, so a stir adds air and little else.
+
+**Before a feed,** a collapsed jar carries a layer of liquid: water, ethanol and acid. Pour
+it off rather than stir it back in. It is a small version of chapter 11's dilution, and it
+removes some of the ethanol that makes the next warm session harsher.
+
+**The stir-down as a test.** Practitioners stir a peaked starter down and time the second
+rise as a vigour check. It is a different measurement from time to peak, not a substitute,
+and the two should not be mixed in one log. Open test 11 is the split-jar version.
 
 ---
 
@@ -904,6 +947,12 @@ rubber-band readings comparable:
     The dilution account predicts about one generation per doubling of the dilution; the
     day-14 time-lapse predicts almost no difference while the starter is young. The chamber
     holds the temperatures.
+11. **What a stir-down does.** One feed into two jars at the same temperature. Stir one down
+    at half height; leave the other. Compare the stirred jar's second peak, height and time
+    from the stir, against the control's single peak, and smell both at peak. The
+    redistribution account predicts a higher second peak; the oxygen account predicts a
+    sharper smell. A film or a vinegar note in the stirred jar within a few feeds is item
+    8's warning.
 
 ---
 
@@ -1010,6 +1059,15 @@ rubber-band readings comparable:
   sourdough fermentation with *Lactobacillus reuteri* on the taste of bread and
   sodium-reduced bread. *Cereal Chemistry* 92(2):224–230. — Glutamate from an *L. reuteri*
   sourdough raises umami and perceived saltiness.
+- Andreasen AA, Stier TJB (1953). Anaerobic nutrition of *Saccharomyces cerevisiae*. I.
+  Ergosterol requirement for growth in a defined medium. *Journal of Cellular and
+  Comparative Physiology* 41(1):23–36; and (1954) II. Unsaturated fatty acid requirement for
+  growth in a defined medium, 43(3):271–281. — Without oxygen, yeast cannot make sterols or
+  unsaturated fatty acids, and growth stops once the stores run out.
+- Stolz P, Böcker G, Hammes WP, Vogel RF (1995). Utilization of electron acceptors by
+  lactobacilli isolated from sourdough. I. *Lactobacillus sanfrancisco*. *Zeitschrift für
+  Lebensmittel-Untersuchung und -Forschung* 201(1):91–96. — Fructose and oxygen as electron
+  acceptors; acetate instead of ethanol when they are available.
 - Country Roads Sourdough. *Dehydrating and Rehydrating Sourdough Starter: A How To Guide*.
   https://countryroadssourdough.com/dehydrating-and-rehydrating-sourdough-starter/ —
   Practitioner recipe for drying and reviving. Not peer-reviewed.
