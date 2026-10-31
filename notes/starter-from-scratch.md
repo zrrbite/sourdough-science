@@ -178,9 +178,9 @@ and ethanol are at their highest, so a starter that is always fed after collapse
 fed in its most stressed state.
 
 **What it looks like when the ratio stays put** *(own run, October 2026)*. A starter here
-was held at 1:2:2 to 1:3:3, twice a day, through its second week, and was often fed after
-it had fallen. After the lull it gave several strong rises, then slowed markedly within
-days. The reading above gives the shape: as the culture strengthened, its peak came
+was held at 1:2:2 to 1:3:3, twice a day, through its second week, and was sometimes fed
+after it had fallen, though not long after. After the lull it gave several strong rises,
+then slowed markedly within days. The reading above gives the shape: as the culture strengthened, its peak came
 earlier, so more of each twelve-hour cycle was spent collapsed in acid and ethanol, and
 the yeast lost a little ground at every feed. Held to the clock, the better it got, the
 harder each feed punished it. Nothing was caught or killed: the species were settled and
@@ -498,6 +498,24 @@ waiting for a sunken jar. In the second week that trend is steep (*Days 9–14*)
 The forward rule and the reactive one meet at the jar. If the table put the peak at your
 return, the top is level when you get there; if it is sunken, the next guess goes one step
 further.
+
+**How long a 1:10:10 can sit.** Chapter 11 runs its recovery feed once a day, and her rule
+allows one feed a day at 1:10:10, so a day is the designed interval. The hours below are
+the same hypothesis as the table above.
+
+| Jar temperature | Peak at 1:10:10 | Feed again by |
+| --- | --- | --- |
+| 27°C | 8–12 h for a healthy starter; 12–18 h for a tired one out of the fridge | 24 h |
+| 20–22°C | About half again as long | 24–36 h |
+| Fridge, once it has started rising | Holds for days | 1–2 weeks as a working levain; her 2–4 weeks for storage |
+
+Past the peak it is not dying. It sits in acid and ethanol, and every hour there costs a
+little vigour, not survival, so a short overshoot costs little. At 24 h warm it has fallen
+and is a normal recovery feed. At 36–48 h warm it is the fed-after-collapse case of *Days
+9–14*. Beyond that each day at room temperature costs more, and after several days mould
+gets its chance (*Her rules*). Late to it: pour the liquid off, do not stir it in, and feed
+1:10:10 again. Since 1:10:10 is the top of the ladder, a longer gap is bought with a cooler
+spot or the fridge, not a higher ratio.
 
 ### Stirring, and what it moves
 
