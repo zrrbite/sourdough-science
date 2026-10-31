@@ -27,10 +27,11 @@ jar with a rubber band, a 0.1 g scale and 24°C. Cloth cover until day 8, then a
 
 ## Rules
 
-- **Feed at peak:** fallen before the feed? Next feed one ratio up, 1:2:2 → 1:3:3 → 1:4:4 → 1:5:5.
+- **Feed at peak:** fallen before the feed? Next feed one ratio up, 1:2:2 → 1:3:3 → 1:4:4 → 1:5:5. Domed: wait. Level, first wrinkles: now. Sunken, boozy: hours late.
+- **Ratio by feeds a day** once it is strong, at 24–27°C: three 1:2:2 · two 1:4:4–1:5:5 · one 1:10:10. Held at 1:2:2 twice a day into week two, a good starter fades.
 - **Day 12:** 10% rye mix = leftover 30% mix + twice its weight in bread flour.
 - **Done** when it triples in 4–6 h on 1:2:2 at 27°C (oven, light on). Video's day 14: 3× in 7 h.
-- **Discard** if pink, orange or fuzzy. **No 40°C+ builds** until done. Fridge: 2–4 weeks.
+- **Discard** if pink, orange or fuzzy. **No 40°C+ builds** until done. Fridge: 2–4 weeks; left underfed there, 1:10:10 first.
 - **Dried backup:** good pinch + 30 g water + 30 g wholemeal/rye; wait days; then as day 4.
 
 Source: [Full Proof Baking, 2019](https://www.youtube.com/watch?v=m6pGkOuZnrk)

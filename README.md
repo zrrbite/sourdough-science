@@ -91,7 +91,8 @@ The lookup end of the document: what to buy, what to weigh, what to check.
   microbial succession it follows (the early rise is bacteria, the day-5 lull is the hand-over),
   and the culture it ends in: who lives there, how one-sided the partnership is, and when it is
   settled, ready and at its best. How to measure a starter's strength, why it keeps building
-  after day 14, and how to get the most active one.
+  after day 14, how to get the most active one, and how to set the ratio by how often you
+  feed (held at 1:2:2 twice a day into week two, a good starter fades).
   Also why to start warm but not hot, what changes for this kitchen, and how to dry a backup
   and revive it (a pinch, not a spoonful). The schedule on one printable A4 page: [cheat
   sheet](notes/starter-cheatsheet.pdf).

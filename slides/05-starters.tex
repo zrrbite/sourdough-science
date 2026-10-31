@@ -35,10 +35,10 @@
 \begin{frame}{What this deck covers}
   \begin{enumerate}
     \item \textbf{The 14-day method}: Full Proof Baking's schedule in grams, and her rules
-    \item \textbf{What is happening in the jar}: the early rise is bacteria, the day-5 lull is the hand-over, and what the settled culture is
+    \item \textbf{What is happening in the jar}: the early rise is bacteria, the day-5 lull is the hand-over, what the settled culture is, and why a starter held at 1:2:2 fades
     \item \textbf{Video, literature and this kitchen}: where the explanations differ; warm, not hot
     \item \textbf{Drying a backup and reviving it}: a pinch, not a spoonful
-    \item \textbf{Open tests}: seven experiments the note leaves open
+    \item \textbf{Open tests}: nine experiments the note leaves open
   \end{enumerate}
   \bigskip
   {\small Flags carried over from the notes: \hypothesis\ \untested\ \caveat{not peer-reviewed}\ \caveat{loose analogue}.
@@ -231,6 +231,72 @@
   \end{itemize}
   \takeaway{If it peaks well before the next feed is due, raise the ratio. That is the whole of days 9--13.}
   \source{Full Proof Baking (2019); chapter 11, \emph{Compounding Stressors} and \emph{Recovery Protocol}}
+\end{frame}
+
+\begin{frame}{Hold the ratio while it gets faster, and it fades \ownresult}
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \footnotesize
+      \begin{itemize}\setlength{\itemsep}{2pt}
+        \item Held at 1:2:2 to 1:3:3 twice a day through its second week, often fed after it had fallen
+        \item After the lull: several strong rises, then markedly slower within days
+        \item As it strengthened its peak came earlier, so more of each 12\,h was spent collapsed in acid and ethanol, where the yeast suffers first
+        \item Nothing was caught or killed: the species were settled, only the yeast's share fell. Dilution should bring it back (open test 9)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \centering
+      \begin{tikzpicture}[every node/.append style={nohyph}]
+        \node[box=2.45cm,minimum height=1.0cm] (a) at (0,0) {\textbf{Stronger starter}\\peaks earlier};
+        \node[box=2.45cm,minimum height=1.0cm] (b) at (3.5,0) {\textbf{Fallen for hours}\\before a feed on the clock};
+        \node[box=2.45cm,minimum height=1.0cm,fill=flag!10,draw=flag] (c) at (3.5,-1.8) {\textbf{Fed in acid and ethanol}\\the yeast suffers first};
+        \node[box=2.45cm,minimum height=1.0cm] (d) at (0,-1.8) {\textbf{Next rise slower}\\but still over before the feed};
+        \draw[arrow] (a) -- (b);
+        \draw[arrow] (b) -- (c);
+        \draw[arrow] (c) -- (d);
+        \draw[arrow] (d) -- (b);
+      \end{tikzpicture}
+      \par\smallskip
+      {\scriptsize\color{muted} A fixed ratio on a fixed clock, October 2026}
+    \end{column}
+  \end{columns}
+  \takeaway{Held to the clock, the better it gets, the harder each feed punishes it.}
+  \source{Own run, October 2026; Gänzle et al.\ (1998); Carbonetto et al.\ (2020); chapter 11, \emph{Compounding Stressors}}
+\end{frame}
+
+\begin{frame}{Set the ratio by the interval, and read the top of the jar}
+  \begin{columns}[T]
+    \begin{column}{0.42\textwidth}
+      \footnotesize
+      The ratio sets where the peak lands. Pick the interval the day allows, then the ratio that puts the peak at it.
+      \smallskip
+
+      {\scriptsize\color{muted} A starter that is getting strong, at 24--27°C}\par\smallskip
+      \begin{tabular}{@{}ll@{}}
+        \toprule
+        \textbf{Feeds a day} & \textbf{Ratio} \\
+        \midrule
+        Three & 1:2:2 \\
+        Two & 1:4:4 to 1:5:5 \\
+        One & 1:10:10 \\
+        \bottomrule
+      \end{tabular}
+    \end{column}
+    \begin{column}{0.54\textwidth}
+      \footnotesize
+      \textbf{\color{crust}At feed time, the top of the jar decides the next ratio}
+      \begin{itemize}\setlength{\itemsep}{2pt}
+        \item \textbf{Domed and still climbing:} not yet. Wait
+        \item \textbf{Level, the first wrinkles or a dimple:} at peak. Feed now
+        \item \textbf{Sunken, liquid on top, boozy:} it fell hours ago. Feed, and go one ratio up
+      \end{itemize}
+      \smallskip
+      {\scriptsize Cooler or stiffer slows it too, but both change the regime the culture adapts to; the ratio does not. Practitioners' signs, not measured ones.}
+    \end{column}
+  \end{columns}
+  {\scriptsize Starting points, not settings: her day 14 ran 1:2:2 three times a day and 1:5:5 overnight. A young starter may take as long on 1:5:5 as on 1:2:2 (7.5\,h against 7\,h), and a cool kitchen stretches every row.\par}
+  \takeaway{Held at 1:2:2 twice a day into week two, a good starter fades.}
+  \source{Full Proof Baking (2019), \emph{Her rules} and the day-14 time-lapse; own run, October 2026}
 \end{frame}
 
 % ===========================================================================
@@ -730,7 +796,7 @@
 \begin{frame}{Takeaways}
   \begin{itemize}
     \item The day-4 rise is bacteria and the day-5 lull is normal: keep to the schedule through both
-    \item Feed at peak. When it falls before the next feed, go one ratio up
+    \item Feed at peak, and set the ratio by how often you feed: 1:2:2 is for three feeds a day. Fallen before the feed, go one ratio up; held at 1:2:2 twice a day, a good starter fades
     \item Done means tripling in 4--6\,h on 1:2:2 at 27°C. No hot builds before that
     \item Start warm, not hot: 24°C or 30°C is a choice of culture as well as pace
     \item The microbes come from the flour and your hands, not the air
@@ -742,7 +808,7 @@
 % ===========================================================================
 \section{Open tests}
 
-\begin{frame}{Seven open tests \untested}
+\begin{frame}{Open tests 1--7: from scratch, and the dried backup \untested}
   \scriptsize
   \begin{columns}[T]
     \begin{column}{0.45\textwidth}
@@ -765,6 +831,17 @@
     \end{column}
   \end{columns}
   \source{The Open tests section of notes/starter-from-scratch.md}
+\end{frame}
+
+\begin{frame}{Open tests 8--9: keeping it strong \untested}
+  \footnotesize
+  \begin{enumerate}\setlength{\itemsep}{6pt}
+    \setcounter{enumi}{7}
+    \item \textbf{Does a higher ratio help the revived yeast catch up?} Split the revived starter into two jars at the same temperature, one fed 1:2:2 and one 1:5:5, each at its own peak. After two weeks, feed both 1:2:2 side by side and compare time to peak and height. The dilution account predicts the 1:5:5 jar is faster
+    \item \textbf{Does the slide reverse with dilution?} Two cultures here, from 2026-10-31: the from-scratch starter that faded under 1:2:2 to 1:3:3, now on 1:5:5, and a jar left underfed in the fridge, on chapter 11's 1:10:10. Both with some wholemeal, at 24--27°C, fed at peak from here. Record feeds to the first 2.5× peak and to the tripling test. Chapter 11 predicts days, not weeks; the slide account predicts the from-scratch jar comes back without new organisms, since only the yeast's share fell
+  \end{enumerate}
+  \takeaway{Both are the same lever, dilution, applied to a yeast-short culture. Time to peak and height at peak, logged at every feed, are the readout.}
+  \source{The Open tests section of notes/starter-from-scratch.md; chapter 11, \emph{Recovery Protocol}}
 \end{frame}
 
 % ===========================================================================

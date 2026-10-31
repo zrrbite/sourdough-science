@@ -177,6 +177,16 @@ mechanism is chapter 11's compounding stressors. Past peak, the substrate is spe
 and ethanol are at their highest, so a starter that is always fed after collapse is always
 fed in its most stressed state.
 
+**What it looks like when the ratio stays put** *(own run, October 2026)*. A starter here
+was held at 1:2:2 to 1:3:3, twice a day, through its second week, and was often fed after
+it had fallen. After the lull it gave several strong rises, then slowed markedly within
+days. The reading above gives the shape: as the culture strengthened, its peak came
+earlier, so more of each twelve-hour cycle was spent collapsed in acid and ethanol, and
+the yeast lost a little ground at every feed. Held to the clock, the better it got, the
+harder each feed punished it. Nothing was caught or killed: the species were settled and
+only the yeast's share fell. *Setting the ratio by the interval* gives the rule that
+prevents it, and open test 9 records the recovery.
+
 ---
 
 ## The finished culture
@@ -291,7 +301,7 @@ the bacterium may give way over the coming months. Open test 7 would show it.
 
 A starter that passes the readiness test can still be weak next to an old one. This section
 covers how to measure strength, why it keeps building after day 14, why a revived starter
-starts behind, and what builds it.
+starts behind, what builds it, and how to set the ratio by how often you feed.
 
 ### Measuring strength
 
@@ -350,13 +360,17 @@ guarantees.
 3. **Set the ratio so the peak lands at the next feed.** Raise it from 1:2:2 towards 1:5:5
    or 1:10:10 as the starter gets faster (*Days 9–14*). A higher ratio also dilutes the acid
    carried over, which is the point of chapter 11's 1:10:10 recovery feed. *(Hypothesis:)*
-   that is what a yeast-short revived starter needs most. Open test 8.
+   that is what a yeast-short revived starter needs most. Open test 8. Starting points
+   by feeds a day: *Setting the ratio by the interval*.
 4. **Some wholemeal or dark rye in the feed,** for enzymes and minerals (chapter 11's
    recovery protocol), and one or two feeds on the baking flour before a bake.
 5. **Keep the regime fixed:** flour, ratio, temperature, timing. If the selection account
    is right, this is what the culture adapts to.
 6. **Keep a small mother.** Keeping 20 g makes high ratios cheap.
-7. **After the fridge, two or three warm feeds at peak** before using it in dough.
+7. **After the fridge, two or three warm feeds at peak** before using it in dough. A jar
+   left underfed in the fridge, sour and flat, gets chapter 11's recovery feed first:
+   1:10:10 with some wholemeal at 24–27°C, judged at its peak, which can take most of a
+   day. Then the two or three feeds at peak.
 8. **Watch for vinegar.** In 40 starters whose rise was measured in the lab, the more
    acetic acid bacteria, the slower the rise (ρ = −0.51; Landis et al. 2021). The authors
    suggest acetic acid or inhibition of the yeast or LAB as the cause, untested. A sharp
@@ -366,6 +380,32 @@ guarantees.
    whether it is still strengthening.
 10. **Dry a new backup once it doubles reliably** (*Drying it*), so the flakes hold the
     stronger culture.
+
+### Setting the ratio by the interval
+
+The ratio is the dial that sets where the peak lands. Choose the interval the day allows,
+then the ratio that puts the peak at it. Her day 14 gives the anchors: three feeds a day at
+1:2:2, 1:5:5 overnight, and up to 1:10:10 for fewer feeds (*Her rules*). For a starter that
+is getting strong, at 24–27°C:
+
+| Feeds a day | Ratio |
+| --- | --- |
+| Three | 1:2:2 |
+| Two | 1:4:4 to 1:5:5 |
+| One | 1:10:10 |
+
+Starting points, not settings. A young starter may take as long on 1:5:5 as on 1:2:2 (her
+day-14 time-lapse: 7.5 h against 7 h), and a cool kitchen stretches every row. What the
+jar shows at feed time decides the next ratio:
+
+- **Domed and still climbing:** not yet. Wait.
+- **Level, the first wrinkles or a dimple in the middle:** at peak. Feed now.
+- **Sunken, liquid on top, a boozy smell:** it fell hours ago. Feed, and go one ratio up.
+
+A cooler spot or a stiffer mix slows it too, but both change the regime the culture is
+adapting to (item 5); the ratio does not. The readings are practitioners' signs, not
+measured ones. Holding 1:2:2 twice a day into the second week is how a good starter fades
+(*Days 9–14*).
 
 ---
 
@@ -732,6 +772,8 @@ rubber-band readings comparable:
    the price of a strip
 6. **Time to peak and height at peak**, the two numbers that track strength from day 14 on
    (*Keeping it strong*)
+7. **The top of the jar at feed time:** climbing, level, or fallen. A run of "fallen" is
+   the signal to raise the ratio (*Setting the ratio by the interval*)
 
 ---
 
@@ -762,6 +804,12 @@ rubber-band readings comparable:
    two jars at the same temperature, one fed 1:2:2 and one 1:5:5, each at its own peak.
    After two weeks, feed both 1:2:2 side by side and compare time to peak and height. The
    dilution account predicts the 1:5:5 jar is faster.
+9. **Does the slide reverse with dilution?** Two cultures here, from 2026-10-31: the
+   from-scratch starter that faded under 1:2:2 to 1:3:3 (*Days 9–14*), now on 1:5:5, and a
+   jar left underfed in the fridge, on chapter 11's 1:10:10. Both with some wholemeal, at
+   24–27°C, fed at peak from here. Record feeds to the first 2.5× peak and to the tripling
+   test. Chapter 11 predicts days, not weeks, and the slide account predicts the
+   from-scratch jar comes back without new organisms, since only the yeast's share fell.
 
 ---
 
