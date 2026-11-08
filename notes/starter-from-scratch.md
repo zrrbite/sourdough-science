@@ -715,6 +715,11 @@ a mix of rye, wholemeal and white flour. Read again, it was most likely bacteria
 two-day-old jar the rise is bacterial (*Days 1–4*), and some sourdough LAB make gas too.
 Nothing was measured.
 
+Later (day not noted) it held a little more air, with no bad smell. The previous
+from-scratch try never smelled bad either, so in this kitchen the smell may not mark the
+first wave: some starters stink and others hardly do (Wink 2008b). No pH strips are to
+hand, so the lull is the test.
+
 **What the reasoning predicts** *(hypothesis)*. The flakes work like Wink's juice, with
 organisms in it. Their lactic acid and their surviving LAB acidify the fresh flour, and if
 the pH falls below 4.5 before the flour's first wave builds, the jar skips the false rise
@@ -729,11 +734,31 @@ either way.
   and the day-5 lull.
 - **Clean sour or yogurt, pH 4.5 or below:** the flakes' LAB. Expect no lull.
 
-**From here** the two methods meet. Keep 20 g at each feed and feed 1:1:1 on the flour mix,
-once or twice a day, with no high ratios until it smells sour and rises to about 2× again
-(*Days 9–14*; *Reviving it*). **Record** the smell and rise at each feed, the pH if a strip
-is to hand, the day of the lull or its absence, the first sour smell, the first 2×, and the
-room overnight as well as by day. Open test 12 is the controlled version.
+Without a strip, the lull decides. A lull is a day or more of almost no rise (under about
+1.2×), a thin, runny mix and few bubbles, usually on day 4–6 just after the busiest day.
+Skipping it looks like modest, steady activity every day with no collapse, then a slow
+climb to 2× and a sour smell.
+
+**Feeding schedule.** From here the two methods meet.
+
+- **Every 12 hours, 1:1:1.** Keep 20 g and add 20 g of water and 20 g of the flour mix,
+  morning and evening. An hour or two either way does not matter yet. This is the video's
+  schedule from day 4, held through day 9 (*Day by day*).
+- **Once a day during a lull.** If it is not expanding, feed no more than once a day, and go
+  back to twice when it rises again (Wink, in the Part 2 thread). Each 1:1:1 feed discards
+  two-thirds of the jar while the yeast is still rare (*Why the yeast comes last*). The
+  video kept to twice a day through its lull, so twice is not wrong, only harder on it.
+- **No faster, no higher.** Not more often than every 12 hours, and no higher ratio until it
+  rises to about 2× with a sour smell for several feeds in a row. The video reached that on
+  days 7–9 and went to 1:2:2 on the evening of day 9 (*Days 9–14*; *Reviving it*).
+- **Expect** the first reliable 2× around day 6–9 at 23.5°C. The video, at 24°C, first
+  reached 2× with a sour note on day 7; the flakes may bring it forward if they skipped the
+  lull.
+
+**Record** at each feed the rise against a rubber band at the starting level, the texture
+(thick and bubbly, or thin and runny) and the smell in a word. Also the day of the lull or
+its absence, the first sour smell, the first 2×, and the room overnight as well as by day.
+Open test 12 is the controlled version.
 
 ---
 
