@@ -663,6 +663,39 @@ thread that it is never necessary, "only patience". Applying it
 to this method means juice in place of water for the day-1 mix and the day-3 feed. That
 combination is this note's suggestion and has not been tried.
 
+### Flakes in a new start *(own run, November 2026, in progress)*
+
+A third way into the first week, between starting from scratch and reviving: a new day-1
+mix with a little of the dried backup (*Drying a backup and reviving it*, below) added to
+give the sourdough bacteria a head start. Run here at a desk measured at 23.5°C, under
+muslin.
+
+**So far.** The day-1 mix had a little dried starter in it; the amount was not weighed. By
+day 2 it had risen. That was read as yeast at first, and the jar was fed a day early, with
+a mix of rye, wholemeal and white flour. Read again, it was most likely bacteria: in a
+two-day-old jar the rise is bacterial (*Days 1–4*), and some sourdough LAB make gas too.
+Nothing was measured.
+
+**What the reasoning predicts** *(hypothesis)*. The flakes work like Wink's juice, with
+organisms in it. Their lactic acid and their surviving LAB acidify the fresh flour, and if
+the pH falls below 4.5 before the flour's first wave builds, the jar skips the false rise
+and the lull, as the pinch revival did (*What it skips*). Two things here may have reopened
+the window: an amount of flakes that may be small against the fresh flour, and the early
+feed, which diluted the acid they brought. The yeast still has to arrive and build up
+either way.
+
+**Which rise it was** tells the two apart, from the smell and a pH strip at the next feeds:
+
+- **Cheesy or vomit-like, pH 5 or above:** the flour's first wave. Expect the day-4 surge
+  and the day-5 lull.
+- **Clean sour or yogurt, pH 4.5 or below:** the flakes' LAB. Expect no lull.
+
+**From here** the two methods meet. Keep 20 g at each feed and feed 1:1:1 on the flour mix,
+once or twice a day, with no high ratios until it smells sour and rises to about 2× again
+(*Days 9–14*; *Reviving it*). **Record** the smell and rise at each feed, the pH if a strip
+is to hand, the day of the lull or its absence, the first sour smell, the first 2×, and the
+room overnight as well as by day. Open test 12 is the controlled version.
+
 ---
 
 ## Drying a backup and reviving it
@@ -1008,6 +1041,11 @@ rubber-band readings comparable:
     redistribution account predicts a higher second peak; the oxygen account predicts a
     sharper smell. A film or a vinegar note in the stirred jar within a few feeds is item
     8's warning.
+12. **Do flakes in a new start skip the lull?** Two jars from the same day-1 mix at the same
+    temperature, one with a weighed pinch of flakes, fed on the schedule and on the same day.
+    Compare the pH on days 2–4, the day-4 rise, whether there is a lull, and the day each
+    first reaches 2× with a sour smell. The acid account predicts the flake jar skips the
+    false rise and the lull (*Flakes in a new start*).
 
 ---
 
