@@ -164,6 +164,37 @@ propagation, with lactobacilli prominent by day 10 (Ercolini et al. 2013). Her "
 on day 7 and her narration's "definite sour notes" on day 9 are this transition, running
 about a day behind the 30°C timeline.
 
+### Why the yeast comes last
+
+Nothing is caught on day 6. The yeast came in on day 1, with the flour and the baker's
+hands (Reese et al. 2020; *Where the video and the literature differ*). What day 6 marks
+is the point where there are enough of them to lift the jar. Four things set that date.
+
+1. **It starts rare.** Flour carries mostly bacteria (Ercolini et al. 2013), and a ripe
+   starter holds about 10⁷ yeast cells per gram (Van der Meulen et al. 2007). Each tenfold
+   is about 3.3 doublings, so from a few cells per gram that is around 20 doublings.
+2. **It loses the first races.** Fresh flour is close to neutral, which suits the first
+   wave. It dominates within a day, takes the sugar first and makes the early rise
+   (*Days 1–4*), while the yeast is still a small minority. Every feed also discards most
+   of the jar: at 1:1:1 the kept starter is a third of the new mix, so the yeast has to
+   manage about 1.6 doublings per feed just to hold its ground.
+3. **Acid clears the field.** The first wave's own acid ends it: the gas producers grew at
+   pH 5 and above and not at 4.5 and below (Wink 2008a), while the classic sourdough yeast
+   grew unaffected from pH 3.5 to 7 (Gänzle et al. 1998). The pH falls through a range
+   that stops the competition but not the yeast. The lull is the changeover, with the
+   first wave stopped and the yeast still too few to show (*Day 5*).
+4. **Then it climbs.** Wink usually saw yeast the day after the pH reached 3.5 (Wink
+   2008a). At 30°C the yeast reached 10⁷ per gram after 4–5 days of backslopping, and in
+   one dough in four only after 8 (Van der Meulen et al. 2007). The video, at 24°C, runs
+   about a day behind that.
+
+**The test of the account is Wink's juice.** Acidified from day 1, her jars showed yeast on
+or before day 4, against about day 7 with water (Wink 2008a): start acidic, and the yeast
+comes sooner. *(Hypothesis:)* acid is the gate. That reading fits her pH-paper series and
+the lab counts, but her work is careful amateur work, and no study found here isolates
+acid as the cause. The flakes in a revival work the same way (*What it skips*), and *Flakes
+in a new start* tries them in a fresh mix (open test 12).
+
 ### Days 9–14: ratio escalation is about timing, not species
 
 By day 9 the community has largely settled. What remains is matching food to appetite. A
