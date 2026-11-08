@@ -741,6 +741,9 @@ climb to 2× and a sour smell.
 
 **Feeding schedule.** From here the two methods meet.
 
+- **Flour: 30% rye**, from 8 November 2026. 350 g plain flour and 150 g dark wholemeal rye,
+  whisked together: the video's mix with plain flour as the base, which it allows
+  (*Setup*). The feeds before were an unweighed mix of rye, wholemeal and white.
 - **Every 12 hours, 1:1:1.** Keep 20 g and add 20 g of water and 20 g of the flour mix,
   morning and evening. An hour or two either way does not matter yet. This is the video's
   schedule from day 4, held through day 9 (*Day by day*).
