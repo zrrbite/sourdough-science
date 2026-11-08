@@ -145,7 +145,8 @@ numbers, the jar goes quiet. That is her day-5 morning card, "no significant
 growth!", with the worst smell of the run.
 
 Wink tracked this with pH paper (Wink 2008a). The gassy bacteria grew at or above pH 5 and
-not at or below 4.5. Yeast usually appeared the day after the pH reached 3.5. She also
+not at or below 4.5. Yeast did not start to grow until the pH fell to around 3.5 (Wink
+2008b), and she never saw it before a jar turned sour. She also
 suggests that *L. citreum* leaves behind bacteriocins that hold back the lactobacilli after
 it stops growing, so that a bigger early rise means a longer lull (Wink 2008b). Treat all of
 this as careful amateur work. The pH paper read to the nearest 0.5, no replicate counts are
@@ -183,14 +184,18 @@ is the point where there are enough of them to lift the jar. Four things set tha
    grew unaffected from pH 3.5 to 7 (Gänzle et al. 1998). The pH falls through a range
    that stops the competition but not the yeast. The lull is the changeover, with the
    first wave stopped and the yeast still too few to show (*Day 5*).
-4. **Then it climbs.** Wink usually saw yeast the day after the pH reached 3.5 (Wink
-   2008a). At 30°C the yeast reached 10⁷ per gram after 4–5 days of backslopping, and in
+4. **Then it climbs.** Wink saw no yeast growth until the pH fell to around 3.5, and it
+   usually followed soon after (Wink 2008a, b). At 30°C the yeast reached 10⁷ per gram after 4–5 days of backslopping, and in
    one dough in four only after 8 (Van der Meulen et al. 2007). The video, at 24°C, runs
    about a day behind that.
 
-**The test of the account is Wink's juice.** Acidified from day 1, her jars showed yeast on
-or before day 4, against about day 7 with water (Wink 2008a): start acidic, and the yeast
-comes sooner. *(Hypothesis:)* acid is the gate. That reading fits her pH-paper series and
+**The test of the account is Wink's acidified starts.** With ascorbic acid (vitamin C) in
+the day-1 mix, her jars and a colleague's had no gassy bacteria and showed yeast on or
+before day 4, where it had been taking about seven days. The one jar she acidified straight
+to pH 3.5, with citric acid, had yeast on day 2 (Wink 2008a). Pineapple juice, the version
+her group settled on, did the same with water controls alongside, but she gives no day
+counts for it, only a "more timely and predictable result" (Wink 2008b). Start acidic, and
+the yeast comes sooner. *(Hypothesis:)* acid is the gate. That reading fits her pH-paper series and
 the lab counts, but her work is careful amateur work, and no study found here isolates
 acid as the cause. The flakes in a revival work the same way (*What it skips*), and *Flakes
 in a new start* tries them in a fresh mix (open test 12).
@@ -686,9 +691,12 @@ point. The same reasoning is why chapter 11 adds wholemeal to a culture in recov
 
 ### An optional shortcut through the lull
 
-Wink's alternative for days 1–3 replaces the water with **pineapple juice**, or orange juice
-or apple cider, to acidify the mix below what the gas producers tolerate. In her trials
-yeast appeared on or before day 4, against about day 7 with water (Wink 2008a). She is
+Wink's alternative replaces the water with **pineapple juice**, to acidify the mix below
+what the gas producers tolerate. Pineapple is more acidic than most juices. Orange juice
+was not acidic enough for the day-1 mix alone, but orange juice and apple cider work if
+they replace the water for two or three days (Wink 2008a). The day counts are from the
+ascorbic acid trial before it: yeast on or before day 4, where it had been taking about
+seven days (Wink 2008a). For juice she gives none (*Why the yeast comes last*). She is
 clear that it "doesn't change the end result" (Wink 2008b), and wrote later in the same
 thread that it is never necessary, "only patience". Applying it
 to this method means juice in place of water for the day-1 mix and the day-3 feed. That
@@ -874,7 +882,7 @@ flowchart TD
         direction TB
         S1["<b>Days 1–4</b><br/>flour's first wave: <i>Leuconostoc</i>, <i>Enterobacter</i><br/>big rise, bad smell"]
         S2["<b>Day 5: the lull</b><br/>acid stops the first wave"]
-        S3["<b>Days 6–9</b><br/>sourdough LAB take over<br/>yeast the day after pH 3.5"]
+        S3["<b>Days 6–9</b><br/>sourdough LAB take over<br/>yeast from about pH 3.5"]
         S4["<b>Days 9–14</b><br/>ratios climb until it triples"]
         S1 --> S2 --> S3 --> S4
     end
@@ -920,7 +928,7 @@ which way the yeast moved, so this is a loose analogue. A "new" yeast may be the
 coming back from the kitchen.
 
 Either way, the yeast does not arrive in a from-scratch jar. The LAB have already acidified
-it, and from scratch Wink saw yeast appear the day after the pH reached 3.5 (Wink 2008a). So
+it, and Wink saw no yeast growth until a jar fell to around pH 3.5 (Wink 2008b). So
 the yeast's clock starts at once instead of after a week of bacterial succession, and the
 acid favours yeasts that tolerate it. The revival skipped the bacterial half of the first
 week, not the yeast half.
@@ -1100,12 +1108,13 @@ rubber-band readings comparable:
 - Kristen, Full Proof Baking (2019). *How To Make A Sourdough Starter From Scratch*. YouTube,
   7 Feb 2019. https://www.youtube.com/watch?v=m6pGkOuZnrk — The method above, from its
   on-screen title cards and narration.
-- Wink D (2008a). The pineapple juice solution, Part 1. *Bread Lines* 16(1), Bread Bakers
-  Guild of America; reposted on The Fresh Loaf, 23 Feb 2009.
+- Wink D (2008a). The pineapple juice solution, Part 1. *Bread Lines* 16(1), March 2008,
+  Bread Bakers Guild of America; reposted on The Fresh Loaf, 23 Feb 2009.
   https://www.thefreshloaf.com/node/10856/pineapple-juice-solution-part-1 — pH-paper trials
-  with water controls. Not peer-reviewed.
-- Wink D (2008b). The pineapple juice solution, Part 2. *Bread Lines*, June 2008; reposted
-  on The Fresh Loaf, 27 Feb 2009. https://www.thefreshloaf.com/node/10901 — Lab
+  of acidified starts (ascorbic acid, then juices) with water controls. The day-4 against
+  day-7 counts are for ascorbic acid. Not peer-reviewed.
+- Wink D (2008b). The pineapple juice solution, Part 2. *Bread Lines* 16(2), June 2008;
+  reposted on The Fresh Loaf, 27 Feb 2009. https://www.thefreshloaf.com/node/10901 — Lab
   identification of a day-two starter; the bacteriocin hypothesis. Not peer-reviewed.
 - Van der Meulen R, Scheirlinck I, Van Schoor A, Huys G, Vancanneyt M, Vandamme P, De Vuyst L
   (2007). Population dynamics and metabolite target analysis of lactic acid bacteria during

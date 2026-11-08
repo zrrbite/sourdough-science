@@ -141,7 +141,7 @@
     \node[rowlabel,anchor=east] at (1.3,-3.4) {She saw};
     \foreach \x/\t in {2.95/{\textit{Leuconostoc}, \textit{Lactococcus}, \textit{Enterococcus}, \textit{Enterobacter} from the flour},
                        6.30/{Acid stops the first wave; the sourdough organisms are not yet in numbers},
-                       9.65/{\textit{Lactobacillus}, \textit{Pediococcus}, \textit{Weissella} take over; yeast the day after pH 3.5},
+                       9.65/{\textit{Lactobacillus}, \textit{Pediococcus}, \textit{Weissella} take over; yeast from about pH 3.5},
                        13.00/{Community largely settled; what remains is matching food to appetite}}{
       \node[tcell,minimum height=2.2cm,anchor=north] at (\x,-0.6) {\t};
     }
@@ -176,7 +176,7 @@
       \small
       \begin{itemize}
         \item As acid builds, the first wave stops before the sourdough organisms have numbers: ``No significant growth!''
-        \item Wink's pH paper: gassy bacteria grew at pH ≥\,5, not ≤\,4.5; yeast usually came the day after pH 3.5 \caveat{careful amateur work; no replicate counts}
+        \item Wink's pH paper: gassy bacteria grew at pH ≥\,5, not ≤\,4.5; no yeast until pH ≈\,3.5 \caveat{careful amateur work; no replicate counts}
         \item \hypothesis\ (hers): \textit{L.\ citreum}'s bacteriocins hold back the lactobacilli, so a bigger early rise means a longer lull
         \item Lab data agree: at 30°C, pH below 4.0 after day 2; yeast at 10⁷\,CFU/g after 4--5 days (one dough in four: 8)
       \end{itemize}
@@ -195,7 +195,7 @@
         \node[right,font=\scriptsize,align=left,text width=2.6cm,text=muted] at (0.6,4.75) {between: the paper reads to 0.5};
         \node[right,font=\scriptsize,align=left,text width=2.6cm] at (0.6,4.15) {≤\,4.5: it does not};
         \draw[flag,very thick] (-0.05,3.5) -- (0.55,3.5);
-        \node[right,font=\scriptsize,align=left,text width=2.6cm] at (0.6,3.5) {3.5: yeast usually the next day};
+        \node[right,font=\scriptsize,align=left,text width=2.6cm] at (0.6,3.5) {≈\,3.5: yeast starts};
       \end{tikzpicture}
     \end{column}
   \end{columns}
@@ -418,8 +418,8 @@
       \small
       \textbf{\color{crust}A shortcut through the lull}
       \begin{itemize}
-        \item Wink: pineapple juice (or orange juice, or apple cider) for water on days 1--3 acidifies the mix below what the gas producers tolerate
-        \item Yeast on or before day 4, against about day 7 with water
+        \item Wink: pineapple juice for water acidifies the mix below what the gas producers tolerate; orange juice or apple cider only over two or three days
+        \item Her day counts are for vitamin C: yeast on or before day 4, against about 7. For juice she gives none
         \item It ``doesn't change the end result''; never necessary, ``only patience''
         \item Here: juice for the day-1 mix and the day-3 feed \untested
       \end{itemize}
@@ -626,7 +626,7 @@
     \node[font=\scriptsize\bfseries,text=crust,anchor=west] (sh) at (9.6,0) {From scratch, for comparison};
     \node[skipped=4.4cm,below=0.1cm of sh.south west,anchor=north west] (s1) {\textbf{Days 1--4:} the flour's first wave, \textit{Leuconostoc}, \textit{Enterobacter} · big rise, bad smell};
     \node[skipped=4.4cm,below=0.3cm of s1] (s2) {\textbf{Day 5: the lull} · acid stops the first wave};
-    \node[cell=4.4cm,anchor=north west] (s3) at (s1.west |- p4.north) {\textbf{Days 6--9:} sourdough LAB take over · yeast the day after pH 3.5};
+    \node[cell=4.4cm,anchor=north west] (s3) at (s1.west |- p4.north) {\textbf{Days 6--9:} sourdough LAB take over · yeast from about pH 3.5};
     \node[cell=4.4cm,anchor=north west] (s4) at (s1.west |- p6.north) {\textbf{Days 9--14:} ratios climb until it triples};
     \draw[arrow,thin] (s1) -- (s2);
     \draw[arrow,thin] (s2) -- (s3);
@@ -678,10 +678,10 @@
   \begin{itemize}
     \item \textbf{The yeast may not be the original.} Survivors compete with yeast arriving as it does from scratch: with the flour, and from the baker's hands
     \item A kitchen that kept the starter for years may hold its yeast: in four bakeries, the sourdough's dominant yeast also dominated walls, air, storage boxes and mixers. A ``new'' yeast may be the old one coming back \caveat{loose analogue}
-    \item The yeast does not arrive in a from-scratch jar: the LAB have already acidified it. From scratch, yeast appeared the day after pH 3.5, so its clock starts at once, and the acid favours tolerant yeasts
+    \item The yeast does not arrive in a from-scratch jar: the LAB have already acidified it. Wink saw no yeast until pH ≈\,3.5, so its clock starts at once, and the acid favours tolerant yeasts
   \end{itemize}
   \takeaway{A backup reliably brings back the bacteria, and perhaps the yeast. Drying later may save more of it (open test 4); whether it is the old yeast is open test 7.}
-  \source{Reese et al.\ (2020); Minervini et al.\ (2015): bakeries hold far more flour and dough than a home, and the study cannot say which way the yeast moved; Wink (2008a), not peer-reviewed}
+  \source{Reese et al.\ (2020); Minervini et al.\ (2015): bakeries hold far more flour and dough than a home, and the study cannot say which way the yeast moved; Wink (2008b), not peer-reviewed}
 \end{frame}
 
 \begin{frame}{A pinch, not a spoonful: the flakes carry the old starter's acid}
@@ -1049,8 +1049,8 @@
   \srcgroup{The method and the first two weeks}
   \begin{sourcelist}
     \src{Kristen, Full Proof Baking (2019)}{\emph{How To Make A Sourdough Starter From Scratch.} YouTube, 7 Feb 2019.}
-    \src{Wink D (2008a)}{The pineapple juice solution, Part 1. \emph{Bread Lines} 16(1). Not peer-reviewed.}
-    \src{Wink D (2008b)}{The pineapple juice solution, Part 2. \emph{Bread Lines}, June 2008. Not peer-reviewed.}
+    \src{Wink D (2008a)}{The pineapple juice solution, Part 1. \emph{Bread Lines} 16(1), March 2008. Not peer-reviewed.}
+    \src{Wink D (2008b)}{The pineapple juice solution, Part 2. \emph{Bread Lines} 16(2), June 2008. Not peer-reviewed.}
     \src{Van der Meulen R et al.\ (2007)}{\emph{Appl.\ Environ.\ Microbiol.} 73(15):4741--4750.}
     \src{Van der Meulen R et al.\ (2011)}{\emph{Appl.\ Environ.\ Microbiol.} 77(8):2716--2726.}
     \src{Ercolini D et al.\ (2013)}{Microbial ecology dynamics during rye and wheat sourdough preparation. \emph{Appl.\ Environ.\ Microbiol.} 79(24):7827--7836.}
