@@ -339,15 +339,18 @@ the bacterium may give way over the coming months. Open test 7 would show it.
 
 A starter that passes the readiness test can still be weak next to an old one. This section
 covers how to measure strength, why it keeps building after day 14, why a revived starter
-starts behind, what builds it, how to set the ratio by how often you feed, and how to plan
-the next feed around an absence.
+starts behind, what builds it, how to set the ratio by how often you feed, how to plan
+the next feed around an absence, and how to rescue a slowed starter around a working day.
 
 ### Measuring strength
 
 Two numbers carry it: **time to peak** and **height at peak**, both at a fixed ratio and a
 measured temperature. Her readiness test fixes all four: more than triple in 4–6 h on 1:2:2
 at 27°C (*Her rules*). A reading at another ratio or temperature says little, and two
-starters compare fairly only on the same feed in the same place.
+starters compare fairly only on the same feed in the same place. The 4–6 h holds only at
+27°C: a cooler jar stretches it, by about half again at 20°C (*Planning the next feed*), so
+a jar that cannot be kept at 27°C takes the test on a day it can, or is read against a
+longer yardstick.
 
 - **Judge at peak, not an hour in.** Early in a feed even a strong starter shows little. The
   feed has diluted the cells, a 1:2:2 feed to a fifth, and the first gas dissolves in the
@@ -516,6 +519,40 @@ and is a normal recovery feed. At 36–48 h warm it is the fed-after-collapse ca
 gets its chance (*Her rules*). Late to it: pour the liquid off, do not stir it in, and feed
 1:10:10 again. Since 1:10:10 is the top of the ladder, a longer gap is bought with a cooler
 spot or the fridge, not a higher ratio.
+
+### A rescue around a working day
+
+The case here (November 2026): a starter that slowed after a run of feeds missed during
+the working day, in a jar that may have sat above 27°C in the oven. Neither cause was
+measured. The two compound. A warm jar gets through its feed sooner, so with nobody home it
+spends more of each day past its peak, in the acid and ethanol where the yeast suffers
+first, and above about 27°C the yeast is past its optimum while the lactobacilli are not
+(Gänzle et al. 1998). Nothing is lost that dilution cannot bring back (*Days 9–14*). The fix
+is to make the peak land when someone is home, not to be home for the peak. Chapter 11's
+recovery protocol, arranged around a working day:
+
+1. **Out of the oven.** Chapter 11 recovers a culture at 22–25°C, not warmer, and a kitchen
+   in November is close to that. Cooler also pushes the peak toward the evening.
+2. **One feed a day at 1:10:10, before work.** Small amounts keep it cheap: 5 g of starter,
+   50 g of water and 50 g of flour, 20–30% of it wholemeal or dark rye (item 4).
+3. **Once a day, not twice.** *(Hypothesis, on the arithmetic of Planning the next feed:)*
+   at 1:10:10 the old starter is 1/21 of the jar, so the yeast needs about 4.4 doublings
+   just to get back to the density it was fed at. At two hours a generation that is about
+   9 h at 27°C, and at half again in a cool kitchen about 13 h, more than a 12 h interval.
+   Twice a day at 1:10:10 can dilute the yeast faster than it regrows.
+4. **In the evening, read it without stirring.** Still rising: it peaks overnight, which is
+   fine. Level or dimpled: note the time. Fallen, with liquid on top: pour the liquid off
+   before the next feed rather than stirring it in (*Stirring, and what it moves*).
+5. **Log time to peak every day,** and give it three to seven days before judging it
+   (chapter 11). The peak should come earlier day by day.
+6. **On a day off, the test:** 1:2:2 at 27°C, measured in the jar. Tripling in 4–6 h means
+   it is back.
+7. **Then the working week in the fridge.** Her rule allows 2–4 weeks unfed. Warm feeds at
+   peak at the weekend, two or three before a bake (item 7), and a new dried backup once it
+   doubles reliably (item 10).
+
+Discard only for pink, orange or fuzzy growth, or a putrid rather than sour smell
+(chapter 11). Even then the dried flakes remain.
 
 ### Stirring, and what it moves
 
