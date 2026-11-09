@@ -709,25 +709,24 @@ mix with a little of the dried backup (*Drying a backup and reviving it*, below)
 give the sourdough bacteria a head start. Run here at a desk measured at 23.5°C, under
 muslin.
 
-**So far.** The day-1 mix had a little dried starter in it; the amount was not weighed. By
-day 2 it had risen. That was read as yeast at first, and the jar was fed a day early, with
-a mix of rye, wholemeal and white flour. Read again, it was most likely bacteria: in a
-two-day-old jar the rise is bacterial (*Days 1–4*), and some sourdough LAB make gas too.
-Nothing was measured.
+**So far.** Day 1 was 6 November. The day-1 mix had a little dried starter in it; the
+amount was not weighed. It had risen by day 3, 8 November, and was fed then, with a mix of
+rye, wholemeal and white flour: the video's first feed, on its day. The rise was read as
+yeast at first. Read again, it was most likely bacteria: in a jar that young the rise is
+bacterial (*Days 1–4*), and some sourdough LAB make gas too. Nothing was measured.
 
-Later (day not noted) it held a little more air, with no bad smell. The previous
+Later on day 3 it held a little more air, with no bad smell. The previous
 from-scratch try never smelled bad either, so in this kitchen the smell may not mark the
 first wave: some starters stink and others hardly do (Wink 2008b). No pH strips are to
-hand, so the lull is the test. On the morning of 9 November, day 3 or 4, it doubled, with a
+hand, so the lull is the test. On the morning of 9 November, day 4, it doubled, with a
 pleasant, slightly acidic smell. The readings feed by feed are in the [Starter
 Diary](starter-diary.md).
 
 **What the reasoning predicts** *(hypothesis)*. The flakes work like Wink's juice, with
 organisms in it. Their lactic acid and their surviving LAB acidify the fresh flour, and if
 the pH falls below 4.5 before the flour's first wave builds, the jar skips the false rise
-and the lull, as the pinch revival did (*What it skips*). Two things here may have reopened
-the window: an amount of flakes that may be small against the fresh flour, and the early
-feed, which diluted the acid they brought. The yeast still has to arrive and build up
+and the lull, as the pinch revival did (*What it skips*). What may have reopened the window
+here is the amount of flakes, which may be small against the fresh flour. The yeast still has to arrive and build up
 either way.
 
 **Which rise it was** tells the two apart, from the smell and a pH strip at the next feeds:
