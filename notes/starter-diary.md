@@ -30,7 +30,9 @@ steady activity means the flakes skipped it.
 | 1 | 6 Nov | | Day-1 mix with a pinch of flakes; amounts not recorded | | | | |
 | 3 | 8 Nov | morning | First feed, on the video's day: rye, wholemeal and white flour, unweighed | Risen, not measured | | | Read as yeast at first; most likely bacteria |
 | 3 | 8 Nov | 15:00 | | A little more air | | No bad smell | No pH strips, so the lull is the test. Flour changed to the 30% rye mix |
-| 4 | 9 Nov | 07:00 | 20 / 20 / 20, 30% rye mix | **2×** | Between runny and firm | Nice, slightly acidic | First doubling. Fed before work; twice a day from here |
+| 4 | 9 Nov | 07:00 | 20 / 20 / 20, 30% rye mix | **2×** | Between runny and firm | Nice, slightly acidic | First doubling. Fed at 07:45, before work; twice a day from here |
+| 4 | 9 Nov | 17:00 | | **2×** again | | | About 9 h after the feed. Fed at about 12 h, to keep the night short |
 
-**Next:** this evening, about 12 hours after the morning feed. Note where it peaked (the
-streaks on the jar show it if it has fallen), then feed 20 / 20 / 20 again.
+**Next:** the evening feed, 20 / 20 / 20, around 19:00–19:45, then the morning one before
+work. If it keeps doubling well inside 12 hours with a sour smell for several feeds and no
+lull comes, the next step is 1:2:2, not more feeds a day.
