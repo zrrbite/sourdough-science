@@ -718,7 +718,9 @@ Nothing was measured.
 Later (day not noted) it held a little more air, with no bad smell. The previous
 from-scratch try never smelled bad either, so in this kitchen the smell may not mark the
 first wave: some starters stink and others hardly do (Wink 2008b). No pH strips are to
-hand, so the lull is the test.
+hand, so the lull is the test. On the morning of 9 November, day 3 or 4, it doubled, with a
+pleasant, slightly acidic smell. The readings feed by feed are in the [Starter
+Diary](starter-diary.md).
 
 **What the reasoning predicts** *(hypothesis)*. The flakes work like Wink's juice, with
 organisms in it. Their lactic acid and their surviving LAB acidify the fresh flour, and if
