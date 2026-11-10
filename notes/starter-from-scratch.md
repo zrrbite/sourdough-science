@@ -759,6 +759,32 @@ climb to 2× and a sour smell.
   reached 2× with a sour note on day 7; the flakes may bring it forward if they skipped the
   lull.
 
+**Why low ratios, even with no first wave** *(hypothesis, on the arithmetic of Planning the
+next feed)*. The low ratios were never about the first wave; they protect the yeast. Every
+feed discards most of the jar, and the yeast, still a small minority, has to regrow before
+the next feed just to stay level:
+
+| Ratio | Old starter kept | Doublings to hold its ground |
+| --- | --- | --- |
+| 1:1:1 | 1/3 | about 1.6 |
+| 1:2:2 | 1/5 | about 2.3 |
+| 1:5:5 | 1/11 | about 3.5 |
+| 1:10:10 | 1/21 | about 4.4 |
+
+At about two hours a generation at 27°C, and about a third longer at 23.5°C, 12 hours buys
+the yeast four or five doublings, and only while the food lasts. That leaves room to build
+at 1:1:1 and 1:2:2, little at 1:5:5 and almost none at 1:10:10. The rise may not show the
+loss: in her day-14 time-lapse 1:5:5 peaked within half an hour of 1:2:2, so a young jar's
+peak is not set by its yeast count. Skipping the first wave changes none of this. It starts
+the yeast's clock early, but the yeast still starts rare (*Why the yeast comes last*). The
+previous new start here never reached 2× after days at 1:10, which fits, though nothing was
+measured.
+
+So the ratio goes up one step at a time, when the jar peaks well before the next feed
+(*Setting the ratio by the interval*): 1:2:2 after a day with no lull, then 1:3:3 and 1:5:5
+once it doubles at 1:2:2 well inside 12 hours for a few feeds in a row. That is the video's
+path: 1:2:2 on day 9, up to 1:5:5 by day 11.
+
 **Record** at each feed the rise against a rubber band at the starting level, the texture
 (thick and bubbly, or thin and runny) and the smell in a word. Also the day of the lull or
 its absence, the first sour smell, the first 2×, and the room overnight as well as by day.
