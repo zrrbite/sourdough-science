@@ -43,6 +43,7 @@ lull.
 | 5 | 10 Nov | morning | **1:2:2 jar**, new: 15 g of the main jar / 30 / 30 | | | | Split off because the main jar was rising fast, and to last the workday |
 | 5 | 10 Nov | morning | **Leftover jar**, kept from 9 Nov: fed; amounts not given | | | | |
 | 5 | 10 Nov | 15:17 | | All three jars almost **2×** | | Nicely acidic | About 9 h after the morning feeds. No lull; the 1:2:2 jar is keeping pace with the 1:1:1 jar |
+| 5 | 10 Nov | 15:49 | | Leftover jar **2×**; main and 1:2:2 still just under | | | Leftover jar's feed amounts not given; a lower ratio would explain it |
 
 **Next:** feed around 19:00–19:30, so the night is about 12 hours: the main jar at
 20 / 20 / 20, the 1:2:2 jar at 1:2:2, and drop the leftover jar. If day 6 brings no lull
