@@ -44,7 +44,11 @@ lull.
 | 5 | 10 Nov | morning | **Leftover jar**, kept from 9 Nov: fed; amounts not given | | | | |
 | 5 | 10 Nov | 15:17 | | All three jars almost **2×** | | Nicely acidic | About 9 h after the morning feeds. No lull; the 1:2:2 jar is keeping pace with the 1:1:1 jar |
 | 5 | 10 Nov | 15:49 | | Leftover jar **2×**; main and 1:2:2 still just under | | | Leftover jar's feed amounts not given; a lower ratio would explain it |
+| 5 | 10 Nov | 19:30 | **Main jar**: 20 / 20 / 20 | | Not runny, not firm (all three) | Nice and acidic, no foulness (all three) | Evening feed, on schedule |
+| 5 | 10 Nov | 19:30 | **1:2:2 jar**: 15 / 30 / 30 | | | | |
+| 5 | 10 Nov | 19:30 | **Leftover jar**: the scrapings, fed; amounts not given | | | | Kept as a spare. Starts from far less starter, so expect it to be slower |
 
-**Next:** feed around 19:00–19:30, so the night is about 12 hours: the main jar at
-20 / 20 / 20, the 1:2:2 jar at 1:2:2, and drop the leftover jar. If day 6 brings no lull
-either, the main line moves to 1:2:2.
+**Next:** day 6, the last chance for a late lull. Before the morning feed, read the main
+and 1:2:2 jars: height from the streaks, texture, smell. Both risen well again means no
+lull, and the main line moves to 1:2:2 in the evening. The leftover jar restarted from
+scrapings, so a slow rise there says nothing about the culture.
