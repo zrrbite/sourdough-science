@@ -34,9 +34,11 @@ steady activity means the flakes skipped it.
 | 4 | 9 Nov | 17:00 | | **2×** again | | | About 9 h after the feed. Evening feed to come at about 12 h |
 | 4 | 9 Nov | 17:08 | | | Dry skin on top, peeled off | | Still active underneath. Feed planned at 19:30, 1:1:1 |
 | 5 | 10 Nov | 00:00 | Fed; amounts not given | Very lively | | | Fed at midnight because it was so active |
-| 5 | 10 Nov | morning | A small feed, to last until evening; amounts not given | | | | Day 5: the video's lull day |
+| 5 | 10 Nov | morning | **Main jar** (fed at midnight): fed; amounts not given | Rose overnight, not quite 2× | | | Day 5: the video's lull day |
+| 5 | 10 Nov | morning | **1:2:2 jar**, new: 15 / 30 / 30 | | | | Split off to last the workday; source jar not given |
+| 5 | 10 Nov | morning | **Leftover jar**, kept from 9 Nov: fed; amounts not given | | | | |
 
-**Next:** the evening reading on day 5. A flat, runny jar today or tomorrow is the lull; but
-if this morning's feed used little starter in a lot of flour, a slow rise tonight is the
-ratio, not a lull. If it keeps doubling well inside 12 hours with a sour smell and no lull
+**Next:** the evening reading on day 5, jar by jar. From day 5 the run is three jars; read
+each against its own ratio. A flat, runny day in the 1:1:1 jars is the lull; a slower rise
+in the 1:2:2 jar is the ratio, not a lull. If it keeps doubling well inside 12 hours with a sour smell and no lull
 comes, the next step is 1:2:2 at the usual times, not more feeds a day.
