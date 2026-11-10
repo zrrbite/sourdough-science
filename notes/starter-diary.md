@@ -25,6 +25,11 @@ the smell may not separate them in this kitchen. Yeast this early would be unusu
 yeast comes last*). The next two days decide: a flat, runny day means it was the first wave;
 steady activity means the flakes skipped it.
 
+Day 5, the video's lull day, brought no lull: all three jars rose to almost 2× within about
+9 hours with an acidic smell, and the jar fed 1:2:2 kept pace with the 1:1:1 jar. So far
+that fits the flakes having skipped the first wave. Day 6 is the last chance for a late
+lull.
+
 | Day | Date | Time | Feed | Rise | Texture | Smell | Notes |
 |---|---|---|---|---|---|---|---|
 | 1 | 6 Nov | | Day-1 mix with a pinch of flakes; amounts not recorded | | | | |
@@ -37,9 +42,8 @@ steady activity means the flakes skipped it.
 | 5 | 10 Nov | morning | **Main jar**: 20 / 20 / 20 | Rose overnight, close to 2× | | | Day 5: the video's lull day |
 | 5 | 10 Nov | morning | **1:2:2 jar**, new: 15 g of the main jar / 30 / 30 | | | | Split off because the main jar was rising fast, and to last the workday |
 | 5 | 10 Nov | morning | **Leftover jar**, kept from 9 Nov: fed; amounts not given | | | | |
+| 5 | 10 Nov | 15:17 | | All three jars almost **2×** | | Nicely acidic | About 9 h after the morning feeds. No lull; the 1:2:2 jar is keeping pace with the 1:1:1 jar |
 
-**Next:** the evening reading on day 5, jar by jar. The main jar at 1:1:1 doubled within 9
-hours yesterday; the same again says no lull, and flat and runny says lull. The 1:2:2 jar
-should reach 2× roughly two hours later than the main jar, since 1:2:2 adds about one
-doubling. Read each against its own ratio. If it keeps doubling well inside 12 hours with a sour smell and no lull
-comes, the next step is 1:2:2 at the usual times, not more feeds a day.
+**Next:** feed around 19:00–19:30, so the night is about 12 hours: the main jar at
+20 / 20 / 20, the 1:2:2 jar at 1:2:2, and drop the leftover jar. If day 6 brings no lull
+either, the main line moves to 1:2:2.
