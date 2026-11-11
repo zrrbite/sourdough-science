@@ -30,6 +30,10 @@ Day 5, the video's lull day, brought no lull: all three jars rose to almost 2× 
 that fits the flakes having skipped the first wave. Day 6 is the last chance for a late
 lull.
 
+Day 6 brought none either: about 2× again by the morning. The days a lull usually comes,
+4 to 6, have passed without one, so the run reads as having skipped the first wave and the
+lull. With no pH reading and no control jar, that remains a reading, not a result.
+
 | Day | Date | Time | Feed | Rise | Texture | Smell | Notes |
 |---|---|---|---|---|---|---|---|
 | 1 | 6 Nov | | Day-1 mix with a pinch of flakes; amounts not recorded | | | | |
@@ -47,8 +51,9 @@ lull.
 | 5 | 10 Nov | 19:30 | **Main jar**: 20 / 20 / 20 | | Not runny, not firm (all three) | Nice and acidic, no foulness (all three) | Evening feed, on schedule |
 | 5 | 10 Nov | 19:30 | **1:2:2 jar**: 15 / 30 / 30 | | | | |
 | 5 | 10 Nov | 19:30 | **Leftover jar**: the scrapings, fed; amounts not given | | | | Kept as a spare. Starts from far less starter, so expect it to be slower |
+| 6 | 11 Nov | morning | | About **2×** again | | | No lull on day 6 either. Which jar or jars not stated (to confirm). Plans to go down to one jar |
 
-**Next:** day 6, the last chance for a late lull. Before the morning feed, read the main
-and 1:2:2 jars: height from the streaks, texture, smell. Both risen well again means no
-lull, and the main line moves to 1:2:2 in the evening. The leftover jar restarted from
-scrapings, so a slow rise there says nothing about the culture.
+**Next:** one jar from day 6, fed 1:2:2 every 12 hours. Keep the 1:2:2 jar if it rose as
+well as the main one, since it has already had a day at that ratio. Step up to 1:3:3, then
+1:5:5, once it doubles at 1:2:2 well inside 12 hours for a few feeds in a row. Go back to
+1:1:1 if it stops reaching about 2× by the next feed.
