@@ -51,10 +51,10 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 5 | 10 Nov | 19:30 | **Main jar**: 20 / 20 / 20 | | Not runny, not firm (all three) | Nice and acidic, no foulness (all three) | Evening feed, on schedule |
 | 5 | 10 Nov | 19:30 | **1:2:2 jar**: 15 / 30 / 30 | | | | |
 | 5 | 10 Nov | 19:30 | **Leftover jar**: the scrapings, fed; amounts not given | | | | Kept as a spare. Starts from far less starter, so expect it to be slower |
-| 6 | 11 Nov | morning | | Main and 1:2:2 jars both **2×**, before the 12-hour mark | | | No lull on day 6 either. Down to one jar: keeping the 1:2:2 jar |
+| 6 | 11 Nov | morning | | About **2×** again | | | No lull on day 6 either. Morning feed not given (to confirm) |
+| 6 | 11 Nov | 16:00 | | Main and 1:2:2 jars both **2×**, before the 19:30 feed | | | About 8½ h after a 07:30 feed, if there was one (to confirm). Down to one jar: keeping the 1:2:2 jar |
 
-**Next:** one jar, the 1:2:2 jar, fed 1:2:2 every 12 hours. Both of its feeds so far reached
-about 2× within 12 hours: near 2× in about 9 hours on day 5, and 2× overnight. Step up to
-1:3:3 when a third feed in a row doubles well inside 12 hours, for instance at 2× or past
-its peak by the evening feed. Then go to 1:5:5 the same way. Go back to 1:1:1 if it stops
+**Next:** one jar, the 1:2:2 jar. If it was fed in the morning, the 16:00 reading is its
+third feed in a row at 1:2:2 to reach about 2× within 12 hours, the last in about 8½. So the
+19:30 feed goes up to 1:3:3, and 1:5:5 follows the same way. Go back down a step if it stops
 reaching about 2× by the next feed.
