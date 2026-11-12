@@ -55,8 +55,8 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 6 | 11 Nov | 16:00 | | Main and 1:2:2 jars both **2×**, before the 19:30 feed | | | About 8½ h after a 07:30 feed, if there was one (to confirm). Down to one jar: keeping the 1:2:2 jar |
 | 6 | 11 Nov | 17:00 | **1:2:2 jar**, the one kept: 20 / 60 / 60 (1:3:3) | | | | First step up to 1:3:3. Fed at 17:00, an hour after it reached 2×, to last until the morning feed; left in the hallway overnight to slow it (temperature not measured) |
 
-**Next:** day 7, about 07:30, 14½ hours after the 1:3:3 feed. Before feeding, read the
-height, whether it is still rising, at its peak or falling back (streaks above the surface),
-the texture and smell, and the hallway's temperature if known. At or just past 2×, or fallen
-back from it: feed 1:3:3 again. Well under 2× and still rising: the hallway was too cold, so
-feed 1:2:2. Either way it goes back on the desk, and the next feed is at 19:30.
+| 7 | 12 Nov | morning | | | | | Morning reading and feed not given (to confirm) |
+| 7 | 12 Nov | 17:15 | | **2×** | | | About 9¾ h after a 07:30 feed, if it was then (to confirm) |
+
+**Next:** feed at 19:30, 1:3:3, and leave it on the desk overnight. Go up to 1:5:5 once it
+doubles at 1:3:3 well inside 12 hours for a few feeds in a row.
