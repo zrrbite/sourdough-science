@@ -57,6 +57,8 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 
 | 7 | 12 Nov | morning | | | | | Morning reading and feed not given (to confirm) |
 | 7 | 12 Nov | 17:15 | | **2×** | | | About 9¾ h after a 07:30 feed, if it was then (to confirm) |
+| 7 | 12 Nov | 19:30 | 1:3:3 (amounts not given) | | | | Evening feed, on schedule |
 
-**Next:** feed at 19:30, 1:3:3, and leave it on the desk overnight. Go up to 1:5:5 once it
-doubles at 1:3:3 well inside 12 hours for a few feeds in a row.
+**Next:** day 8, about 07:30. Read the height, whether it is rising, at its peak or fallen
+back, the texture and the smell. At 2× or past it: 1:3:3 again. Well under 2×: back to
+1:2:2. Go up to 1:5:5 once it doubles at 1:3:3 well inside 12 hours for a few feeds in a row.
