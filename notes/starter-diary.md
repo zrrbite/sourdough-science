@@ -59,9 +59,10 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 7 | 12 Nov | 17:15 | | **2×** | | | About 9¾ h after a 07:30 feed, if it was then (to confirm) |
 | 7 | 12 Nov | 19:30 | 1:3:3 (amounts not given) | | | | Evening feed, on schedule |
 
-**Next:** day 8, about 07:30. Read the height, whether it is rising, at its peak or fallen
-back, the texture and the smell. At 2× or past it: up to 1:4:4. Well under 2×: 1:3:3 again.
-In the evening, at 2× again by the time Martin is home: up to 1:5:5 at 19:30. 1:5:5 is the
+| 8 | 13 Nov | morning | | **2×** again | | | 12 h after the 1:3:3 feed. Morning feed to come: up to 1:4:4 |
+
+**Next:** the day-8 morning feed goes up to 1:4:4. In the evening, at 2× again by the time
+Martin is home: up to 1:5:5 at 19:30. 1:5:5 is the
 ceiling for twice a day at 23.5°C, where the peak should land near the next feed. A weekend
 hybrid bake (starter for flavour, commercial yeast for the rise) is planned for 14–15
 November.
