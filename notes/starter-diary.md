@@ -60,9 +60,12 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 7 | 12 Nov | 19:30 | 1:3:3 (amounts not given) | | | | Evening feed, on schedule |
 
 | 8 | 13 Nov | morning | | **2×** again | | | 12 h after the 1:3:3 feed. Morning feed to come: up to 1:4:4 |
+| 8 | 13 Nov | 17:40 | | **3×** | | | First 3×. About 10 h after a 07:30 feed at 1:4:4, if that was the morning feed (to confirm); it may have reached 3× earlier |
 
-**Next:** the day-8 morning feed goes up to 1:4:4. In the evening, at 2× again by the time
-Martin is home: up to 1:5:5 at 19:30. 1:5:5 is the
+**Next:** up to 1:5:5 at 19:30. Saturday morning (day 9), the readiness test: feed 1:2:2,
+hold it at about 27°C, and see whether it triples in 4–6 hours. *(Rough estimate:)* 3× in
+about 10 hours at 1:4:4 and 23.5°C scales to about 5–6 hours at 1:2:2 and 27°C, so it may
+already be close. 1:5:5 is the
 ceiling for twice a day at 23.5°C, where the peak should land near the next feed. A weekend
 hybrid bake (starter for flavour, commercial yeast for the rise) is planned for 14–15
 November.
