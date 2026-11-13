@@ -67,3 +67,8 @@ rise and the starter for flavour; what and when are not decided yet. The readine
 (feed 1:2:2, hold at about 27°C, 3× within 4–6 hours) is still worth running, as the levain
 build if the bake allows. *(Rough estimate:)* 3× in 10 hours at 1:4:4 and 23.5°C scales to
 about 5–6 hours at 1:2:2 and 27°C, so it may already pass.
+
+Then the 10% rye mix, as the video did on day 12 once 1:5:5 was steady: after two 1:5:5
+feeds that reach 2× or more by the next feed, probably the evening of 14 November (day 9).
+Make it by adding twice the leftover 30% mix's weight in plain flour. Give the first feed on
+it at 1:4:4, as she did, and go back to 1:5:5 if it still peaks before the next feed.
