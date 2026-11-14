@@ -60,15 +60,15 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 7 | 12 Nov | 19:30 | 1:3:3 (amounts not given) | | | | Evening feed, on schedule |
 | 8 | 13 Nov | 07:30 | 1:4:4 (amounts not given) | **2×** again, before the feed | | | 12 h after the 1:3:3 feed. First 1:4:4 |
 | 8 | 13 Nov | 17:40 | | **3×** | | | First 3×, 10 h after the 1:4:4 feed; it may have reached 3× earlier |
+| 8 | 13 Nov | 19:30 | 1:5:5 (amounts not given) | | | | First 1:5:5 |
+| 9 | 14 Nov | 08:00 | | Just above **2×** | | | 12½ h after the first 1:5:5 feed: the peak landed near the next feed, as intended. Slower than the day before's 3× in 10 h at 1:4:4; the room overnight was not measured |
 
-**Next:** up to 1:5:5 at 19:30, the ceiling for twice a day at 23.5°C, where the peak
-should land near the next feed. The weekend bake is a hybrid, with commercial yeast for the
-rise and the starter for flavour; what and when are not decided yet. The readiness test
-(feed 1:2:2, hold at about 27°C, 3× within 4–6 hours) is still worth running, as the levain
-build if the bake allows. *(Rough estimate:)* 3× in 10 hours at 1:4:4 and 23.5°C scales to
-about 5–6 hours at 1:2:2 and 27°C, so it may already pass.
+**Next:** 1:5:5 again on the morning of day 9, the ceiling for twice a day at 23.5°C. At
+19:30, if it has reached 2× or more again, switch to the 10% rye mix, as the video did on
+day 12 once 1:5:5 was steady. Make the mix by adding twice the leftover 30% mix's weight in
+plain flour. Give the first feed on it at 1:4:4, as she did, and go back to 1:5:5 if it
+still peaks before the next feed. If it falls short, 1:5:5 on the 30% mix for another feed.
 
-Then the 10% rye mix, as the video did on day 12 once 1:5:5 was steady: after two 1:5:5
-feeds that reach 2× or more by the next feed, probably the evening of 14 November (day 9).
-Make it by adding twice the leftover 30% mix's weight in plain flour. Give the first feed on
-it at 1:4:4, as she did, and go back to 1:5:5 if it still peaks before the next feed.
+The weekend bake is a hybrid, with commercial yeast for the rise and the starter for
+flavour; what and when are not decided yet. The readiness test (feed 1:2:2, hold at about
+27°C, 3× within 4–6 hours) is still worth running, as the levain build if the bake allows.
