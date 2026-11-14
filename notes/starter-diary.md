@@ -61,7 +61,7 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 8 | 13 Nov | 07:30 | 1:4:4 (amounts not given) | **2×** again, before the feed | | | 12 h after the 1:3:3 feed. First 1:4:4 |
 | 8 | 13 Nov | 17:40 | | **3×** | | | First 3×, 10 h after the 1:4:4 feed; it may have reached 3× earlier |
 | 8 | 13 Nov | 19:30 | 1:5:5 (amounts not given) | | | | First 1:5:5 |
-| 9 | 14 Nov | 08:00 | | Just above **2×** | | | 12½ h after the first 1:5:5 feed: the peak landed near the next feed, as intended. Slower than the day before's 3× in 10 h at 1:4:4; the room overnight was not measured |
+| 9 | 14 Nov | 08:00 | | Just above **2×**, still rising | | | 12½ h after the first 1:5:5 feed, not yet peaked. Slower than the day before's 3× in 10 h at 1:4:4: the nights are cooler now, though the room overnight was not measured |
 
 **Next:** 1:5:5 again on the morning of day 9, the ceiling for twice a day at 23.5°C. At
 19:30, if it has reached 2× or more again, switch to the 10% rye mix, as the video did on
