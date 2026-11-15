@@ -62,13 +62,14 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 8 | 13 Nov | 17:40 | | **3×** | | | First 3×, 10 h after the 1:4:4 feed; it may have reached 3× earlier |
 | 8 | 13 Nov | 19:30 | 1:5:5 (amounts not given) | | | | First 1:5:5 |
 | 9 | 14 Nov | 08:00 | | Just above **2×**, still rising | | | 12½ h after the first 1:5:5 feed, not yet peaked. Slower than the day before's 3× in 10 h at 1:4:4: the nights are cooler now, though the room overnight was not measured |
+| 9 | 14 Nov | morning | Fed; time, ratio and flour not given (to confirm) | | | | Left to peak before feeding |
+| 9 | 14 Nov | 20:00 | Evening feed missed | | | | Martin fell asleep; fed at 02:00 instead |
+| 10 | 15 Nov | 02:00 | 20 / 100 / 100 (1:5:5); flour mix not given (to confirm) | | | | The evening feed, 6 h late. If it was on the new mix (10% rye, 20% wholemeal, 70% plain), this was the first feed on it |
 
-**Next:** 1:5:5 again on the morning of day 9, the ceiling for twice a day at 23.5°C. At
-19:30, if it has reached 2× or more again, switch to the 10% rye mix, as the video did on
-day 12 once 1:5:5 was steady. Make the mix by adding twice the leftover 30% mix's weight in
-plain flour. Give the first feed on it at 1:4:4, as she did, and go back to 1:5:5 if it
-still peaks before the next feed. If it falls short, 1:5:5 on the 30% mix for another feed.
+**Next:** feed at 19:30 on 15 November (day 10), then back to 07:30 and 19:30. At 1:5:5 it
+should peak in the afternoon and wait a few hours, as it did on day 9. At 2× or more by
+then: 1:5:5 again. Under 2×: 1:4:4. The planned flour from here is 10% rye, 20% wholemeal and 70%
+plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), replacing the
+video's 10% rye mix.
 
-The weekend bake is a hybrid, with commercial yeast for the rise and the starter for
-flavour; what and when are not decided yet. The readiness test (feed 1:2:2, hold at about
-27°C, 3× within 4–6 hours) is still worth running, as the levain build if the bake allows.
+The readiness test (feed 1:2:2, hold at about 27°C, 3× within 4–6 hours) is still to run.
