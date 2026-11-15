@@ -75,3 +75,7 @@ plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), repl
 video's 10% rye mix.
 
 The readiness test (feed 1:2:2, hold at about 27°C, 3× within 4–6 hours) is still to run.
+Planned for the morning of 21 November (day 16), as the levain build for a bake: 3× in 4–6
+hours means mix the dough with it, a sourdough loaf baked on 22 November. About 7 hours is
+where the video's day-14 starter was, so usable with a slower bulk. Slower than that means
+the hybrid again.
