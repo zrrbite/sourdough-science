@@ -66,6 +66,7 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 9 | 14 Nov | 20:00 | Evening feed missed | | | | Martin fell asleep; fed at 02:00 instead |
 | 10 | 15 Nov | 02:00 | 20 / 100 / 100 (1:5:5), **new mix**: 10% rye, 20% wholemeal, 70% plain | | | | The evening feed, 6 h late, 16½ h after the last. First feed on the new mix |
 | 10 | 15 Nov | 16:15 | | Not yet peaked, "still a bit of room"; height not given | | | 14¼ h after the 02:00 feed. Slower than expected at 1:5:5: the first feed on the new mix, after a cool night |
+| 10 | 15 Nov | evening | Fed; time and ratio not given (1:4:4 planned, to confirm) | At or close to its peak | | | Fed at the peak, aiming for the next feed at 07:00 |
 
 **Next:** feed at the peak, about 19:00, at 1:4:4 and on the desk overnight, not in the
 hallway: at 1:5:5 on the new mix it has taken more than 14 hours, so 1:5:5 overnight would not
