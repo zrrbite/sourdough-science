@@ -65,11 +65,12 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 9 | 14 Nov | 09:30 | Fed; ratio not given (to confirm) | | | | Left to peak before feeding, 14 h after the 19:30 feed |
 | 9 | 14 Nov | 20:00 | Evening feed missed | | | | Martin fell asleep; fed at 02:00 instead |
 | 10 | 15 Nov | 02:00 | 20 / 100 / 100 (1:5:5), **new mix**: 10% rye, 20% wholemeal, 70% plain | | | | The evening feed, 6 h late, 16½ h after the last. First feed on the new mix |
+| 10 | 15 Nov | 16:15 | | Not yet peaked, "still a bit of room"; height not given | | | 14¼ h after the 02:00 feed. Slower than expected at 1:5:5: the first feed on the new mix, after a cool night |
 
-**Next:** 02:00 to 19:30 would be 17½ hours, about 5 past the peak. If Martin is home,
-feed at the peak this afternoon instead, and leave it in the hallway overnight to stretch to
-07:30, as on day 6. Back to 07:30 and 19:30 from 16 November. If it reaches 2× or more
-before it peaks: 1:5:5 again. Under 2×: 1:4:4. The flour from here is 10% rye, 20% wholemeal and 70%
+**Next:** feed at the peak, about 19:00, at 1:4:4 and on the desk overnight, not in the
+hallway: at 1:5:5 on the new mix it has taken more than 14 hours, so 1:5:5 overnight would not
+peak by 07:30. Back to 07:30 and 19:30 from 16 November, at whichever ratio peaks near the
+next feed. The flour from here is 10% rye, 20% wholemeal and 70%
 plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), replacing the
 video's 10% rye mix.
 
