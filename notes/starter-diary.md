@@ -66,9 +66,10 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 9 | 14 Nov | 20:00 | Evening feed missed | | | | Martin fell asleep; fed at 02:00 instead |
 | 10 | 15 Nov | 02:00 | 20 / 100 / 100 (1:5:5), **new mix**: 10% rye, 20% wholemeal, 70% plain | | | | The evening feed, 6 h late, 16½ h after the last. First feed on the new mix |
 
-**Next:** feed at 19:30 on 15 November (day 10), then back to 07:30 and 19:30. At 1:5:5 it
-should peak in the afternoon and wait a few hours, as it did on day 9. At 2× or more by
-then: 1:5:5 again. Under 2×: 1:4:4. The flour from here is 10% rye, 20% wholemeal and 70%
+**Next:** 02:00 to 19:30 would be 17½ hours, about 5 past the peak. If Martin is home,
+feed at the peak this afternoon instead, and leave it in the hallway overnight to stretch to
+07:30, as on day 6. Back to 07:30 and 19:30 from 16 November. If it reaches 2× or more
+before it peaks: 1:5:5 again. Under 2×: 1:4:4. The flour from here is 10% rye, 20% wholemeal and 70%
 plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), replacing the
 video's 10% rye mix.
 
