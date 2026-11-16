@@ -67,11 +67,14 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 10 | 15 Nov | 02:00 | 20 / 100 / 100 (1:5:5), **new mix**: 10% rye, 20% wholemeal, 70% plain | | | | The evening feed, 6 h late, 16½ h after the last. First feed on the new mix |
 | 10 | 15 Nov | 16:15 | | Not yet peaked, "still a bit of room"; height not given | | | 14¼ h after the 02:00 feed. Slower than expected at 1:5:5: the first feed on the new mix, after a cool night |
 | 10 | 15 Nov | evening | Fed; time and ratio not given (1:4:4 planned, to confirm) | At or close to its peak | | | Fed at the peak, aiming for the next feed at 07:00 |
+| 11 | 16 Nov | 07:00 | | | | | Morning reading and feed not given (to confirm) |
+| 11 | 16 Nov | 17:00 | | **Under 1.5×** ("hasn't even grown 1/2 yet") | | | About 10 h after a 07:00 feed. Much slower than day 8's 3× in 10 h at 1:4:4. Two things changed since: the new mix with less rye, and colder days and nights (not measured) |
 
-**Next:** feed at the peak, about 19:00, at 1:4:4 and on the desk overnight, not in the
-hallway: at 1:5:5 on the new mix it has taken more than 14 hours, so 1:5:5 overnight would not
-peak by 07:30. Back to 07:30 and 19:30 from 16 November, at whichever ratio peaks near the
-next feed. The flour from here is 10% rye, 20% wholemeal and 70%
+**Next:** warmth first. Move it to about 26–27°C (oven with the light on, checked with a
+thermometer) and do not feed it until it peaks. Then 1:2:2, kept warm, until it reaches 2×
+within 12 hours again. Measure the desk's temperature by day and overnight. If it recovers in
+the warm, the cold was the cause: keep it warm, or use lower ratios. If it stays slow after
+two or three warm feeds, the flour was: add rye back. The flour from here is 10% rye, 20% wholemeal and 70%
 plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), replacing the
 video's 10% rye mix.
 
