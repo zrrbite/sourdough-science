@@ -70,12 +70,14 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 11 | 16 Nov | 07:00 | 1:4:4 (amounts not given) | | | | Morning reading not given (to confirm) |
 | 11 | 16 Nov | 17:00 | | **Under 1.5×** ("hasn't even grown 1/2 yet") | Bubbly; not firm, not overly runny | Sour | 10 h after the 07:00 feed at 1:4:4. Alive but much slower than day 8's 3× in 10 h at 1:4:4. Two things changed since: the new mix with less rye, and colder days and nights (not measured) |
 | 11 | 16 Nov | evening | | | | | Moved into the oven with the light on, to warm it; temperature not given |
+| 11 | 16 Nov | evening | | Growth picking up | | | Oven at **28°C**. Faster as soon as it was warm, with the flour unchanged, so the office had most likely got too cold *(hypothesis; the office not measured)* |
 
-**Next:** warmth first. Move it to about 26–27°C (oven with the light on, checked with a
-thermometer) and do not feed it until it peaks. Then 1:2:2, kept warm, until it reaches 2×
-within 12 hours again. Measure the desk's temperature by day and overnight. If it recovers in
-the warm, the cold was the cause: keep it warm, or use lower ratios. If it stays slow after
-two or three warm feeds, the flour was: add rye back. The flour from here is 10% rye, 20% wholemeal and 70%
+**Next:** feed when it peaks, or at bedtime, at 1:4:4 rather than 1:2:2, and leave it in
+the oven overnight. At 28°C, 1:2:2 would peak in the middle of the night. Check the oven
+again before bed; if it still reads 28°C it has settled. At 07:00: at or near its peak means
+1:4:4 is the right overnight ratio in the oven. Measure the office by day and overnight: if
+it has dropped well below 23.5°C, the jar lives in the oven with the light on, or gets lower
+ratios at the desk. The flour from here is 10% rye, 20% wholemeal and 70%
 plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), replacing the
 video's 10% rye mix.
 
