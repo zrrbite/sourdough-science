@@ -68,7 +68,7 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 10 | 15 Nov | 16:15 | | Not yet peaked, "still a bit of room"; height not given | | | 14¼ h after the 02:00 feed. Slower than expected at 1:5:5: the first feed on the new mix, after a cool night |
 | 10 | 15 Nov | evening | Fed; time and ratio not given (1:4:4 planned, to confirm) | At or close to its peak | | | Fed at the peak, aiming for the next feed at 07:00 |
 | 11 | 16 Nov | 07:00 | 1:4:4 (amounts not given) | | | | Morning reading not given (to confirm) |
-| 11 | 16 Nov | 17:00 | | **Under 1.5×** ("hasn't even grown 1/2 yet") | Bubbly | Sour | 10 h after the 07:00 feed at 1:4:4. Alive but much slower than day 8's 3× in 10 h at 1:4:4. Two things changed since: the new mix with less rye, and colder days and nights (not measured) |
+| 11 | 16 Nov | 17:00 | | **Under 1.5×** ("hasn't even grown 1/2 yet") | Bubbly; not firm, not overly runny | Sour | 10 h after the 07:00 feed at 1:4:4. Alive but much slower than day 8's 3× in 10 h at 1:4:4. Two things changed since: the new mix with less rye, and colder days and nights (not measured) |
 
 **Next:** warmth first. Move it to about 26–27°C (oven with the light on, checked with a
 thermometer) and do not feed it until it peaks. Then 1:2:2, kept warm, until it reaches 2×
