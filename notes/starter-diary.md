@@ -82,8 +82,9 @@ taken.
 | 11 | 16 Nov | 22:00 | 1:4:4 (amounts not given) | | | | Left in the office overnight, not the oven; the office is not warm at night |
 | 12 | 17 Nov | morning | | Has not risen much | | | About 9 h after the 22:00 feed, in the cold office. Not fed, so it can finish its rise |
 
-**From here: the fridge.** On the evening of day 12, feed it 1:5:5 at its peak and put it
-straight in the fridge; her rule gives 2–4 weeks unfed. Before a bake, give it two or three
+**From here: the fridge,** fed once a week, on Sundays, Martin's routine. Any ratio from
+1:2:2 to 1:5:5 lasts a week; the higher one leaves more food and less acid, so it comes out
+less sour. Her rule allows 2–4 weeks unfed, so a week is well inside it. Before a bake, give it two or three
 warm feeds at peak, in the oven with the light on at 27–28°C. One of them can be the
 readiness test: 1:2:2, 3× within 4–6 hours. If it comes out of the fridge sour and flat, pour
 off any liquid and give chapter 11's recovery feed: 1:10:10 with some wholemeal, warm. Dry a
