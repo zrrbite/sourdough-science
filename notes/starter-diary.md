@@ -34,6 +34,14 @@ Day 6 brought none either: about 2× again by the morning. The days a lull usual
 4 to 6, have passed without one, so the run reads as having skipped the first wave and the
 lull. With no pH reading and no control jar, that remains a reading, not a result.
 
+**Outcome** *(hypothesis on the causes)*. No lull at any point. The first 2× came on day 4
+and the first 3× on day 8, in 10 hours at 1:4:4 and 23.5°C. It reached 1:5:5 on day 8,
+three days ahead of the video. From day 10 it slowed, just as the new mix with a third of
+the rye and a colder office arrived together. In the oven at 28°C it picked up within the
+evening on the same flour, so the cold most likely did most of it. The daily run ended on
+day 12, 17 November, for a fridge routine. The readiness test was never run, and no pH was
+taken.
+
 | Day | Date | Time | Feed | Rise | Texture | Smell | Notes |
 |---|---|---|---|---|---|---|---|
 | 1 | 6 Nov | | Day-1 mix with a pinch of flakes; amounts not recorded | | | | |
@@ -74,16 +82,11 @@ lull. With no pH reading and no control jar, that remains a reading, not a resul
 | 11 | 16 Nov | 22:00 | 1:4:4 (amounts not given) | | | | Left in the office overnight, not the oven; the office is not warm at night |
 | 12 | 17 Nov | morning | | Has not risen much | | | About 9 h after the 22:00 feed, in the cold office. Not fed, so it can finish its rise |
 
-**Next:** leave it in the office today, unfed. At 1:4:4 in the cold it has been taking
-most of a day, so it should peak around the evening. Feed it then, at 1:2:2, and from here
-1:2:2 twice a day in the office, the ratio that should peak in about 12 hours at a cooler
-desk (*hypothesis*: day 6's 2× in 8½ hours at 23.5°C, slowed by the cold). Measure the
-office by day and overnight to set the ratio properly. The flour from here is 10% rye, 20% wholemeal and 70%
-plain flour (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g plain), replacing the
-video's 10% rye mix.
-
-The readiness test (feed 1:2:2, hold at about 27°C, 3× within 4–6 hours) is still to run.
-Planned for the morning of 21 November (day 16), as the levain build for a bake: 3× in 4–6
-hours means mix the dough with it, a sourdough loaf baked on 22 November. About 7 hours is
-where the video's day-14 starter was, so usable with a slower bulk. Slower than that means
-the hybrid again.
+**From here: the fridge.** On the evening of day 12, feed it 1:5:5 at its peak and put it
+straight in the fridge; her rule gives 2–4 weeks unfed. Before a bake, give it two or three
+warm feeds at peak, in the oven with the light on at 27–28°C. One of them can be the
+readiness test: 1:2:2, 3× within 4–6 hours. If it comes out of the fridge sour and flat, pour
+off any liquid and give chapter 11's recovery feed: 1:10:10 with some wholemeal, warm. Dry a
+new backup now that it doubles reliably (*Drying a backup and reviving it*). The flour stays
+10% rye, 20% wholemeal and 70% plain (300 g: 100 g of the old 30% mix, 60 g wholemeal, 140 g
+plain).

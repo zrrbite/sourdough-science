@@ -721,8 +721,13 @@ first wave: some starters stink and others hardly do (Wink 2008b). No pH strips 
 hand, so the lull is the test. On the morning of 9 November, day 4, it doubled, with a
 pleasant, slightly acidic smell. Days 5 and 6 brought no lull: it rose to near 2× between
 feeds each time and smelled acidic, so the run reads as having skipped the first wave
-*(hypothesis; no pH, no control jar)*. The readings feed by feed are in the [Starter
-Diary](starter-diary.md).
+*(hypothesis; no pH, no control jar)*. It first tripled on day 8, in 10 hours at 1:4:4, and
+reached 1:5:5 that evening, three days ahead of the video. From day 10 it slowed. A new flour
+mix with less rye (10% rye, 20% wholemeal) and a colder office came at the same time, and in
+an oven at 28°C it picked up within the evening on the same flour. So the cold most likely
+did most of it *(hypothesis; the office was not measured)*. The daily feeding ended on day
+12 for a fridge routine, without the readiness test. The readings feed by feed are in the
+[Starter Diary](starter-diary.md).
 
 **What the reasoning predicts** *(hypothesis)*. The flakes work like Wink's juice, with
 organisms in it. Their lactic acid and their surviving LAB acidify the fresh flour, and if
