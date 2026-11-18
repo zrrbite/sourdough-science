@@ -81,6 +81,8 @@ taken.
 | 11 | 16 Nov | evening | | Growth picking up | | | Oven at **28°C**. Faster as soon as it was warm, with the flour unchanged, so the office had most likely got too cold *(hypothesis; the office not measured)* |
 | 11 | 16 Nov | 22:00 | 1:4:4 (amounts not given) | | | | Left in the office overnight, not the oven; the office is not warm at night |
 | 12 | 17 Nov | morning | | Has not risen much | | | About 9 h after the 22:00 feed, in the cold office. Not fed, so it can finish its rise |
+| 13 | 18 Nov | | 25 / 25 / 25 (1:1:1), out of the fridge, in the oven with the light on | **2×** in 2 h | | | First refresh after "a few days" in the fridge (in since about 17 Nov). Oven temperature not given; it read 28°C on day 11 |
+| 13 | 18 Nov | | Fed again; ratio not given (to confirm) | | | | To rest a while, then back in the fridge, ready for a bake soon (date not set) |
 
 **From here: the fridge,** fed once a week, on Sundays, Martin's routine. Any ratio from
 1:2:2 to 1:5:5 lasts a week; the higher one leaves more food and less acid, so it comes out
